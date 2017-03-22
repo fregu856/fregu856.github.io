@@ -10,5 +10,9 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/image_captioning", methods=["GET", "POST"])
+def image_captioning():
+    return render_template("image_captioning.html")
+
 if __name__ == '__main__':
     app.run()
