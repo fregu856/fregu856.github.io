@@ -279,7 +279,17 @@
                               <p class="item-intro text-muted">Control of an Inverted Double Pendulum using Reinforcement Learning.</p>
                               <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/WuxKutPuQbY" frameborder="0" allowfullscreen></iframe></div>
                               </br>
-                              <p>More info coming soon.</p>
+                              <ul class="list-inline social-buttons">
+                                <li>
+                                    <a href="https://goo.gl/KCqTfM"><i class="fa fa-list-alt"></i></a>Poster
+                                </li>
+                                <li>
+                                    <a href="https://goo.gl/X35tzq"><i class="fa fa-file-text"></i></a>Report
+                                </li>
+                                <li>
+                                    <a href="https://github.com/fregu856/CS-229"><i class="fa fa-github"></i></a>Code
+                                </li>
+                              </ul>
                               <ul class="list-inline">
                                   <li>Nov. 2016 - Dec. 2016</li>
                                   <li>Course project in CS 229: Machine Learning, Stanford University</li>
@@ -313,7 +323,41 @@
                               <p class="item-intro text-muted">Autonomous/Web Controlled Raspberry Pi & Arduino Robot.</p>
                               <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/povGte7K8o4" frameborder="0" allowfullscreen></iframe></div>
                               </br>
-                              <p>More info coming soon.</p>
+                              <ul class="list-inline social-buttons">
+                                <li>
+                                    <a href="https://goo.gl/photos/z78dbTpEZ5kwjqneA"><i class="fa fa-picture-o"></i></a>Images
+                                </li>
+                                <li>
+                                    <a href="https://github.com/fregu856/Sommarprojekt16"><i class="fa fa-github"></i></a>Code
+                                </li>
+                              </ul>
+
+                              <p>
+                                  <b>Main hardware:</b><br>
+                                      - 1x Arduino Uno.<br>
+                                      - 1x Raspberry Pi 3 Model B.<br>
+                                      - 1x Raspberry Pi Camera Module v2.<br>
+                                      - 1x DFRobot 4WD Arduino Mobile Platform.<br>
+                                      - 2x L298 Dual H-Bridge DC Motor Controller.<br>
+                                      - 5x Sharp GP2Y0A21YK0F IR Range Sensor - 10 cm to 80 cm.<br>
+                                      - 1x Power bank.<br>
+                                  <br>
+
+                                  <b>Features:</b><br>
+                                      - Autonomous navigation of simple mazes.<br>
+                                      - Basic computer vision for detection of "color signs".<br>
+                                      - Video streaming.<br>
+                                      - Web interface for manual control and monitoring (desktop & mobile).<br>
+                                      - PD controller.<br>
+                                  <br>
+
+                                  <b>Functionality:</b><br>
+                                      - The Arduino reads and filters the IR sensors, implements the PD controller, controls the motor controllers via PVM and runs a state mahcine for autonomous navigation.<br>
+                                      - The Raspberry Pi acts as a webserver, streams live video and runs a basic computer vision algorithm.<br>
+                                      - The Arduino sends sensor and status data to the Raspberry Pi over serial (USB cable), which in turn sends this (and video streaming data) to the web page over wifi.<br>
+                                      - User input is sent from the web page to the Raspberry Pi over wifi, which in turn sends this to the Arduino over serial.
+                              </p>
+
                               <ul class="list-inline">
                                   <li>Jun. 2016 - Aug. 2016</li>
                                   <li>Personal summer project</li>
@@ -347,7 +391,39 @@
                               <p class="item-intro text-muted">Autonomous Hexapod Robot.</p>
                               <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/N5_tMeEpJaA" frameborder="0" allowfullscreen></iframe></div>
                               </br>
-                              <p>By Fredrik Gustafsson, Joakim Bertils, Jonas Ehn, Kevin Kjellén, Erik Ljungzell, Christoffer Malmgren and Jens Månsson. More info coming soon.</p>
+                              <ul class="list-inline social-buttons">
+                                <li>
+                                    <a href="https://drive.google.com/file/d/0B-n8kwzkfV_fZzFONTlqa3hockU/view?usp=sharing"><i class="fa fa-list-alt"></i></a>Slides
+                                </li>
+                                <li>
+                                    <a href="https://drive.google.com/file/d/0B-n8kwzkfV_fM1hqVU1uZkxTYlU/view?usp=sharing"><i class="fa fa-file-text"></i></a>Report
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Skipsterino/Kandidatprojekt"><i class="fa fa-github"></i></a>Code
+                                </li>
+                              </ul>
+
+                              <p>
+                                  <b>Main hardware:</b><br>
+                                      - 1x PhantomX AX Metal Hexapod Mark II Kit (including 18x Dynamixel AX-12 servos, excluding the ArbotiX Robocontroller).<br>
+                                      - 3x ATmega1284p microcontrollers.<br>
+                                      - 7x IR distance sensors.<br>
+                                      - 1x ultrasonic distance sensor.<br>
+                                      - 1x MPU-6050 IMU.<br>
+                                      - 1x LCD display.<br>
+                                      - 1x FireFly Bluetooth modem.<br>
+                                      - 1x Raspberry Pi 3 Model B.<br>
+                                      - 1x Raspberry Pi Camera Board 5 MP.<br>
+                                  <br>
+
+                                  <b>Functionality:</b><br>
+                                  - The robot can navigate a simple maze (containing both low and high obstacles) autonomously and be controlled manually with an Xbox controller connected to a PC. It communicates with the PC over Bluetooth.<br>
+                                  - The system is divided into three subsystems (control, sensors and communication), with one microcontroller each. The subsystems communicate via an SPI bus.<br>
+                                  - The Raspberry Pi is configured as a WiFi hotspot and streams video to a Linux computer.<br>
+                                  - The walking algorithm is based on inverse kinematics. A PD controller is used to keep it centered in corridors.
+                              </p>
+
+                              <p>By Fredrik Gustafsson, Joakim Bertils, Jonas Ehn, Kevin Kjellén, Erik Ljungzell, Christoffer Malmgren and Jens Månsson.</p>
                               <ul class="list-inline">
                                   <li>Jan. 2016 - Jun. 2016</li>
                                   <li>Bachelor thesis project, Linköping University</li>
@@ -381,7 +457,12 @@
                               <p class="item-intro text-muted">2D Adventure Game.</p>
                               <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/2dzIzPWQkns" frameborder="0" allowfullscreen></iframe></div>
                               </br>
-                              <p>By Fredrik Gustafsson, Olle Andersson, Simon Arkeholt, Joakim Bertils, Jonas Ehn and Johannes Grundell. More info coming soon.</p>
+                              <ul class="list-inline social-buttons">
+                                <li>
+                                    <a href="https://github.com/Zoreno/BlueWindProject"><i class="fa fa-github"></i></a>Code
+                                </li>
+                              </ul>
+                              <p>By Fredrik Gustafsson, Olle Andersson, Simon Arkeholt, Joakim Bertils, Jonas Ehn and Johannes Grundell.</p>
                               <ul class="list-inline">
                                   <li>Oct. 2015 - Dec. 2015</li>
                                   <li>Course project in TDDC76: Programming and Datastructures, Linköping University</li>
