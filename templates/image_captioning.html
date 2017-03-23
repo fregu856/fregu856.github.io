@@ -192,6 +192,16 @@
 
         window.onload = load_func;
 
+        // to make buttons NOT stay focused after clicks:
+        $(".btn").mouseup(function(){
+        $(this).blur();
+        })
+
+        // to text in the navbar NOT stay focused after clicks (so that text don't stay red):
+        $(".page-scroll").mouseup(function(){
+        $(this).blur();
+        })
+
     </script>
 
 </body>

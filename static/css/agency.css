@@ -72,6 +72,11 @@ h6 {
   background-color: rgb(186,19,25);
   border-color: rgb(186,19,25);
 }
+.btn-primary:focus:active {
+  color: white;
+  background-color: rgb(186,19,25);
+  border-color: rgb(186,19,25);
+}
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
@@ -644,9 +649,7 @@ ul.social-buttons li a {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
+ul.social-buttons li a:hover {
   background-color: rgb(201,34,40);
 }
 .btn:focus,
