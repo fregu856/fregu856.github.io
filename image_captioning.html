@@ -38,10 +38,13 @@
   <!-- Navigation -->
   <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top" style="background-color: #222222; border-color: transparent;">
       <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header page-scroll">
-              <a class="navbar-brand page-scroll" href="/">fregu856</a>
-          </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="/">fregu856</a>
+        </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -89,15 +92,15 @@
 
           <div class="row text-center">
               <div class="col-xs-12">
-                  <img id="standard" src="" />
+                  <img class="img-responsive img-centered" id="standard" src="" />
 
                   </br>
 
-                  <img id="attention" src="" />
+                  <img class="img-responsive img-centered" id="attention" src="" />
 
                   </br>
 
-                  <img id="map" src="" />
+                  <img class="img-responsive img-centered" id="map" src="" />
               </div>
           </div>
 
@@ -200,6 +203,11 @@
 
         // to make buttons NOT stay focused after clicks:
         $(".btn").mouseup(function(){
+        $(this).blur();
+        })
+
+        // to make the toggle menu button NOT stay focused after clicks:
+        $(".navbar-toggle").mouseup(function(){
         $(this).blur();
         })
 
