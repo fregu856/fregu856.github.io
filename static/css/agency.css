@@ -1,7 +1,4 @@
-// to make the toggle menu button NOT stay focused after clicks:
-$(".navbar-toggle").mouseup(function(){
-$(this).blur();
-})/*!
+/*!
  * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
