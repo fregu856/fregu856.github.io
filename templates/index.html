@@ -99,7 +99,7 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>2D Object Detection for Autonomous Driving</h4>
-                        <p class="text-muted">Tensorflow Implementation of SqueezeDet.</p>
+                        <p class="text-muted">TensorFlow Implementation of SqueezeDet.</p>
                     </div>
                 </div>
 
@@ -726,7 +726,7 @@
     <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
+                <div class="close-modal" data-dismiss="modal" id="2D_detection_cross">
                     <div class="lr">
                         <div class="rl">
                         </div>
@@ -738,8 +738,10 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>2D Object Detection for Autonomous Driving</h2>
-                                <p class="item-intro text-muted">Tensorflow Implementation of SqueezeDet.</p>
-                                <img class="img-responsive img-centered" src="static/img/2D_detection.png" alt="">
+                                <p class="item-intro text-muted">TensorFlow Implementation of SqueezeDet.</p>
+                                <div class="video-container"><iframe id="2D_detection_video" width="560" height="315" src="https://www.youtube.com/embed/5BBwjvlUULI?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
+                                </br>
+
                                 <ul class="list-inline social-buttons">
                                   <li>
                                       <a href="https://github.com/fregu856/2D_detection"><i class="fa fa-github"></i></a>Code
@@ -747,15 +749,15 @@
                                 </ul>
 
                                 <p>
-                                    Ongoing project.
+                                    Ongoing project. TensorFlow implementation of SqueezeDet, trained on KITTI.
                                 </p>
 
                                 <ul class="list-inline">
                                     <li>Aug. 2016 - </li>
                                     <li>Personal project</li>
-                                    <li>Python, Tensorflow</li>
+                                    <li>Python, TensorFlow</li>
                                 </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <button id="2D_detection_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
                     </div>
@@ -816,6 +818,13 @@
       });
       $('#Zenuity_car_button').on('click', function() {
       $('#Zenuity_car_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
+
+      $('#2D_detection_cross').on('click', function() {
+      $('#2D_detection_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
+      $('#2D_detection_button').on('click', function() {
+      $('#2D_detection_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
       });
 
       // to make buttons NOT stay focused after clicks:
