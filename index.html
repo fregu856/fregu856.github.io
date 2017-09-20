@@ -88,7 +88,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6 portfolio-item">
+                <div class="col-md-12 portfolio-item">
                     <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -100,6 +100,23 @@
                     <div class="portfolio-caption">
                         <h4>2D Object Detection for Autonomous Driving</h4>
                         <p class="text-muted">TensorFlow Implementation of SqueezeDet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 portfolio-item">
+                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="static/img/segmentation_gray.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Semantic Segmentation for Autonomous Driving</h4>
+                        <p class="text-muted">TensorFlow Implementation of ENet.</p>
                     </div>
                 </div>
 
@@ -766,6 +783,50 @@
         </div>
     </div>
 
+    <!-- Portfolio Modal 11 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal" id="segmentation_cross">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Semantic Segmentation for Autonomous Driving</h2>
+                                <p class="item-intro text-muted">TensorFlow Implementation of ENet.</p>
+                                <div class="video-container"><iframe id="segmentation_video" width="560" height="315" src="https://www.youtube.com/embed/HbPhvct5kvs?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
+                                </br>
+
+                                <ul class="list-inline social-buttons">
+                                  <li>
+                                      <a href="https://github.com/fregu856/segmentation"><i class="fa fa-github"></i></a>Code
+                                  </li>
+                                </ul>
+
+                                <p>
+                                    Ongoing project. TensorFlow implementation of ENet, trained on Cityscapes.
+                                </p>
+
+                                <ul class="list-inline">
+                                    <li>Aug. 2017 - </li>
+                                    <li>Personal project</li>
+                                    <li>Python, TensorFlow</li>
+                                </ul>
+                                <button id="segmentation_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery -->
     <script src="static/vendor/jquery/jquery.min.js"></script>
 
@@ -825,6 +886,13 @@
       });
       $('#2D_detection_button').on('click', function() {
       $('#2D_detection_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
+
+      $('#segmentation_cross').on('click', function() {
+      $('#segmentation_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
+      $('#segmentation_button').on('click', function() {
+      $('#segmentation_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
       });
 
       // to make buttons NOT stay focused after clicks:
