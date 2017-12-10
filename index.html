@@ -852,7 +852,7 @@
     <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
+                <div class="close-modal" data-dismiss="modal" id="smaugs_cross">
                     <div class="lr">
                         <div class="rl">
                         </div>
@@ -865,7 +865,8 @@
                                 <!-- Project Details Go Here -->
                                 <h2>SMAUGS</h2>
                                 <p class="item-intro text-muted">Autonomous Minesweeping System.</p>
-                                <img class="img-responsive img-centered" src="static/img/smaugs_color.png" alt="">
+                                <div class="video-container"><iframe id="smaugs_video" width="560" height="315" src="https://www.youtube.com/embed/cdtr_g31KOo?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
+                                </br>
 
                                 <p>
                                     Ongoing project, more info coming soon.
@@ -876,7 +877,7 @@
                                     <li>Course project in TSRT10: Automatic Control - Project Course, Linköping University</li>
                                     <li>C++, Python, ROS</li>
                                 </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <button id="smaugs_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
                     </div>
@@ -951,6 +952,13 @@
       });
       $('#segmentation_button').on('click', function() {
       $('#segmentation_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
+
+      $('#smaugs_cross').on('click', function() {
+      $('#smaugs_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
+      $('#smaugs_button').on('click', function() {
+      $('#smaugs_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
       });
 
       // to make buttons NOT stay focused after clicks:
