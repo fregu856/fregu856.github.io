@@ -89,6 +89,38 @@
 
             <div class="row">
               <div class="col-md-6 portfolio-item">
+                  <a href="#portfolioModal14" class="portfolio-link" data-toggle="modal">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                              <i class="fa fa-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img src="static/img/thesis_gray.png" class="img-responsive" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                      <h4>Master's Thesis Project</h4>
+                      <p class="text-muted">Automotive 3D Object Detection Without Target Domain Annotations.</p>
+                  </div>
+              </div>
+
+                <div class="col-md-6 portfolio-item">
+                    <a href="#portfolioModal13" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="static/img/skalman_gray.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Skalman</h4>
+                        <p class="text-muted">Autonomous/Web Controlled TurtleBot3.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 portfolio-item">
                   <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
                       <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
@@ -307,7 +339,7 @@
                           </li>
 
                           <li>
-                              <a href="http://www.fregu856.com/static/CV_Fredrik_Gustafsson_Jan18.pdf" title="Resume"><i class="fa fa-file-text"></i></a>
+                              <a href="http://www.fregu856.com/static/CV_Fredrik_Gustafsson_Feb18.pdf" title="Resume"><i class="fa fa-file-text"></i></a>
                           </li>
                         </ul>
                     </div>
@@ -315,7 +347,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">- I am an engineering student whose main interests include mobile robotics, computer vision, deep learning and Bayesian filtering. I aim to contribute to the development of fully autonomous vehicles and hope to experience the day when we can safely say: <b>”Do you remember when people used to get killed in traffic?”</b>.</p>
+                    <p class="large text-muted">- I am an engineering student whose main interests include autonomous robots, computer vision, deep learning and Bayesian filtering. I aim to be a key contributor in the development of fully autonomous vehicles and hope to experience the day when we can safely say: <b>”Do you remember when people used to get killed in traffic?”</b>.</p>
                 </div>
             </div>
         </div>
@@ -325,7 +357,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <span class="copyright">Copyright &copy; Fredrik Gustafsson 2017</span>
+                    <span class="copyright">Copyright &copy; Fredrik Gustafsson 2017-2018</span>
                 </div>
             </div>
         </div>
@@ -893,6 +925,79 @@
         </div>
     </div>
 
+    <!-- Portfolio Modal 13 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Skalman</h2>
+                                <p class="item-intro text-muted">Autonomous/Web Controlled TurtleBot3.</p>
+                                <img class="img-responsive img-centered" src="static/img/skalman_color.png" alt="">
+
+                                <p>
+                                    Ongoing project.
+                                </p>
+
+                                <ul class="list-inline">
+                                    <li>Jan. 2018 -</li>
+                                    <li>Personal project</li>
+                                    <li>Python, C++, ROS, HTML, JavaScript</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 14 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal" id="thesis_cross">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Master's Thesis Project</h2>
+                                <p class="item-intro text-muted">Automotive 3D Object Detection Without Target Domain Annotations.</p>
+                                <div class="video-container"><iframe id="thesis_video" width="560" height="315" src="https://www.youtube.com/embed/-QR7zpitRIA?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
+                                </br>
+
+                                <p>Ongoing project.</p>
+
+                                <ul class="list-inline">
+                                    <li>Jan. 2018 - </li>
+                                    <li>Master's Thesis Project, Zenuity &amp Linköping University</li>
+                                    <li>Python, PyTorch</li>
+                                </ul>
+                                <button id="thesis_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery -->
     <script src="static/vendor/jquery/jquery.min.js"></script>
 
@@ -966,6 +1071,13 @@
       });
       $('#smaugs_button').on('click', function() {
       $('#smaugs_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
+
+      $('#thesis_cross').on('click', function() {
+      $('#thesis_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
+      $('#thesis_button').on('click', function() {
+      $('#thesis_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
       });
 
       // to make buttons NOT stay focused after clicks:
