@@ -14,5 +14,9 @@ def index():
 def image_captioning():
     return render_template("image_captioning.html")
 
+@app.route("/hogskolevalet18", methods=["GET", "POST"])
+def hogskolevalet18():
+    return render_template("hogskolevalet18.html")
+
 if __name__ == '__main__':
     app.run()
