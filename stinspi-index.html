@@ -108,50 +108,71 @@
             <hr class="my-4">
             <p class="text mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
 
-            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                <button type="button" class="btn btn-secondary" data-filter="all">Alla intervjuer</button>
+            <button type="button" class="btn btn-secondary" data-filter="all">Alla intervjuer</button>
 
-                <div class="btn-group" role="group">
-                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Utbildning
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                        <button class="dropdown-item" type="button" data-multifilter="ingenjör">Ingenjör</button>
-                        <button class="dropdown-item" type="button" data-multifilter="läkare">Läkare</button>
-                        <button class="dropdown-item" type="button" data-multifilter="jurudik">Jurudik</button>
-                        <button class="dropdown-item" type="button" data-multifilter="ekonomi">Ekonomi</button>
-                    </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Utbildning
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <button class="dropdown-item" type="button" data-multifilter="ingenjör">Ingenjör</button>
+                    <button class="dropdown-item" type="button" data-multifilter="läkare">Läkare</button>
+                    <button class="dropdown-item" type="button" data-multifilter="jurudik">Jurudik</button>
+                    <button class="dropdown-item" type="button" data-multifilter="ekonomi">Ekonomi</button>
                 </div>
-
-                <div class="btn-group" role="group">
-                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Skola
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                        <button class="dropdown-item" type="button" data-multifilter="kth">KTH</button>
-                        <button class="dropdown-item" type="button" data-multifilter="chalmers">Chalmers</button>
-                        <button class="dropdown-item" type="button" data-multifilter="lund">Lund</button>
-                        <button class="dropdown-item" type="button" data-multifilter="linköping">Linköping</button>
-                    </div>
-                </div>
-
-                <div class="btn-group" role="group">
-                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Stad
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                        <button class="dropdown-item" type="button" data-multifilter="stockholm">Stockholm</button>
-                        <button class="dropdown-item" type="button" data-multifilter="göteborg">Göteborg</button>
-                        <button class="dropdown-item" type="button" data-multifilter="lund">Lund</button>
-                        <button class="dropdown-item" type="button" data-multifilter="linköping">Linköping</button>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                  <input type="text" data-search class="form-control" placeholder="Sök" aria-describedby="btnGroupAddon">
-                </div>
-
             </div>
+
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Skola
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <button class="dropdown-item" type="button" data-multifilter="kth">KTH</button>
+                    <button class="dropdown-item" type="button" data-multifilter="chalmers">Chalmers</button>
+                    <button class="dropdown-item" type="button" data-multifilter="lund">Lund</button>
+                    <button class="dropdown-item" type="button" data-multifilter="linköping">Linköping</button>
+                </div>
+            </div>
+
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Stad
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <button class="dropdown-item" type="button" data-multifilter="stockholm">Stockholm</button>
+                    <button class="dropdown-item" type="button" data-multifilter="göteborg">Göteborg</button>
+                    <button class="dropdown-item" type="button" data-multifilter="lund">Lund</button>
+                    <button class="dropdown-item" type="button" data-multifilter="linköping">Linköping</button>
+                </div>
+            </div>
+
+            <div class="input-group">
+              <input type="text" data-search class="form-control" placeholder="Sök" aria-describedby="btnGroupAddon">
+            </div>
+
+            <br>
+
+                <select class="form-control" id="exampleFormControlSelect1" data-multifilter>
+                  <option value="all">Utbildning</option>
+                  <option value="ingenjör">Ingenjör</option>
+                  <option value="läkare">Läkare</option>
+                </select>
+
+                <select class="form-control" id="exampleFormControlSelect1" data-multifilter>
+                  <option value="all">Skola</option>
+                  <option value="kth">KTH</option>
+                  <option value="chalmers">Chalmers</option>
+                </select>
+
+                <select class="form-control" id="exampleFormControlSelect1" data-multifilter>
+                  <option value="all">Stad</option>
+                  <option value="stockholm">Stockholm</option>
+                  <option value="göteborg">Göteborg</option>
+                </select>
+
+            </form>
+
+
 
             <div class="filtr-container">
                 <div class="filtr-item" data-category="ingenjör, kth, stockholm">
