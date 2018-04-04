@@ -84,7 +84,126 @@
       </div>
     </section>
 
-    <section class="bg-dark" id="services">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="bg-dark" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">We've got what you need!</h2>
+            <hr class="my-4">
+            <p class="text mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-secondary" data-filter="all">Alla intervjuer</button>
+
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Utbildning
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <button class="dropdown-item" type="button" data-multifilter="ingenjör">Ingenjör</button>
+                        <button class="dropdown-item" type="button" data-multifilter="läkare">Läkare</button>
+                        <button class="dropdown-item" type="button" data-multifilter="jurudik">Jurudik</button>
+                        <button class="dropdown-item" type="button" data-multifilter="ekonomi">Ekonomi</button>
+                    </div>
+                </div>
+
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Skola
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <button class="dropdown-item" type="button" data-multifilter="kth">KTH</button>
+                        <button class="dropdown-item" type="button" data-multifilter="chalmers">Chalmers</button>
+                        <button class="dropdown-item" type="button" data-multifilter="lund">Lund</button>
+                        <button class="dropdown-item" type="button" data-multifilter="linköping">Linköping</button>
+                    </div>
+                </div>
+
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Stad
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <button class="dropdown-item" type="button" data-multifilter="stockholm">Stockholm</button>
+                        <button class="dropdown-item" type="button" data-multifilter="göteborg">Göteborg</button>
+                        <button class="dropdown-item" type="button" data-multifilter="lund">Lund</button>
+                        <button class="dropdown-item" type="button" data-multifilter="linköping">Linköping</button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                  <input type="text" data-search class="form-control" placeholder="Sök" aria-describedby="btnGroupAddon">
+                </div>
+
+            </div>
+
+            <div class="filtr-container">
+                <div class="filtr-item" data-category="ingenjör, kth, stockholm">
+                   <img src="static/stinspi-img/profile_pic.jpg" alt="sample">
+                   <p style="visibility: hidden">Teknisk fysik, ingenjör, kth, stockholm</p>
+                </div>
+
+                <div class="filtr-item" data-category="ingenjör, chalmers, göteborg">
+                   <img src="static/stinspi-img/profile_pic.jpg" alt="sample">
+                   <p style="visibility: hidden">Teknisk fysik, ingenjör, chalmers, göteborg</p>
+                </div>
+
+                <div class="filtr-item" data-category="läkare, linköping">
+                   <img src="static/stinspi-img/profile_pic.jpg" alt="sample">
+                   <p style="visibility: hidden">läkare, linköping</p>
+                </div>
+
+                <div class="filtr-item" data-category="jurudik, lund">
+                   <img src="static/stinspi-img/profile_pic.jpg" alt="sample">
+                   <p style="visibility: hidden">jurudik, lund</p>
+                </div>
+
+                <div class="filtr-item" data-category="ekonomi, chalmers, göteborg">
+                   <img src="static/stinspi-img/profile_pic.jpg" alt="sample">
+                   <p style="visibility: hidden">ekonomi, chalmers, göteborg</p>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="bg-light" id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -224,14 +343,14 @@
       </div>
     </section>
 
-    <section class="bg-light">
+    <section class="bg-dark">
       <div class="container text-center">
         <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
         <a class="btn btn-primary btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
       </div>
     </section>
 
-    <section class="bg-dark" id="contact">
+    <section class="bg-light" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -276,6 +395,46 @@
 
     <!-- Custom scripts for this template -->
     <script src="static/stinspi-js/creative.min.js"></script>
+
+    <script src="static/Filterizr/dist/jquery.filterizr.min.js"></script>
+
+    <script>
+        // Default options
+        var options = {
+           animationDuration: 0.5, // in seconds
+           filter: 'all', // Initial filter
+           callbacks: {
+              onFilteringStart: function() { },
+              onFilteringEnd: function() { },
+              onShufflingStart: function() { },
+              onShufflingEnd: function() { },
+              onSortingStart: function() { },
+              onSortingEnd: function() { }
+           },
+           controlsSelector: '', // Selector for custom controls
+           delay: 0, // Transition delay in ms
+           delayMode: 'progressive', // 'progressive' or 'alternate'
+           easing: 'ease-out',
+           filterOutCss: { // Filtering out animation
+              opacity: 0,
+              transform: 'scale(0.5)'
+           },
+           filterInCss: { // Filtering in animation
+              opacity: 0,
+              transform: 'scale(1)'
+           },
+           layout: 'sameSize', // See layouts
+           multifilterLogicalOperator: 'or',
+           selector: '.filtr-container',
+           setupControls: true // Should be false if controlsSelector is set
+        }
+        // You can override any of these options and then call...
+        var filterizd = $('.filtr-container').filterizr(options);
+        // If you have already instantiated your Filterizr then call...
+        filterizd.filterizr('setOptions', options);
+
+        $('.filtr-container').filterizr({ multifilterLogicalOperator: 'and' });
+    </script>
 
   </body>
 
