@@ -758,6 +758,10 @@ body {
 	overflow:hidden;
 }
 
+.custom-p {
+  margin-bottom: 1px !important;
+}
+
 .video-container iframe, .video-container object, .video-container embed {
 	position:absolute;
 	top:0;
