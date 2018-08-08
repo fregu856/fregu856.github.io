@@ -1,0 +1,69 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-primary {
+  background-color: rgb(40, 150, 110) !important;
+}
+
+.bg-light {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.bg-dark {
+  background-color: rgb(242, 242, 242) !important;
+}
+
+.bg-img {
+  background: linear-gradient(rgba(40, 150, 110, 0.96), rgba(40, 150, 110, 0.96)), url("header_1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background: linear-gradient(rgba(10, 10, 10, 0.96), rgba(10, 10, 10, 0.96)), url("header_1.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+hr {
+  max-width: 60px;
+  border-width: 5px;
+  border-color: rgb(40, 150, 110);
+}
+hr.light {
+  border-color: rgb(255, 255, 255);
+}
+hr.dark {
+  border-color: rgb(0, 0, 0);
+}
+
+h1.custom {
+  font-size: 55px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}

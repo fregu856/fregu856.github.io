@@ -20,6 +20,11 @@ p {
 p.large {
   font-size: 16px;
 }
+
+.custom-p2 {
+  font-size: 18px !important;
+}
+
 a,
 a:hover,
 a:focus,
@@ -53,7 +58,7 @@ h6 {
   background-color: #eeeeee;
 }
 .bg-darkest-gray {
-  background-color: #222222;
+  background-color: rgb(15, 15, 15);
 }
 .btn-primary {
   color: white;
@@ -62,6 +67,7 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+  border-radius: 300px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -152,7 +158,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
-  background-color: #222222;
+  background-color: rgb(15, 15, 15);
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -171,8 +177,8 @@ fieldset[disabled] .btn-xl.active {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #222222;
-  border-color: #222222;
+  background-color: rgb(15, 15, 15);
+  border-color: rgb(15, 15, 15);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
@@ -181,7 +187,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   color: rgb(201,34,40);
-  background-color: #222222;
+  background-color: rgb(15, 15, 15);
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -226,7 +232,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: rgb(15, 15, 15);
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -562,7 +568,7 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-color: #222222;
+  background-color: rgb(15, 15, 15);
   background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -638,7 +644,7 @@ ul.social-buttons {
 }
 ul.social-buttons li a {
   display: block;
-  background-color: #222222;
+  background-color: rgb(15, 15, 15);
   height: 40px;
   width: 40px;
   border-radius: 100%;
@@ -710,7 +716,7 @@ ul.social-buttons li a:hover {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #222222;
+  background-color: rgb(15, 15, 15);
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -721,7 +727,7 @@ ul.social-buttons li a:hover {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #222222;
+  background-color: rgb(15, 15, 15);
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
