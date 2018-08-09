@@ -758,17 +758,24 @@ ul.social-buttons li a:hover {
   display: none;
 }
 ::-moz-selection {
+  color: #fff;
+  background: #212529;
   text-shadow: none;
-  background: rgb(201,34,40);
 }
+
 ::selection {
+  color: #fff;
+  background: #212529;
   text-shadow: none;
-  background: rgb(201,34,40);
 }
+
 img::selection {
+  color: #fff;
   background: transparent;
 }
+
 img::-moz-selection {
+  color: #fff;
   background: transparent;
 }
 body {
