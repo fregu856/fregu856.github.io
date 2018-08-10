@@ -36,6 +36,7 @@ a:focus,
 a:active,
 a.active {
   outline: none;
+  text-decoration: none;
 }
 a {
   color: rgb(201,34,40);
@@ -44,7 +45,8 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: rgb(186,19,25);
+  color: rgb(161,14,20);
+  text-decoration: none;
 }
 h1,
 h2,
