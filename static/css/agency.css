@@ -67,11 +67,17 @@ h6 {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
 }
 .bg-darkest-gray {
   background-color: rgb(25, 25, 25);
 }
+
+.btn-default {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: transparent;
+}
+
 .btn-primary {
   color: white;
   background-color: rgb(201,34,40);
