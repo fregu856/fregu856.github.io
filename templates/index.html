@@ -310,7 +310,23 @@
             <br />
 
             <div class="row">
-              <div class="col-md-12 portfolio-item">
+              <div class="col-md-6 portfolio-item">
+                  <a href="#portfolioModal16" class="portfolio-link" data-toggle="modal">
+                      <div class="portfolio-hover">
+                          <div class="portfolio-hover-content">
+                              <i class="fa fa-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img src="static/img/deeplabv3_gray.png" class="img-responsive" alt="">
+                  </a>
+                  <div class="portfolio-caption">
+                      <h4>PyTorch Implementation of DeepLabV3</h4>
+                      <p class="text-muted">Semantic Segmentation for Autonomous Driving.</p>
+                  </div>
+              </div>
+
+
+              <div class="col-md-6 portfolio-item">
                   <a href="#portfolioModal14" class="portfolio-link" data-toggle="modal">
                       <div class="portfolio-hover">
                           <div class="portfolio-hover-content">
@@ -1438,6 +1454,50 @@
         </div>
     </div>
 
+    <!-- Portfolio Modal 16 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal" id="deeplabv3_cross">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h3 style="margin-bottom: -15px">PyTorch Implementation of DeepLabV3</h3>
+                                <p class="item-intro text-muted">Semantic Segmentation for Autonomous Driving.</p>
+                                <div class="video-container"><iframe id="deeplabv3_video" width="560" height="315" src="https://www.youtube.com/embed/9e2x4dDRB-k?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
+                                </br>
+
+                                <ul class="list-inline social-buttons">
+                                  <li>
+                                      <a href="https://github.com/fregu856/deeplabv3" target="_blank"><i class="fa fa-github"></i></a>Code
+                                  </li>
+                                </ul>
+
+                                <p class="text-justify">
+                                    PyTorch implementation of <a href="https://arxiv.org/abs/1706.05587">DeepLabV3</a>, trained on the Cityscapes dataset. Please see the GitHub repository linked above for code and further details.
+                                </p>
+
+                                <ul class="list-inline">
+                                    <li>May 2018 - Sep. 2018</li>
+                                    <li>Personal project</li>
+                                    <li>Python, PyTorch</li>
+                                </ul>
+                                <button id="deeplabv3_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ################################################################### -->
     <!-- ################################################################### -->
     <!-- ################################################################### -->
@@ -1586,6 +1646,13 @@
       });
       $('#thesis_button').on('click', function() {
       $('#thesis_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
+
+      $('#deeplabv3_cross').on('click', function() {
+      $('#deeplabv3_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
+      $('#deeplabv3_button').on('click', function() {
+      $('#deeplabv3_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
       });
 
       // to make buttons NOT stay focused after clicks:
