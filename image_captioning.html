@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Project portfolio (deep learning, robots, programming) for Fredrik Gustafsson.">
+    <meta name="author" content="Fredrik Gustafsson">
+
+    <title>Fredrik Gustafsson</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="/static/css/agency.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top" style="background-color: #222222; border-color: transparent;">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="/">fregu856</a>
+        </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="hidden">
+                      <a href="#page-top"></a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="/#portfolio">Projects</a>
+                  </li>
+
+                  <li>
+                      <a class="page-scroll" href="/#coursework">Coursework</a>
+                  </li>
+
+                  <li>
+                      <a class="page-scroll" href="/#about">About me</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+  </nav>
+
+    <!-- demo section -->
+    <section id="demo">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Neural Image Captioning</h2>
+              </div>
+          </div>
+
+          </br>
+
+          <div class="row text-center">
+              <div class="col-md-4">
+                  <button class="page-scroll btn btn-xl" onclick="standard_func()" style="margin-bottom: 10px; margin-top: 10px">Standard Model</button>  </div>
+              <div class="col-md-4">
+                  <button class="page-scroll btn btn-xl" onclick="attention_func()" style="margin-bottom: 10px; margin-top: 10px">Attention Model</button>
+              </div>
+              <div class="col-md-4">
+                  <button class="page-scroll btn btn-xl" onclick="compare_func()" style="margin-bottom: 10px; margin-top: 10px">Compare Models</button>
+              </div>
+          </div>
+
+          </br>
+          </br>
+
+          <div class="row text-center">
+              <div class="col-xs-12">
+                  <img class="img-responsive img-centered" id="standard" src="" />
+
+                  </br>
+
+                  <img class="img-responsive img-centered" id="attention" src="" />
+
+                  </br>
+
+                  <img class="img-responsive img-centered" id="map" src="" />
+              </div>
+          </div>
+
+        </div>
+    </section>
+
+<p id="demo"></p>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="copyright">Copyright &copy; Fredrik Gustafsson 2017-2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/static/js/jqBootstrapValidation.js"></script>
+    <script src="/static/js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="/static/js/agency.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+
+        function getRandomInt(min, max)
+        {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function load_func()
+        {
+          img_no = getRandomInt(1, 200);
+          document.getElementById("standard").src = "static/images/standard_" + img_no + ".png";
+          document.getElementById("attention").src = "static/images/attention_" + img_no + ".png";
+          document.getElementById("map").src = "static/images/map_" + img_no + ".png";
+
+        }
+
+        function standard_func()
+        {
+          if (img_no == 200)
+          {
+              img_no = 1;
+          }
+          else
+          {
+              ++img_no;
+          }
+
+          document.getElementById("standard").src = "static/images/standard_" + img_no + ".png";
+          document.getElementById("attention").src = "";
+          document.getElementById("map").src = "";
+        }
+
+        function attention_func()
+        {
+          if (img_no == 200)
+          {
+              img_no = 1;
+          }
+          else
+          {
+              ++img_no;
+          }
+
+          document.getElementById("standard").src = "";
+          document.getElementById("attention").src = "static/images/attention_" + img_no + ".png";
+          document.getElementById("map").src = "static/images/map_" + img_no + ".png";
+        }
+
+        function compare_func()
+        {
+          if (img_no == 200)
+          {
+              img_no = 1;
+          }
+          else
+          {
+              ++img_no;
+          }
+
+          document.getElementById("standard").src = "static/images/standard_" + img_no + ".png";
+          document.getElementById("attention").src = "static/images/attention_" + img_no + ".png";
+          document.getElementById("map").src = "static/images/map_" + img_no + ".png";
+        }
+
+        window.onload = load_func;
+
+        // to make buttons NOT stay focused after clicks:
+        $(".btn").mouseup(function(){
+        $(this).blur();
+        })
+
+        // to make the toggle menu button NOT stay focused after clicks:
+        $(".navbar-toggle").mouseup(function(){
+        $(this).blur();
+        })
+
+        // to text in the navbar NOT stay focused after clicks (so that text don't stay red):
+        $(".page-scroll").mouseup(function(){
+        $(this).blur();
+        })
+
+    </script>
+
+</body>
+
+</html>
