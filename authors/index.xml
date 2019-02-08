@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Academic</title>
+    <link>/authors/</link>
+    <description>Recent content in Authors on Academic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Admin</title>
+      <link>/authors/admin/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/authors/admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GA Cushen</title>
+      <link>/authors/ga-cushen/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0200</pubDate>
+      
+      <guid>/authors/ga-cushen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MS Nixon</title>
+      <link>/authors/ms-nixon/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0200</pubDate>
+      
+      <guid>/authors/ms-nixon/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
