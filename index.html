@@ -1,1679 +1,2381 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-us">
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Project portfolio (deep learning, robots, programming) for Fredrik Gustafsson.">
-    <meta name="author" content="Fredrik Gustafsson">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="author" content="Fredrik K. Gustafsson">
 
-    <title>Fredrik Gustafsson</title>
+  
+  
+  
+  
+  <meta name="description" content="PhD Student in Uncertainty-Aware Deep Learning">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="alternate" hreflang="en-us" href="/">
 
-    <!-- Custom Fonts -->
-    <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href="static/css/academicons.min.css" rel="stylesheet">
+  
 
-    <!-- Theme CSS -->
-    <link href="static/css/agency.css" rel="stylesheet">
-    <link href="static/css/creative.css" rel="stylesheet">
-    <link href="static/css/grayscale_white.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
-    <![endif]-->
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/projects.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@https://twitter.com/fregu856">
+  <meta property="twitter:creator" content="@https://twitter.com/fregu856">
+  
+  <meta property="og:site_name" content="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <meta property="og:description" content="PhD Student in Uncertainty-Aware Deep Learning">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="og:updated_time" content="2017-10-15T00:00:00&#43;02:00">
+  
+
+  
+
+  <title>Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</title>
 
 </head>
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">fregu856</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-
-                    <li>
-                        <a class="page-scroll" href="#publications">Publications</a>
-                    </li>
-
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Projects</a>
-                    </li>
-
-                    <!-- <li>
-                        <a class="page-scroll" href="#talks">Talks</a>
-                    </li> -->
-
-                    <li>
-                        <a class="page-scroll" href="#teaching">Teaching</a>
-                    </li>
-
-                    <li>
-                        <a class="page-scroll" href="#coursework">Coursework</a>
-                    </li>
-
-                    <li>
-                        <a class="page-scroll" href="#contact_me">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid  -->
-    </nav>
-
-    <header class="masthead bg-primary text-center text-white">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">Fredrik K. Gustafsson</div>
-
-                <hr class="light">
-
-                <p class="custom-p2">Machine Learning | Computer Vision | Autonomous Robots</p>
-                <br />
-
-                <a href="#about" class="page-scroll btn btn-circle"><i class="fa fa-angle-double-down"></i></a>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container" style="width:90%">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2 class="section-heading">About</h2>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="team-member">
-                        <img src="static/img/profile_pic.jpg" class="img-responsive img-circle" alt="picture of Fredrik Gustafsson">
-                        <h4>Fredrik K. Gustafsson</h4>
-                        <p class="text-muted">PhD Student at Uppsala University</p>
-
-                        <ul class="list-inline social-buttons">
-                          <li>
-                              <a href="https://github.com/fregu856" title="GitHub profile" target="_blank"><i class="fa fa-github"></i></a>
-                          </li>
-
-                          <li>
-                              <a href="https://www.linkedin.com/in/fregu856/" title="LinkedIn profile" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                          </li>
-
-                          <li>
-                              <a href="https://scholar.google.com/citations?user=bjbzGCcAAAAJ&hl" title="Google Scholar profile" target="_blank"><i class="ai ai-google-scholar"></i></a>
-                          </li>
-
-                          <li>
-                              <a href="https://www.youtube.com/channel/UC4AQIQCMSj2c84Bl52rT2mg" title="YouTube channel" target="_blank"><i class="fa fa-youtube"></i></a>
-                          </li>
-
-                          <li>
-                              <a href="https://twitter.com/fregu856" title="Twitter profile" target="_blank"><i class="fa fa-twitter"></i></a>
-                          </li>
-
-                          <!-- <li>
-                              <a href="mailto:fregu856@gmail.com" target="_blank" title="Email"><i class="fa fa-envelope"></i></a>
-                          </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify">
-                    <!-- <p class="large text-muted" style="margin-top: -10px">I am a first-year PhD student in the group of <a href="http://user.it.uu.se/~thosc112/" target="_blank">Prof. Thomas Schön</a> at the <a href="http://www.it.uu.se/first?lang=en" target="_blank">Department of Information Technology</a>, <a href="http://www.uu.se/en" target="_blank">Uppsala University</a>. My general areas of interest are <b>machine learning</b>, <b>computer vision</b> and <b>autonomous robots</b>. My research focuses on <b>uncertainty-aware deep learning</b> for autonomous driving. I aim to be a key contributor in the development of fully autonomous vehicles and hope to experience the day when we can safely say: <b>”Do you remember when people used to get killed in traffic?”</b>.</p> -->
-                    <p class="large text-muted" style="margin-top: -10px">I am a first-year PhD student in the group of <a href="http://user.it.uu.se/~thosc112/" target="_blank">Prof. Thomas Schön</a> at the <a href="http://www.it.uu.se/first?lang=en" target="_blank">Department of Information Technology</a>, <a href="http://www.uu.se/en" target="_blank">Uppsala University</a>. My general areas of interest are <b>machine learning</b>, <b>computer vision</b> and <b>autonomous robots</b>. My research focuses on <b>uncertainty-aware deep learning</b> for <b>autonomous driving</b> and <b>medical imaging</b>.</p>
-
-                    <p class="large text-muted">I received my BSc in Applied Physics and Electrical Engineering in 2016 and my MSc in Electrical Engineering in 2018, both from <a href="https://liu.se/en" target="_blank">Linköping University</a>. Upon graduation, I was awarded the <a href="https://www.lith.liu.se/examenshogtid/tryggve-holm-medalj-och-diplom?l=sv" target="_blank">Tryggve Holm medal</a> for outstanding student achievements. The first year of my MSc studies was spent as an exchange student at the  <a href="https://ee.stanford.edu/" target="_blank">Department of Electrical Engineering</a>, <a href="https://www.stanford.edu/" target="_blank">Stanford University</a>. I have industry experience from <a href="https://www.bmwgroup.com/en.html" target="_blank">BMW Group</a> (Germany), <a href="https://www.zenuity.com/" target="_blank">Zenuity</a> (Sweden) and <a href="http://www.t-engineering.se/" target="_blank">T Engineering</a> (Sweden).</p>
-                </div>
-            </div>
-
-            </br>
-<!--
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="team-member">
-                        <a href="http://www.fregu856.com/static/CV_Fredrik_Gustafsson_Feb18.pdf" target="_blank" class="btn btn-default btn-lg" style="padding: 9px 12px;"><i class="fa fa-file-pdf-o fa-fw"></i> <span>Resume</span></a>
-                        <a href="http://www.fregu856.com/static/CV_Fredrik_Gustafsson_Feb18.pdf" target="_blank" class="btn btn-default btn-lg" style="padding: 9px 37px;"><i class="fa fa-file-pdf-o fa-fw"></i> <span>CV</span></a>
-                    </div>
-                </div>
-            </div> -->
-
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="team-member">
-                        <a href="/static/Resume_Fredrik_Gustafsson_Sept18.pdf" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-file-pdf-o fa-fw"></i> <span>Resume</span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h3 class="section-heading">News</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-
-                    <ul>
-                        <li>
-                            <p><b>[November 24, 2018]</b> I was awarded the <a href="https://www.lith.liu.se/examenshogtid/tryggve-holm-medalj-och-diplom?l=sv" target="_blank">Tryggve Holm medal</a> for <i>"outstanding student achievements"</i> during my time at <a href="https://liu.se/en" target="_blank">Linköping University</a>.</p>
-                        </li>
-
-                        <li>
-                            <p><b>[September 28, 2018]</b> <b>New project:</b> PyTorch implementation of <a href="https://arxiv.org/abs/1706.05587">DeepLabV3</a>, see <a href="https://github.com/fregu856/deeplabv3">GitHub repo</a> and <a href="https://youtu.be/9e2x4dDRB-k">Youtube video</a> for further details.</p>
-                        </li>
-
-                        <li>
-                            <p><b>[September 21, 2018]</b> The <a href="https://github.com/fregu856/3DOD_thesis" target="_blank">code</a> for 3D object detection used in my <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585" target="_blank">MSc thesis</a> has been uploaded to GitHub.</p>
-                        </li>
-
-                        <li>
-                            <p><b>[September 20, 2018]</b> I have created a <a href="https://github.com/fregu856/papers" target="_blank">GitHub repository</a> for posting summaries of interesting papers that I read.</p>
-                        </li>
-
-                        <li>
-                            <p><b>[September 13, 2018]</b> I have joined the group of <a href="http://user.it.uu.se/~thosc112/" target="_blank">Prof. Thomas Schön</a> as a PhD student to work on uncertainty-aware deep learning.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="bg-light-gray">
-        <div class="container" style="width:90%">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2 class="section-heading">Publications</h2>
-            </div>
-
-            <br />
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify">
-                    <h4 style="text-transform: none">Theses</h4>
-
-                    <!-- <p class="text-muted custom-p3">[PhD]</p>
-                    <p class="text-muted custom-p3"><b>Automotive 3D Object Detection Without Target Domain Annotations</b></p>
-                    <p class="text-muted custom-p3"><i>Fredrik K. Gustafsson and Erik Linder-Norén</i></p>
-                    <p class="text-muted custom-p3">Master of Science Thesis in Electrical Engineering, Linköping University, 2018</p>
-                    <p class="text-muted custom-p3"><a href="#modal_MSc_abstract" data-toggle="modal">[abstract]</a> <a target="_blank" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585">[pdf]</a> <a href="#modal_MSc_bibtex" data-toggle="modal">[bibtex]</a> <a target="_blank" href="https://github.com/fregu856/3DOD_thesis">[code]</a> <a target="_blank" href="https://youtu.be/KdrHLXpYYlg">[video]</a> <a target="_blank" href="http://www.fregu856.com/static/msc_thesis_slides.pdf">[slides]</a></p>
-                    </br> -->
-
-                    <p class="text-muted custom-p3">[MSc]</p>
-                    <p class="text-muted custom-p3"><b>Automotive 3D Object Detection Without Target Domain Annotations</b></p>
-                    <p class="text-muted custom-p3"><i>Fredrik K. Gustafsson and Erik Linder-Norén</i></p>
-                    <p class="text-muted custom-p3">Master of Science Thesis in Electrical Engineering, Linköping University, 2018</p>
-                    <p class="text-muted custom-p3"><a href="#modal_MSc_abstract" data-toggle="modal">[abstract]</a> <a target="_blank" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585">[pdf]</a> <a href="#modal_MSc_bibtex" data-toggle="modal">[bibtex]</a> <a target="_blank" href="https://github.com/fregu856/3DOD_thesis">[code]</a> <a target="_blank" href="https://youtu.be/KdrHLXpYYlg">[video]</a> <a target="_blank" href="http://www.fregu856.com/static/msc_thesis_slides.pdf">[slides]</a></p>
-                    <!-- </br> -->
-
-                    <!-- <h4 style="text-transform: none">Journal Papers</h4>
-
-                    <p class="text-muted custom-p3">[J3]</p>
-                    <p class="text-muted custom-p3"><b>Automotive 3D Object Detection Without Target Domain Annotations</b></p>
-                    <p class="text-muted custom-p3"><i>Fredrik K. Gustafsson and Erik Linder-Norén</i></p>
-                    <p class="text-muted custom-p3">Neural Information Processing Systems (NIPS), 2017</p>
-                    <p class="text-muted custom-p3"><a href="#modal_MSc_abstract" data-toggle="modal">[abstract]</a> <a target="_blank" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585">[pdf]</a> <a href="#modal_MSc_bibtex" data-toggle="modal">[bibtex]</a> <a target="_blank" href="https://github.com/fregu856/3DOD_thesis">[code]</a> <a target="_blank" href="https://youtu.be/KdrHLXpYYlg">[video]</a> <a target="_blank" href="http://www.fregu856.com/static/msc_thesis_slides.pdf">[slides]</a></p>
-                    </br>
-
-                    <p class="text-muted custom-p3">[J2]</p>
-                    <p class="text-muted custom-p3"><b>Automotive 3D Object Detection Without Target Domain Annotations</b></p>
-                    <p class="text-muted custom-p3"><i>Fredrik K. Gustafsson and Erik Linder-Norén</i></p>
-                    <p class="text-muted custom-p3">Neural Information Processing Systems (NIPS), 2016</p>
-                    <p class="text-muted custom-p3"><a href="#modal_MSc_abstract" data-toggle="modal">[abstract]</a> <a target="_blank" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585">[pdf]</a> <a href="#modal_MSc_bibtex" data-toggle="modal">[bibtex]</a> <a target="_blank" href="https://github.com/fregu856/3DOD_thesis">[code]</a> <a target="_blank" href="https://youtu.be/KdrHLXpYYlg">[video]</a> <a target="_blank" href="http://www.fregu856.com/static/msc_thesis_slides.pdf">[slides]</a></p>
-                    </br>
-
-                    <p class="text-muted custom-p3">[J1]</p>
-                    <p class="text-muted custom-p3"><b>Automotive 3D Object Detection Without Target Domain Annotations</b></p>
-                    <p class="text-muted custom-p3"><i>Fredrik K. Gustafsson and Erik Linder-Norén</i></p>
-                    <p class="text-muted custom-p3">Neural Information Processing Systems (NIPS), 2015</p>
-                    <p class="text-muted custom-p3"><a href="#modal_MSc_abstract" data-toggle="modal">[abstract]</a> <a target="_blank" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585">[pdf]</a> <a href="#modal_MSc_bibtex" data-toggle="modal">[bibtex]</a> <a target="_blank" href="https://github.com/fregu856/3DOD_thesis">[code]</a> <a target="_blank" href="https://youtu.be/KdrHLXpYYlg">[video]</a> <a target="_blank" href="http://www.fregu856.com/static/msc_thesis_slides.pdf">[slides]</a></p>
-                    </br> -->
-
-                    <!-- <h4 style="text-transform: none">Conference Papers</h4>
-
-                    <p class="text-muted custom-p3">[C3]</p>
-                    <p class="text-muted custom-p3"><b>Automotive 3D Object Detection Without Target Domain Annotations</b></p>
-                    <p class="text-muted custom-p3"><i>Fredrik K. Gustafsson and Erik Linder-Norén</i></p>
-                    <p class="text-muted custom-p3">Neural Information Processing Systems (NIPS), 2017</p>
-                    <p class="text-muted custom-p3"><a href="#modal_MSc_abstract" data-toggle="modal">[abstract]</a> <a target="_blank" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585">[pdf]</a> <a href="#modal_MSc_bibtex" data-toggle="modal">[bibtex]</a> <a target="_blank" href="https://github.com/fregu856/3DOD_thesis">[code]</a> <a target="_blank" href="https://youtu.be/KdrHLXpYYlg">[video]</a> <a target="_blank" href="http://www.fregu856.com/static/msc_thesis_slides.pdf">[slides]</a></p>
-                    </br>
-
-                    <p class="text-muted custom-p3">[C2]</p>
-                    <p class="text-muted custom-p3"><b>Automotive 3D Object Detection Without Target Domain Annotations</b></p>
-                    <p class="text-muted custom-p3"><i>Fredrik K. Gustafsson and Erik Linder-Norén</i></p>
-                    <p class="text-muted custom-p3">Neural Information Processing Systems (NIPS), 2016</p>
-                    <p class="text-muted custom-p3"><a href="#modal_MSc_abstract" data-toggle="modal">[abstract]</a> <a target="_blank" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585">[pdf]</a> <a href="#modal_MSc_bibtex" data-toggle="modal">[bibtex]</a> <a target="_blank" href="https://github.com/fregu856/3DOD_thesis">[code]</a> <a target="_blank" href="https://youtu.be/KdrHLXpYYlg">[video]</a> <a target="_blank" href="http://www.fregu856.com/static/msc_thesis_slides.pdf">[slides]</a></p>
-                    </br>
-
-                    <p class="text-muted custom-p3">[C1]</p>
-                    <p class="text-muted custom-p3"><b>Automotive 3D Object Detection Without Target Domain Annotations</b></p>
-                    <p class="text-muted custom-p3"><i>Fredrik K. Gustafsson and Erik Linder-Norén</i></p>
-                    <p class="text-muted custom-p3">Neural Information Processing Systems (NIPS), 2015</p>
-                    <p class="text-muted custom-p3"><a href="#modal_MSc_abstract" data-toggle="modal">[abstract]</a> <a target="_blank" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585">[pdf]</a> <a href="#modal_MSc_bibtex" data-toggle="modal">[bibtex]</a> <a target="_blank" href="https://github.com/fregu856/3DOD_thesis">[code]</a> <a target="_blank" href="https://youtu.be/KdrHLXpYYlg">[video]</a> <a target="_blank" href="http://www.fregu856.com/static/msc_thesis_slides.pdf">[slides]</a></p> -->
-
-                </div>
-            </div>
-
-            </br>
-            </br>
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="team-member">
-                        <a href="https://scholar.google.com/citations?user=bjbzGCcAAAAJ&hl" target="_blank" class="btn btn-default btn-lg"><i class="ai ai-google-scholar"></i> <span>Google Scholar</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Section -->
-    <section id="portfolio">
-        <div class="container" style="width:90%">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
-                    <h4 class="section-subheading text-muted"></h4>
-                    <h4 class="section-subheading text-muted"></h4>
-                </div>
-            </div>
-
-            <br />
-
-            <div class="row">
-              <div class="col-md-6 portfolio-item">
-                  <a href="#portfolioModal16" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="static/img/deeplabv3_gray.png" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>PyTorch Implementation of DeepLabV3</h4>
-                      <p class="text-muted">Semantic Segmentation for Autonomous Driving.</p>
-                  </div>
-              </div>
-
-
-              <div class="col-md-6 portfolio-item">
-                  <a href="#portfolioModal14" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="static/img/thesis_gray.png" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>Master's Thesis Project</h4>
-                      <p class="text-muted">3D Object Detection for Autonomous Driving using Deep Learning.</p>
-                  </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6 portfolio-item">
-                  <a href="#portfolioModal15" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="static/img/stinspira_gray.png" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>Stinspira</h4>
-                      <p class="text-muted">Website Aiming to Increase Interest in Higher Education Among Youths.</p>
-                  </div>
-              </div>
-
-                <div class="col-md-6 portfolio-item">
-                    <a href="#portfolioModal13" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="static/img/skalman_gray.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Skalman</h4>
-                        <p class="text-muted">Autonomous/Web Controlled TurtleBot3.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6 portfolio-item">
-                  <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="static/img/smaugs_gray.png" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>SMAUGS</h4>
-                      <p class="text-muted">Autonomous Minesweeping System.</p>
-                  </div>
-              </div>
-
-                <div class="col-md-6 portfolio-item">
-                    <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="static/img/2D_detection_gray.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>2D Object Detection for Autonomous Driving</h4>
-                        <p class="text-muted">TensorFlow Implementation of SqueezeDet.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 portfolio-item">
-                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="static/img/segmentation_gray.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Semantic Segmentation for Autonomous Driving</h4>
-                        <p class="text-muted">TensorFlow Implementation of ENet.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="static/img/RCcar_gray.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>ROSperino</h4>
-                        <p class="text-muted">Autonomous/Web Controlled RC Car.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 portfolio-item">
-                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="static/img/Zenuity_car_gray.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Summer Internship Project</h4>
-                        <p class="text-muted">Deep Learning Demo/Test Platform.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="static/img/AA273_bw.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>AA 273 Final Project</h4>
-                        <p class="text-muted">The SE-Sync Algorithm for Pose-Graph SLAM.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="static/img/cs224n_poster.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>CS 224N Final Project</h4>
-                        <p class="text-muted">Neural Image Captioning for Intelligent Vehicle-to-Passenger Communication.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="static/img/cs229_poster.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>CS 229 Final Project</h4>
-                        <p class="text-muted">Control of an Inverted Double Pendulum using Reinforcement Learning.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6 portfolio-item">
-                  <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="static/img/T_gray.png" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>Summer Internship Project</h4>
-                      <p class="text-muted">Web Tool for Analysis and Visualization of Sensor Data.</p>
-                  </div>
-              </div>
-
-                <div class="col-md-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="static/img/rasperino.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Rasperino</h4>
-                        <p class="text-muted">Autonomous/Web Controlled Raspberry Pi & Arduino Robot.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 portfolio-item">
-                  <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="static/img/spiderpig.png" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>Spider Pig</h4>
-                      <p class="text-muted">Autonomous Hexapod Robot.</p>
-                  </div>
-              </div>
-
-              <div class="col-md-6 portfolio-item">
-                  <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                      <div class="portfolio-hover">
-                          <div class="portfolio-hover-content">
-                              <i class="fa fa-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img src="static/img/bluewind.png" class="img-responsive" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                      <h4>BlueWind</h4>
-                      <p class="text-muted">2D Adventure Game.</p>
-                  </div>
-              </div>
-          </div>
-        </div>
-    </section>
-
-    <!-- Talks Section -->
-    <!-- <section id="talks" class="bg-light-gray">
-        <div class="container" style="width:90%">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2 class="section-heading">Talks</h2>
-            </div>
-
-            <br />
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify">
-                    <h4 style="text-transform: none">2018</h4>
-
-                    <p class="text-muted custom-p3"><b>Learning dynamical systems using SMC</b></p>
-                    <p class="text-muted custom-p3"><a target="_blank" href="">Bosch center for Artificial Intelligence</a>, <a target="_blank" href="">Bosch</a></p>
-                    <p class="text-muted custom-p3">May 30, 2018 | Renningen, Germany</p>
-                    <p class="text-muted custom-p3"><a target="_blank" href="">[pdf]</a></p>
-                    </br>
-
-                    <p class="text-muted custom-p3"><b>Machine Learning - trends and tools</b></p>
-                    <p class="text-muted custom-p3"><a target="_blank" href="">Elekta</a></p>
-                    <p class="text-muted custom-p3">May 24, 2018 | Stockholm, Sweden</p>
-                    <p class="text-muted custom-p3"><a target="_blank" href="">[pdf]</a></p>
-                    </br>
-
-                    <h4 style="text-transform: none">2017</h4>
-
-                    <p class="text-muted custom-p3"><b>Learning dynamical systems using SMC</b></p>
-                    <p class="text-muted custom-p3"><a target="_blank" href="">Bosch center for Artificial Intelligence</a>, <a target="_blank" href="">Bosch</a></p>
-                    <p class="text-muted custom-p3">May 30, 2017 | Renningen, Germany</p>
-                    <p class="text-muted custom-p3"><a target="_blank" href="">[pdf]</a></p>
-                    </br>
-
-                    <p class="text-muted custom-p3"><b>Machine Learning - trends and tools</b></p>
-                    <p class="text-muted custom-p3"><a target="_blank" href="">Elekta</a></p>
-                    <p class="text-muted custom-p3">May 24, 2017 | Stockholm, Sweden</p>
-                    <p class="text-muted custom-p3"><a target="_blank" href="">[pdf]</a></p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Teaching Section -->
-    <section id="teaching" class="bg-light-gray">
-        <div class="container" style="width:90%">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2 class="section-heading">Teaching</h2>
-            </div>
-
-            <br />
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify">
-                    <h4 style="text-transform: none">Uppsala University</h4>
-
-                    <p class="text-muted custom-p3"><a target="_blank" href="http://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=29556&lasar=&typ=0">1RT490 | Automatic Control I | BSc</a></p>
-                    <p class="text-muted custom-p3"><i><b>Teaching Assistant</b> (Swedish: Lektionsledare)</i></p>
-                    <p class="text-muted custom-p3">Spring I 2019</p>
-                    </br>
-
-                    <h4 style="text-transform: none">Linköping University</h4>
-
-                    <p class="text-muted custom-p3"><a target="_blank" href="https://liu.se/studieinfo/en/kurs/tata24/ht-2018">TATA24 | Linear Algebra | BSc</a></p>
-                    <p class="text-muted custom-p3"><i><b>Teaching Assistant</b> (Swedish: Mentor)</i></p>
-                    <p class="text-muted custom-p3">Autumn 2014, Autumn 2015</p>
-                    </br>
-
-                    <p class="text-muted custom-p3"><a target="_blank" href="https://liu.se/studieinfo/en/kurs/tatm79/ht-2018">TATM79 | Foundation Course in Mathematics | BSc</a></p>
-                    <p class="text-muted custom-p3"><i><b>Teaching Assistant</b> (Swedish: Handledare)</i></p>
-                    <p class="text-muted custom-p3">Autumn 2015</p>
-                    </br>
-
-                    <p class="text-muted custom-p3"><a target="_blank" href="https://liu.se/studieinfo/en/kurs/taiu10/ht-2018">TAIU10 | Calculus, one variable - Preparatory course | BSc</a></p>
-                    <p class="text-muted custom-p3"><i><b>Teaching Assistant</b> (Swedish: Lektionsledare)</i></p>
-                    <p class="text-muted custom-p3">Autumn 2014</p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Coursework Section -->
-    <section id="coursework">
-        <div class="container" style="width:90%">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2 class="section-heading">Coursework</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify">
-                    <h4 style="text-transform: none">Uppsala University</h4>
-                                        <p class="text-muted custom-p"><a target="_blank" href="https://www.kth.se/student/kurser/kurs/SF3961?l=en">SF3961 | Statistical Inference | 15 Credits | (Ongoing)</a></p>
-                    <p class="text-muted custom-p"><a target="_blank" href="http://www.it.uu.se/research/systems_and_control/education/2016/set">Statistical Estimation Theory and Its Applications | 9 Credits | (Ongoing)</a></p>
-
-                    </br>
-
-                    <h4 style="text-transform: none">Stanford University</h4>
-                    <p class="text-muted custom-p">CS 229 | Machine Learning | 3 Units</p>
-                    <p class="text-muted custom-p">EE 263 | Introduction to Linear Dynamical Systems | 3 Units</p>
-                    <p class="text-muted custom-p">EE 278 | Introduction to Statistical Signal Processing | 3 Units</p>
-                    <p class="text-muted custom-p">EE 310 | SystemX: Ubiquitous Sensing, Computing and Communication Seminar | 1 Unit</p>
-                    <p class="text-muted custom-p">AA 274 | Principles of Robotic Autonomy | 3 Units</p>
-                    <p class="text-muted custom-p">CS 224N | Natural Language Processing with Deep Learning | 3 Units</p>
-                    <p class="text-muted custom-p">EE 373A | Adaptive Signal Processing | 3 Units</p>
-                    <p class="text-muted custom-p">EE 203 | The Entrepreneurial Engineer | 1 Unit</p>
-                    <p class="text-muted custom-p">AA 203 | Introduction to Optimal Control and Dynamic Optimization | 3 Units</p>
-                    <p class="text-muted custom-p">AA 273 | State Estimation and Filtering for Aerospace Systems | 3 Units</p>
-                    <p class="text-muted custom-p">CS 547 | Human-Computer Interaction Seminar | 1 Unit</p>
-                    <p class="text-muted custom-p">EE 380 | Colloquium on Computer Systems | 1 Unit</p>
-                    <p class="text-muted custom-p">MS&E 472 | Entrepreneurial Thought Leaders' Seminar | 1 Unit</p>
-
-                    </br>
-
-                    <h4 style="text-transform: none">Linköping University</h4>
-                    <p class="text-muted custom-p">TSEA51 | Switching Theory and Logical Design | 4 Credits</p>
-                    <p class="text-muted custom-p">TATM79 | Foundation Course in Mathematics | 6 Credits</p>
-                    <p class="text-muted custom-p">TFYY51 | Engineering Project | 6 Credits</p>
-                    <p class="text-muted custom-p">TATA24 | Linear Algebra | 8 Credits</p>
-                    <p class="text-muted custom-p">TATA41 | Calculus in One Variable 1 | 6 Credits</p>
-                    <p class="text-muted custom-p">TATA42 | Calculus in One Variable 2 | 6 Credits</p>
-                    <p class="text-muted custom-p">TATA40 | Perspectives on Mathematics | 1 Credit</p>
-                    <p class="text-muted custom-p">TATA14 | The Language of Mathematics | 4 Credits</p>
-                    <p class="text-muted custom-p">TFYA10 | Wave Motion | 8 Credits</p>
-                    <p class="text-muted custom-p">TFFM12 | Perspectives on Physics | 2 Credits</p>
-                    <p class="text-muted custom-p">TATA43 | Calculus in Several Variables | 8 Credits</p>
-                    <p class="text-muted custom-p">TDDC74 | Programming: Abstraction and Modelling | 8 Credits</p>
-                    <p class="text-muted custom-p">TSRT04 | Introduction in Matlab | 2 Credits</p>
-                    <p class="text-muted custom-p">TATA44 | Vector Analysis | 4 Credits</p>
-                    <p class="text-muted custom-p">TANA21 | Scientific Computing | 6 Credits</p>
-                    <p class="text-muted custom-p">TSTE05 | Electronics and Measurement Technology | 8 Credits</p>
-                    <p class="text-muted custom-p">TATA34 | Real Analysis, Honours Course | 6 Credits</p>
-                    <p class="text-muted custom-p">TMME12 | Engineering Mechanics Y | 4 Credits</p>
-                    <p class="text-muted custom-p">TATA45 | Complex Analysis | 6 Credits</p>
-                    <p class="text-muted custom-p">TMME04 | Engineering Mechanics II | 6 Credits</p>
-                    <p class="text-muted custom-p">TAOP07 | Introduction to Optimization | 6 Credits</p>
-                    <p class="text-muted custom-p">TATA53 | Linear Algebra, Honours Course | 6 Credits</p>
-                    <p class="text-muted custom-p">TAMS14 | Probability, First Course | 4 Credits</p>
-                    <p class="text-muted custom-p">TSEA28 | Computer Hardware and Architecture Y | 6 Credits</p>
-                    <p class="text-muted custom-p">TFYA13 | Electromagnetic Field Theory | 8 Credits</p>
-                    <p class="text-muted custom-p">TATA77 | Fourier Analysis | 6 Credits</p>
-                    <p class="text-muted custom-p">TAMS24 | Statistics, First Course | 4 Credits</p>
-                    <p class="text-muted custom-p">TSDT18 | Signals and Systems | 6 Credits</p>
-                    <p class="text-muted custom-p">TFYA12 | Thermodynamics and Statistical Mechanics | 6 Credits</p>
-                    <p class="text-muted custom-p">TATM85 | Functional Analysis | 6 Credits</p>
-                    <p class="text-muted custom-p">TDDC76 | Programming and Data Structures | 8 Credits</p>
-                    <p class="text-muted custom-p">TSRT12 | Automatic Control Y | 6 Credits</p>
-                    <p class="text-muted custom-p">TFYA73 | Modern Physics I | 4 Credits</p>
-                    <p class="text-muted custom-p">TSEA56 | Electronics Engineering - Bachelor Project | 16 Credits</p>
-                    <p class="text-muted custom-p">TATA66 | Fourier and Wavelet Analysis | 6 Credits</p>
-                    <p class="text-muted custom-p">TSKS10 | Signals, Information and Communication | 4 Credits</p>
-                    <p class="text-muted custom-p">TEAE01 | Industrial Economics, Basic Course | 6 Credits</p>
-                    <p class="text-muted custom-p">TSRT62 | Modelling and Simulation | 6 Credits</p>
-                    <p class="text-muted custom-p">TSRT10 | Automatic Control - Project Course | 12 Credits</p>
-                    <p class="text-muted custom-p">TGTU49 | History of Technology | 6 Credits</p>
-                    <p class="text-muted custom-p">TSEA81 | Computer Engineering and Real-time Systems | 6 Credits</p>
-                    <p class="text-muted custom-p">TQET33 | Degree Project - Master's Thesis | 30 Credits</p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact_me" class="bg-light-gray">
-        <div class="container" style="width:90%">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h2 class="section-heading">Contact</h2>
-            </div>
-
-            <br />
-
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-
-                    <p class="text-muted custom-p"><span class="fa fa-map-marker"></span> <a href="https://goo.gl/maps/EZumPhF7q7A2" target="_blank">Room 2303, Department of Information Technology, Uppsala University</a></p>
-                    <p class="text-muted custom-p"><span class="fa fa-envelope"></span> fregu856@gmail.com | fredrik.gustafsson@it.uu.se</p>
-                    <p class="text-muted custom-p"><span class="fa fa-mobile"></span> +46705786348</p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <span class="copyright">Copyright &copy; Fredrik Gustafsson 2017-2019</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">CS 224N Final Project</h3>
-                                <p class="item-intro text-muted">Neural Image Captioning for Intelligent Vehicle-to-Passenger Communication.</p>
-                                <img class="img-responsive img-centered" src="static/img/img_captioning.png" alt="">
-                                <ul class="list-inline social-buttons">
-                                  <li>
-                                      <a href="/image_captioning"><i class="fa fa-picture-o"></i></a>Demo
-                                  </li>
-                                  <li>
-                                      <a href="https://goo.gl/1DMQVE" target="_blank"><i class="fa fa-list-alt"></i></a>Poster
-                                  </li>
-                                  <li>
-                                      <a href="https://goo.gl/PzgRf5" target="_blank"><i class="fa fa-file-text"></i></a>Report
-                                  </li>
-                                  <li>
-                                      <a href="https://github.com/fregu856/CS224n_project" target="_blank"><i class="fa fa-github"></i></a>Code
-                                  </li>
-                                </ul>
-                                <ul class="list-inline">
-                                    <li>Jan. 2017 - Mar. 2017</li>
-                                    <li>Course project in CS 224N: Natural Language Processing with Deep Learning, Stanford University</li>
-                                    <li>Python, TensorFlow</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Fredrik K. Gustafsson</a>
     </div>
 
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="close-modal" data-dismiss="modal" id="cs229_cross">
-                  <div class="lr">
-                      <div class="rl">
-                      </div>
-                  </div>
-              </div>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-8 col-lg-offset-2">
-                          <div class="modal-body">
-                              <!-- Project Details Go Here -->
-                              <h3 style="margin-bottom: -15px">CS 229 Final Project</h3>
-                              <p class="item-intro text-muted">Control of an Inverted Double Pendulum using Reinforcement Learning.</p>
-                              <div class="video-container"><iframe id="cs229_video" width="560" height="315" src="https://www.youtube.com/embed/WuxKutPuQbY?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
-                              </br>
-                              <ul class="list-inline social-buttons">
-                                <li>
-                                    <a href="https://goo.gl/KCqTfM" target="_blank"><i class="fa fa-list-alt"></i></a>Poster
-                                </li>
-                                <li>
-                                    <a href="https://goo.gl/X35tzq" target="_blank"><i class="fa fa-file-text"></i></a>Report
-                                </li>
-                                <li>
-                                    <a href="https://github.com/fregu856/CS-229" target="_blank"><i class="fa fa-github"></i></a>Code
-                                </li>
-                              </ul>
-                              <ul class="list-inline">
-                                  <li>Nov. 2016 - Dec. 2016</li>
-                                  <li>Course project in CS 229: Machine Learning, Stanford University</li>
-                                  <li>Python</li>
-                              </ul>
-                              <button id="cs229_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about" data-target="#about">
+            
+            <span>About</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected" data-target="#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects" data-target="#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#teaching" data-target="#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#coursework" data-target="#coursework">
+            
+            <span>Coursework</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#reading" data-target="#reading">
+            
+            <span>Reading</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact" data-target="#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<span id="homepage" style="display: none"></span>
+
+
+  
+
+
+
+
+
+  
+  
+  
+  <section id="about" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="">
+  <div class="col-xs-12 col-md-4">
+    <div id="profile">
+
+      
+      <div class="portrait" style="background-image: url('/img/avatar.jpeg');"></div>
+      <meta itemprop="image" content="/img/avatar.jpeg">
+      
+
+      <div class="portrait-title">
+        <h2 itemprop="name">Fredrik K. Gustafsson</h2>
+        <h3 itemprop="jobTitle">PhD Student in Uncertainty-Aware Deep Learning</h3>
+
+        
+        
+
+        
+        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          
+          <span itemprop="name"></span>
+          
+        </h3>
+        
+      </div>
+
+      <link itemprop="url" href="/">
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        <li>
+          <a itemprop="sameAs" href="https://github.com/fregu856" target="_blank" rel="noopener">
+            <i class="fa fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a itemprop="sameAs" href="https://www.linkedin.com/in/fregu856/" target="_blank" rel="noopener">
+            <i class="fa fa-linkedin big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a itemprop="sameAs" href="https://scholar.google.com/citations?user=bjbzGCcAAAAJ&amp;hl" target="_blank" rel="noopener">
+            <i class="ai ai-google-scholar big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a itemprop="sameAs" href="https://www.youtube.com/channel/UC4AQIQCMSj2c84Bl52rT2mg" target="_blank" rel="noopener">
+            <i class="fa fa-youtube big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a itemprop="sameAs" href="https://twitter.com/fregu856" target="_blank" rel="noopener">
+            <i class="fa fa-twitter big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-8" itemprop="description">
+
+    
+
+<h1 id="about-me">About Me</h1>
+
+<p>I am a first-year PhD student in the group of <a href="http://user.it.uu.se/~thosc112/" target="_blank">Prof. Thomas Schön</a> at the Department of Information Technology, <a href="http://www.uu.se/en" target="_blank">Uppsala University</a>. My general areas of interest are <b>machine learning</b>, <b>computer vision</b> and <b>autonomous robots</b>. My research focuses on <b>uncertainty-aware deep learning</b> for <b>autonomous driving</b> and <b>medical imaging</b>.</p>
+
+<p>I received my BSc in Applied Physics and Electrical Engineering in 2016 and my MSc in Electrical Engineering in 2018, both from <a href="https://liu.se/en" target="_blank">Linköping University</a>. Upon graduation, I was awarded the <a href="https://www.lith.liu.se/examenshogtid/tryggve-holm-medalj-och-diplom?l=sv" target="_blank">Tryggve Holm medal</a> for outstanding student achievements. The first year of my MSc studies was spent as an exchange student at the Department of Electrical Engineering, <a href="https://www.stanford.edu/" target="_blank">Stanford University</a>. I have industry experience from <a href="https://www.bmwgroup.com/en.html" target="_blank">BMW Group</a> (Germany), <a href="https://www.zenuity.com/" target="_blank">Zenuity</a> (Sweden) and <a href="http://www.t-engineering.se/" target="_blank">T Engineering</a> (Sweden).</p>
+
+<h3 id="news">News</h3>
+
+<ul>
+<li><p><b>[Nov 24, 2018]</b> I was awarded the <a href="https://www.lith.liu.se/examenshogtid/tryggve-holm-medalj-och-diplom?l=sv" target="_blank">Tryggve Holm medal</a> for <i>&ldquo;outstanding student achievements&rdquo;</i> during my time at <a href="https://liu.se/en" target="_blank">Linköping University</a>.</p></li>
+
+<li><p><b>[Sep 28, 2018]</b> <b>New project:</b> PyTorch implementation of <a href="https://arxiv.org/abs/1706.05587" target="_blank">DeepLabV3</a>, see <a href="https://github.com/fregu856/deeplabv3" target="_blank">GitHub repo</a> and <a href="https://youtu.be/9e2x4dDRB-k" target="_blank">Youtube video</a> for further details.</p></li>
+
+<li><p><b>[Sep 21, 2018]</b> The <a href="https://github.com/fregu856/3DOD_thesis" target="_blank">code</a> for 3D object detection used in my <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585" target="_blank">MSc thesis</a> has been uploaded to GitHub.</p></li>
+
+<li><p><b>[Sep 20, 2018]</b> I have created a <a href="https://github.com/fregu856/papers" target="_blank">GitHub repository</a> for posting summaries of interesting papers that I read.</p></li>
+
+<li><p><b>[Sep 13, 2018]</b> I have joined the group of <a href="http://user.it.uu.se/~thosc112/" target="_blank">Prof. Thomas Schön</a> as a PhD student to work on uncertainty-aware deep learning.</p></li>
+</ul>
+
+<p>Click <a href="/post/news">here</a> for older news.</p>
+
+
+    <div class="row">
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="publications_selected" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Publications</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+    
+      
+    
+
+    
+    
+      
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/publication/msc/">
+      <img src="/img/thesis_color.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/msc/" itemprop="url">Automotive 3D Object Detection Without Target Domain Annotations</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    In this thesis we study the computer vision problem of 3D object detection, in which objects should be detected from various sensor data and their position in the 3D world should be estimated. We also study the application of Generative Adversarial Networks in domain adaptation techniques, aiming to improve the 3D object detection model&rsquo;s ability to transfer between different domains.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Fredrik K. Gustafsson, Erik Linder-Norén
+    
+  </div>
+
+  <div class="pub-publication">
+    Master of Science Thesis in Electrical Engineering, 2018</div>
+
+  <div class="pub-links">
+    
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585" target="_blank" rel="noopener">
+  Link to paper
+</a>
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/3DOD_thesis" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.fregu856.com/static/msc_thesis_slides.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/KdrHLXpYYlg" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+  </div>
+
+</div>
+
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="projects" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Projects</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+    
+
+    
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/deeplabv3/">
+      <img src="/img/deeplabv3_gray.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/deeplabv3/" itemprop="url">PyTorch Implementation of DeepLabV3</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Semantic Segmentation for Autonomous Driving.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/deeplabv3" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/9e2x4dDRB-k" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/stinspira/">
+      <img src="/img/stinspira_gray.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/stinspira/" itemprop="url">Stinspira</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Website Aiming to Increase Interest in Higher Education Among Youths.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/stinspira/stinspira.github.io" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.stinspira.se/" target="_blank" rel="noopener">
+  Website
+</a>
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/skalman/">
+      <img src="/img/skalman_gray.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/skalman/" itemprop="url">Skalman</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Autonomous/Web Controlled TurtleBot3.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/skalman" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/smaugs/">
+      <img src="/img/smaugs_gray.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/smaugs/" itemprop="url">SMAUGS</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Autonomous Minesweeping System.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/KNabhxX7Tv4" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.isy.liu.se/edu/projekt/reglerteknik/2017/minesweeper/" target="_blank" rel="noopener">
+  Website
+</a>
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.isy.liu.se/edu/projekt/reglerteknik/2017/minesweeper/dok/poster.pdf" target="_blank" rel="noopener">
+  Poster
+</a>
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.isy.liu.se/edu/projekt/reglerteknik/2017/minesweeper/dok/CDIO_Tech_doc0.4.pdf" target="_blank" rel="noopener">
+  Report
+</a>
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/2dod/">
+      <img src="/img/2D_detection_gray.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/2dod/" itemprop="url">2D Object Detection for Autonomous Driving</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      TensorFlow Implementation of SqueezeDet.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/2D_detection" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/5BBwjvlUULI" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/segmentation/">
+      <img src="/img/segmentation_gray.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/segmentation/" itemprop="url">Semantic Segmentation for Autonomous Driving</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      TensorFlow Implementation of ENet.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/segmentation" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/HbPhvct5kvs" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/rosperino/">
+      <img src="/img/RCcar_gray.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/rosperino/" itemprop="url">ROSperino</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Autonomous/Web Controlled RC Car.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/Summer17" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/zenuity/">
+      <img src="/img/Zenuity_car_gray.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/zenuity/" itemprop="url">Summer Internship Project</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Deep Learning Demo/Test Platform.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/SumFcbAPXV0" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/aa273/">
+      <img src="/img/AA273_bw.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/aa273/" itemprop="url">AA 273 Final Project</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      The SE-Sync Algorithm for Pose-Graph SLAM.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://goo.gl/J2v7OU" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://goo.gl/puwDWF" target="_blank" rel="noopener">
+  Report
+</a>
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/cs224n/">
+      <img src="/img/cs224n_poster.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/cs224n/" itemprop="url">CS 224N Final Project</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Neural Image Captioning for Intelligent Vehicle-to-Passenger Communication.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/CS224n_project" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://goo.gl/1DMQVE" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.fregu856.com/image_captioning" target="_blank" rel="noopener">
+  Demo
+</a>
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://goo.gl/PzgRf5" target="_blank" rel="noopener">
+  Report
+</a>
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/cs229/">
+      <img src="/img/cs229_poster.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/cs229/" itemprop="url">CS 229 Final Project</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Control of an Inverted Double Pendulum using Reinforcement Learning.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/CS-229" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://goo.gl/KCqTfM" target="_blank" rel="noopener">
+  Poster
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/WuxKutPuQbY" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://goo.gl/X35tzq" target="_blank" rel="noopener">
+  Report
+</a>
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/t/">
+      <img src="/img/T_gray.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/t/" itemprop="url">Summer Internship Project</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Web Tool for Analysis and Visualization of Sensor Data.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/rasperino/">
+      <img src="/img/rasperino.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/rasperino/" itemprop="url">Rasperino</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Autonomous/Web Controlled Raspberry Pi &amp; Arduino Robot.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/Sommarprojekt16" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/povGte7K8o4" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://goo.gl/photos/z78dbTpEZ5kwjqneA" target="_blank" rel="noopener">
+  Images
+</a>
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/spiderpig/">
+      <img src="/img/spiderpig.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/spiderpig/" itemprop="url">Spider Pig</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      Autonomous Hexapod Robot.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/Skipsterino/Kandidatprojekt" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://drive.google.com/file/d/0B-n8kwzkfV_fZzFONTlqa3hockU/view?usp=sharing" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/N5_tMeEpJaA" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://drive.google.com/file/d/0B-n8kwzkfV_fM1hqVU1uZkxTYlU/view?usp=sharing" target="_blank" rel="noopener">
+  Report
+</a>
+
+
+  </div>
+
+</div>
+
+    
+      <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/project/bluewind/">
+      <img src="/img/bluewind.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/project/bluewind/" itemprop="url">BlueWind</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+      2D Adventure Game.
+    
+  </div>
+
+  <div class="pub-links">
+    
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/Zoreno/BlueWindProject" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/2dzIzPWQkns" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+  </div>
+
+</div>
+
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="teaching" class="home-section">
+    <div class="container">
+      
+
+<script type="text/javascript" src="d3-andmeteadus/d3.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.geom.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.layout.js"></script>
+
+<style type="text/css">
+
+#mybanner{
+  background: url(img/banner-andmeteadus.png) no-repeat top left;
+  background-size: contain;
+  overflow: hidden;
+  margin: 0;
+}
+
+svg {
+  width: 720px;
+  height: 200px;
+}
+
+#chart {
+  position: absolute;
+  top: 0;
+}
+
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #555;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+	
+circle {
+  stroke: #fff;
+}
+
+    </style>
+    <script type="text/javascript">
+
+var w = 720,
+    h = 260,
+    color = d3.scale.category10();
+
+var force = d3.layout.force()
+    .gravity(0)
+    .charge(-10)
+    .size([w, h]);
+
+var nodes = force.nodes(),
+    a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+    b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+    c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+
+nodes.push(a, b, c, d);
+
+var svg = d3.select("#body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.append("svg:rect")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.selectAll("circle")
+    .data(nodes)
+  .enter().append("svg:circle")
+    .attr("r", 12)
+    .attr("cx", function(d) { return d.x; })
+    .attr("cy", function(d) { return d.y; })
+    .style("fill", fill)
+	.style("visibility", "hidden");
+    
+
+force.on("tick", function(e) {
+  var k = e.alpha * .1;
+  nodes.forEach(function(node) {
+    var center = nodes[node.type];
+    node.x += (center.x - node.x) * k;
+    node.y += (center.y - node.y) * k;
+  });
+
+  svg.selectAll("circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+});
+
+var p0;
+
+svg.on("mousemove", function() {
+  var p1 = d3.svg.mouse(this),
+      node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+
+  p0 = p1;
+
+  svg.append("svg:circle")
+      .data([node])
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", 4.5)
+      .style("fill", fill)
+    .transition()
+      .delay(2250)
+      .attr("r", 1e-6)
+      .each("end", function() { nodes.splice(4, 1); })
+      .remove();
+
+  nodes.push(node);
+  force.start();
+});
+
+function fill(d) {
+  return color(d.type);
+}
+
+</script>
+
+
+<div class="row">
+  
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Teaching</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+<h3 id="uppsala-university">Uppsala University</h3>
+
+<ul>
+<li><p><a href="http://www.it.uu.se/research/systems_and_control/education/2019/dl" target="_blank">Deep Learning | PhD (Broad)</a><br />
+<em><strong>Teaching Assistant</strong></em><br />
+Spring II 2019</p></li>
+
+<li><p><a href="http://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=29556&amp;lasar=&amp;typ=0" target="_blank">1RT490 | Automatic Control I | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Spring I 2019</p></li>
+</ul>
+
+<h3 id="linköping-university">Linköping University</h3>
+
+<ul>
+<li><p><a href="https://liu.se/studieinfo/en/kurs/tata24/ht-2018" target="_blank">TATA24 | Linear Algebra | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Mentor)</em><br />
+Autumn 2014, Autumn 2015</p></li>
+
+<li><p><a href="https://liu.se/studieinfo/en/kurs/tatm79/ht-2018" target="_blank">TATM79 | Foundation Course in Mathematics | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Handledare)</em><br />
+Autumn 2015</p></li>
+
+<li><p><a href="https://liu.se/studieinfo/en/kurs/taiu10/ht-2018" target="_blank">TAIU10 | Calculus, one variable - Preparatory course | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Autumn 2014</p></li>
+</ul>
+
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  
+  var w = 720,
+      h = 260,
+      color = d3.scale.category10();
+  
+  var force = d3.layout.force()
+      .gravity(0)
+      .charge(-10)
+      .size([w, h]);
+  
+  var nodes = force.nodes(),
+      a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+      b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+      c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+  	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+  
+  nodes.push(a, b, c, d);
+  
+  var svg = d3.select("#mybanner").append("svg:svg")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.append("svg:rect")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.selectAll("circle")
+      .data(nodes)
+    .enter().append("svg:circle")
+      .attr("r", 12)
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .style("fill", fill)
+  	.style("visibility", "hidden");
+      
+  
+  force.on("tick", function(e) {
+    var k = e.alpha * .1;
+    nodes.forEach(function(node) {
+      var center = nodes[node.type];
+      node.x += (center.x - node.x) * k;
+      node.y += (center.y - node.y) * k;
+    });
+  
+    svg.selectAll("circle")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  });
+  
+  var p0;
+  
+  svg.on("mousemove", function() {
+    var p1 = d3.svg.mouse(this),
+        node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+  
+    p0 = p1;
+  
+    svg.append("svg:circle")
+        .data([node])
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", 4.5)
+        .style("fill", fill)
+      .transition()
+        .delay(2250)
+        .attr("r", 1e-6)
+        .each("end", function() { nodes.splice(4, 1); })
+        .remove();
+  
+    nodes.push(node);
+    force.start();
+  });
+  
+  function fill(d) {
+    return color(d.type);
+  }
+
+</script>
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="coursework" class="home-section">
+    <div class="container">
+      
+
+<script type="text/javascript" src="d3-andmeteadus/d3.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.geom.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.layout.js"></script>
+
+<style type="text/css">
+
+#mybanner{
+  background: url(img/banner-andmeteadus.png) no-repeat top left;
+  background-size: contain;
+  overflow: hidden;
+  margin: 0;
+}
+
+svg {
+  width: 720px;
+  height: 200px;
+}
+
+#chart {
+  position: absolute;
+  top: 0;
+}
+
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #555;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+	
+circle {
+  stroke: #fff;
+}
+
+    </style>
+    <script type="text/javascript">
+
+var w = 720,
+    h = 260,
+    color = d3.scale.category10();
+
+var force = d3.layout.force()
+    .gravity(0)
+    .charge(-10)
+    .size([w, h]);
+
+var nodes = force.nodes(),
+    a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+    b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+    c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+
+nodes.push(a, b, c, d);
+
+var svg = d3.select("#body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.append("svg:rect")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.selectAll("circle")
+    .data(nodes)
+  .enter().append("svg:circle")
+    .attr("r", 12)
+    .attr("cx", function(d) { return d.x; })
+    .attr("cy", function(d) { return d.y; })
+    .style("fill", fill)
+	.style("visibility", "hidden");
+    
+
+force.on("tick", function(e) {
+  var k = e.alpha * .1;
+  nodes.forEach(function(node) {
+    var center = nodes[node.type];
+    node.x += (center.x - node.x) * k;
+    node.y += (center.y - node.y) * k;
+  });
+
+  svg.selectAll("circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+});
+
+var p0;
+
+svg.on("mousemove", function() {
+  var p1 = d3.svg.mouse(this),
+      node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+
+  p0 = p1;
+
+  svg.append("svg:circle")
+      .data([node])
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", 4.5)
+      .style("fill", fill)
+    .transition()
+      .delay(2250)
+      .attr("r", 1e-6)
+      .each("end", function() { nodes.splice(4, 1); })
+      .remove();
+
+  nodes.push(node);
+  force.start();
+});
+
+function fill(d) {
+  return color(d.type);
+}
+
+</script>
+
+
+<div class="row">
+  
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Coursework</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+<h3 id="uppsala-university">Uppsala University</h3>
+
+<ul>
+<li><a href="http://www.it.uu.se/research/systems_and_control/education/2019/dl" target="_blank">Deep Learning | 5 Credits | (Ongoing)</a></li>
+<li><a href="http://www.it.uu.se/research/systems_and_control/education/2016/set" target="_blank">Statistical Estimation Theory and Its Applications | 9 Credits | (Ongoing)</a></li>
+</ul>
+
+<h3 id="stanford-university">Stanford University</h3>
+
+<ul>
+<li>CS 229 | Machine Learning | 3 Units</li>
+<li>EE 263 | Introduction to Linear Dynamical Systems | 3 Units</li>
+<li>EE 278 | Introduction to Statistical Signal Processing | 3 Units</li>
+<li>EE 310 | Ubiquitous Sensing, Computing and Communication Seminar | 1 Unit</li>
+<li>AA 274 | Principles of Robotic Autonomy | 3 Units</li>
+<li>CS 224N | Natural Language Processing with Deep Learning | 3 Units</li>
+<li>EE 373A | Adaptive Signal Processing | 3 Units</li>
+<li>EE 203 | The Entrepreneurial Engineer | 1 Unit</li>
+<li>AA 203 | Introduction to Optimal Control and Dynamic Optimization | 3 Units</li>
+<li>AA 273 | State Estimation and Filtering for Aerospace Systems | 3 Units</li>
+<li>CS 547 | Human-Computer Interaction Seminar | 1 Unit</li>
+<li>EE 380 | Colloquium on Computer Systems | 1 Unit</li>
+<li>MS&amp;E 472 | Entrepreneurial Thought Leaders&rsquo; Seminar | 1 Unit</li>
+</ul>
+
+<h3 id="linköping-university">Linköping University</h3>
+
+<ul>
+<li>TSEA51 | Switching Theory and Logical Design | 4 Credits</li>
+<li>TATM79 | Foundation Course in Mathematics | 6 Credits</li>
+<li>TFYY51 | Engineering Project | 6 Credits</li>
+<li>TATA24 | Linear Algebra | 8 Credits</li>
+<li>TATA41 | Calculus in One Variable 1 | 6 Credits</li>
+<li>TATA42 | Calculus in One Variable 2 | 6 Credits</li>
+<li>TATA40 | Perspectives on Mathematics | 1 Credit</li>
+<li>TATA14 | The Language of Mathematics | 4 Credits</li>
+<li>TFYA10 | Wave Motion | 8 Credits</li>
+<li>TFFM12 | Perspectives on Physics | 2 Credits</li>
+<li>TATA43 | Calculus in Several Variables | 8 Credits</li>
+<li>TDDC74 | Programming: Abstraction and Modelling | 8 Credits</li>
+<li>TSRT04 | Introduction in Matlab | 2 Credits</li>
+<li>TATA44 | Vector Analysis | 4 Credits</li>
+<li>TANA21 | Scientific Computing | 6 Credits</li>
+<li>TSTE05 | Electronics and Measurement Technology | 8 Credits</li>
+<li>TATA34 | Real Analysis, Honours Course | 6 Credits</li>
+<li>TMME12 | Engineering Mechanics Y | 4 Credits</li>
+<li>TATA45 | Complex Analysis | 6 Credits</li>
+<li>TMME04 | Engineering Mechanics II | 6 Credits</li>
+<li>TAOP07 | Introduction to Optimization | 6 Credits</li>
+<li>TATA53 | Linear Algebra, Honours Course | 6 Credits</li>
+<li>TAMS14 | Probability, First Course | 4 Credits</li>
+<li>TSEA28 | Computer Hardware and Architecture Y | 6 Credits</li>
+<li>TFYA13 | Electromagnetic Field Theory | 8 Credits</li>
+<li>TATA77 | Fourier Analysis | 6 Credits</li>
+<li>TAMS24 | Statistics, First Course | 4 Credits</li>
+<li>TSDT18 | Signals and Systems | 6 Credits</li>
+<li>TFYA12 | Thermodynamics and Statistical Mechanics | 6 Credits</li>
+<li>TATM85 | Functional Analysis | 6 Credits</li>
+<li>TDDC76 | Programming and Data Structures | 8 Credits</li>
+<li>TSRT12 | Automatic Control Y | 6 Credits</li>
+<li>TFYA73 | Modern Physics I | 4 Credits</li>
+<li>TSEA56 | Electronics Engineering - Bachelor Project | 16 Credits</li>
+<li>TATA66 | Fourier and Wavelet Analysis | 6 Credits</li>
+<li>TSKS10 | Signals, Information and Communication | 4 Credits</li>
+<li>TEAE01 | Industrial Economics, Basic Course | 6 Credits</li>
+<li>TSRT62 | Modelling and Simulation | 6 Credits</li>
+<li>TSRT10 | Automatic Control - Project Course | 12 Credits</li>
+<li>TGTU49 | History of Technology | 6 Credits</li>
+<li>TSEA81 | Computer Engineering and Real-time Systems | 6 Credits</li>
+<li>TQET33 | Degree Project - Master&rsquo;s Thesis | 30 Credits</li>
+</ul>
+
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  
+  var w = 720,
+      h = 260,
+      color = d3.scale.category10();
+  
+  var force = d3.layout.force()
+      .gravity(0)
+      .charge(-10)
+      .size([w, h]);
+  
+  var nodes = force.nodes(),
+      a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+      b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+      c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+  	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+  
+  nodes.push(a, b, c, d);
+  
+  var svg = d3.select("#mybanner").append("svg:svg")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.append("svg:rect")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.selectAll("circle")
+      .data(nodes)
+    .enter().append("svg:circle")
+      .attr("r", 12)
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .style("fill", fill)
+  	.style("visibility", "hidden");
+      
+  
+  force.on("tick", function(e) {
+    var k = e.alpha * .1;
+    nodes.forEach(function(node) {
+      var center = nodes[node.type];
+      node.x += (center.x - node.x) * k;
+      node.y += (center.y - node.y) * k;
+    });
+  
+    svg.selectAll("circle")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  });
+  
+  var p0;
+  
+  svg.on("mousemove", function() {
+    var p1 = d3.svg.mouse(this),
+        node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+  
+    p0 = p1;
+  
+    svg.append("svg:circle")
+        .data([node])
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", 4.5)
+        .style("fill", fill)
+      .transition()
+        .delay(2250)
+        .attr("r", 1e-6)
+        .each("end", function() { nodes.splice(4, 1); })
+        .remove();
+  
+    nodes.push(node);
+    force.start();
+  });
+  
+  function fill(d) {
+    return color(d.type);
+  }
+
+</script>
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="reading" class="home-section">
+    <div class="container">
+      
+
+<script type="text/javascript" src="d3-andmeteadus/d3.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.geom.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.layout.js"></script>
+
+<style type="text/css">
+
+#mybanner{
+  background: url(img/banner-andmeteadus.png) no-repeat top left;
+  background-size: contain;
+  overflow: hidden;
+  margin: 0;
+}
+
+svg {
+  width: 720px;
+  height: 200px;
+}
+
+#chart {
+  position: absolute;
+  top: 0;
+}
+
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #555;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+	
+circle {
+  stroke: #fff;
+}
+
+    </style>
+    <script type="text/javascript">
+
+var w = 720,
+    h = 260,
+    color = d3.scale.category10();
+
+var force = d3.layout.force()
+    .gravity(0)
+    .charge(-10)
+    .size([w, h]);
+
+var nodes = force.nodes(),
+    a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+    b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+    c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+
+nodes.push(a, b, c, d);
+
+var svg = d3.select("#body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.append("svg:rect")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.selectAll("circle")
+    .data(nodes)
+  .enter().append("svg:circle")
+    .attr("r", 12)
+    .attr("cx", function(d) { return d.x; })
+    .attr("cy", function(d) { return d.y; })
+    .style("fill", fill)
+	.style("visibility", "hidden");
+    
+
+force.on("tick", function(e) {
+  var k = e.alpha * .1;
+  nodes.forEach(function(node) {
+    var center = nodes[node.type];
+    node.x += (center.x - node.x) * k;
+    node.y += (center.y - node.y) * k;
+  });
+
+  svg.selectAll("circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+});
+
+var p0;
+
+svg.on("mousemove", function() {
+  var p1 = d3.svg.mouse(this),
+      node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+
+  p0 = p1;
+
+  svg.append("svg:circle")
+      .data([node])
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", 4.5)
+      .style("fill", fill)
+    .transition()
+      .delay(2250)
+      .attr("r", 1e-6)
+      .each("end", function() { nodes.splice(4, 1); })
+      .remove();
+
+  nodes.push(node);
+  force.start();
+});
+
+function fill(d) {
+  return color(d.type);
+}
+
+</script>
+
+
+<div class="row">
+  
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Reading</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <p>I categorize and post comments on all research papers I read, and share this publicly on <a href="https://github.com/fregu856/papers" target="_blank">GitHub</a>. Feel free to reach out with any questions or suggested readings, I am always interested in learning about new methods and ideas.</p>
+
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  
+  var w = 720,
+      h = 260,
+      color = d3.scale.category10();
+  
+  var force = d3.layout.force()
+      .gravity(0)
+      .charge(-10)
+      .size([w, h]);
+  
+  var nodes = force.nodes(),
+      a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+      b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+      c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+  	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+  
+  nodes.push(a, b, c, d);
+  
+  var svg = d3.select("#mybanner").append("svg:svg")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.append("svg:rect")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.selectAll("circle")
+      .data(nodes)
+    .enter().append("svg:circle")
+      .attr("r", 12)
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .style("fill", fill)
+  	.style("visibility", "hidden");
+      
+  
+  force.on("tick", function(e) {
+    var k = e.alpha * .1;
+    nodes.forEach(function(node) {
+      var center = nodes[node.type];
+      node.x += (center.x - node.x) * k;
+      node.y += (center.y - node.y) * k;
+    });
+  
+    svg.selectAll("circle")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  });
+  
+  var p0;
+  
+  svg.on("mousemove", function() {
+    var p1 = d3.svg.mouse(this),
+        node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+  
+    p0 = p1;
+  
+    svg.append("svg:circle")
+        .data([node])
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", 4.5)
+        .style("fill", fill)
+      .transition()
+        .delay(2250)
+        .attr("r", 1e-6)
+        .each("end", function() { nodes.splice(4, 1); })
+        .remove();
+  
+    nodes.push(node);
+    force.start();
+  });
+  
+  function fill(d) {
+    return color(d.type);
+  }
+
+</script>
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="contact" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Contact</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <p><ul class="fa-ul" itemscope>
+
+  <li>
+    <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
+    <span id="person-address" itemprop="address">
+    <a href="https://goo.gl/maps/EZumPhF7q7A2" target="_blank">Room 2303, Department of Information Technology, Uppsala University</a>
+    </span>
+  </li>
+
+  <li>
+    <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+    <span id="person-email" itemprop="email">
+    fregu856@gmail.com | fredrik.gustafsson@it.uu.se
+    </span>
+  </li>
+
+  <li>
+    <i class="fa-li fa fa-phone fa-2x" aria-hidden="true"></i>
+    <span id="person-telephone" itemprop="telephone">
+    +46705786348
+    </span>
+  </li>
+
+</ul>
+</p>
+
+    <ul class="fa-ul" itemscope>
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+    </ul>
+
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      Copyright &copy; Fredrik K. Gustafsson 2019 
+
+      <br>
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> &middot; Based on the modified theme by <a href="https://github.com/kasparmartens/website" target="_blank" rel="noopener">Kaspar Märtens</a>
+
+
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="close-modal" data-dismiss="modal" id="rasperino_cross">
-                  <div class="lr">
-                      <div class="rl">
-                      </div>
-                  </div>
-              </div>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-8 col-lg-offset-2">
-                          <div class="modal-body">
-                              <!-- Project Details Go Here -->
-                              <h3 style="margin-bottom: -15px">Rasperino</h3>
-                              <p class="item-intro text-muted">Autonomous/Web Controlled Raspberry Pi & Arduino Robot.</p>
-                              <div class="video-container"><iframe id="rasperino_video" width="560" height="315" src="https://www.youtube.com/embed/povGte7K8o4?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
-                              </br>
-                              <ul class="list-inline social-buttons">
-                                <li>
-                                    <a href="https://goo.gl/photos/z78dbTpEZ5kwjqneA" target="_blank"><i class="fa fa-picture-o"></i></a>Images
-                                </li>
-                                <li>
-                                    <a href="https://github.com/fregu856/Sommarprojekt16" target="_blank"><i class="fa fa-github"></i></a>Code
-                                </li>
-                              </ul>
+    
 
-                              <p class="text-justify">
-                                  <b>Main hardware:</b><br>
-                                      - 1x Arduino Uno.<br>
-                                      - 1x Raspberry Pi 3 Model B.<br>
-                                      - 1x Raspberry Pi Camera Module v2.<br>
-                                      - 1x DFRobot 4WD Arduino Mobile Platform.<br>
-                                      - 2x L298 Dual H-Bridge DC Motor Controller.<br>
-                                      - 5x Sharp GP2Y0A21YK0F IR Range Sensor - 10 cm to 80 cm.<br>
-                                      - 1x Power bank.<br>
-                                  <br>
+    
+    
 
-                                  <b>Features:</b><br>
-                                      - Autonomous navigation of simple mazes.<br>
-                                      - Basic computer vision for detection of "color signs".<br>
-                                      - Video streaming.<br>
-                                      - Web interface for manual control and monitoring (desktop & mobile).<br>
-                                      - PD controller.<br>
-                                  <br>
+    
 
-                                  <b>Functionality:</b><br>
-                                      - The Arduino reads and filters the IR sensors, implements the PD controller, controls the motor controllers via PVM and runs a state mahcine for autonomous navigation.<br>
-                                      - The Raspberry Pi acts as a webserver, streams live video and runs a basic computer vision algorithm.<br>
-                                      - The Arduino sends sensor and status data to the Raspberry Pi over serial (USB cable), which in turn sends this (and video streaming data) to the web page over wifi.<br>
-                                      - User input is sent from the web page to the Raspberry Pi over wifi, which in turn sends this to the Arduino over serial.
-                              </p>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
 
-                              <ul class="list-inline">
-                                  <li>Jun. 2016 - Aug. 2016</li>
-                                  <li>Personal summer project</li>
-                                  <li>Python, C, HTML, JavaScript</li>
-                              </ul>
-                              <button id="rasperino_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
 
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="close-modal" data-dismiss="modal" id="spiderpig_cross">
-                  <div class="lr">
-                      <div class="rl">
-                      </div>
-                  </div>
-              </div>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-8 col-lg-offset-2">
-                          <div class="modal-body">
-                              <!-- Project Details Go Here -->
-                              <h3 style="margin-bottom: -15px">Spider Pig</h3>
-                              <p class="item-intro text-muted">Autonomous Hexapod Robot.</p>
-                              <div class="video-container"><iframe id="spiderpig_video" width="560" height="315" src="https://www.youtube.com/embed/N5_tMeEpJaA?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
-                              </br>
-                              <ul class="list-inline social-buttons">
-                                <li>
-                                    <a href="https://drive.google.com/file/d/0B-n8kwzkfV_fZzFONTlqa3hockU/view?usp=sharing" target="_blank"><i class="fa fa-list-alt"></i></a>Slides
-                                </li>
-                                <li>
-                                    <a href="https://drive.google.com/file/d/0B-n8kwzkfV_fM1hqVU1uZkxTYlU/view?usp=sharing" target="_blank"><i class="fa fa-file-text"></i></a>Report
-                                </li>
-                                <li>
-                                    <a href="https://github.com/Skipsterino/Kandidatprojekt" target="_blank"><i class="fa fa-github"></i></a>Code
-                                </li>
-                              </ul>
+      
 
-                              <p class="text-justify">
-                                  <b>Main hardware:</b><br>
-                                      - 1x PhantomX AX Metal Hexapod Mark II Kit (including 18x Dynamixel AX-12 servos, excluding the ArbotiX Robocontroller).<br>
-                                      - 3x ATmega1284p microcontrollers.<br>
-                                      - 7x IR distance sensors.<br>
-                                      - 1x ultrasonic distance sensor.<br>
-                                      - 1x MPU-6050 IMU.<br>
-                                      - 1x LCD display.<br>
-                                      - 1x FireFly Bluetooth modem.<br>
-                                      - 1x Raspberry Pi 3 Model B.<br>
-                                      - 1x Raspberry Pi Camera Board 5 MP.<br>
-                                  <br>
+      
 
-                                  <b>Functionality:</b><br>
-                                  - The robot can navigate a simple maze (containing both low and high obstacles) autonomously and be controlled manually with an Xbox controller connected to a PC. It communicates with the PC over Bluetooth.<br>
-                                  - The system is divided into three subsystems (control, sensors and communication), with one microcontroller each. The subsystems communicate via an SPI bus.<br>
-                                  - The Raspberry Pi is configured as a WiFi hotspot and streams video to a Linux computer.<br>
-                                  - The walking algorithm is based on inverse kinematics. A PD controller is used to keep it centered in corridors.
-                              </p>
+      <script>hljs.initHighlightingOnLoad();</script>
+    
 
-                              <p class="text-justify">By Fredrik Gustafsson, Joakim Bertils, Jonas Ehn, Kevin Kjellén, Erik Ljungzell, Christoffer Malmgren and Jens Månsson. My main responsibilities: Sensors and autonomy.</p>
-                              <ul class="list-inline">
-                                  <li>Jan. 2016 - Jun. 2016</li>
-                                  <li>Bachelor thesis project, Linköping University</li>
-                                  <li>C</li>
-                              </ul>
-                              <button id="spiderpig_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
+    
+    
 
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="close-modal" data-dismiss="modal" id="bluewind_cross">
-                  <div class="lr">
-                      <div class="rl">
-                      </div>
-                  </div>
-              </div>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-8 col-lg-offset-2">
-                          <div class="modal-body">
-                              <!-- Project Details Go Here -->
-                              <h3 style="margin-bottom: -15px">BlueWind</h3>
-                              <p class="item-intro text-muted">2D Adventure Game.</p>
-                              <div class="video-container"><iframe id="bluewind_video" width="560" height="315" src="https://www.youtube.com/embed/2dzIzPWQkns?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
-                              </br>
-                              <ul class="list-inline social-buttons">
-                                <li>
-                                    <a href="https://github.com/Zoreno/BlueWindProject" target="_blank"><i class="fa fa-github"></i></a>Code
-                                </li>
-                              </ul>
-
-                              <p class="text-justify">By Fredrik Gustafsson, Olle Andersson, Simon Arkeholt, Joakim Bertils, Jonas Ehn and Johannes Grundell.</p>
-
-                              <ul class="list-inline">
-                                  <li>Oct. 2015 - Dec. 2015</li>
-                                  <li>Course project in TDDC76: Programming and Datastructures, Linköping University</li>
-                                  <li>C++</li>
-                              </ul>
-                              <button id="bluewind_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">AA 273 Final Project</h3>
-                                <p class="item-intro text-muted">The SE-Sync Algorithm for Pose-Graph SLAM.</p>
-                                <img class="img-responsive img-centered" src="static/img/AA273_color.png" alt="">
-                                <ul class="list-inline social-buttons">
-                                  <li>
-                                      <a href="https://goo.gl/J2v7OU" target="_blank"><i class="fa fa-list-alt"></i></a>Slides
-                                  </li>
-                                  <li>
-                                      <a href="https://goo.gl/puwDWF" target="_blank"><i class="fa fa-file-text"></i></a>Report
-                                  </li>
-                                </ul>
-
-                                <ul class="list-inline">
-                                    <li>May 2017 - Jun. 2017</li>
-                                    <li>Course project in AA 273: State Estimation and Filtering for Aerospace Systems, Stanford University</li>
-                                    <li>C++, ROS, MATLAB</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 7 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">ROSperino</h3>
-                                <p class="item-intro text-muted">Autonomous/Web Controlled RC Car.</p>
-                                <img class="img-responsive img-centered" src="static/img/RCcar_color.png" alt="">
-                                <ul class="list-inline social-buttons">
-                                  <li>
-                                      <a href="https://goo.gl/photos/LKZvyXHjr5Y9rBLAA" target="_blank"><i class="fa fa-picture-o"></i></a>Images
-                                  </li>
-                                  <li>
-                                      <a href="https://github.com/fregu856/Summer17" target="_blank"><i class="fa fa-github"></i></a>Code
-                                  </li>
-                                </ul>
-
-                                <p class="text-justify">
-                                    Ongoing project. Current features include video streaming, a web interface for manual control and SLAM using both the camera and the LiDAR separately. The project goal is to build a small-scale Formula Student Driverless car.
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>Jun. 2017 -</li>
-                                    <li>Personal project</li>
-                                    <li>Python, ROS, HTML, JavaScript</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 8 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal" id="Zenuity_car_cross">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">Summer Internship Project</h3>
-                                <p class="item-intro text-muted">Deep Learning Demo/Test Platform.</p>
-                                <div class="video-container"><iframe id="Zenuity_car_video" width="560" height="315" src="https://www.youtube.com/embed/SumFcbAPXV0?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
-                                </br>
-
-                                <p class="text-justify">
-                                    Deep learning demo/test platform based on a standard 1/10 scale RC car. Using a web interface, one can manually control the car and run a variety of deep learning algorithms on streaming video, including the end-to-end trained system for obstacle avoidance shown in the video above.
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>Jun. 2017 - Aug. 2017</li>
-                                    <li>Summer internship project at Zenuity</li>
-                                    <li>Python, TensorFlow, HTML, JavaScript, ROS</li>
-                                </ul>
-                                <button id="Zenuity_car_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 9 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">Summer Internship Project</h3>
-                                <p class="item-intro text-muted">Web Tool for Analysis and Visualization of Sensor Data.</p>
-                                <img class="img-responsive img-centered" src="static/img/T_color.png" alt="">
-
-                                <p class="text-justify">
-                                    Web tool for analysis and visualization of car engine sensor data for a fleet of test vehicles, developed using Python (Flask), MySQL and Bootstrap.
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>Jun. 2016 - Aug. 2016</li>
-                                    <li>Summer internship project at T Engineering</li>
-                                    <li>Python, SQL, HTML, JavaScript</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 10 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal" id="2D_detection_cross">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">2D Object Detection for Autonomous Driving</h3>
-                                <p class="item-intro text-muted">TensorFlow Implementation of SqueezeDet.</p>
-                                <div class="video-container"><iframe id="2D_detection_video" width="560" height="315" src="https://www.youtube.com/embed/5BBwjvlUULI?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
-                                </br>
-
-                                <ul class="list-inline social-buttons">
-                                  <li>
-                                      <a href="https://github.com/fregu856/2D_detection" target="_blank"><i class="fa fa-github"></i></a>Code
-                                  </li>
-                                </ul>
-
-                                <p class="text-justify">
-                                    TensorFlow implementation of SqueezeDet, trained on the KITTI dataset. The results in the video above can obviously be improved, but because of limited computing resources (personally funded Azure VM) I did not perform any further hyperparameter tuning. Please see the GitHub repository linked above for code and further details.
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>Aug. 2017 - Sep. 2017</li>
-                                    <li>Personal project</li>
-                                    <li>Python, TensorFlow</li>
-                                </ul>
-                                <button id="2D_detection_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 11 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal" id="segmentation_cross">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">Semantic Segmentation for Autonomous Driving</h3>
-                                <p class="item-intro text-muted">TensorFlow Implementation of ENet.</p>
-                                <div class="video-container"><iframe id="segmentation_video" width="560" height="315" src="https://www.youtube.com/embed/HbPhvct5kvs?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
-                                </br>
-
-                                <ul class="list-inline social-buttons">
-                                  <li>
-                                      <a href="https://github.com/fregu856/segmentation" target="_blank"><i class="fa fa-github"></i></a>Code
-                                  </li>
-                                </ul>
-
-                                <p class="text-justify">
-                                    TensorFlow implementation of ENet, trained on the Cityscapes dataset. The results in the video above can obviously be improved, but because of limited computing resources (personally funded Azure VM) I did not perform any further hyperparameter tuning. Please see the GitHub repository linked above for code and further details.
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>Aug. 2017 - Sep. 2017</li>
-                                    <li>Personal project</li>
-                                    <li>Python, TensorFlow</li>
-                                </ul>
-                                <button id="segmentation_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 12 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal" id="smaugs_cross">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">SMAUGS</h3>
-                                <p class="item-intro text-muted">Autonomous Minesweeping System.</p>
-                                <div class="video-container"><iframe id="smaugs_video" width="560" height="315" src="https://www.youtube.com/embed/KNabhxX7Tv4?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
-                                </br>
-                                <ul class="list-inline social-buttons">
-                                    <li>
-                                        <a href="http://www.isy.liu.se/edu/projekt/reglerteknik/2017/minesweeper/dok/poster.pdf" target="_blank"><i class="fa fa-list-alt"></i></a>Poster
-                                    </li>
-                                    <li>
-                                        <a href="http://www.isy.liu.se/edu/projekt/reglerteknik/2017/minesweeper/dok/CDIO_Tech_doc0.4.pdf" target="_blank"><i class="fa fa-file-text"></i></a>Report
-                                    </li>
-                                </ul>
-
-                                <p class="text-justify">By Fredrik Gustafsson, Andreas Hägglund, Andreas Lundgren, Elin Näsholm, Fredrik Tormod, Hampus Andersson, Jonathan Jerner and Mattias Andreasson.</p>
-                                <p class="text-justify">My main responsibilities: SLAM and ROS.</p>
-
-                                <ul class="list-inline">
-                                    <li>Sep. 2017 - Dec. 2017</li>
-                                    <li>Course project in TSRT10: Automatic Control - Project Course, Linköping University</li>
-                                    <li>C++, Python, ROS</li>
-                                </ul>
-                                <button id="smaugs_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 13 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">Skalman</h3>
-                                <p class="item-intro text-muted">Autonomous/Web Controlled TurtleBot3.</p>
-                                <img class="img-responsive img-centered" src="static/img/skalman_color.png" alt="">
-
-                                <p class="text-justify">
-                                    Ongoing project.
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>Jan. 2018 -</li>
-                                    <li>Personal project</li>
-                                    <li>Python, C++, ROS, HTML, JavaScript</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 14 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal" id="thesis_cross">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">Master's Thesis Project</h3>
-                                <p class="item-intro text-muted">3D Object Detection for Autonomous Driving using Deep Learning.</p>
-                                <div class="video-container"><iframe id="thesis_video" width="560" height="315" src="https://www.youtube.com/embed/KdrHLXpYYlg?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
-                                </br>
-                                <ul class="list-inline social-buttons">
-                                  <li>
-                                      <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585" target="_blank"><i class="fa fa-file-text"></i></a>Thesis
-                                  </li>
-                                  <li>
-                                      <a href="http://www.fregu856.com/static/msc_thesis_slides.pdf" target="_blank"><i class="fa fa-list-alt"></i></a>Slides
-                                  </li>
-                                  <li>
-                                      <a href="https://github.com/fregu856/3DOD_thesis" target="_blank"><i class="fa fa-github"></i></a>Code
-                                  </li>
-                                </ul>
-
-                                <p></p>
-
-                                <p class="text-justify">
-                                    The work constitutes roughly 50% of the master's thesis:</br>
-                                    Automotive 3D Object Detection Without Target Domain Annotations, Fredrik K. Gustafsson and Erik Linder-Norén, 2018.
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>Jan. 2018 - Jun. 2018</li>
-                                    <li>Master's Thesis Project, Zenuity &amp Linköping University</li>
-                                    <li>Python, PyTorch</li>
-                                </ul>
-                                <button id="thesis_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 15 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">Stinspira</h3>
-                                <p class="item-intro text-muted">Website Aiming to Increase Interest in Higher Education Among Youths.</p>
-                                <img class="img-responsive img-centered" src="static/img/stinspira.png" alt="">
-
-                                <p class="text-justify">
-                                    Website (in Swedish) aiming to increase interest in higher education among youths. Web design, logo design and content creation. <a href="http://www.stinspira.se/" target="_blank">stinspira.se</a>.
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>Jun. 2018 -</li>
-                                    <li>Personal project</li>
-                                    <li>HTML, JavaScript</li>
-                                </ul>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 16 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal" id="deeplabv3_cross">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h3 style="margin-bottom: -15px">PyTorch Implementation of DeepLabV3</h3>
-                                <p class="item-intro text-muted">Semantic Segmentation for Autonomous Driving.</p>
-                                <div class="video-container"><iframe id="deeplabv3_video" width="560" height="315" src="https://www.youtube.com/embed/9e2x4dDRB-k?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
-                                </br>
-
-                                <ul class="list-inline social-buttons">
-                                  <li>
-                                      <a href="https://github.com/fregu856/deeplabv3" target="_blank"><i class="fa fa-github"></i></a>Code
-                                  </li>
-                                </ul>
-
-                                <p class="text-justify">
-                                    PyTorch implementation of <a href="https://arxiv.org/abs/1706.05587">DeepLabV3</a>, trained on the Cityscapes dataset. Please see the GitHub repository linked above for code and further details.
-                                </p>
-
-                                <ul class="list-inline">
-                                    <li>May 2018 - Sep. 2018</li>
-                                    <li>Personal project</li>
-                                    <li>Python, PyTorch</li>
-                                </ul>
-                                <button id="deeplabv3_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ################################################################### -->
-    <!-- ################################################################### -->
-    <!-- ################################################################### -->
-
-    <!-- Modal MSc Abstract -->
-    <div class="portfolio-modal modal fade" id="modal_MSc_abstract" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-
-                                <p class="text-justify">
-                                  In this thesis we study a perception problem in the context of autonomous driving. Specifically, we study the computer vision problem of 3D object detection, in which objects should be detected from various sensor data and their position in the 3D world should be estimated. We also study the application of Generative Adversarial Networks in domain adaptation techniques, aiming to improve the 3D object detection model's ability to transfer between different domains.</br></br>
-
-                                  The state-of-the-art Frustum-PointNet architecture for LiDAR-based 3D object detection was implemented and found to closely match its reported performance when trained and evaluated on the KITTI dataset. The architecture was also found to transfer reasonably well from the synthetic SYN dataset to KITTI, and is thus believed to be usable in a semi-automatic 3D bounding box annotation process. The Frustum-PointNet architecture was also extended to explicitly utilize image features, which surprisingly degraded its detection performance. Furthermore, an image-only 3D object detection model was designed and implemented, which was found to compare quite favourably with current state-of-the-art in terms of detection performance.</br></br>
-
-                                  Additionally, the PixelDA approach was adopted and successfully applied to the MNIST to MNIST-M domain adaptation problem, which validated the idea that unsupervised domain adaptation using Generative Adversarial Networks can improve the performance of a task network for a dataset lacking ground truth annotations. Surprisingly, the approach did however not significantly improve upon the performance of the image-based 3D object detection models when trained on the SYN dataset and evaluated on KITTI.
-                                </p>
-
-                                <button id="thesis_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Abstract</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal MSc bibtex -->
-    <div class="portfolio-modal modal fade" id="modal_MSc_bibtex" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-
-                                <p class="text-justify">
-                                    @misc{gustafsson2018automotive,</br>
-                                      title={Automotive 3D Object Detection Without Target Domain Annotations},</br>
-                                      author={Gustafsson, Fredrik and Linder-Nor{\'e}n, Erik},</br>
-                                      year={2018}</br>
-                                    }
-                                </p>
-
-                                <button id="thesis_button" type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close bibtex</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="static/vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="static/js/jqBootstrapValidation.js"></script>
-    <script src="static/js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="static/js/agency.min.js"></script>
-
-    <script type="text/javascript" charset="utf-8">
-
-      // to make videos stop when you close the project modals:
-      $('#cs229_cross').on('click', function() {
-      $('#cs229_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-      $('#cs229_button').on('click', function() {
-      $('#cs229_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-
-      $('#rasperino_cross').on('click', function() {
-      $('#rasperino_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-      $('#rasperino_button').on('click', function() {
-      $('#rasperino_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-
-      $('#spiderpig_cross').on('click', function() {
-      $('#spiderpig_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-      $('#spiderpig_button').on('click', function() {
-      $('#spiderpig_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-
-      $('#bluewind_cross').on('click', function() {
-      $('#bluewind_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-      $('#bluewind_button').on('click', function() {
-      $('#bluewind_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-
-      $('#Zenuity_car_cross').on('click', function() {
-      $('#Zenuity_car_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-      $('#Zenuity_car_button').on('click', function() {
-      $('#Zenuity_car_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-
-      $('#2D_detection_cross').on('click', function() {
-      $('#2D_detection_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-      $('#2D_detection_button').on('click', function() {
-      $('#2D_detection_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-
-      $('#segmentation_cross').on('click', function() {
-      $('#segmentation_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-      $('#segmentation_button').on('click', function() {
-      $('#segmentation_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-
-      $('#smaugs_cross').on('click', function() {
-      $('#smaugs_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-      $('#smaugs_button').on('click', function() {
-      $('#smaugs_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-
-      $('#thesis_cross').on('click', function() {
-      $('#thesis_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-      $('#thesis_button').on('click', function() {
-      $('#thesis_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-
-      $('#deeplabv3_cross').on('click', function() {
-      $('#deeplabv3_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-      $('#deeplabv3_button').on('click', function() {
-      $('#deeplabv3_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-      });
-
-      // to make buttons NOT stay focused after clicks:
-      $(".btn").mouseup(function(){
-      $(this).blur();
-      })
-
-      // to make the toggle menu button NOT stay focused after clicks:
-      $(".navbar-toggle").mouseup(function(){
-      $(this).blur();
-      })
-
-      // to text in the navbar NOT stay focused after clicks (so that text don't stay red):
-      $(".page-scroll").mouseup(function(){
-      $(this).blur();
-      })
-
-    </script>
-
-</body>
-
+  </body>
 </html>
+
+

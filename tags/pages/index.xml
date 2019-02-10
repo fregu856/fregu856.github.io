@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pages on Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</title>
+    <link>/tags/pages/</link>
+    <description>Recent content in pages on Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2019</copyright>
+    <lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>News</title>
+      <link>/post/news/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
+      
+      <guid>/post/news/</guid>
+      <description>[Nov 24, 2018] I was awarded the Tryggve Holm medal for &amp;ldquo;outstanding student achievements&amp;rdquo; during my time at Linköping University.
+ [Sep 28, 2018] New project: PyTorch implementation of DeepLabV3, see GitHub repo and Youtube video for further details.
+ [Sep 21, 2018] The code for 3D object detection used in my MSc thesis has been uploaded to GitHub.
+ [Sep 20, 2018] I have created a GitHub repository for posting summaries of interesting papers that I read.</description>
+    </item>
+    
+  </channel>
+</rss>

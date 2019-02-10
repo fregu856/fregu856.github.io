@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning on Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</title>
+    <link>/</link>
+    <description>Recent content in Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning on Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2019</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PyTorch Implementation of DeepLabV3</title>
+      <link>/project/deeplabv3/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/project/deeplabv3/</guid>
+      <description>&lt;p&gt;PyTorch implementation of &lt;a href=&#34;https://arxiv.org/abs/1706.05587&#34; target=&#34;_blank&#34;&gt;DeepLabV3&lt;/a&gt;, trained on the Cityscapes dataset. Please see the GitHub repository linked below for code and further details.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Neural Processes as distributions over functions</title>
+      <link>/post/np/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/post/np/</guid>
+      <description>
+
+&lt;p&gt;In this year’s ICML, some interesting work was presented on Neural Processes. See the paper &lt;a href=&#34;https://arxiv.org/abs/1807.01613&#34; target=&#34;_blank&#34;&gt;conditional Neural Processes&lt;/a&gt; and the follow-up work by the same authors on &lt;a href=&#34;https://arxiv.org/abs/1807.01622&#34; target=&#34;_blank&#34;&gt;Neural Processes&lt;/a&gt; which was presented in the workshop.&lt;/p&gt;
+
+&lt;p&gt;Neural Processes (NPs) caught my attention as they essentially are a neural network (NN) based probabilistic model which can represent a distribution over stochastic processes. So NPs combine elements from two worlds:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Deep Learning &amp;ndash; neural networks are flexible non-linear functions which are straightforward to train&lt;/li&gt;
+&lt;li&gt;Gaussian Processes &amp;ndash; GPs offer a probabilistic framework for learning a distribution over a wide class of non-linear functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both have their advantages and drawbacks. In the limited data regime, GPs are preferable due to their probabilistic nature and ability to capture uncertainty. This differs from (non-Bayesian) neural networks which represent a single function rather than a distribution over functions. However the latter might be preferable in the presence of large amounts of data as training NNs is computationally much more scalable than inference for GPs. Neural Processes aim to combine the best of these two worlds.&lt;/p&gt;
+
+&lt;p&gt;I found the idea behind NPs interesting, but I felt I was lacking intuition and a deeper understanding how NPs behave as a prior over functions. I believe, often the best way towards understanding something is implementing it, empirically trying it out on simple problems, and finally explaining this to someone else. So here is my attempt at reviewing and discussing NPs.&lt;/p&gt;
+
+&lt;p&gt;Before reading my post, I recommend the reader to take a look at both original papers. Even though here I discuss &lt;a href=&#34;https://arxiv.org/abs/1807.01622&#34; target=&#34;_blank&#34;&gt;[NPs]&lt;/a&gt;, you might find it easier to start with &lt;a href=&#34;https://arxiv.org/abs/1807.01613&#34; target=&#34;_blank&#34;&gt;[conditional NPs]&lt;/a&gt; which are essentially a non-probabilistic version of NPs.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-is-a-neural-process&#34;&gt;What is a Neural Process?&lt;/h3&gt;
+
+&lt;p&gt;The NP is a neural network based approach to represent a distribution over functions. The broad idea behind how the NP model is set up and how it is trained is illustrated in this schema:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/schema1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Given a set of observations $(x_i, y_i)$, they are split into two sets: &amp;ldquo;context points&amp;rdquo; and &amp;ldquo;target points&amp;rdquo;. Given the pairs $(x_c, y_c)$ for $c = 1, …, C$ in the context set and given unseen inputs $x_t^{\ast}$ for $t = 1, …, T$ in the target set, our goal is to predict the corresponding function values $y_t^{\ast}$. We can think of NPs as if they were modelling the target set conditional on the context. Information flows from the context set (on the left) to making new predictions on the target set (on the right) via the latent space $z$. The latter is essentially a finite-dimensional embedding of mappings from x to y. The fact that $z$ is a random variable makes NP a probabilistic model and lets us capture uncertainty over functions. Once we have trained the model, we can use our (approximate) posterior distribution of $z$ as a prior to make predictions at test time.&lt;/p&gt;
+
+&lt;p&gt;At first sight, the split into context and target sets may look like the standard train and test split of the data, but this is not the case, as the target set is directly used in training the NP model &amp;ndash; our (probabilistic) loss function is explicitly defined over the target set. This will allow the model to avoid overfitting and achieve better out-of-sample generalisation. In practice, we would repeatedly split our training data into randomly chosen context and target sets to obtain good generalisation.&lt;/p&gt;
+
+&lt;p&gt;Let us consider two scenarios:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Inferring a distribution over functions, based on a single data set&lt;/li&gt;
+&lt;li&gt;Inferring a distribution over functions, when we have access to multiple data sets which we believe to be related in some way&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The first scenario corresponds to a standard (probabilistic) supervised learning setup: Given a data set of $N$ samples, i.e. given $(x_i, y_i)$ for $i = 1, … ,N$, and assuming there is an underlying true $f$ which has generated the $y_i = f(x_i)$ values, our goal is to learn the posterior distribution over $f$ and use it to get predictive densities at test points $f(x^{\ast})$.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/two_scenarios.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second scenario can be seen from the meta-learning viewpoint. Given $D$ data sets $d = 1, …, D$, each consisting of $N_d$ pairs $(x_i^{(d)}, y_i^{(d)})$, if we assume that every data set $d = 1, …, D$ has its own underlying function $f_d$ which has generated the values $y_i = f_d(x_i)$, we might want to learn the posterior of every $f_d$ as well as generalise to a new data set $d^{\ast}$. The latter is especially useful when every data set has only a small number of observations. This information sharing is achieved by specifying that there exists a shared process which underlies all functions $f_d$. For example, in the context of GPs, one can assume that $f_d \sim \mathcal{GP}$ share kernel hyperparameters. Having learned the shared process, when given a new data set $d^{\ast}$, one can use the posterior over functions as a prior and carry out few-shot function regression.&lt;/p&gt;
+
+&lt;p&gt;The reason I wanted to highlight these two scenarios is the following. Usually, in the most standard setting, GP-regression is carried out under the first scenario. This tends to work well even when $N$ is small. However, the motivation behind NPs seems to be mainly coming from the meta-learning setup &amp;ndash; in this setting the latent $z$ can be thought of as a mechanism to share information across different data sets. Nevertheless, having elements of a probabilistic model, NPs should be applicable in both scenarios. Below we will investigate how NPs behave when trained only on a single data set, as well as the second setup where we have access to a large number of function draws in order to train the NP.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-are-nps-implemented&#34;&gt;How are NPs implemented?&lt;/h3&gt;
+
+&lt;p&gt;Here is a more detailed schema of the NP generative model:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/schema2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Going through this generative mechanism step-by-step:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First, the context points $(x_c, y_c)$ are mapped through a NN $h$ to obtain a latent representation $r_c$.&lt;/li&gt;
+&lt;li&gt;Then, the vectors $r_c$ are aggregated (in practice: averaged) to obtain a single value $r$ (which has the same dimensionality as every $r_c$).&lt;/li&gt;
+&lt;li&gt;This $r$ is used to parametrise the distribution of $z$, i.e. $p(z | x_{1:C}, y_{1:C}) = \mathcal{N}(\mu_z( r ), \sigma_z^2( r ))$&lt;/li&gt;
+&lt;li&gt;Finally, to obtain a prediction at a target $x_t^{\ast}$, we sample $z$ and concatenate this with $x_t^{\ast}$, and map $(z, x_t^{\ast})$ through a NN $g$ to obtain a sample from the predictive distribution of $y_t^{\ast}$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Inference for the NP is carried out in the variational inference framework. Specifically, we introduce two approximate distributions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$q(z | \text {context})$ to approximate the conditional prior $p(z | \text {context})$&lt;/li&gt;
+&lt;li&gt;$q(z | \text {context}, \text {target})$ to approximate the respective $p(z | \text {context}, \text {target})$
+where we have denoted $\text {context} := (x_{1:C}, y_{1:C})$ and $\text {target} := (x_{1:T}^{\ast}, y_{1:T}^{\ast})$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The approximate posterior $q(z | \cdot)$ is chosen to have the specific form as illustrated in the inference model diagram below. That is, we use the same $h$ to map both the context set as well as the target set to obtain the aggregated $r$, which in turn is mapped to $\mu_z$ and $\sigma_z$. These parametrise the approximate posterior $q(z | \cdot) = \mathcal{N}(\mu_z, \sigma_z)$.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/schema3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The variational lower bound&lt;/p&gt;
+
+&lt;p&gt;$$\text {ELBO} = \mathbb{E}_{q(z | \text {context}, \text {target})} \left[ \sum_{t=1}^T \log p(y_t^{\ast} | z, x_t^{\ast}) + \log \frac{q(z | \text {context})}{q(z | \text {context}, \text {target})} \right]$$&lt;/p&gt;
+
+&lt;p&gt;contains two terms. The first is the expected log-likelihood over the target set. This is evaluated by first sampling $z \sim q(z | \text {context}, \text {target})$, as indicated on the left part of the inference diagram, and then using these $z$ values for predictions on the target set, as on the right part of the diagram. The second term in ELBO has a regularising effect &amp;ndash; it is the negative KL divergence between $q(z | \text {context}, \text {target})$ and $q(z | \text {context})$. Note that this differs slightly from the most commonly encountered variational inference setup with $\text{KL}(q || p)$, where $p$ would be the prior $p(z)$. This is because in our generative model, we have specified a conditional prior $p(z | \text {context})$ instead of directly specifying $p(z)$. As this conditional prior depends on $h$, we do not have access to its exact value and instead need to use an approximate $q(z | \text {context})$.&lt;/p&gt;
+
+&lt;h3 id=&#34;experiments&#34;&gt;Experiments&lt;/h3&gt;
+
+&lt;h4 id=&#34;np-as-a-prior-over-functions&#34;&gt;NP as a prior over functions&lt;/h4&gt;
+
+&lt;p&gt;Let&amp;rsquo;s start by exploring the behaviour of NPs as a prior over functions, i.e. in the setting where we haven’t observed any data and haven’t yet trained the model. Having initialised the weights (here I initialised them independently from a standard normal), we can sample $z \sim \mathcal{N}(0, I)$ and generate from the prior predictive distribution over a grid of $x^{\ast}$ values to plot the functions.&lt;/p&gt;
+
+&lt;p&gt;As opposed to GPs which have interpretable kernel hyperparameters, the NP prior is much less explicit. There are various architectural choices involved (such as how many hidden layers to use, what activation functions to use etc) which all implicitly affect our prior distribution over the function space.&lt;/p&gt;
+
+&lt;p&gt;For example, when using sigmoid activations and varying the dimensionality of $z$ in $\{1, 2, 4, 8\}$, typical draws from the (randomly initialised) NP prior may look as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/draws_from_prior.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But when deciding to use the ReLU activations instead, we have placed the prior probability mass over a different set of functions:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/draws_from_prior_relu.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;training-np-on-a-small-data-set&#34;&gt;Training NP on a small data set&lt;/h4&gt;
+
+&lt;p&gt;Suppose all we have is the following five data points:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/observed_data.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The training procedure for NPs will involve separating the context set and target set. One option is to use a fixed size context set, another is to cover a wider range of scenarios by training using varying context set sizes (e.g. at every iteration we could randomly draw the number of context points from the set $\{1, 2, 3, 4\}$).
+Once we have trained the model on these random subsets, we use the trained model as our prior and now condition on all of our data (i.e. we take all these five points to be the context points) and plot draws from the posterior.
+The animation below illustrates how the predictive distribution of the NP changes as it is being trained:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment1.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So the NP seems to have successfully learned a distribution over mappings which go through all of our five points. Now let&amp;rsquo;s explore how well it generalises to other mappings, i.e. what happens if we use this trained NP for prediction on a different context set. Here is the posterior when conditioning on the red points instead:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Not very surprisingly, the flexible NP model which was trained only on subsets of the five blue points, doesn’t generalise to a different set of context points. To get a model which would generalise better, we could consider (pre)training the NP on a larger set of functions.&lt;/p&gt;
+
+&lt;h4 id=&#34;training-nps-on-a-small-class-of-functions&#34;&gt;Training NPs on a small class of functions&lt;/h4&gt;
+
+&lt;p&gt;So far, we have explored the training scenario using a single (fixed) data set. To have an NP which would generalise similarly to GPs, it seems that we should train it on a much larger class of functions. But before that, let&amp;rsquo;s explore how NPs behave in a simpler setting.&lt;/p&gt;
+
+&lt;p&gt;That is, let&amp;rsquo;s consider a toy scenario, where instead of a single function we observe a small class of functions. Specifically, let&amp;rsquo;s consider all functions of the form $a \cdot \sin(x)$ where $a \in [-1, 1]$.&lt;/p&gt;
+
+&lt;p&gt;It would be interesting to see:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Is the NP able to capture this class of functions&lt;/li&gt;
+&lt;li&gt;Will it generalise beyond this class of functions&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Let&amp;rsquo;s use the following training procedure:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Draw $a$ uniformly $a \sim U(-2, 2)$&lt;/li&gt;
+&lt;li&gt;Draw $x_i \sim U(-3, 3)$&lt;/li&gt;
+&lt;li&gt;Define $y_i := f(x_i)$, where $f(x) = a \sin(x)$&lt;/li&gt;
+&lt;li&gt;Divide pairs $(x_i, y_i)$ randomly into context and target sets and perform an optimisation step&lt;/li&gt;
+&lt;li&gt;Repeat&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here we used a two-dimensional $z$ so that we could visualise what the model has learned. Having trained the NP, we visualised the function draws corresponding to various $(z_1, z_2)$ values on a grid, as shown below:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment2_latent_space.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It seems that the direction from left-to-right essentially encodes our parameter $a$.  Here is another visualisation of the same effect, where we vary one of the latent dimensions (either $z_1$ or $z_2$):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment2.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that above we did not use any context set at prediction time, but simply pre-specified various $(z_1, z_2)$ values. Now let&amp;rsquo;s look into using this trained model for predicting.&lt;/p&gt;
+
+&lt;p&gt;Taking the context set to be the point $(0, 0)$, shown on the left, will result in quite a broad posterior which looks quite nice, covering functions which resemble $a \sin(x)$ for a certain range of values of $a$ (but note that not for all $a \in [-2, 2]$ it was trained on).
+&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment2_pred.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Adding a second context point $(1, \sin(1))$ will result in the posterior shown in the middle. The posterior has changed compared to the previous plot, e.g. functions with a negative values of $a$ are not included any more, but none of the functions goes through the given point. When increasing the number of context points which follow $f(x) = 1.0 \sin(x)$ then the NP posterior will become reasonably close to the true underlying function, as shown on the right.&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s explore how well the trained NP will generalise beyond the class of functions it was trained on. Specifically, let&amp;rsquo;s explore how it will generalise to the following functions $2.5 \sin(x)$ and $| \sin(x) |$. The first requires some extrapolation from the training data. The second one has a similar shape to the functions in training set but unlike the rest its values are non-negative.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment2_misspecification.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As seen from the plots, the NP has not been able to generalise beyond what it had seen during training. In both cases, the model behaviour is somewhat expected (e.g. on the left, $a=2$ corresponds to the best fit within the class of functions the model has seen). However, note that there is not much uncertainty in the NP predictive distributions. Of course over-confident predictions are not specific to NPs, however their black-box nature may make them more difficult to diagnose, compared to more interpretable models.&lt;/p&gt;
+
+&lt;h4 id=&#34;training-nps-on-functions-drawn-from-gps&#34;&gt;Training NPs on functions drawn from GPs&lt;/h4&gt;
+
+&lt;p&gt;Based on experiments so far, it seems that NPs are not out-of-the-box replacements for GPs, as the latter have more desirable properties regarding posterior uncertainty. In order to achieve a similar behaviour with an NP, we could train it using a large number of draws from a GP prior. We could do it as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Draw $f \sim \mathcal{GP}(0, k_{\theta}(\cdot))$&lt;/li&gt;
+&lt;li&gt;Draw $x_i \sim U(-3, 3)$&lt;/li&gt;
+&lt;li&gt;Define $y_i := f(x_i)$&lt;/li&gt;
+&lt;li&gt;Divide pairs $(x_i, y_i)$ randomly into context and target sets and perform an optimisation step&lt;/li&gt;
+&lt;li&gt;Repeat&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The above procedure can be carried out with fixed kernel hyperparameters $\theta$ or a mixture of different values. The RBF (or squared exponential) kernel has two parameters: one controls the variance (essentially the range of function values) and the other “wigglyness”. The latter is called the lengthscale parameter and its effect is illustrated here, by drawing functions from the GP prior with lengthscale values in $\{1, 2, 3\}$:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/GP_draws.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To cover a variety of functions in the NP training, we could specify a prior $p(\theta)$ where to draw samples from. In this toy experiment, I varied lengthscale, as above, uniformly in $\{1, 2, 3\}$. As previously, choosing the latent $z$-space to be 2D, we can visualise what the NP has learned:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment3.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This looks pretty cool! The NP has learned the two-dimensional $z$ space where we can smoothly interpolate between different functions.&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s explore the predictions we get using this NP, and let&amp;rsquo;s see how its behaviour compares to a Gaussian Process posterior. Using an increasing number of context points $\{3, 5, 11\}$, let&amp;rsquo;s consider two functions:&lt;/p&gt;
+
+&lt;p&gt;First, using a relatively smooth function $f(x) = \sin(0.5x)$, the predictions look as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment3_pred2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Second, let&amp;rsquo;s consider $f(x) = \sin(1.5x)$:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment3_pred1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the first case, the NP predictions follow the observations quite closely, whereas in the second case, with three observations it looks good, but when given more points it hasn&amp;rsquo;t been able to capture the pattern.
+This effect is quite likely due to our architectural choices to use quite small NNs and a low-dimensional $z$. In order to improve the model behaviour so that it would resemble GPs more closely, we could consider applying the following changes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Using only a 2D $z$-space might be quite restrictive in what we are able to learn, we could consider using a higher-dimensional $z$. And similarly for $r$.&lt;/li&gt;
+&lt;li&gt;We could consider using a larger number of hidden units in NNs $h$ and $g$, and consider making them deep.&lt;/li&gt;
+&lt;li&gt;Observing a larger number of function draws as well as a larger variety of functions (i.e. more variability in GP kernel hyperparameters) during the training phase could lead to better generalisation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Such changes can indeed lead to more desirable results.
+For example, having increased $\text {dim}( r )$ to 32 and $\text {dim}(z)$ to 4 together with a larger number of hidden units in $h$ and $g$, we observe much nicer behaviour:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h3&gt;
+
+&lt;p&gt;Even though Neural Processes combine elements from both NNs and GP-like Bayesian models to capture distributions over functions, on this spectrum NPs lie closer to neural models. By making careful choices regarding the neural architectures as well as the training procedure for NPs, it is possible to achieve desirable model behaviour, e.g. GP-like predictive uncertainties. However, these effects are mostly implicit which make NPs more challenging to interpret as a prior.&lt;/p&gt;
+
+&lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
+
+&lt;p&gt;My implementation using TensorFlow in R (together with code for the experiments above) is available in &lt;a href=&#34;https://github.com/kasparmartens/NeuralProcesses&#34; target=&#34;_blank&#34;&gt;github.com/kasparmartens/NeuralProcesses&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h3&gt;
+
+&lt;p&gt;I would like to thank Hyunjik Kim for clarifying my understanding of the NP papers, Jin Xu for sharing his results on NPs (which stimulated me to think about more complex NNs), Tanel Pärnamaa and Leon Law for their comments, and Chris Yau for being an awesome supervisor.&lt;/p&gt;
+
+&lt;div&gt;
+&lt;meta name=&#34;twitter:card&#34; content=&#34;summary&#34; /&gt;
+&lt;meta name=&#34;twitter:site&#34; content=&#34;@kasparmartens&#34; /&gt;
+&lt;meta name=&#34;twitter:title&#34; content=&#34;Neural Processes&#34; /&gt;
+&lt;meta name=&#34;twitter:description&#34; content=&#34;In this year’s ICML, some interesting work was presented on Neural Processes. In this blog post, I discuss what are Neural Processes and how they behave as a prior over functions.&#34; /&gt;
+&lt;meta name=&#34;twitter:image&#34; content=&#34;https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment3_1.gif&#34;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stinspira</title>
+      <link>/project/stinspira/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/project/stinspira/</guid>
+      <description>&lt;p&gt;Website (in Swedish) aiming to increase interest in higher education among youths. Web design, logo design and content creation. &lt;a href=&#34;http://www.stinspira.se/&#34; target=&#34;_blank&#34;&gt;stinspira.se&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automotive 3D Object Detection Without Target Domain Annotations</title>
+      <link>/publication/msc/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/msc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skalman</title>
+      <link>/project/skalman/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/project/skalman/</guid>
+      <description>&lt;p&gt;Ongoing project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SMAUGS</title>
+      <link>/project/smaugs/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/smaugs/</guid>
+      <description>&lt;p&gt;By Fredrik K. Gustafsson, Andreas Hägglund, Andreas Lundgren, Elin Näsholm, Fredrik Tormod, Hampus Andersson, Jonathan Jerner and Mattias Andreasson.&lt;/p&gt;
+&lt;p&gt;My main responsibilities: SLAM and ROS.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2D Object Detection for Autonomous Driving</title>
+      <link>/project/2dod/</link>
+      <pubDate>Sat, 02 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/2dod/</guid>
+      <description>&lt;p&gt;TensorFlow implementation of SqueezeDet, trained on the KITTI dataset. The results in the video above can obviously be improved, but because of limited computing resources (personally funded Azure VM) I did not perform any further hyperparameter tuning. Please see the GitHub repository linked below for code and further details.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Semantic Segmentation for Autonomous Driving</title>
+      <link>/project/segmentation/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/segmentation/</guid>
+      <description>&lt;p&gt;TensorFlow implementation of ENet, trained on the Cityscapes dataset. The results in the video above can obviously be improved, but because of limited computing resources (personally funded Azure VM) I did not perform any further hyperparameter tuning. Please see the GitHub repository linked below for code and further details.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ROSperino</title>
+      <link>/project/rosperino/</link>
+      <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/rosperino/</guid>
+      <description>&lt;p&gt;Features include video streaming, a web interface for manual control and SLAM using both the camera and the LiDAR separately.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Summer Internship Project</title>
+      <link>/project/zenuity/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/zenuity/</guid>
+      <description>&lt;p&gt;Deep learning demo/test platform based on a standard &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt; scale RC car. Using a web interface, one can manually control the car and run a variety of deep learning algorithms on streaming video, including the end-to-end trained system for obstacle avoidance shown in the video above.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>AA 273 Final Project</title>
+      <link>/project/aa273/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/aa273/</guid>
+      <description>&lt;p&gt;We study the SE-Sync algorithm and how it can be utilized for pose-graph SLAM. We begin by presenting a historical review of the general SLAM problem and the optimization based paradigm of pose-graph SLAM. We then proceed to carefully define the pose-graph SLAM problem and present an intuitive but still sufficiently complete treatment of the SE-Sync algorithm and how it is applied to solve the corresponding optimization problem.&lt;/p&gt;
+
+&lt;p&gt;Our main contribution is an implementation of SE-Sync in a ROS compatible SLAM system obtained by replacing the back-end optimizer of an existing open source implementation. Utilizing a realistic simulation environment, we compare its performance with the original implementation in four different mapping environments of varying size and complexity, and find that SE-Sync performs equally well or slightly better in all cases.&lt;/p&gt;
+
+&lt;p&gt;We finally conclude that application of the SE-Sync algorithm in practical SLAM systems seems promising, but that further work is necessary to determine whether or not the improvement is of significant practical importance.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CS 224N Final Project</title>
+      <link>/project/cs224n/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/cs224n/</guid>
+      <description>&lt;p&gt;Motivated by the future need of intelligent systems for vehicle-to-passenger communication in autonomous vehicles, we implement two models for automatic image caption generation based on the neural encoder-decoder framework.&lt;/p&gt;
+
+&lt;p&gt;Following an extensive hyperparameter search, our non-attention based model achieves performance on the MSCOCO dataset highly comparable to that of its reference model. Our attention based model does however fail to exceed this performance, despite the attention mechanism appearing to function as intended. This leads to a discussion of possible causes and what architecture modifications that might be needed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CS 229 Final Project</title>
+      <link>/project/cs229/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/cs229/</guid>
+      <description>&lt;p&gt;In this project, we apply reinforcement learning techniques to control an inverted double pendulum on a cart. We successfully learn a controller for balancing in a simulation environment using Q-learning with a linear function approximator, without any prior knowledge of the system at hand. We do however fail to learn a controller for the swing-up maneuver, which leads to a discussion on what might be needed to solve more complex control problems using reinforcement learning.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Summer Internship Project</title>
+      <link>/project/t/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/t/</guid>
+      <description>&lt;p&gt;Web tool for analysis and visualization of car engine sensor data for a fleet of test vehicles, developed using Python (Flask), MySQL and Bootstrap.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rasperino</title>
+      <link>/project/rasperino/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/rasperino/</guid>
+      <description>&lt;p&gt;
+    &lt;b&gt;Main hardware:&lt;/b&gt;&lt;br&gt;
+        - 1x Arduino Uno.&lt;br&gt;
+        - 1x Raspberry Pi 3 Model B.&lt;br&gt;
+        - 1x Raspberry Pi Camera Module v2.&lt;br&gt;
+        - 1x DFRobot 4WD Arduino Mobile Platform.&lt;br&gt;
+        - 2x L298 Dual H-Bridge DC Motor Controller.&lt;br&gt;
+        - 5x Sharp GP2Y0A21YK0F IR Range Sensor - 10 cm to 80 cm.&lt;br&gt;
+        - 1x Power bank.&lt;br&gt;
+    &lt;br&gt;
+
+    &lt;b&gt;Features:&lt;/b&gt;&lt;br&gt;
+        - Autonomous navigation of simple mazes.&lt;br&gt;
+        - Basic computer vision for detection of &#34;color signs&#34;.&lt;br&gt;
+        - Video streaming.&lt;br&gt;
+        - Web interface for manual control and monitoring (desktop &amp; mobile).&lt;br&gt;
+        - PD controller.&lt;br&gt;
+    &lt;br&gt;
+
+    &lt;b&gt;Functionality:&lt;/b&gt;&lt;br&gt;
+        - The Arduino reads and filters the IR sensors, implements the PD controller, controls the motor controllers via PVM and runs a state mahcine for autonomous navigation.&lt;br&gt;
+        - The Raspberry Pi acts as a webserver, streams live video and runs a basic computer vision algorithm.&lt;br&gt;
+        - The Arduino sends sensor and status data to the Raspberry Pi over serial (USB cable), which in turn sends this (and video streaming data) to the web page over WiFi.&lt;br&gt;
+        - User input is sent from the web page to the Raspberry Pi over WiFi, which in turn sends this to the Arduino over serial.
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

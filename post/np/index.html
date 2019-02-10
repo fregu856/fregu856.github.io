@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="author" content="Fredrik K. Gustafsson">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="In this year’s ICML, some interesting work was presented on Neural Processes. See the paper conditional Neural Processes and the follow-up work by the same authors on Neural Processes which was presented in the workshop.
+Neural Processes (NPs) caught my attention as they essentially are a neural network (NN) based probabilistic model which can represent a distribution over stochastic processes. So NPs combine elements from two worlds:
+ Deep Learning &ndash; neural networks are flexible non-linear functions which are straightforward to train Gaussian Processes &ndash; GPs offer a probabilistic framework for learning a distribution over a wide class of non-linear functions  Both have their advantages and drawbacks.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/np/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/projects.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/np/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@https://twitter.com/fregu856">
+  <meta property="twitter:creator" content="@https://twitter.com/fregu856">
+  
+  <meta property="og:site_name" content="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <meta property="og:url" content="/post/np/">
+  <meta property="og:title" content="Neural Processes as distributions over functions | Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <meta property="og:description" content="In this year’s ICML, some interesting work was presented on Neural Processes. See the paper conditional Neural Processes and the follow-up work by the same authors on Neural Processes which was presented in the workshop.
+Neural Processes (NPs) caught my attention as they essentially are a neural network (NN) based probabilistic model which can represent a distribution over stochastic processes. So NPs combine elements from two worlds:
+ Deep Learning &ndash; neural networks are flexible non-linear functions which are straightforward to train Gaussian Processes &ndash; GPs offer a probabilistic framework for learning a distribution over a wide class of non-linear functions  Both have their advantages and drawbacks.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-08-10T00:00:00&#43;02:00">
+  
+  <meta property="article:modified_time" content="2018-08-10T00:00:00&#43;02:00">
+  
+
+  
+
+  <title>Neural Processes as distributions over functions | Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Fredrik K. Gustafsson</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>About</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#coursework">
+            
+            <span>Coursework</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#reading">
+            
+            <span>Reading</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Neural Processes as distributions over functions</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-08-10 00:00:00 &#43;0200 CEST" itemprop="datePublished dateModified">
+      Aug 10, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Fredrik K. Gustafsson">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    14 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Neural%20Processes%20as%20distributions%20over%20functions&amp;url=%2fpost%2fnp%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2fnp%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fnp%2f&amp;title=Neural%20Processes%20as%20distributions%20over%20functions"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fnp%2f&amp;title=Neural%20Processes%20as%20distributions%20over%20functions"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Neural%20Processes%20as%20distributions%20over%20functions&amp;body=%2fpost%2fnp%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>In this year’s ICML, some interesting work was presented on Neural Processes. See the paper <a href="https://arxiv.org/abs/1807.01613" target="_blank">conditional Neural Processes</a> and the follow-up work by the same authors on <a href="https://arxiv.org/abs/1807.01622" target="_blank">Neural Processes</a> which was presented in the workshop.</p>
+
+<p>Neural Processes (NPs) caught my attention as they essentially are a neural network (NN) based probabilistic model which can represent a distribution over stochastic processes. So NPs combine elements from two worlds:</p>
+
+<ul>
+<li>Deep Learning &ndash; neural networks are flexible non-linear functions which are straightforward to train</li>
+<li>Gaussian Processes &ndash; GPs offer a probabilistic framework for learning a distribution over a wide class of non-linear functions</li>
+</ul>
+
+<p>Both have their advantages and drawbacks. In the limited data regime, GPs are preferable due to their probabilistic nature and ability to capture uncertainty. This differs from (non-Bayesian) neural networks which represent a single function rather than a distribution over functions. However the latter might be preferable in the presence of large amounts of data as training NNs is computationally much more scalable than inference for GPs. Neural Processes aim to combine the best of these two worlds.</p>
+
+<p>I found the idea behind NPs interesting, but I felt I was lacking intuition and a deeper understanding how NPs behave as a prior over functions. I believe, often the best way towards understanding something is implementing it, empirically trying it out on simple problems, and finally explaining this to someone else. So here is my attempt at reviewing and discussing NPs.</p>
+
+<p>Before reading my post, I recommend the reader to take a look at both original papers. Even though here I discuss <a href="https://arxiv.org/abs/1807.01622" target="_blank">[NPs]</a>, you might find it easier to start with <a href="https://arxiv.org/abs/1807.01613" target="_blank">[conditional NPs]</a> which are essentially a non-probabilistic version of NPs.</p>
+
+<h3 id="what-is-a-neural-process">What is a Neural Process?</h3>
+
+<p>The NP is a neural network based approach to represent a distribution over functions. The broad idea behind how the NP model is set up and how it is trained is illustrated in this schema:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/schema1.png" alt="" /></p>
+
+<p>Given a set of observations $(x_i, y_i)$, they are split into two sets: &ldquo;context points&rdquo; and &ldquo;target points&rdquo;. Given the pairs $(x_c, y_c)$ for $c = 1, …, C$ in the context set and given unseen inputs $x_t^{\ast}$ for $t = 1, …, T$ in the target set, our goal is to predict the corresponding function values $y_t^{\ast}$. We can think of NPs as if they were modelling the target set conditional on the context. Information flows from the context set (on the left) to making new predictions on the target set (on the right) via the latent space $z$. The latter is essentially a finite-dimensional embedding of mappings from x to y. The fact that $z$ is a random variable makes NP a probabilistic model and lets us capture uncertainty over functions. Once we have trained the model, we can use our (approximate) posterior distribution of $z$ as a prior to make predictions at test time.</p>
+
+<p>At first sight, the split into context and target sets may look like the standard train and test split of the data, but this is not the case, as the target set is directly used in training the NP model &ndash; our (probabilistic) loss function is explicitly defined over the target set. This will allow the model to avoid overfitting and achieve better out-of-sample generalisation. In practice, we would repeatedly split our training data into randomly chosen context and target sets to obtain good generalisation.</p>
+
+<p>Let us consider two scenarios:</p>
+
+<ol>
+<li>Inferring a distribution over functions, based on a single data set</li>
+<li>Inferring a distribution over functions, when we have access to multiple data sets which we believe to be related in some way</li>
+</ol>
+
+<p>The first scenario corresponds to a standard (probabilistic) supervised learning setup: Given a data set of $N$ samples, i.e. given $(x_i, y_i)$ for $i = 1, … ,N$, and assuming there is an underlying true $f$ which has generated the $y_i = f(x_i)$ values, our goal is to learn the posterior distribution over $f$ and use it to get predictive densities at test points $f(x^{\ast})$.</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/two_scenarios.png" alt="" /></p>
+
+<p>The second scenario can be seen from the meta-learning viewpoint. Given $D$ data sets $d = 1, …, D$, each consisting of $N_d$ pairs $(x_i^{(d)}, y_i^{(d)})$, if we assume that every data set $d = 1, …, D$ has its own underlying function $f_d$ which has generated the values $y_i = f_d(x_i)$, we might want to learn the posterior of every $f_d$ as well as generalise to a new data set $d^{\ast}$. The latter is especially useful when every data set has only a small number of observations. This information sharing is achieved by specifying that there exists a shared process which underlies all functions $f_d$. For example, in the context of GPs, one can assume that $f_d \sim \mathcal{GP}$ share kernel hyperparameters. Having learned the shared process, when given a new data set $d^{\ast}$, one can use the posterior over functions as a prior and carry out few-shot function regression.</p>
+
+<p>The reason I wanted to highlight these two scenarios is the following. Usually, in the most standard setting, GP-regression is carried out under the first scenario. This tends to work well even when $N$ is small. However, the motivation behind NPs seems to be mainly coming from the meta-learning setup &ndash; in this setting the latent $z$ can be thought of as a mechanism to share information across different data sets. Nevertheless, having elements of a probabilistic model, NPs should be applicable in both scenarios. Below we will investigate how NPs behave when trained only on a single data set, as well as the second setup where we have access to a large number of function draws in order to train the NP.</p>
+
+<h3 id="how-are-nps-implemented">How are NPs implemented?</h3>
+
+<p>Here is a more detailed schema of the NP generative model:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/schema2.png" alt="" /></p>
+
+<p>Going through this generative mechanism step-by-step:</p>
+
+<ul>
+<li>First, the context points $(x_c, y_c)$ are mapped through a NN $h$ to obtain a latent representation $r_c$.</li>
+<li>Then, the vectors $r_c$ are aggregated (in practice: averaged) to obtain a single value $r$ (which has the same dimensionality as every $r_c$).</li>
+<li>This $r$ is used to parametrise the distribution of $z$, i.e. $p(z | x_{1:C}, y_{1:C}) = \mathcal{N}(\mu_z( r ), \sigma_z^2( r ))$</li>
+<li>Finally, to obtain a prediction at a target $x_t^{\ast}$, we sample $z$ and concatenate this with $x_t^{\ast}$, and map $(z, x_t^{\ast})$ through a NN $g$ to obtain a sample from the predictive distribution of $y_t^{\ast}$.</li>
+</ul>
+
+<p>Inference for the NP is carried out in the variational inference framework. Specifically, we introduce two approximate distributions:</p>
+
+<ul>
+<li>$q(z | \text {context})$ to approximate the conditional prior $p(z | \text {context})$</li>
+<li>$q(z | \text {context}, \text {target})$ to approximate the respective $p(z | \text {context}, \text {target})$
+where we have denoted $\text {context} := (x_{1:C}, y_{1:C})$ and $\text {target} := (x_{1:T}^{\ast}, y_{1:T}^{\ast})$.</li>
+</ul>
+
+<p>The approximate posterior $q(z | \cdot)$ is chosen to have the specific form as illustrated in the inference model diagram below. That is, we use the same $h$ to map both the context set as well as the target set to obtain the aggregated $r$, which in turn is mapped to $\mu_z$ and $\sigma_z$. These parametrise the approximate posterior $q(z | \cdot) = \mathcal{N}(\mu_z, \sigma_z)$.</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/schema3.png" alt="" /></p>
+
+<p>The variational lower bound</p>
+
+<p>$$\text {ELBO} = \mathbb{E}_{q(z | \text {context}, \text {target})} \left[ \sum_{t=1}^T \log p(y_t^{\ast} | z, x_t^{\ast}) + \log \frac{q(z | \text {context})}{q(z | \text {context}, \text {target})} \right]$$</p>
+
+<p>contains two terms. The first is the expected log-likelihood over the target set. This is evaluated by first sampling $z \sim q(z | \text {context}, \text {target})$, as indicated on the left part of the inference diagram, and then using these $z$ values for predictions on the target set, as on the right part of the diagram. The second term in ELBO has a regularising effect &ndash; it is the negative KL divergence between $q(z | \text {context}, \text {target})$ and $q(z | \text {context})$. Note that this differs slightly from the most commonly encountered variational inference setup with $\text{KL}(q || p)$, where $p$ would be the prior $p(z)$. This is because in our generative model, we have specified a conditional prior $p(z | \text {context})$ instead of directly specifying $p(z)$. As this conditional prior depends on $h$, we do not have access to its exact value and instead need to use an approximate $q(z | \text {context})$.</p>
+
+<h3 id="experiments">Experiments</h3>
+
+<h4 id="np-as-a-prior-over-functions">NP as a prior over functions</h4>
+
+<p>Let&rsquo;s start by exploring the behaviour of NPs as a prior over functions, i.e. in the setting where we haven’t observed any data and haven’t yet trained the model. Having initialised the weights (here I initialised them independently from a standard normal), we can sample $z \sim \mathcal{N}(0, I)$ and generate from the prior predictive distribution over a grid of $x^{\ast}$ values to plot the functions.</p>
+
+<p>As opposed to GPs which have interpretable kernel hyperparameters, the NP prior is much less explicit. There are various architectural choices involved (such as how many hidden layers to use, what activation functions to use etc) which all implicitly affect our prior distribution over the function space.</p>
+
+<p>For example, when using sigmoid activations and varying the dimensionality of $z$ in $\{1, 2, 4, 8\}$, typical draws from the (randomly initialised) NP prior may look as follows:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/draws_from_prior.png" alt="" /></p>
+
+<p>But when deciding to use the ReLU activations instead, we have placed the prior probability mass over a different set of functions:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/draws_from_prior_relu.png" alt="" /></p>
+
+<h4 id="training-np-on-a-small-data-set">Training NP on a small data set</h4>
+
+<p>Suppose all we have is the following five data points:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/observed_data.png" alt="" /></p>
+
+<p>The training procedure for NPs will involve separating the context set and target set. One option is to use a fixed size context set, another is to cover a wider range of scenarios by training using varying context set sizes (e.g. at every iteration we could randomly draw the number of context points from the set $\{1, 2, 3, 4\}$).
+Once we have trained the model on these random subsets, we use the trained model as our prior and now condition on all of our data (i.e. we take all these five points to be the context points) and plot draws from the posterior.
+The animation below illustrates how the predictive distribution of the NP changes as it is being trained:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment1.gif" alt="" /></p>
+
+<p>So the NP seems to have successfully learned a distribution over mappings which go through all of our five points. Now let&rsquo;s explore how well it generalises to other mappings, i.e. what happens if we use this trained NP for prediction on a different context set. Here is the posterior when conditioning on the red points instead:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment1.png" alt="" /></p>
+
+<p>Not very surprisingly, the flexible NP model which was trained only on subsets of the five blue points, doesn’t generalise to a different set of context points. To get a model which would generalise better, we could consider (pre)training the NP on a larger set of functions.</p>
+
+<h4 id="training-nps-on-a-small-class-of-functions">Training NPs on a small class of functions</h4>
+
+<p>So far, we have explored the training scenario using a single (fixed) data set. To have an NP which would generalise similarly to GPs, it seems that we should train it on a much larger class of functions. But before that, let&rsquo;s explore how NPs behave in a simpler setting.</p>
+
+<p>That is, let&rsquo;s consider a toy scenario, where instead of a single function we observe a small class of functions. Specifically, let&rsquo;s consider all functions of the form $a \cdot \sin(x)$ where $a \in [-1, 1]$.</p>
+
+<p>It would be interesting to see:</p>
+
+<ol>
+<li>Is the NP able to capture this class of functions</li>
+<li>Will it generalise beyond this class of functions</li>
+</ol>
+
+<p>Let&rsquo;s use the following training procedure:</p>
+
+<ul>
+<li>Draw $a$ uniformly $a \sim U(-2, 2)$</li>
+<li>Draw $x_i \sim U(-3, 3)$</li>
+<li>Define $y_i := f(x_i)$, where $f(x) = a \sin(x)$</li>
+<li>Divide pairs $(x_i, y_i)$ randomly into context and target sets and perform an optimisation step</li>
+<li>Repeat</li>
+</ul>
+
+<p>Here we used a two-dimensional $z$ so that we could visualise what the model has learned. Having trained the NP, we visualised the function draws corresponding to various $(z_1, z_2)$ values on a grid, as shown below:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment2_latent_space.png" alt="" /></p>
+
+<p>It seems that the direction from left-to-right essentially encodes our parameter $a$.  Here is another visualisation of the same effect, where we vary one of the latent dimensions (either $z_1$ or $z_2$):</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment2.gif" alt="" /></p>
+
+<p>Note that above we did not use any context set at prediction time, but simply pre-specified various $(z_1, z_2)$ values. Now let&rsquo;s look into using this trained model for predicting.</p>
+
+<p>Taking the context set to be the point $(0, 0)$, shown on the left, will result in quite a broad posterior which looks quite nice, covering functions which resemble $a \sin(x)$ for a certain range of values of $a$ (but note that not for all $a \in [-2, 2]$ it was trained on).
+<img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment2_pred.png" alt="" /></p>
+
+<p>Adding a second context point $(1, \sin(1))$ will result in the posterior shown in the middle. The posterior has changed compared to the previous plot, e.g. functions with a negative values of $a$ are not included any more, but none of the functions goes through the given point. When increasing the number of context points which follow $f(x) = 1.0 \sin(x)$ then the NP posterior will become reasonably close to the true underlying function, as shown on the right.</p>
+
+<p>Now let&rsquo;s explore how well the trained NP will generalise beyond the class of functions it was trained on. Specifically, let&rsquo;s explore how it will generalise to the following functions $2.5 \sin(x)$ and $| \sin(x) |$. The first requires some extrapolation from the training data. The second one has a similar shape to the functions in training set but unlike the rest its values are non-negative.</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment2_misspecification.png" alt="" /></p>
+
+<p>As seen from the plots, the NP has not been able to generalise beyond what it had seen during training. In both cases, the model behaviour is somewhat expected (e.g. on the left, $a=2$ corresponds to the best fit within the class of functions the model has seen). However, note that there is not much uncertainty in the NP predictive distributions. Of course over-confident predictions are not specific to NPs, however their black-box nature may make them more difficult to diagnose, compared to more interpretable models.</p>
+
+<h4 id="training-nps-on-functions-drawn-from-gps">Training NPs on functions drawn from GPs</h4>
+
+<p>Based on experiments so far, it seems that NPs are not out-of-the-box replacements for GPs, as the latter have more desirable properties regarding posterior uncertainty. In order to achieve a similar behaviour with an NP, we could train it using a large number of draws from a GP prior. We could do it as follows:</p>
+
+<ul>
+<li>Draw $f \sim \mathcal{GP}(0, k_{\theta}(\cdot))$</li>
+<li>Draw $x_i \sim U(-3, 3)$</li>
+<li>Define $y_i := f(x_i)$</li>
+<li>Divide pairs $(x_i, y_i)$ randomly into context and target sets and perform an optimisation step</li>
+<li>Repeat</li>
+</ul>
+
+<p>The above procedure can be carried out with fixed kernel hyperparameters $\theta$ or a mixture of different values. The RBF (or squared exponential) kernel has two parameters: one controls the variance (essentially the range of function values) and the other “wigglyness”. The latter is called the lengthscale parameter and its effect is illustrated here, by drawing functions from the GP prior with lengthscale values in $\{1, 2, 3\}$:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/GP_draws.png" alt="" /></p>
+
+<p>To cover a variety of functions in the NP training, we could specify a prior $p(\theta)$ where to draw samples from. In this toy experiment, I varied lengthscale, as above, uniformly in $\{1, 2, 3\}$. As previously, choosing the latent $z$-space to be 2D, we can visualise what the NP has learned:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment3.gif" alt="" /></p>
+
+<p>This looks pretty cool! The NP has learned the two-dimensional $z$ space where we can smoothly interpolate between different functions.</p>
+
+<p>Now let&rsquo;s explore the predictions we get using this NP, and let&rsquo;s see how its behaviour compares to a Gaussian Process posterior. Using an increasing number of context points $\{3, 5, 11\}$, let&rsquo;s consider two functions:</p>
+
+<p>First, using a relatively smooth function $f(x) = \sin(0.5x)$, the predictions look as follows:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment3_pred2.png" alt="" /></p>
+
+<p>Second, let&rsquo;s consider $f(x) = \sin(1.5x)$:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment3_pred1.png" alt="" /></p>
+
+<p>In the first case, the NP predictions follow the observations quite closely, whereas in the second case, with three observations it looks good, but when given more points it hasn&rsquo;t been able to capture the pattern.
+This effect is quite likely due to our architectural choices to use quite small NNs and a low-dimensional $z$. In order to improve the model behaviour so that it would resemble GPs more closely, we could consider applying the following changes:</p>
+
+<ul>
+<li>Using only a 2D $z$-space might be quite restrictive in what we are able to learn, we could consider using a higher-dimensional $z$. And similarly for $r$.</li>
+<li>We could consider using a larger number of hidden units in NNs $h$ and $g$, and consider making them deep.</li>
+<li>Observing a larger number of function draws as well as a larger variety of functions (i.e. more variability in GP kernel hyperparameters) during the training phase could lead to better generalisation.</li>
+</ul>
+
+<p>Such changes can indeed lead to more desirable results.
+For example, having increased $\text {dim}( r )$ to 32 and $\text {dim}(z)$ to 4 together with a larger number of hidden units in $h$ and $g$, we observe much nicer behaviour:</p>
+
+<p><img src="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment4.png" alt="" /></p>
+
+<h3 id="conclusions">Conclusions</h3>
+
+<p>Even though Neural Processes combine elements from both NNs and GP-like Bayesian models to capture distributions over functions, on this spectrum NPs lie closer to neural models. By making careful choices regarding the neural architectures as well as the training procedure for NPs, it is possible to achieve desirable model behaviour, e.g. GP-like predictive uncertainties. However, these effects are mostly implicit which make NPs more challenging to interpret as a prior.</p>
+
+<h3 id="implementation">Implementation</h3>
+
+<p>My implementation using TensorFlow in R (together with code for the experiments above) is available in <a href="https://github.com/kasparmartens/NeuralProcesses" target="_blank">github.com/kasparmartens/NeuralProcesses</a>.</p>
+
+<h3 id="acknowledgements">Acknowledgements</h3>
+
+<p>I would like to thank Hyunjik Kim for clarifying my understanding of the NP papers, Jin Xu for sharing his results on NPs (which stimulated me to think about more complex NNs), Tanel Pärnamaa and Leon Law for their comments, and Chris Yau for being an awesome supervisor.</p>
+
+<div>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@kasparmartens" />
+<meta name="twitter:title" content="Neural Processes" />
+<meta name="twitter:description" content="In this year’s ICML, some interesting work was presented on Neural Processes. In this blog post, I discuss what are Neural Processes and how they behave as a prior over functions." />
+<meta name="twitter:image" content="https://raw.githubusercontent.com/kasparmartens/NeuralProcesses/master/fig/experiment3_1.gif"
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      Copyright &copy; Fredrik K. Gustafsson 2019 
+
+      <br>
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> &middot; Based on the modified theme by <a href="https://github.com/kasparmartens/website" target="_blank" rel="noopener">Kaspar Märtens</a>
+
+
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

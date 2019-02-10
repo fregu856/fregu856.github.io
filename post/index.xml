@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2019</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Neural Processes as distributions over functions</title>
+      <link>/post/np/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/post/np/</guid>
+      <description>In this year’s ICML, some interesting work was presented on Neural Processes. See the paper conditional Neural Processes and the follow-up work by the same authors on Neural Processes which was presented in the workshop.
+Neural Processes (NPs) caught my attention as they essentially are a neural network (NN) based probabilistic model which can represent a distribution over stochastic processes. So NPs combine elements from two worlds:
+ Deep Learning &amp;ndash; neural networks are flexible non-linear functions which are straightforward to train Gaussian Processes &amp;ndash; GPs offer a probabilistic framework for learning a distribution over a wide class of non-linear functions  Both have their advantages and drawbacks.</description>
+    </item>
+    
+    <item>
+      <title>News</title>
+      <link>/post/news/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
+      
+      <guid>/post/news/</guid>
+      <description>[Nov 24, 2018] I was awarded the Tryggve Holm medal for &amp;ldquo;outstanding student achievements&amp;rdquo; during my time at Linköping University.
+ [Sep 28, 2018] New project: PyTorch implementation of DeepLabV3, see GitHub repo and Youtube video for further details.
+ [Sep 21, 2018] The code for 3D object detection used in my MSc thesis has been uploaded to GitHub.
+ [Sep 20, 2018] I have created a GitHub repository for posting summaries of interesting papers that I read.</description>
+    </item>
+    
+  </channel>
+</rss>

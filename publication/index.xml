@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</title>
+    <link>/publication/</link>
+    <description>Recent content in Publications on Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2019</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automotive 3D Object Detection Without Target Domain Annotations</title>
+      <link>/publication/msc/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/msc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
