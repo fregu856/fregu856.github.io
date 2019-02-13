@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Test</title>
+      <link>/post/blog1/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/post/blog1/</guid>
+      <description>In this year’s ICML, some interesting work was presented on Neural Processes. See the paper conditional Neural Processes and the follow-up work by the same authors on Neural Processes which was presented in the workshop.
+Neural Processes (NPs) caught my attention as they essentially are a neural network (NN) based probabilistic model which can represent a distribution over stochastic processes. So NPs combine elements from two worlds:
+ Deep Learning &amp;ndash; neural networks are flexible non-linear functions which are straightforward to train Gaussian Processes &amp;ndash; GPs offer a probabilistic framework for learning a distribution over a wide class of non-linear functions  Both have their advantages and drawbacks.</description>
+    </item>
+    
+    <item>
       <title>Neural Processes as distributions over functions</title>
       <link>/post/np/</link>
       <pubDate>Fri, 10 Aug 2018 00:00:00 +0200</pubDate>
