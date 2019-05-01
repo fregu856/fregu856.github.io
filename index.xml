@@ -343,7 +343,7 @@ plt.show()
 &lt;p&gt;&lt;img src=&#34;/img/19apr/7.png&#34; alt=&#34;Plot of the trajectory of the model parameters during training&#34; /&gt;
 &lt;img src=&#34;/img/19apr/8.png&#34; alt=&#34;Zoomed plot of the trajectory of the model parameters during training&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Feel free to &lt;a href=&#34;/#contact&#34;&gt;contact&lt;/a&gt; me or post a comment below if you have any questions or comments. In the next blog post, we&amp;rsquo;ll do nonlinear curve-fitting using feed-forward neural networks TEST.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Feel free to &lt;a href=&#34;/#contact&#34;&gt;contact&lt;/a&gt; me or post a comment below if you have any questions or comments. In the next blog post, we&amp;rsquo;ll do nonlinear curve-fitting using feed-forward neural networks.&lt;/em&gt;&lt;/p&gt;
 
 &lt;!-- ```console
 num train batches per epoch: 6
