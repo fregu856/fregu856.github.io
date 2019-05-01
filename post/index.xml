@@ -13,25 +13,13 @@
     
     
     <item>
-      <title>Test</title>
-      <link>/post/blog1/</link>
-      <pubDate>Mon, 11 Feb 2019 00:00:00 +0100</pubDate>
+      <title>Getting started with PyTorch:&lt;br&gt; 1 - Linear regression</title>
+      <link>/post/19apr/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0200</pubDate>
       
-      <guid>/post/blog1/</guid>
-      <description>In this year’s ICML, some interesting work was presented on Neural Processes. See the paper conditional Neural Processes and the follow-up work by the same authors on Neural Processes which was presented in the workshop.
-Neural Processes (NPs) caught my attention as they essentially are a neural network (NN) based probabilistic model which can represent a distribution over stochastic processes. So NPs combine elements from two worlds:
- Deep Learning &amp;ndash; neural networks are flexible non-linear functions which are straightforward to train Gaussian Processes &amp;ndash; GPs offer a probabilistic framework for learning a distribution over a wide class of non-linear functions  Both have their advantages and drawbacks.</description>
-    </item>
-    
-    <item>
-      <title>Neural Processes as distributions over functions</title>
-      <link>/post/np/</link>
-      <pubDate>Fri, 10 Aug 2018 00:00:00 +0200</pubDate>
-      
-      <guid>/post/np/</guid>
-      <description>In this year’s ICML, some interesting work was presented on Neural Processes. See the paper conditional Neural Processes and the follow-up work by the same authors on Neural Processes which was presented in the workshop.
-Neural Processes (NPs) caught my attention as they essentially are a neural network (NN) based probabilistic model which can represent a distribution over stochastic processes. So NPs combine elements from two worlds:
- Deep Learning &amp;ndash; neural networks are flexible non-linear functions which are straightforward to train Gaussian Processes &amp;ndash; GPs offer a probabilistic framework for learning a distribution over a wide class of non-linear functions  Both have their advantages and drawbacks.</description>
+      <guid>/post/19apr/</guid>
+      <description>All code found in this blog post is also available on Google Colab where it can be executed directly in the browser.
+When I first got interested in deep learning a couple of years ago, I started out using TensorFlow. In early 2018 I then decided to switch to PyTorch, a decision that I&amp;rsquo;ve been very happy with ever since. Today, the difference between the two frameworks is probably quite small in practice (and both are extensively used by researchers in the field), but I personally still find PyTorch more convenient to use.</description>
     </item>
     
     <item>
@@ -40,10 +28,10 @@ Neural Processes (NPs) caught my attention as they essentially are a neural netw
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Nov 24, 2018] I was awarded the Tryggve Holm medal for &amp;ldquo;outstanding student achievements&amp;rdquo; during my time at Linköping University.
- [Sep 28, 2018] New project: PyTorch implementation of DeepLabV3, see GitHub repo and Youtube video for further details.
- [Sep 21, 2018] The code for 3D object detection used in my MSc thesis has been uploaded to GitHub.
- [Sep 20, 2018] I have created a GitHub repository for posting summaries of interesting papers that I read.</description>
+      <description>[Apr 25, 2019] I have posted the first part in a short series of blog posts on how to get started with PyTorch and deep learning.
+ [Nov 24, 2018] I was awarded the Tryggve Holm medal for &amp;ldquo;outstanding student achievements&amp;rdquo; during my time at Linköping University.
+ [Sep 28, 2018] New project: PyTorch implementation of DeepLabV3, see GitHub repository and Youtube video for further details.
+ [Sep 21, 2018] The code for 3D object detection used in my MSc thesis has been uploaded to GitHub.</description>
     </item>
     
   </channel>

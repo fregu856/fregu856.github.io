@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="author" content="Fredrik K. Gustafsson">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="All code found in this blog post is also available on Google Colab where it can be executed directly in the browser.
+When I first got interested in deep learning a couple of years ago, I started out using TensorFlow. In early 2018 I then decided to switch to PyTorch, a decision that I&rsquo;ve been very happy with ever since. Today, the difference between the two frameworks is probably quite small in practice (and both are extensively used by researchers in the field), but I personally still find PyTorch more convenient to use.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/19apr/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/projects.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-134427131-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/19apr/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@https://twitter.com/fregu856">
+  <meta property="twitter:creator" content="@https://twitter.com/fregu856">
+  
+  <meta property="og:site_name" content="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <meta property="og:url" content="/post/19apr/">
+  <meta property="og:title" content="Getting started with PyTorch:&lt;br&gt; 1 - Linear regression | Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <meta property="og:description" content="All code found in this blog post is also available on Google Colab where it can be executed directly in the browser.
+When I first got interested in deep learning a couple of years ago, I started out using TensorFlow. In early 2018 I then decided to switch to PyTorch, a decision that I&rsquo;ve been very happy with ever since. Today, the difference between the two frameworks is probably quite small in practice (and both are extensively used by researchers in the field), but I personally still find PyTorch more convenient to use.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-04-25T00:00:00&#43;02:00">
+  
+  <meta property="article:modified_time" content="2019-04-25T00:00:00&#43;02:00">
+  
+
+  
+
+  <title>Getting started with PyTorch:&lt;br&gt; 1 - Linear regression | Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Fredrik K. Gustafsson</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>About</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Blog Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#coursework">
+            
+            <span>Coursework</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#reading">
+            
+            <span>Reading</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/19apr/7.png" class="article-banner-small" itemprop="image">
+  
+</div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Getting started with PyTorch:<br> 1 - Linear regression</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2019-04-25 00:00:00 &#43;0200 CEST" itemprop="datePublished dateModified">
+      Apr 25, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Fredrik K. Gustafsson">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    7 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/19apr/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p><em>All code found in this blog post is also available on <a href="https://colab.research.google.com/drive/1UfqfzEvaq18a2b8Y7kHTU8iAfOVzbF6t" target="_blank">Google Colab</a> where it can be executed directly in the browser.</em></p>
+
+<p>When I first got interested in deep learning a couple of years ago, I started out using <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a>. In early 2018 I then decided to switch to <a href="https://pytorch.org/" target="_blank">PyTorch</a>, a decision that I&rsquo;ve been very happy with ever since. Today, the difference between the two frameworks is probably quite small in practice (and both are extensively used by researchers in the field), but I <em>personally</em> still find PyTorch more convenient to use.</p>
+
+<p>In a short series of blog posts I thus intend to try and help anyone interested in the field to get started with PyTorch and deep learning, by providing (hopefully) clearly written code examples.</p>
+
+<p>In this first post, we&rsquo;ll start with perhaps the most simple example problem there is and try to fit a straight line to some noisy data points. We will however do so using <a href="http://ruder.io/optimizing-gradient-descent/index.html#gradientdescentvariants" target="_blank">mini-batch Stochastic Gradient Descent (SGD)</a> and use the same basic code structure that can be used also for significantly more interesting problems, such as <a href="https://github.com/fregu856/deeplabv3" target="_blank">street-scene semantic segmentation</a> or <a href="https://github.com/fregu856/3DOD_thesis" target="_blank">automotive 3D object detection</a>.</p>
+
+<p>Essentially, we need to specify just three things: a dataset class, a model class and a training loop.</p>
+
+<h3 id="dataset">Dataset</h3>
+
+<p>For our dataset class, we need to specify a constructor and two member functions.</p>
+
+<p>In the constructor <code>__init__</code>, we create a synthetic dataset $D = \{(x_1, y_1), \dots, (x_N, y_N)\}$ by drawing $x_i$ uniformly from an interval and adding Gaussian noise to a given straight line:
+\[
+x_i \sim U[-3, 3], \quad i = 1, \dots, N,
+\]
+\[
+y_i = \bar{k}x_i + \bar{m} + \epsilon_i, \quad \epsilon_i \sim \mathcal{N}(0, 0.5), \quad i = 1, \dots, N.
+\]</p>
+
+<p>We also assign the number of examples, $N$, to a member variable so that it can be returned by <code>__len__</code>.</p>
+
+<p>Finally, in <code>__getitem__</code> we return the corresponding example $(x_i, y_i)$ given an index $i \in \{1, \dots, N\}$.</p>
+
+<pre><code class="language-python">
+import torch
+import torch.utils.data
+
+import numpy as np
+
+import matplotlib.pyplot as plt
+
+class LinearRegressionDataset(torch.utils.data.Dataset):
+    def __init__(self, k, m, N):
+        self.X = np.random.uniform(low=-3.0, high=3.0, size=(N, )) # (shape: (N, ))
+
+        epsilon = np.random.normal(loc=0.0, scale=0.5, size=(N, )) # (shape: (N, ))
+
+        self.Y = k*self.X + m + epsilon # (shape: (N, ))
+
+        plt.figure(figsize=(8, 6))
+        plt.plot(self.X, self.Y, &quot;^k&quot;, label=&quot;Training data examples&quot;)
+        plt.plot([-3, 3], [k*(-3)+m, k*3+m], &quot;r&quot;, label=&quot;True straight line&quot;)
+        plt.legend()
+        plt.ylabel(&quot;y&quot;)
+        plt.xlabel(&quot;x&quot;)
+        plt.show()
+
+        self.num_examples = N
+
+        self.X = self.X.astype(np.float32)
+        self.Y = self.Y.astype(np.float32)
+
+    def __getitem__(self, index):
+        x = self.X[index]
+
+        y = self.Y[index]
+
+        return (x, y)
+
+    def __len__(self):
+        return self.num_examples
+
+</code></pre>
+
+<p>In <code>__init__</code>, we also plot our created dataset $D = \{(x_1, y_1), \dots, (x_N, y_N)\}$ together with the true straight line $y = \bar{k}x + \bar{m}$. For $\bar{k} = 3$, $\bar{m}= 5$, $N= 50$, we get the following plot:
+<img src="/img/19apr/1.png" alt="Plot of our training dataset" /></p>
+
+<h3 id="model">Model</h3>
+
+<p>For our model class, we need to specify a constructor and one member function.</p>
+
+<p>In the constructor <code>__init__</code>, we create our two model parameters $k, m$ and assign them to member variables. These are then used in <code>forward</code> to output a prediction $\hat{y} = kx + m$ for a given input $x$.</p>
+
+<pre><code class="language-python">
+import torch.nn as nn
+
+class LinearRegressionModel(nn.Module):
+    def __init__(self):
+        super(LinearRegressionModel, self).__init__()
+
+        self.k = nn.Parameter(torch.zeros(1)) # (shape: (1))
+        self.m = nn.Parameter(torch.zeros(1)) # (shape: (1))
+
+    def forward(self, x):
+        # (x has shape: (batch_size))
+
+        y_hat = self.k*x + self.m # (shape: (batch_size))
+
+        return y_hat
+
+</code></pre>
+
+<h3 id="training-loop">Training loop</h3>
+
+<p>To train our model on the dataset using SGD, we create instances of <code>LinearRegressionDataset</code> and <code>LinearRegressionModel</code>, we create the data loader <code>train_loader</code> (which will repeatedly call <code>LinearRegressionDataset.__getitem__</code> to create mini-batches), and create the SGD optimizer object <code>optimizer</code>.</p>
+
+<p>We then iterate through the entire dataset with mini-batches of size <code>batch_size</code>, and for each mini-batch we compute the L2 loss $L(k, m) = \frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2,$ we compute the gradients of this mini-batch loss with respect to our model parameters, and finally use these gradients in the SGD step to update the parameters.</p>
+
+<p>One such iteration through the dataset is called an epoch, and we repeat this process <code>num_epochs</code> times.</p>
+
+<pre><code class="language-python">
+from torch.autograd import Variable
+
+num_epochs = 25
+learning_rate = 0.01
+batch_size = 8
+
+k = 3
+m = 5
+N = 50
+
+train_dataset = LinearRegressionDataset(k=k, m=m, N=N)
+
+num_train_batches = int(len(train_dataset)/batch_size)
+print (&quot;num train batches per epoch: %d&quot; % num_train_batches)
+
+train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
+                                           batch_size=batch_size, shuffle=True,
+                                           num_workers=1)
+
+model = LinearRegressionModel()
+model = model.cuda()
+model.train() # (set in training mode, this affects BatchNorm and dropout)
+
+optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
+
+epoch_losses_train = []
+for epoch in range(num_epochs):
+    print (&quot;###########################&quot;)
+    print (&quot;epoch: %d/%d&quot; % (epoch+1, num_epochs))
+
+    batch_losses = []
+    for step, (x, y) in enumerate(train_loader):
+        x = Variable(x).cuda() # (shape: (batch_size))
+        y = Variable(y).cuda() # (shape: (batch_size))
+
+        y_hat = model(x) # (shape: (batch_size))
+
+        loss = torch.mean(torch.pow(y - y_hat, 2))
+
+        # optimization step:
+        optimizer.zero_grad() # (reset gradients)
+        loss.backward() # (compute gradients)
+        optimizer.step() # (perform the SGD update of the model parameters)
+
+        # store the loss value:
+        loss_value = loss.data.cpu().numpy()
+        batch_losses.append(loss_value)
+
+    epoch_loss = np.mean(batch_losses)
+    epoch_losses_train.append(epoch_loss)
+    print (&quot;train loss: %g&quot; % epoch_loss)
+
+plt.figure(figsize=(8, 6))
+plt.plot(epoch_losses_train, &quot;^k&quot;)
+plt.plot(epoch_losses_train, &quot;k&quot;)
+plt.ylabel(&quot;Loss&quot;)
+plt.xlabel(&quot;Epoch&quot;)
+plt.title(&quot;Loss per epoch&quot;)
+plt.show()
+
+print (&quot;k, true value: %g, estimated value: %g&quot; % (k, model.k))
+print (&quot;m, true value: %g, estimated value: %g&quot; % (m, model.m))
+
+plt.figure(figsize=(8, 6))
+plt.plot(train_dataset.X, train_dataset.Y, &quot;^k&quot;, label=&quot;Training data examples&quot;)
+plt.plot([-3, 3], [k*(-3)+m, k*3+m], &quot;r&quot;, label=&quot;True straight line&quot;)
+plt.plot([-3, 3], [model.k*(-3)+model.m, model.k*3+model.m], &quot;b&quot;,
+         label=&quot;Estimated straight line&quot;)
+plt.legend()
+plt.ylabel(&quot;y&quot;)
+plt.xlabel(&quot;x&quot;)
+plt.show()
+
+</code></pre>
+
+<p>In each epoch, we also store all mini-batch losses and then average them to get a loss value for the entire dataset. Once training is completed, we plot these epoch losses:
+<img src="/img/19apr/2.png" alt="Plot of the training loss per epoch" /></p>
+
+<p>As we can see, the loss quickly decreases in the beginning and then starts to level out as our model parameters $k, m$ get close to the true values $\bar{k} = 3$, $\bar{m}= 5$. We also plot our estimated straight line $\hat{y} = kx + m$ and compare it to the true one:
+<img src="/img/19apr/3.png" alt="Plot of our training dataset, the true straight line and our estimated straight line" /></p>
+
+<h3 id="additional-visualizations">Additional visualizations</h3>
+
+<p>Since we in this simple example problem have just two model parameters, we can gain additional insight by computing our loss function $L(k, m) = \frac{1}{N} \sum_{i=1}^{N} (y_i - \hat{y}_i)^2$ (over the entire dataset) for different values of $k, m$ and plot the loss surface:</p>
+
+<pre><code class="language-python">
+num_values=100
+k_plot_values = np.linspace(start=(k-7.0), stop=(k+7.0), num=num_values)
+m_plot_values = np.linspace(start=(m-7.0), stop=(m+7.0), num=num_values)
+# (k_plot_values and m_plot_values both have shape: (num_values, ))
+loss_values = np.zeros((num_values, num_values))
+for k_i in range(num_values):
+    for m_i in range(num_values):
+        Y_hat = k_plot_values[k_i]*train_dataset.X + m_plot_values[m_i]
+        # (Y_hat has shape: (N, ))
+
+        loss = np.mean((train_dataset.Y - Y_hat)**2)
+        loss_values[m_i, k_i] = loss
+
+plt.figure(figsize=(8, 6))
+K, M = np.meshgrid(k_plot_values, m_plot_values)
+plt.contour(K, M, loss_values, levels=20)
+plt.plot(k, m, &quot;r*&quot;, label=&quot;True parameters&quot;)
+plt.legend()
+plt.ylabel(&quot;m&quot;)
+plt.xlabel(&quot;k&quot;)
+plt.title(&quot;Loss surface&quot;)
+plt.show()
+
+</code></pre>
+
+<p><img src="/img/19apr/4.png" alt="Plot of the loss surface" /></p>
+
+<p>Finally, we can also store the current values of $k, m$ at different points during training and plot the parameter trajectory, starting at the initial point $(k_0 = 0, m_0 = 0)$ and ending at our final estimate $(k = 3.03, m = 4.86)$:</p>
+
+<pre><code class="language-python">
+model = LinearRegressionModel()
+model = model.cuda()
+model.train() # (set in training mode, this affects BatchNorm and dropout)
+
+optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
+
+epoch_losses_train = []
+k_values = []
+m_values = []
+k_values.append(model.k.data.cpu().numpy())
+m_values.append(model.m.data.cpu().numpy())
+for epoch in range(num_epochs):
+    print (&quot;###########################&quot;)
+    print (&quot;epoch: %d/%d&quot; % (epoch+1, num_epochs))
+
+    batch_losses = []
+    for step, (x, y) in enumerate(train_loader):
+        x = Variable(x).cuda() # (shape: (batch_size))
+        y = Variable(y).cuda() # (shape: (batch_size))
+
+        y_hat = model(x) # (shape: (batch_size))
+
+        loss = torch.mean(torch.pow(y - y_hat, 2))
+
+        # optimization step:
+        optimizer.zero_grad() # (reset gradients)
+        loss.backward() # (compute gradients)
+        optimizer.step() # (perform the SGD update of the model parameters)
+
+        # store the loss value:
+        loss_value = loss.data.cpu().numpy()
+        batch_losses.append(loss_value)
+
+    epoch_loss = np.mean(batch_losses)
+    epoch_losses_train.append(epoch_loss)
+    print (&quot;train loss: %g&quot; % epoch_loss)
+
+    k_values.append(model.k.data.cpu().numpy())
+    m_values.append(model.m.data.cpu().numpy())
+
+plt.figure(figsize=(8, 6))
+plt.plot(epoch_losses_train, &quot;^k&quot;)
+plt.plot(epoch_losses_train, &quot;k&quot;)
+plt.ylabel(&quot;Loss&quot;)
+plt.xlabel(&quot;Epoch&quot;)
+plt.title(&quot;Loss per epoch&quot;)
+plt.show()
+
+print (&quot;k, true value: %g, estimated value: %g&quot; % (k, model.k))
+print (&quot;m, true value: %g, estimated value: %g&quot; % (m, model.m))
+
+plt.figure(figsize=(8, 6))
+plt.plot(train_dataset.X, train_dataset.Y, &quot;^k&quot;, label=&quot;Training data examples&quot;)
+plt.plot([-3, 3], [k*(-3)+m, k*3+m], &quot;r&quot;, label=&quot;True straight line&quot;)
+plt.plot([-3, 3], [model.k*(-3)+model.m, model.k*3+model.m], &quot;b&quot;,
+         label=&quot;Estimated straight line&quot;)
+plt.legend()
+plt.ylabel(&quot;y&quot;)
+plt.xlabel(&quot;x&quot;)
+plt.show()
+
+num_values=100
+k_plot_values = np.linspace(start=(k-7.0), stop=(k+7.0), num=num_values)
+m_plot_values = np.linspace(start=(m-7.0), stop=(m+7.0), num=num_values)
+# (k_plot_values and m_plot_values both have shape: (num_values, ))
+loss_values = np.zeros((num_values, num_values))
+for k_i in range(num_values):
+    for m_i in range(num_values):
+        Y_hat = k_plot_values[k_i]*train_dataset.X + m_plot_values[m_i]
+        # (Y_hat has shape: (N, ))
+
+        loss = np.mean((train_dataset.Y - Y_hat)**2)
+        loss_values[m_i, k_i] = loss
+
+plt.figure(figsize=(8, 6))
+K, M = np.meshgrid(k_plot_values, m_plot_values)
+plt.contour(K, M, loss_values, levels=20)
+plt.plot(k, m, &quot;r*&quot;, label=&quot;True parameters&quot;)
+plt.plot(k_values, m_values, &quot;xb&quot;, label=&quot;Estimated parameters&quot;)
+plt.plot(k_values, m_values, &quot;b&quot;)
+plt.legend()
+plt.ylabel(&quot;m&quot;)
+plt.xlabel(&quot;k&quot;)
+plt.title(&quot;Parameter trajectory&quot;)
+plt.show()
+
+plt.figure(figsize=(8, 6))
+K, M = np.meshgrid(k_plot_values, m_plot_values)
+plt.contour(K, M, loss_values, levels=20)
+plt.plot(k, m, &quot;r*&quot;, label=&quot;True parameters&quot;)
+plt.plot(k_values, m_values, &quot;xb&quot;, label=&quot;Estimated parameters&quot;)
+plt.plot(k_values, m_values, &quot;b&quot;)
+plt.legend()
+plt.ylabel(&quot;m&quot;)
+plt.xlabel(&quot;k&quot;)
+plt.xlim([k-3.0, k+3.0])
+plt.ylim([m-3.0, m+3.0])
+plt.title(&quot;Parameter trajectory - Zoomed&quot;)
+plt.show()
+
+</code></pre>
+
+<p><img src="/img/19apr/7.png" alt="Plot of the trajectory of the model parameters during training" />
+<img src="/img/19apr/8.png" alt="Zoomed plot of the trajectory of the model parameters during training" /></p>
+
+<p><em>Feel free to <a href="/#contact">contact</a> me or post a comment below if you have any questions or comments. In the next blog post, we&rsquo;ll do nonlinear curve-fitting using feed-forward neural networks.</em></p>
+
+<!-- ```console
+num train batches per epoch: 6
+###########################
+epoch: 1/25
+train loss: 50.0857
+###########################
+epoch: 2/25
+train loss: 25.0836
+``` -->
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fregu856" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      Copyright &copy; Fredrik K. Gustafsson 2019 
+
+      <br>
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> &middot; Based on the modified theme by <a href="https://github.com/kasparmartens/website" target="_blank" rel="noopener">Kaspar Märtens</a>
+
+
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//fregu856.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+
