@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision</title>
+      <link>/publication/evaluating_bdl/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/evaluating_bdl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Getting started with PyTorch:&lt;br&gt; 1 - Linear regression</title>
       <link>/post/19apr/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0200</pubDate>
@@ -490,40 +499,6 @@ train loss: 25.0836
       
       <guid>/project/t/</guid>
       <description>&lt;p&gt;Web tool for analysis and visualization of car engine sensor data for a fleet of test vehicles, developed using Python (Flask), MySQL and Bootstrap.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Rasperino</title>
-      <link>/project/rasperino/</link>
-      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/rasperino/</guid>
-      <description>&lt;p&gt;
-    &lt;b&gt;Main hardware:&lt;/b&gt;&lt;br&gt;
-        - 1x Arduino Uno.&lt;br&gt;
-        - 1x Raspberry Pi 3 Model B.&lt;br&gt;
-        - 1x Raspberry Pi Camera Module v2.&lt;br&gt;
-        - 1x DFRobot 4WD Arduino Mobile Platform.&lt;br&gt;
-        - 2x L298 Dual H-Bridge DC Motor Controller.&lt;br&gt;
-        - 5x Sharp GP2Y0A21YK0F IR Range Sensor - 10 cm to 80 cm.&lt;br&gt;
-        - 1x Power bank.&lt;br&gt;
-    &lt;br&gt;
-
-    &lt;b&gt;Features:&lt;/b&gt;&lt;br&gt;
-        - Autonomous navigation of simple mazes.&lt;br&gt;
-        - Basic computer vision for detection of &#34;color signs&#34;.&lt;br&gt;
-        - Video streaming.&lt;br&gt;
-        - Web interface for manual control and monitoring (desktop &amp; mobile).&lt;br&gt;
-        - PD controller.&lt;br&gt;
-    &lt;br&gt;
-
-    &lt;b&gt;Functionality:&lt;/b&gt;&lt;br&gt;
-        - The Arduino reads and filters the IR sensors, implements the PD controller, controls the motor controllers via PVM and runs a state mahcine for autonomous navigation.&lt;br&gt;
-        - The Raspberry Pi acts as a webserver, streams live video and runs a basic computer vision algorithm.&lt;br&gt;
-        - The Arduino sends sensor and status data to the Raspberry Pi over serial (USB cable), which in turn sends this (and video streaming data) to the web page over WiFi.&lt;br&gt;
-        - User input is sent from the web page to the Raspberry Pi over WiFi, which in turn sends this to the Arduino over serial.
-&lt;/p&gt;
 </description>
     </item>
     
