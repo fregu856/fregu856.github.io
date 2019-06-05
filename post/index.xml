@@ -28,10 +28,10 @@ When I first got interested in deep learning a couple of years ago, I started ou
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Apr 25, 2019] I have posted the first part in a short series of blog posts on how to get started with PyTorch and deep learning.
+      <description>[Jun 5, 2019] New preprint: Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision [arXiv] [code] [video] [project].
+ [Apr 25, 2019] I have posted the first part in a short series of blog posts on how to get started with PyTorch and deep learning.
  [Nov 24, 2018] I was awarded the Tryggve Holm medal for &amp;ldquo;outstanding student achievements&amp;rdquo; during my time at Linköping University.
- [Sep 28, 2018] New project: PyTorch implementation of DeepLabV3, see GitHub repository and Youtube video for further details.
- [Sep 21, 2018] The code for 3D object detection used in my MSc thesis has been uploaded to GitHub.</description>
+ [Sep 28, 2018] New project: PyTorch implementation of DeepLabV3, see GitHub repository and Youtube video for further details.</description>
     </item>
     
   </channel>
