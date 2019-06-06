@@ -27,16 +27,25 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/about/</guid>
-      <description>About Me I am a first-year PhD student in the group of Prof. Thomas Schön at the Department of Information Technology, Uppsala University. I am also supervised by Dr. Martin Danelljan, ETH Zurich. My general areas of interest are machine learning, computer vision and autonomous robots. My research focuses on uncertainty-aware deep learning for autonomous driving and medical imaging.
+      <description>About Me I am a PhD student in the group of Prof. Thomas Schön at Uppsala University. I am also supervised by Dr. Martin Danelljan, ETH Zurich. My general areas of interest are machine learning, computer vision and autonomous robots. My research focuses on uncertainty-aware deep learning for autonomous driving and medical imaging.
 I received my BSc in Applied Physics and Electrical Engineering in 2016 and my MSc in Electrical Engineering in 2018, both from Linköping University.</description>
     </item>
     
     <item>
-      <title>Publications</title>
+      <title>Selected Publications</title>
       <link>/home/publications_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/home/publications_selected/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/home/publications/</guid>
       <description></description>
     </item>
     
@@ -55,15 +64,6 @@ I received my BSc in Applied Physics and Electrical Engineering in 2016 and my M
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/home/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/home/publications/</guid>
       <description></description>
     </item>
     

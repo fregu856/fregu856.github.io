@@ -742,6 +742,17 @@ article .article-metadata {
   color: #3170A5;
 }
 
+.pub-list-item .pub-authors2 {
+  line-height: normal;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+.pub-list-item .pub-authors3 {
+  line-height: normal;
+  font-size: 0.95rem;
+  font-style: normal;
+}
+
 .pub-list-item .pub-publication {
   color: #090;
   font-size: 1rem;

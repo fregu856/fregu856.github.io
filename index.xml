@@ -20,6 +20,16 @@
     </item>
     
     <item>
+      <title>Ensembling as Approximate Bayesian Inference for Predictive Uncertainty Estimation in Deep Learning</title>
+      <link>/publication/ssdl2019/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ssdl2019/</guid>
+      <description>&lt;p&gt;This extended abstract describes preliminary results from the paper &lt;a href=&#34;/publication/evaluating_bdl&#34;&gt;Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Getting started with PyTorch:&lt;br&gt; 1 - Linear regression</title>
       <link>/post/19apr/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0200</pubDate>
@@ -489,16 +499,6 @@ train loss: 25.0836
       
       <guid>/project/cs229/</guid>
       <description>&lt;p&gt;In this project, we apply reinforcement learning techniques to control an inverted double pendulum on a cart. We successfully learn a controller for balancing in a simulation environment using Q-learning with a linear function approximator, without any prior knowledge of the system at hand. We do however fail to learn a controller for the swing-up maneuver, which leads to a discussion on what might be needed to solve more complex control problems using reinforcement learning.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Summer Internship Project</title>
-      <link>/project/t/</link>
-      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/t/</guid>
-      <description>&lt;p&gt;Web tool for analysis and visualization of car engine sensor data for a fleet of test vehicles, developed using Python (Flask), MySQL and Bootstrap.&lt;/p&gt;
 </description>
     </item>
     

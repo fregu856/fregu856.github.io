@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Ensembling as Approximate Bayesian Inference for Predictive Uncertainty Estimation in Deep Learning</title>
+      <link>/publication/ssdl2019/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ssdl2019/</guid>
+      <description>This extended abstract describes preliminary results from the paper Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision.</description>
+    </item>
+    
+    <item>
       <title>Automotive 3D Object Detection Without Target Domain Annotations</title>
       <link>/publication/msc/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
