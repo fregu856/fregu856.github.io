@@ -20,6 +20,30 @@
     </item>
     
     <item>
+      <title>Getting started with PyTorch:&lt;br&gt; 2 - Curve-fitting with neural networks</title>
+      <link>/post/19may/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0200</pubDate>
+      
+      <guid>/post/19may/</guid>
+      <description>&lt;p&gt;&lt;em&gt;All code found in this blog post is also available on &lt;a href=&#34;TODO!TODO!TODO!TODO!TODO!TODO!TODO!&#34; target=&#34;_blank&#34;&gt;Google Colab&lt;/a&gt; where it can be executed directly in the browser.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Text text text&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Feel free to &lt;a href=&#34;/#contact&#34;&gt;contact&lt;/a&gt; me or post a comment below if you have any questions or comments. In the next blog post, we&amp;rsquo;ll do classification on MNIST using CNNs.&lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- ```console
+num train batches per epoch: 6
+###########################
+epoch: 1/25
+train loss: 50.0857
+###########################
+epoch: 2/25
+train loss: 25.0836
+``` --&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Ensembling as Approximate Bayesian Inference for Predictive Uncertainty Estimation in Deep Learning</title>
       <link>/publication/ssdl2019/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
@@ -489,16 +513,6 @@ train loss: 25.0836
       <description>&lt;p&gt;Motivated by the future need of intelligent systems for vehicle-to-passenger communication in autonomous vehicles, we implement two models for automatic image caption generation based on the neural encoder-decoder framework.&lt;/p&gt;
 
 &lt;p&gt;Following an extensive hyperparameter search, our non-attention based model achieves performance on the MSCOCO dataset highly comparable to that of its reference model. Our attention based model does however fail to exceed this performance, despite the attention mechanism appearing to function as intended. This leads to a discussion of possible causes and what architecture modifications that might be needed.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CS 229 Final Project</title>
-      <link>/project/cs229/</link>
-      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/cs229/</guid>
-      <description>&lt;p&gt;In this project, we apply reinforcement learning techniques to control an inverted double pendulum on a cart. We successfully learn a controller for balancing in a simulation environment using Q-learning with a linear function approximator, without any prior knowledge of the system at hand. We do however fail to learn a controller for the swing-up maneuver, which leads to a discussion on what might be needed to solve more complex control problems using reinforcement learning.&lt;/p&gt;
 </description>
     </item>
     

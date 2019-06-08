@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Getting started with PyTorch:&lt;br&gt; 2 - Curve-fitting with neural networks</title>
+      <link>/post/19may/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0200</pubDate>
+      
+      <guid>/post/19may/</guid>
+      <description>All code found in this blog post is also available on Google Colab where it can be executed directly in the browser.
+Text text text&amp;hellip;
+Feel free to contact me or post a comment below if you have any questions or comments. In the next blog post, we&amp;rsquo;ll do classification on MNIST using CNNs.</description>
+    </item>
+    
+    <item>
       <title>Getting started with PyTorch:&lt;br&gt; 1 - Linear regression</title>
       <link>/post/19apr/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0200</pubDate>
