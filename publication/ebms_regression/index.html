@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -15,10 +13,14 @@
   
   
   
-  <meta name="description" content="PhD Student in Uncertainty-Aware Deep Learning">
+    
+      
+    
+  
+  <meta name="description" content="Energy-based models (EBMs) have become increasingly popular within computer vision in recent years. While they are commonly employed for generative image modeling, recent work has applied EBMs also for regression tasks, achieving state-of-the-art performance on object detection and visual tracking. Training EBMs is however known to be challenging. While a variety of different techniques have been explored for generative modeling, the application of EBMs to regression is not a well-studied problem. How EBMs should be trained for best possible regression performance is thus currently unclear. We therefore accept the task of providing the first detailed study of this problem. To that end, we propose a simple yet highly effective extension of noise contrastive estimation, and carefully compare its performance to six popular methods from literature on the tasks of 1D regression and object detection. The results of this comparison suggest that our training method should be considered the go-to approach. We also apply our method to the visual tracking task, setting a new state-of-the-art on five datasets. Notably, our tracker achieves 63.7% AUC on LaSOT and 78.7% Success on TrackingNet.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tags/pages/">
+  <link rel="alternate" hreflang="en-us" href="/publication/ebms_regression/">
 
   
 
@@ -72,15 +74,15 @@
   
 
   
-  <link rel="alternate" href="/tags/pages/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
-  <link rel="feed" href="/tags/pages/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tags/pages/">
+  <link rel="canonical" href="/publication/ebms_regression/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -88,17 +90,19 @@
   <meta property="twitter:creator" content="@https://twitter.com/fregu856">
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
-  <meta property="og:url" content="/tags/pages/">
-  <meta property="og:title" content="pages | Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
-  <meta property="og:description" content="PhD Student in Uncertainty-Aware Deep Learning">
+  <meta property="og:url" content="/publication/ebms_regression/">
+  <meta property="og:title" content="How to Train Your Energy-Based Model for Regression | Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning">
+  <meta property="og:description" content="Energy-based models (EBMs) have become increasingly popular within computer vision in recent years. While they are commonly employed for generative image modeling, recent work has applied EBMs also for regression tasks, achieving state-of-the-art performance on object detection and visual tracking. Training EBMs is however known to be challenging. While a variety of different techniques have been explored for generative modeling, the application of EBMs to regression is not a well-studied problem. How EBMs should be trained for best possible regression performance is thus currently unclear. We therefore accept the task of providing the first detailed study of this problem. To that end, we propose a simple yet highly effective extension of noise contrastive estimation, and carefully compare its performance to six popular methods from literature on the tasks of 1D regression and object detection. The results of this comparison suggest that our training method should be considered the go-to approach. We also apply our method to the visual tracking task, setting a new state-of-the-art on five datasets. Notably, our tracker achieves 63.7% AUC on LaSOT and 78.7% Success on TrackingNet.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2010-01-01T00:00:00&#43;01:00">
+  <meta property="article:published_time" content="2020-05-01T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-05-01T00:00:00&#43;00:00">
   
 
   
 
-  <title>pages | Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</title>
+  <title>How to Train Your Energy-Based Model for Regression | Fredrik K. Gustafsson | PhD Student in Uncertainty-Aware Deep Learning</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -288,34 +292,134 @@
   </div>
 </nav>
 
-
-
-
-
-<div class="universal-wrapper">
-
-  <h1>pages</h1>
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
-
+<div class="article-header">
+  <img src="/img/ebms_regression.jpg" class="article-banner-small" itemprop="image">
   
-  
-  <div>
-    <h2><a href="/post/news/">News</a></h2>
-    <div class="article-style">
-      
-      [May 5, 2020] New preprint: How to Train Your Energy-Based Model for Regression [arXiv] [code] [project].
- [Apr 7, 2020] Accepted paper: Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision has been accepted to CVPR Workshops 2020.
- [Oct 1, 2019] Accepted workshop paper: Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision has been accepted to the workshop on Bayesian Deep Learning at NeurIPS 2019.
-      
-    </div>
-  </div>
-  
-
-  
-
-
 </div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">How to Train Your Energy-Based Model for Regression</h1>
+    <span class="pub-authors" itemprop="author">
+      
+      Fredrik K. Gustafsson, Martin Danelljan, Radu Timofte, Thomas B. Schön
+      
+    </span>
+    <span class="pull-right">
+      
+
+    </span>
+
+    
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Energy-based models (EBMs) have become increasingly popular within computer vision in recent years. While they are commonly employed for generative image modeling, recent work has applied EBMs also for regression tasks, achieving state-of-the-art performance on object detection and visual tracking. Training EBMs is however known to be challenging. While a variety of different techniques have been explored for generative modeling, the application of EBMs to regression is not a well-studied problem. How EBMs should be trained for best possible regression performance is thus currently unclear. We therefore accept the task of providing the first detailed study of this problem. To that end, we propose a simple yet highly effective extension of noise contrastive estimation, and carefully compare its performance to six popular methods from literature on the tasks of 1D regression and object detection. The results of this comparison suggest that our training method should be considered the go-to approach. We also apply our method to the visual tracking task, setting a new state-of-the-art on five datasets. Notably, our tracker achieves 63.7% AUC on LaSOT and 78.7% Success on TrackingNet.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
+          <div class="col-xs-12 col-sm-9">
+            
+            <a href="/publication/#8">
+              Preprint
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+          <div class="col-xs-12 col-sm-9">Preprint, 2020</div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+          <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+            May, 2020
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="row" style="padding-top: 10px">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+          <div class="col-xs-12 col-sm-9">
+
+            
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline" href="https://github.com/fregu856/ebms_regression" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+  </div>
+</div>
+
+
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
@@ -402,9 +506,14 @@
 
     
     
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
 
   </body>
 </html>
-
-
 
