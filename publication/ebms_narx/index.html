@@ -13,10 +13,14 @@
   
   
   
-  <meta name="description" content="PhD Student in Probabilistic Deep Learning">
+    
+      
+    
+  
+  <meta name="description" content="This paper is directed towards the problem of learning nonlinear ARX models based on system input--output data. In particular, our interest is in learning a conditional distribution of the current output based on a finite window of past inputs and outputs. To achieve this, we consider the use of so-called energy-based models, which have been developed in allied fields for learning unknown distributions based on data. This energy-based model relies on a general function to describe the distribution, and here we consider a deep neural network for this purpose. The primary benefit of this approach is that it is capable of learning both simple and highly complex noise models, which we demonstrate on simulated and experimental data.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/">
+  <link rel="alternate" hreflang="en-us" href="/publication/ebms_narx/">
 
   
 
@@ -32,6 +36,11 @@
   
     
   
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+    
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
@@ -65,15 +74,15 @@
   
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
-  <link rel="feed" href="/post/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/">
+  <link rel="canonical" href="/publication/ebms_narx/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -81,17 +90,19 @@
   <meta property="twitter:creator" content="@https://twitter.com/fregu856">
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
-  <meta property="og:url" content="/post/">
-  <meta property="og:title" content="Posts | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
-  <meta property="og:description" content="PhD Student in Probabilistic Deep Learning">
+  <meta property="og:url" content="/publication/ebms_narx/">
+  <meta property="og:title" content="Deep Energy-Based NARX Models | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <meta property="og:description" content="This paper is directed towards the problem of learning nonlinear ARX models based on system input--output data. In particular, our interest is in learning a conditional distribution of the current output based on a finite window of past inputs and outputs. To achieve this, we consider the use of so-called energy-based models, which have been developed in allied fields for learning unknown distributions based on data. This energy-based model relies on a general function to describe the distribution, and here we consider a deep neural network for this purpose. The primary benefit of this approach is that it is capable of learning both simple and highly complex noise models, which we demonstrate on simulated and experimental data.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2017-01-01T00:00:00&#43;01:00">
+  <meta property="article:published_time" content="2020-12-09T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-12-09T00:00:00&#43;00:00">
   
 
   
 
-  <title>Posts | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</title>
+  <title>Deep Energy-Based NARX Models | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -281,144 +292,142 @@
   </div>
 </nav>
 
-
-
-
-
-<div class="universal-wrapper">
-
-  <h1>Posts</h1>
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
-
+<div class="article-header">
+  <img src="/img/ebms_narx.png" class="article-banner-small" itemprop="image">
   
-  
-    
-    
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2019-04-25 00:00:00 &#43;0200 CEST" itemprop="datePublished dateModified">
-      Apr 25, 2019
-    </time>
-  </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Fredrik K. Gustafsson">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    7 min read
-  </span>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/19apr/#disqus_thread"></a>
-  
-
-  
-
-  
-
 </div>
 
 
-  
-  
-  <a href="/post/19apr/">
-    <img src="/img/19apr/9.png" class="article-banner" itemprop="image">
-  </a>
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/19apr/" itemprop="url">Getting started with PyTorch:<br> 1 - Linear regression</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
+
+  <div class="article-container">
+    <h1 itemprop="name">Deep Energy-Based NARX Models</h1>
+    <span class="pub-authors" itemprop="author">
+      
+      Johannes Hendriks, Fredrik K. Gustafsson, Antônio Ribeiro, Adrian Wills, Thomas B. Schön
+      
+    </span>
+    <span class="pull-right">
+      
+
+    </span>
+
     
-    <p>When I first got interested in deep learning a couple of years ago, I started out using TensorFlow. In early 2018 I then decided to switch to PyTorch, a decision that I&rsquo;ve been very happy with ever since&hellip;</p>
+
     
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">This paper is directed towards the problem of learning nonlinear ARX models based on system input&ndash;output data. In particular, our interest is in learning a conditional distribution of the current output based on a finite window of past inputs and outputs. To achieve this, we consider the use of so-called energy-based models, which have been developed in allied fields for learning unknown distributions based on data. This energy-based model relies on a general function to describe the distribution, and here we consider a deep neural network for this purpose. The primary benefit of this approach is that it is capable of learning both simple and highly complex noise models, which we demonstrate on simulated and experimental data.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
+          <div class="col-xs-12 col-sm-9">
+            
+            <a href="/publication/#8">
+              Preprint
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+          <div class="col-xs-12 col-sm-9">Preprint, 2020</div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+          <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+            December, 2020
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="row" style="padding-top: 10px">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+          <div class="col-xs-12 col-sm-9">
+
+            
+
+
+
+
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2012.04136" target="_blank" rel="noopener">
+  arXiv
+</a>
+
+
+
+<a class="btn btn-primary btn-outline" href="https://github.com/jnh277/ebm_arx" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
   </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/19apr/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-  
-    
-    
-
-<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-        Last updated on
-    
-    <time datetime="2010-01-01 00:00:00 &#43;0100 CET" itemprop="datePublished dateModified">
-      Nov 24, 2018
-    </time>
-  </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Fredrik K. Gustafsson">
-  </span>
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/news/#disqus_thread"></a>
-  
-
-  
-
-  
-
 </div>
 
 
-  
-  
-  <h3 class="article-title" itemprop="headline">
-    <a href="/post/news/" itemprop="url">News</a>
-  </h3>
-  <div class="article-style" itemprop="articleBody">
-    
-    [Dec 9, 2020] New preprint: Deep Energy-Based NARX Models [arXiv] [code] [project].
- [Dec 8, 2020] New preprint: Accurate 3D Object Detection using Energy-Based Models [arXiv] [code] [video] [project].
- [Oct 21, 2020] In November and December, I will visit the Computer Vision Lab at ETH Zürich (remote due to COVID-19).
- [Jul 29, 2020] Accepted paper: How to Train Your Energy-Based Model for Regression has been accepted to BMVC 2020.
-    
-  </div>
-  <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/news/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
 
-  
-
-  
-
-
-</div>
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
@@ -491,7 +500,25 @@
 
     
     
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
 
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
     
     
 

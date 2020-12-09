@@ -11,6 +11,24 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Deep Energy-Based NARX Models</title>
+      <link>/publication/ebms_narx/</link>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ebms_narx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accurate 3D Object Detection using Energy-Based Models</title>
+      <link>/publication/ebms_3dod/</link>
+      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ebms_3dod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>How to Train Your Energy-Based Model for Regression</title>
       <link>/publication/ebms_regression/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
@@ -471,30 +489,6 @@ train loss: 25.0836
       
       <guid>/project/rosperino/</guid>
       <description>&lt;p&gt;Features include video streaming, a web interface for manual control and SLAM using both the camera and the LiDAR separately.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Summer Internship Project</title>
-      <link>/project/zenuity/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/project/zenuity/</guid>
-      <description>&lt;p&gt;Deep learning demo/test platform based on a standard &lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt; scale RC car. Using a web interface, one can manually control the car and run a variety of deep learning algorithms on streaming video, including the end-to-end trained system for obstacle avoidance shown in the video above.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>AA 273 Final Project</title>
-      <link>/project/aa273/</link>
-      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/project/aa273/</guid>
-      <description>&lt;p&gt;We study the SE-Sync algorithm and how it can be utilized for pose-graph SLAM. We begin by presenting a historical review of the general SLAM problem and the optimization based paradigm of pose-graph SLAM. We then proceed to carefully define the pose-graph SLAM problem and present an intuitive but still sufficiently complete treatment of the SE-Sync algorithm and how it is applied to solve the corresponding optimization problem.&lt;/p&gt;
-
-&lt;p&gt;Our main contribution is an implementation of SE-Sync in a ROS compatible SLAM system obtained by replacing the back-end optimizer of an existing open source implementation. Utilizing a realistic simulation environment, we compare its performance with the original implementation in four different mapping environments of varying size and complexity, and find that SE-Sync performs equally well or slightly better in all cases.&lt;/p&gt;
-
-&lt;p&gt;We finally conclude that application of the SE-Sync algorithm in practical SLAM systems seems promising, but that further work is necessary to determine whether or not the improvement is of significant practical importance.&lt;/p&gt;
 </description>
     </item>
     
