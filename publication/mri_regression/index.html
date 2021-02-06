@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="In this thesis we study a perception problem in the context of autonomous driving. Specifically, we study the computer vision problem of 3D object detection, in which objects should be detected from various sensor data and their position in the 3D world should be estimated. We also study the application of Generative Adversarial Networks in domain adaptation techniques, aiming to improve the 3D object detection model&#39;s ability to transfer between different domains. The state-of-the-art Frustum-PointNet architecture for LiDAR-based 3D object detection was implemented and found to closely match its reported performance when trained and evaluated on the KITTI dataset. The architecture was also found to transfer reasonably well from the synthetic SYN dataset to KITTI, and is thus believed to be usable in a semi-automatic 3D bounding box annotation process. The Frustum-PointNet architecture was also extended to explicitly utilize image features, which surprisingly degraded its detection performance. Furthermore, an image-only 3D object detection model was designed and implemented, which was found to compare quite favourably with current state-of-the-art in terms of detection performance. Additionally, the PixelDA approach was adopted and successfully applied to the MNIST to MNIST-M domain adaptation problem, which validated the idea that unsupervised domain adaptation using Generative Adversarial Networks can improve the performance of a task network for a dataset lacking ground truth annotations. Surprisingly, the approach did however not significantly improve upon the performance of the image-based 3D object detection models when trained on the SYN dataset and evaluated on KITTI.">
+  <meta name="description" content="Purpose: To enable fast and automated analysis of body composition from UK Biobank MRI with accurate estimates of individual measurement errors. Methods: In an ongoing large-scale imaging study the UK Biobank has acquired MRI of over 40,000 men and women aged 44-82. Phenotypes derived from these images, such as body composition, can reveal new links between genetics, cardiovascular disease, and metabolic conditions. In this retrospective study, neural networks were trained to provide six measurements of body composition from UK Biobank neck-to-knee body MRI. A ResNet50 architecture can automatically predict these values by image-based regression, but may also produce erroneous outliers. Predictive uncertainty, which could identify these failure cases, was therefore modeled with a mean-variance loss and ensembling. Its estimates of individual prediction errors were evaluated in cross-validation on over 8,000 subjects, tested on another 1,000 cases, and finally applied for inference. Results: Relative measurement errors below 5% were achieved on all but one target, for intra-class correlation coefficients (ICC) above 0.97 both in validation and testing. Both mean-variance loss and ensembling yielded improvements and provided uncertainty estimates that highlighted some of the worst outlier predictions. Combined, they reached the highest quality, but also exhibited a consistent bias towards high uncertainty in heavyweight subjects. Conclusion: Mean-variance regression and ensembling provided complementary benefits for automated body composition measurements from UK Biobank MRI, reaching high speed and accuracy. These values were inferred for the entire cohort, with uncertainty estimates that can approximate the measurement errors and identify some of the worst outliers automatically.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/msc/">
+  <link rel="alternate" hreflang="en-us" href="/publication/mri_regression/">
 
   
 
@@ -82,7 +82,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/msc/">
+  <link rel="canonical" href="/publication/mri_regression/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -90,19 +90,19 @@
   <meta property="twitter:creator" content="@https://twitter.com/fregu856">
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
-  <meta property="og:url" content="/publication/msc/">
-  <meta property="og:title" content="Automotive 3D Object Detection Without Target Domain Annotations | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
-  <meta property="og:description" content="In this thesis we study a perception problem in the context of autonomous driving. Specifically, we study the computer vision problem of 3D object detection, in which objects should be detected from various sensor data and their position in the 3D world should be estimated. We also study the application of Generative Adversarial Networks in domain adaptation techniques, aiming to improve the 3D object detection model&#39;s ability to transfer between different domains. The state-of-the-art Frustum-PointNet architecture for LiDAR-based 3D object detection was implemented and found to closely match its reported performance when trained and evaluated on the KITTI dataset. The architecture was also found to transfer reasonably well from the synthetic SYN dataset to KITTI, and is thus believed to be usable in a semi-automatic 3D bounding box annotation process. The Frustum-PointNet architecture was also extended to explicitly utilize image features, which surprisingly degraded its detection performance. Furthermore, an image-only 3D object detection model was designed and implemented, which was found to compare quite favourably with current state-of-the-art in terms of detection performance. Additionally, the PixelDA approach was adopted and successfully applied to the MNIST to MNIST-M domain adaptation problem, which validated the idea that unsupervised domain adaptation using Generative Adversarial Networks can improve the performance of a task network for a dataset lacking ground truth annotations. Surprisingly, the approach did however not significantly improve upon the performance of the image-based 3D object detection models when trained on the SYN dataset and evaluated on KITTI.">
+  <meta property="og:url" content="/publication/mri_regression/">
+  <meta property="og:title" content="Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <meta property="og:description" content="Purpose: To enable fast and automated analysis of body composition from UK Biobank MRI with accurate estimates of individual measurement errors. Methods: In an ongoing large-scale imaging study the UK Biobank has acquired MRI of over 40,000 men and women aged 44-82. Phenotypes derived from these images, such as body composition, can reveal new links between genetics, cardiovascular disease, and metabolic conditions. In this retrospective study, neural networks were trained to provide six measurements of body composition from UK Biobank neck-to-knee body MRI. A ResNet50 architecture can automatically predict these values by image-based regression, but may also produce erroneous outliers. Predictive uncertainty, which could identify these failure cases, was therefore modeled with a mean-variance loss and ensembling. Its estimates of individual prediction errors were evaluated in cross-validation on over 8,000 subjects, tested on another 1,000 cases, and finally applied for inference. Results: Relative measurement errors below 5% were achieved on all but one target, for intra-class correlation coefficients (ICC) above 0.97 both in validation and testing. Both mean-variance loss and ensembling yielded improvements and provided uncertainty estimates that highlighted some of the worst outlier predictions. Combined, they reached the highest quality, but also exhibited a consistent bias towards high uncertainty in heavyweight subjects. Conclusion: Mean-variance regression and ensembling provided complementary benefits for automated body composition measurements from UK Biobank MRI, reaching high speed and accuracy. These values were inferred for the entire cohort, with uncertainty estimates that can approximate the measurement errors and identify some of the worst outliers automatically.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-06-01T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2021-01-18T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2018-06-01T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2021-01-18T00:00:00&#43;00:00">
   
 
-  <title>Automotive 3D Object Detection Without Target Domain Annotations | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</title>
+  
+
+  <title>Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -295,17 +295,18 @@
 <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
-<div class="article-container">
-  <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/KdrHLXpYYlg?enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
+<div class="article-header">
+  <img src="/img/mri_regression.png" class="article-banner-small" itemprop="image">
+  
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">Automotive 3D Object Detection Without Target Domain Annotations</h1>
+    <h1 itemprop="name">Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI</h1>
     <span class="pub-authors" itemprop="author">
       
-      Fredrik K. Gustafsson, Erik Linder-Norén
+      Taro Langner, Fredrik K. Gustafsson, Benny Avelin, Robin Strand, Håkan Ahlström, Joel Kullberg
       
     </span>
     <span class="pull-right">
@@ -317,7 +318,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">In this thesis we study a perception problem in the context of autonomous driving. Specifically, we study the computer vision problem of 3D object detection, in which objects should be detected from various sensor data and their position in the 3D world should be estimated. We also study the application of Generative Adversarial Networks in domain adaptation techniques, aiming to improve the 3D object detection model&rsquo;s ability to transfer between different domains. The state-of-the-art Frustum-PointNet architecture for LiDAR-based 3D object detection was implemented and found to closely match its reported performance when trained and evaluated on the KITTI dataset. The architecture was also found to transfer reasonably well from the synthetic SYN dataset to KITTI, and is thus believed to be usable in a semi-automatic 3D bounding box annotation process. The Frustum-PointNet architecture was also extended to explicitly utilize image features, which surprisingly degraded its detection performance. Furthermore, an image-only 3D object detection model was designed and implemented, which was found to compare quite favourably with current state-of-the-art in terms of detection performance. Additionally, the PixelDA approach was adopted and successfully applied to the MNIST to MNIST-M domain adaptation problem, which validated the idea that unsupervised domain adaptation using Generative Adversarial Networks can improve the performance of a task network for a dataset lacking ground truth annotations. Surprisingly, the approach did however not significantly improve upon the performance of the image-based 3D object detection models when trained on the SYN dataset and evaluated on KITTI.</p>
+    <p class="pub-abstract" itemprop="text">Purpose: To enable fast and automated analysis of body composition from UK Biobank MRI with accurate estimates of individual measurement errors. Methods: In an ongoing large-scale imaging study the UK Biobank has acquired MRI of over 40,000 men and women aged 44-82. Phenotypes derived from these images, such as body composition, can reveal new links between genetics, cardiovascular disease, and metabolic conditions. In this retrospective study, neural networks were trained to provide six measurements of body composition from UK Biobank neck-to-knee body MRI. A ResNet50 architecture can automatically predict these values by image-based regression, but may also produce erroneous outliers. Predictive uncertainty, which could identify these failure cases, was therefore modeled with a mean-variance loss and ensembling. Its estimates of individual prediction errors were evaluated in cross-validation on over 8,000 subjects, tested on another 1,000 cases, and finally applied for inference. Results: Relative measurement errors below 5% were achieved on all but one target, for intra-class correlation coefficients (ICC) above 0.97 both in validation and testing. Both mean-variance loss and ensembling yielded improvements and provided uncertainty estimates that highlighted some of the worst outlier predictions. Combined, they reached the highest quality, but also exhibited a consistent bias towards high uncertainty in heavyweight subjects. Conclusion: Mean-variance regression and ensembling provided complementary benefits for automated body composition measurements from UK Biobank MRI, reaching high speed and accuracy. These values were inferred for the entire cohort, with uncertainty estimates that can approximate the measurement errors and identify some of the worst outliers automatically.</p>
     
 
     
@@ -328,8 +329,8 @@
           <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
           <div class="col-xs-12 col-sm-9">
             
-            <a href="/publication/#7">
-              Thesis
+            <a href="/publication/#8">
+              Preprint
             </a>
             
           </div>
@@ -346,7 +347,7 @@
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">Master of Science Thesis in Electrical Engineering, Linköping University</div>
+          <div class="col-xs-12 col-sm-9">Preprint, 2021</div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -360,7 +361,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            June, 2018
+            January, 2021
           </div>
         </div>
       </div>
@@ -380,13 +381,13 @@
 
 
 
-
-<a class="btn btn-primary btn-outline" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585" target="_blank" rel="noopener">
-  Link to paper
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2101.06963" target="_blank" rel="noopener">
+  arXiv
 </a>
 
 
-<a class="btn btn-primary btn-outline" href="https://github.com/fregu856/3DOD_thesis" target="_blank" rel="noopener">
+
+<a class="btn btn-primary btn-outline" href="https://github.com/tarolangner/mri-biometry" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -400,18 +401,15 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://youtu.be/KdrHLXpYYlg" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-<a class="btn btn-primary btn-outline" href="http://www.fregu856.com/static/msc_thesis_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
 
 
 
 
+
+<button type="button" class="btn btn-primary btn-outline js-cite-modal"
+        data-filename="/files/citations/mri_regression.bib">
+  BibTeX
+</button>
 
 
 

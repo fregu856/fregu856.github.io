@@ -6,9 +6,18 @@
     <description>Recent content in Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning on Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2020</copyright>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2021</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI</title>
+      <link>/publication/mri_regression/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/mri_regression/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Deep Energy-Based NARX Models</title>
@@ -479,16 +488,6 @@ train loss: 25.0836
       
       <guid>/project/segmentation/</guid>
       <description>&lt;p&gt;TensorFlow implementation of ENet, trained on the Cityscapes dataset. The results in the video above can obviously be improved, but because of limited computing resources (personally funded Azure VM) I did not perform any further hyperparameter tuning. Please see the GitHub repository linked below for code and further details.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ROSperino</title>
-      <link>/project/rosperino/</link>
-      <pubDate>Wed, 02 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/project/rosperino/</guid>
-      <description>&lt;p&gt;Features include video streaming, a web interface for manual control and SLAM using both the camera and the LiDAR separately.&lt;/p&gt;
 </description>
     </item>
     

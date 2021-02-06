@@ -6,11 +6,20 @@
     <description>Recent content in Publications on Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2020</copyright>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2021</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI</title>
+      <link>/publication/mri_regression/</link>
+      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/mri_regression/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Deep Energy-Based NARX Models</title>
