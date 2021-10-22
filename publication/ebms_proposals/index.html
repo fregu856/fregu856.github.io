@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
@@ -15,10 +13,14 @@
   
   
   
-  <meta name="description" content="PhD Student in Probabilistic Deep Learning">
+    
+      
+    
+  
+  <meta name="description" content="Energy-based models (EBMs) have experienced a resurgence within machine learning in recent years, including as a promising alternative for probabilistic regression. However, energy-based regression requires a proposal distribution to be manually designed for training, and an initial estimate has to be provided at test-time. We address both of these issues by introducing a conceptually simple method to automatically learn an effective proposal distribution, which is parameterized by a separate network head. To this end, we derive a surprising result, leading to a unified training objective that jointly minimizes the KL divergence from the proposal to the EBM, and the negative log-likelihood of the EBM. At test-time, we can then employ importance sampling with the trained proposal to efficiently evaluate the learned EBM and produce stand-alone predictions. Furthermore, we utilize our derived training objective to learn mixture density networks (MDNs) with a jointly trained energy-based teacher, consistently outperforming conventional MDN training on four real-world regression tasks within computer vision.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tags/pages/">
+  <link rel="alternate" hreflang="en-us" href="/publication/ebms_proposals/">
 
   
 
@@ -72,15 +74,15 @@
   
 
   
-  <link rel="alternate" href="/tags/pages/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
-  <link rel="feed" href="/tags/pages/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tags/pages/">
+  <link rel="canonical" href="/publication/ebms_proposals/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -88,17 +90,19 @@
   <meta property="twitter:creator" content="@https://twitter.com/fregu856">
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
-  <meta property="og:url" content="/tags/pages/">
-  <meta property="og:title" content="pages | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
-  <meta property="og:description" content="PhD Student in Probabilistic Deep Learning">
+  <meta property="og:url" content="/publication/ebms_proposals/">
+  <meta property="og:title" content="Learning Proposals for Practical Energy-Based Regression | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <meta property="og:description" content="Energy-based models (EBMs) have experienced a resurgence within machine learning in recent years, including as a promising alternative for probabilistic regression. However, energy-based regression requires a proposal distribution to be manually designed for training, and an initial estimate has to be provided at test-time. We address both of these issues by introducing a conceptually simple method to automatically learn an effective proposal distribution, which is parameterized by a separate network head. To this end, we derive a surprising result, leading to a unified training objective that jointly minimizes the KL divergence from the proposal to the EBM, and the negative log-likelihood of the EBM. At test-time, we can then employ importance sampling with the trained proposal to efficiently evaluate the learned EBM and produce stand-alone predictions. Furthermore, we utilize our derived training objective to learn mixture density networks (MDNs) with a jointly trained energy-based teacher, consistently outperforming conventional MDN training on four real-world regression tasks within computer vision.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2010-01-01T00:00:00&#43;01:00">
+  <meta property="article:published_time" content="2021-10-22T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2021-10-22T00:00:00&#43;00:00">
   
 
   
 
-  <title>pages | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</title>
+  <title>Learning Proposals for Practical Energy-Based Regression | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -288,35 +292,138 @@
   </div>
 </nav>
 
-
-
-
-
-<div class="universal-wrapper">
-
-  <h1>pages</h1>
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
-
+<div class="article-header">
+  <img src="/img/ebms_proposals.svg" class="article-banner-small" itemprop="image">
   
-  
-  <div>
-    <h2><a href="/post/news/">News</a></h2>
-    <div class="article-style">
-      
-      [Oct 22, 2021] New preprint: Learning Proposals for Practical Energy-Based Regression [arXiv (TODO!)] [code] [project].
- [Sep 13, 2021] I will be a contingent worker at Facebook Reality Labs until mid-December (part-time internship extension).
- [Sep 3, 2021] Accepted paper: Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI has been accepted for publication in Computerized Medical Imaging and Graphics.
- [Jun 7, 2021] I will spend the summer as a research intern at Facebook Reality Labs (FRL Research Pittsburgh, remote due to COVID-19).
-      
-    </div>
-  </div>
-  
-
-  
-
-
 </div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Learning Proposals for Practical Energy-Based Regression</h1>
+    <span class="pub-authors" itemprop="author">
+      
+      Fredrik K. Gustafsson, Martin Danelljan, Thomas B. Schön
+      
+    </span>
+    <span class="pull-right">
+      
+
+    </span>
+
+    
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Energy-based models (EBMs) have experienced a resurgence within machine learning in recent years, including as a promising alternative for probabilistic regression. However, energy-based regression requires a proposal distribution to be manually designed for training, and an initial estimate has to be provided at test-time. We address both of these issues by introducing a conceptually simple method to automatically learn an effective proposal distribution, which is parameterized by a separate network head. To this end, we derive a surprising result, leading to a unified training objective that jointly minimizes the KL divergence from the proposal to the EBM, and the negative log-likelihood of the EBM. At test-time, we can then employ importance sampling with the trained proposal to efficiently evaluate the learned EBM and produce stand-alone predictions. Furthermore, we utilize our derived training objective to learn mixture density networks (MDNs) with a jointly trained energy-based teacher, consistently outperforming conventional MDN training on four real-world regression tasks within computer vision.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
+          <div class="col-xs-12 col-sm-9">
+            
+            <a href="/publication/#8">
+              Preprint
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+          <div class="col-xs-12 col-sm-9">Preprint, 2021</div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+          <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+            October, 2021
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="row" style="padding-top: 10px">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+          <div class="col-xs-12 col-sm-9">
+
+            
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline" href="https://github.com/fregu856/ebms_proposals" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+  </div>
+</div>
+
+
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
@@ -403,9 +510,14 @@
 
     
     
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
 
   </body>
 </html>
-
-
 

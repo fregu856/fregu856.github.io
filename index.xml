@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Learning Proposals for Practical Energy-Based Regression</title>
+      <link>/publication/ebms_proposals/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ebms_proposals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI</title>
       <link>/publication/mri_regression/</link>
       <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
@@ -62,16 +71,6 @@
       
       <guid>/publication/evaluating_bdl/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Ensembling as Approximate Bayesian Inference for Predictive Uncertainty Estimation in Deep Learning</title>
-      <link>/publication/ssdl2019/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/ssdl2019/</guid>
-      <description>&lt;p&gt;This extended abstract describes preliminary results from the paper &lt;a href=&#34;/publication/evaluating_bdl&#34;&gt;Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision&lt;/a&gt;.&lt;/p&gt;
-</description>
     </item>
     
     <item>
