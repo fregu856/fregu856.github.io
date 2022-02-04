@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2021</copyright>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2022</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
@@ -28,10 +28,11 @@ When I first got interested in deep learning a couple of years ago, I started ou
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Oct 22, 2021] New preprint: Learning Proposals for Practical Energy-Based Regression [arXiv] [code] [project].
+      <description>[Feb 3, 2022] Today I presented my half-time seminar Energy-Based Probabilistic Regression in Computer Vision [slides].
+ [Jan 18, 2022] Accepted paper: Learning Proposals for Practical Energy-Based Regression has been accepted to AISTATS 2022.
+ [Oct 22, 2021] New preprint: Learning Proposals for Practical Energy-Based Regression [arXiv] [code] [project].
  [Sep 13, 2021] I will be a contingent worker at Facebook Reality Labs until mid-December (part-time internship extension).
- [Sep 3, 2021] Accepted paper: Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI has been accepted for publication in Computerized Medical Imaging and Graphics.
- [Jun 7, 2021] I will spend the summer as a research intern at Facebook Reality Labs (FRL Research Pittsburgh, remote due to COVID-19).</description>
+ [Sep 3, 2021] Accepted paper: Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI has been accepted for publication in Computerized Medical Imaging and Graphics.</description>
     </item>
     
   </channel>
