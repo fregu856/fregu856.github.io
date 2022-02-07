@@ -11,6 +11,28 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Explaining machine learning and how it can be used to help doctors</title>
+      <link>/post/explaining_ml/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0100</pubDate>
+      
+      <guid>/post/explaining_ml/</guid>
+      <description>&lt;p&gt;For a project in the doctoral course &lt;em&gt;Using Maths and CS to do Social Good&lt;/em&gt; at Uppsala University, our goal was to make grade 7-9 students more interested in mathematics. To that end, we have created a &lt;a href=&#34;https://youtu.be/5G4cmSh4s-4&#34; target=&#34;_blank&#34;&gt;video&lt;/a&gt; with an accompanying &lt;a href=&#34;https://educaora.com/@MachineLearningDoc&#34; target=&#34;_blank&#34;&gt;interactive blog post&lt;/a&gt;. In the video, we explain the essence of how machine learning works and how it can be used to help doctors discover heart attacks from patient ECGs. &lt;em&gt;There is also a &lt;a href=&#34;https://youtu.be/WKsxZ5fGvF0&#34; target=&#34;_blank&#34;&gt;Swedish version&lt;/a&gt; of the video.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We tailor our explanation of machine learning to grade 7-9 students by basing it on the concept of straight lines (linear functions). We start by showing how a straight line can be fitted to some collected data and then used to make predictions, for example to predict ice cream sales from the outside temperature.
+&lt;img src=&#34;/img/explaining_ml/img2.png&#34; alt=&#34;Illustrative ice cream example&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We then explain what ECGs are and how they are used by doctors when a patient comes to a hospital and complains about chest pain, trying to determine if the patient has a heart attack or not.
+&lt;img src=&#34;/img/explaining_ml/img4.png&#34; alt=&#34;Chest pain, ECG, heart attack?&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, we generalize our initial ice cream sales vs. outside temperature example to explain how machine learning can be used also to predict heart attack risk from a patient ECG, and how this can be used to help doctors discover patients who have heart attacks.
+&lt;img src=&#34;/img/explaining_ml/img5.png&#34; alt=&#34;Prediction of heart attack risk&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Project group:&lt;/br&gt;
+&lt;a href=&#34;https://dgedon.github.io/&#34; target=&#34;_blank&#34;&gt;Daniel Gedon&lt;/a&gt;, &lt;a href=&#34;https://katalog.uu.se/profile/?id=N20-1420&#34; target=&#34;_blank&#34;&gt;Erik Hallström&lt;/a&gt; &amp;amp; Fredrik K. Gustafsson&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Learning Proposals for Practical Energy-Based Regression</title>
       <link>/publication/ebms_proposals/</link>
       <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
@@ -477,16 +499,6 @@ train loss: 25.0836
       
       <guid>/project/2dod/</guid>
       <description>&lt;p&gt;TensorFlow implementation of SqueezeDet, trained on the KITTI dataset. The results in the video above can obviously be improved, but because of limited computing resources (personally funded Azure VM) I did not perform any further hyperparameter tuning. Please see the GitHub repository linked below for code and further details.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Semantic Segmentation for Autonomous Driving</title>
-      <link>/project/segmentation/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/project/segmentation/</guid>
-      <description>&lt;p&gt;TensorFlow implementation of ENet, trained on the Cityscapes dataset. The results in the video above can obviously be improved, but because of limited computing resources (personally funded Azure VM) I did not perform any further hyperparameter tuning. Please see the GitHub repository linked below for code and further details.&lt;/p&gt;
 </description>
     </item>
     
