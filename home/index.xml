@@ -49,24 +49,6 @@
     </item>
     
     <item>
-      <title>Blog Posts</title>
-      <link>/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/home/posts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/home/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Recent &amp; Upcoming Talks</title>
       <link>/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
@@ -81,7 +63,10 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/teaching/</guid>
-      <description>Uppsala University  1RT700 | Statistical Machine Learning | MSc
+      <description>Uppsala University  1RT890 | Empirical Modelling | MSc
+Teaching Assistant (Swedish: Lektionsledare)
+Autumn I 2022
+ 1RT700 | Statistical Machine Learning | MSc
 Teaching Assistant
 Spring I 2022
  1RT890 | Empirical Modelling | MSc
@@ -92,10 +77,7 @@ Teaching Assistant
 Spring II 2021
  1RT490 | Automatic Control I | BSc
 Teaching Assistant (Swedish: Lektionsledare)
-Spring I 2021
- 1RT890 | Empirical Modelling | MSc
-Teaching Assistant (Swedish: Lektionsledare)
-Autumn I 2020</description>
+Spring I 2021</description>
     </item>
     
     <item>
@@ -105,6 +87,15 @@ Autumn I 2020</description>
       
       <guid>/home/tags/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Academic Service</title>
+      <link>/home/service/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/service/</guid>
+      <description> Reviewing  AISTATS 2023 | (Upcoming) AAAI 2023 | 3 + 3 Papers BMVC 2022 | 6 Papers ECCV 2022 | 8 Papers CVPR 2022 | 2 Papers AISTATS 2022 | 3 Papers AAAI 2022 | 4 + 2 Papers BMVC 2021 | 6 Papers EBM Workshop at ICLR 2021 | 3 Papers ICRA 2021 | 1 Paper BMVC 2020 | 1 Paper IFAC World Congress 2020 | 2 Papers  </description>
     </item>
     
     <item>
@@ -126,6 +117,24 @@ Autumn I 2020</description>
     </item>
     
     <item>
+      <title>Blog Posts</title>
+      <link>/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Student Projects</title>
+      <link>/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Klassrumsbesök</title>
       <link>/home/klassrumsbesok/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
@@ -140,7 +149,7 @@ Autumn I 2020</description>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/contact/</guid>
-      <description>  Room 2237, Department of Information Technology, Uppsala University     fregu856@gmail.com | fredrik.gustafsson@it.uu.se     +46705786348    </description>
+      <description> Room 2237, Department of Information Technology, Uppsala University   --   Ångström Laboratory, Department of Information Technology, Room 103166     fregu856@gmail.com | fredrik.gustafsson@it.uu.se     +46705786348    </description>
     </item>
     
   </channel>
