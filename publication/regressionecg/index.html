@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="For a project in the doctoral course Using Maths and CS to do Social Good at Uppsala University, our goal was to make grade 7-9 students more interested in mathematics. To that end, we have created a video with an accompanying interactive blog post. In the video, we explain the essence of how machine learning works and how it can be used to help doctors discover heart attacks from patient ECGs.">
+  <meta name="description" content="Objective: Imbalances of the electrolyte concentration levels in the body can lead to catastrophic consequences, but accurate and accessible measurements could improve patient outcomes. While blood tests provide accurate measurements, they are invasive and the laboratory analysis can be slow or inaccessible. In contrast, an electrocardiogram (ECG) is a widely adopted tool which is quick and simple to acquire. However, the problem of estimating continuous electrolyte concentrations directly from ECGs is not well-studied. We therefore investigate if regression methods can be used for accurate ECG-based prediction of electrolyte concentrations. Methods: We explore the use of deep neural networks (DNNs) for this task. We analyze the regression performance across four electrolytes, utilizing a novel dataset containing over 290000 ECGs. For improved understanding, we also study the full spectrum from continuous predictions to binary classification of extreme concentration levels. To enhance clinical usefulness, we finally extend to a probabilistic regression approach and evaluate different uncertainty estimates. Results: We find that the performance varies significantly between different electrolytes, which is clinically justified in the interplay of electrolytes and their manifestation in the ECG. We also compare the regression accuracy with that of traditional machine learning models, demonstrating superior performance of DNNs. Conclusion: Discretization can lead to good classification performance, but does not help solve the original problem of predicting continuous concentration levels. While probabilistic regression demonstrates potential practical usefulness, the uncertainty estimates are not particularly well-calibrated. Significance: Our study is a first step towards accurate and reliable ECG-based prediction of electrolyte concentration levels.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/explaining_ml/">
+  <link rel="alternate" hreflang="en-us" href="/publication/regressionecg/">
 
   
 
@@ -82,7 +82,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/explaining_ml/">
+  <link rel="canonical" href="/publication/regressionecg/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -90,19 +90,19 @@
   <meta property="twitter:creator" content="@https://twitter.com/fregu856">
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
-  <meta property="og:url" content="/post/explaining_ml/">
-  <meta property="og:title" content="Explaining machine learning and how it can be used to help doctors | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
-  <meta property="og:description" content="For a project in the doctoral course Using Maths and CS to do Social Good at Uppsala University, our goal was to make grade 7-9 students more interested in mathematics. To that end, we have created a video with an accompanying interactive blog post. In the video, we explain the essence of how machine learning works and how it can be used to help doctors discover heart attacks from patient ECGs.">
+  <meta property="og:url" content="/publication/regressionecg/">
+  <meta property="og:title" content="ECG-Based Electrolyte Prediction: Evaluating Regression and Probabilistic Methods | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <meta property="og:description" content="Objective: Imbalances of the electrolyte concentration levels in the body can lead to catastrophic consequences, but accurate and accessible measurements could improve patient outcomes. While blood tests provide accurate measurements, they are invasive and the laboratory analysis can be slow or inaccessible. In contrast, an electrocardiogram (ECG) is a widely adopted tool which is quick and simple to acquire. However, the problem of estimating continuous electrolyte concentrations directly from ECGs is not well-studied. We therefore investigate if regression methods can be used for accurate ECG-based prediction of electrolyte concentrations. Methods: We explore the use of deep neural networks (DNNs) for this task. We analyze the regression performance across four electrolytes, utilizing a novel dataset containing over 290000 ECGs. For improved understanding, we also study the full spectrum from continuous predictions to binary classification of extreme concentration levels. To enhance clinical usefulness, we finally extend to a probabilistic regression approach and evaluate different uncertainty estimates. Results: We find that the performance varies significantly between different electrolytes, which is clinically justified in the interplay of electrolytes and their manifestation in the ECG. We also compare the regression accuracy with that of traditional machine learning models, demonstrating superior performance of DNNs. Conclusion: Discretization can lead to good classification performance, but does not help solve the original problem of predicting continuous concentration levels. While probabilistic regression demonstrates potential practical usefulness, the uncertainty estimates are not particularly well-calibrated. Significance: Our study is a first step towards accurate and reliable ECG-based prediction of electrolyte concentration levels.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2022-02-07T00:00:00&#43;01:00">
+  <meta property="article:published_time" content="2022-12-21T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2022-02-07T00:00:00&#43;01:00">
-  
-
+  <meta property="article:modified_time" content="2022-12-21T00:00:00&#43;00:00">
   
 
-  <title>Explaining machine learning and how it can be used to help doctors | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</title>
+  
+
+  <title>ECG-Based Electrolyte Prediction: Evaluating Regression and Probabilistic Methods | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -292,112 +292,146 @@
   </div>
 </nav>
 
-
-<article class="article" itemscope itemtype="http://schema.org/Article">
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
-<div class="article-container">
-  <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/5G4cmSh4s-4?enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe></div>
+<div class="article-header">
+  <img src="/img/regressionECG.png" class="article-banner-small" itemprop="image">
+  
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">Explaining machine learning and how it can be used to help doctors</h1>
+    <h1 itemprop="name">ECG-Based Electrolyte Prediction: Evaluating Regression and Probabilistic Methods</h1>
+    <span class="pub-authors" itemprop="author">
+      
+      Philipp Von Bachmann, Daniel Gedon, Fredrik K. Gustafsson, Antônio H. Ribeiro, Erik Lampa, Stefan Gustafsson, Johan Sundström, Thomas B. Schön
+      
+    </span>
+    <span class="pull-right">
+      
+
+    </span>
 
     
 
-<div class="article-metadata">
-
-  <span class="article-date">
     
-    <time datetime="2022-02-07 00:00:00 &#43;0100 CET" itemprop="datePublished dateModified">
-      Feb 7, 2022
-    </time>
-  </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Fredrik K. Gustafsson">
-  </span>
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">Objective: Imbalances of the electrolyte concentration levels in the body can lead to catastrophic consequences, but accurate and accessible measurements could improve patient outcomes. While blood tests provide accurate measurements, they are invasive and the laboratory analysis can be slow or inaccessible. In contrast, an electrocardiogram (ECG) is a widely adopted tool which is quick and simple to acquire. However, the problem of estimating continuous electrolyte concentrations directly from ECGs is not well-studied. We therefore investigate if regression methods can be used for accurate ECG-based prediction of electrolyte concentrations. Methods: We explore the use of deep neural networks (DNNs) for this task. We analyze the regression performance across four electrolytes, utilizing a novel dataset containing over 290000 ECGs. For improved understanding, we also study the full spectrum from continuous predictions to binary classification of extreme concentration levels. To enhance clinical usefulness, we finally extend to a probabilistic regression approach and evaluate different uncertainty estimates. Results: We find that the performance varies significantly between different electrolytes, which is clinically justified in the interplay of electrolytes and their manifestation in the ECG. We also compare the regression accuracy with that of traditional machine learning models, demonstrating superior performance of DNNs. Conclusion: Discretization can lead to good classification performance, but does not help solve the original problem of predicting continuous concentration levels. While probabilistic regression demonstrates potential practical usefulness, the uncertainty estimates are not particularly well-calibrated. Significance: Our study is a first step towards accurate and reliable ECG-based prediction of electrolyte concentration levels.</p>
+    
 
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    2 min read
-  </span>
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <a href="/post/explaining_ml/#disqus_thread"></a>
-  
-
-  
-
-  
-  
-
-  
-
-</div>
-
-
-    <div class="article-style" itemprop="articleBody">
-      <p>For a project in the doctoral course <em>Using Maths and CS to do Social Good</em> at Uppsala University, our goal was to make grade 7-9 students more interested in mathematics. To that end, we have created a <a href="https://youtu.be/5G4cmSh4s-4" target="_blank">video</a> with an accompanying <a href="https://educaora.com/@MachineLearningDoc" target="_blank">interactive blog post</a>. In the video, we explain the essence of how machine learning works and how it can be used to help doctors discover heart attacks from patient ECGs. <em>There is also a <a href="https://youtu.be/5ehdIBaElYA" target="_blank">Swedish version</a> of the video.</em></p>
-
-<p>We tailor our explanation of machine learning to grade 7-9 students by basing it on the concept of straight lines (linear functions). We start by showing how a straight line can be fitted to some collected data and then used to make predictions, for example to predict ice cream sales from the outside temperature.
-<img src="/img/explaining_ml/img2.png" alt="Illustrative ice cream example" /></p>
-
-<p>We then explain what ECGs are and how they are used by doctors when a patient comes to a hospital and complains about chest pain, trying to determine if the patient has a heart attack or not.
-<img src="/img/explaining_ml/img4.png" alt="Chest pain, ECG, heart attack?" /></p>
-
-<p>Finally, we generalize our initial ice cream sales vs. outside temperature example to explain how machine learning can be used also to predict heart attack risk from a patient ECG, and how this can be used to help doctors discover patients who have heart attacks.
-<img src="/img/explaining_ml/img5.png" alt="Prediction of heart attack risk" /></p>
-
-<p>Project group:</br>
-<a href="https://dgedon.github.io/" target="_blank">Daniel Gedon</a>, <a href="https://katalog.uu.se/profile/?id=N20-1420" target="_blank">Erik Hallström</a> &amp; Fredrik K. Gustafsson</p>
-
+    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
+          <div class="col-xs-12 col-sm-9">
+            
+            <a href="/publication/#8">
+              Preprint
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
     </div>
-
-    
-
-
-
-
-
-    
+    <div class="visible-xs space-below"></div>
     
 
     
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+          <div class="col-xs-12 col-sm-9">Preprint, 2022</div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+    
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+          <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+            December, 2022
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="row" style="padding-top: 10px">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+          <div class="col-xs-12 col-sm-9">
+
+            
+
+
+
+
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2212.13890" target="_blank" rel="noopener">
+  arXiv
+</a>
+
+
+
+<a class="btn btn-primary btn-outline" href="https://github.com/philippvb/ecg-electrolyte-regression" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button type="button" class="btn btn-primary btn-outline js-cite-modal"
+        data-filename="/files/citations/regressionECG.bib">
+  BibTeX
+</button>
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="visible-xs space-below"></div>
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
 
     
-<section id="comments">
-  <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "fregu856-com" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
-
 
 
   </div>
-</article>
+</div>
+
+
 
 <footer class="site-footer">
   <div class="container">

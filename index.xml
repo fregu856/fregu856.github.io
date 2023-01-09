@@ -11,12 +11,21 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>ECG-Based Electrolyte Prediction: Evaluating Regression and Probabilistic Methods</title>
+      <link>/publication/regressionecg/</link>
+      <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/regressionecg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Explaining machine learning and how it can be used to help doctors</title>
       <link>/post/explaining_ml/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0100</pubDate>
       
       <guid>/post/explaining_ml/</guid>
-      <description>&lt;p&gt;For a project in the doctoral course &lt;em&gt;Using Maths and CS to do Social Good&lt;/em&gt; at Uppsala University, our goal was to make grade 7-9 students more interested in mathematics. To that end, we have created a &lt;a href=&#34;https://youtu.be/5G4cmSh4s-4&#34; target=&#34;_blank&#34;&gt;video&lt;/a&gt; with an accompanying &lt;a href=&#34;https://educaora.com/@MachineLearningDoc&#34; target=&#34;_blank&#34;&gt;interactive blog post&lt;/a&gt;. In the video, we explain the essence of how machine learning works and how it can be used to help doctors discover heart attacks from patient ECGs. &lt;em&gt;There is also a &lt;a href=&#34;https://youtu.be/WKsxZ5fGvF0&#34; target=&#34;_blank&#34;&gt;Swedish version&lt;/a&gt; of the video.&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;For a project in the doctoral course &lt;em&gt;Using Maths and CS to do Social Good&lt;/em&gt; at Uppsala University, our goal was to make grade 7-9 students more interested in mathematics. To that end, we have created a &lt;a href=&#34;https://youtu.be/5G4cmSh4s-4&#34; target=&#34;_blank&#34;&gt;video&lt;/a&gt; with an accompanying &lt;a href=&#34;https://educaora.com/@MachineLearningDoc&#34; target=&#34;_blank&#34;&gt;interactive blog post&lt;/a&gt;. In the video, we explain the essence of how machine learning works and how it can be used to help doctors discover heart attacks from patient ECGs. &lt;em&gt;There is also a &lt;a href=&#34;https://youtu.be/5ehdIBaElYA&#34; target=&#34;_blank&#34;&gt;Swedish version&lt;/a&gt; of the video.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;We tailor our explanation of machine learning to grade 7-9 students by basing it on the concept of straight lines (linear functions). We start by showing how a straight line can be fitted to some collected data and then used to make predictions, for example to predict ice cream sales from the outside temperature.
 &lt;img src=&#34;/img/explaining_ml/img2.png&#34; alt=&#34;Illustrative ice cream example&#34; /&gt;&lt;/p&gt;
@@ -489,16 +498,6 @@ train loss: 25.0836
       <guid>/project/smaugs/</guid>
       <description>&lt;p&gt;By Fredrik K. Gustafsson, Andreas Hägglund, Andreas Lundgren, Elin Näsholm, Fredrik Tormod, Hampus Andersson, Jonathan Jerner and Mattias Andreasson.&lt;/p&gt;
 &lt;p&gt;My main responsibilities: SLAM and ROS.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2D Object Detection for Autonomous Driving</title>
-      <link>/project/2dod/</link>
-      <pubDate>Sat, 02 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/project/2dod/</guid>
-      <description>&lt;p&gt;TensorFlow implementation of SqueezeDet, trained on the KITTI dataset. The results in the video above can obviously be improved, but because of limited computing resources (personally funded Azure VM) I did not perform any further hyperparameter tuning. Please see the GitHub repository linked below for code and further details.&lt;/p&gt;
 </description>
     </item>
     
