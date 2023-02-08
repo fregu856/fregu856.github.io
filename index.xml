@@ -6,9 +6,27 @@
     <description>Recent content in Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning on Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2022</copyright>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2023</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How Reliable is Your Regression Model&#39;s Uncertainty Under Real-World Distribution Shifts?</title>
+      <link>/publication/regression_uncertainty/</link>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/regression_uncertainty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Restoration with Mean-Reverting Stochastic Differential Equations</title>
+      <link>/publication/ir_sde/</link>
+      <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ir_sde/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ECG-Based Electrolyte Prediction: Evaluating Regression and Probabilistic Methods</title>
@@ -478,27 +496,6 @@ train loss: 25.0836
       
       <guid>/publication/msc/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Skalman</title>
-      <link>/project/skalman/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/project/skalman/</guid>
-      <description>&lt;p&gt;Ongoing project.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>SMAUGS</title>
-      <link>/project/smaugs/</link>
-      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/project/smaugs/</guid>
-      <description>&lt;p&gt;By Fredrik K. Gustafsson, Andreas Hägglund, Andreas Lundgren, Elin Näsholm, Fredrik Tormod, Hampus Andersson, Jonathan Jerner and Mattias Andreasson.&lt;/p&gt;
-&lt;p&gt;My main responsibilities: SLAM and ROS.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

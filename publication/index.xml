@@ -6,11 +6,29 @@
     <description>Recent content in Publications on Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2022</copyright>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2023</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How Reliable is Your Regression Model&#39;s Uncertainty Under Real-World Distribution Shifts?</title>
+      <link>/publication/regression_uncertainty/</link>
+      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/regression_uncertainty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Restoration with Mean-Reverting Stochastic Differential Equations</title>
+      <link>/publication/ir_sde/</link>
+      <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ir_sde/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ECG-Based Electrolyte Prediction: Evaluating Regression and Probabilistic Methods</title>
