@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models</title>
+      <link>/publication/refusion/</link>
+      <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/refusion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>How Reliable is Your Regression Model&#39;s Uncertainty Under Real-World Distribution Shifts?</title>
       <link>/publication/regression_uncertainty/</link>
       <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
@@ -487,15 +496,6 @@ train loss: 25.0836
       <guid>/project/stinspira/</guid>
       <description>&lt;p&gt;Website (in Swedish) aiming to increase interest in higher education among youths. Web design, logo design and content creation. &lt;a href=&#34;http://www.stinspira.se/&#34; target=&#34;_blank&#34;&gt;stinspira.se&lt;/a&gt;.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Automotive 3D Object Detection Without Target Domain Annotations</title>
-      <link>/publication/msc/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/msc/</guid>
-      <description></description>
     </item>
     
   </channel>
