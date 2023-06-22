@@ -13,7 +13,17 @@
     
     
     <item>
-      <title>Explaining machine learning and how it can be used to help doctors</title>
+      <title>The How and Why of Reading 300 Papers in 5 Years</title>
+      <link>/post/phd_of_reading/</link>
+      <pubDate>Thu, 22 Jun 2023 00:00:00 +0200</pubDate>
+      
+      <guid>/post/phd_of_reading/</guid>
+      <description>The header image above was generated using the text-to-image tool at imagine.art, from the input &amp;ldquo;teddy bear scientists having an intense discussion in a reading group about machine learning&amp;rdquo;.
+Since I started my PhD almost five years ago (in September 2018), I have categorized, annotated and written short comments for all research papers I read in detail. I share this publicly in a GitHub repository, and recently reached 300 read papers.</description>
+    </item>
+    
+    <item>
+      <title>Explaining Machine Learning and How It Can Be Used to Help Doctors</title>
       <link>/post/explaining_ml/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0100</pubDate>
       
@@ -22,7 +32,7 @@
     </item>
     
     <item>
-      <title>Getting started with PyTorch:&lt;br&gt; 1 - Linear regression</title>
+      <title>Getting Started with PyTorch:&lt;br&gt; 1 - Linear Regression</title>
       <link>/post/19apr/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0200</pubDate>
       
@@ -37,10 +47,10 @@ When I first got interested in deep learning a couple of years ago, I started ou
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Apr 25, 2023] Accepted paper: Image Restoration with Mean-Reverting Stochastic Differential Equations has been accepted to ICML 2023.
+      <description>[Jun 22, 2023] New blog post: The How and Why of Reading 300 Papers in 5 Years.
+ [Apr 25, 2023] Accepted paper: Image Restoration with Mean-Reverting Stochastic Differential Equations has been accepted to ICML 2023.
  [Apr 18, 2023] Accepted paper: Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models has been accepted to CVPR Workshops 2023.
- [Mar 16, 2023] Today I presented Some Advice for New (and Old?) PhD Students [slides] at our weekly division meeting.
- [Feb 8, 2023] New preprint: How Reliable is Your Regression Model&amp;rsquo;s Uncertainty Under Real-World Distribution Shifts?</description>
+ [Mar 16, 2023] Today I presented Some Advice for New (and Old?</description>
     </item>
     
   </channel>

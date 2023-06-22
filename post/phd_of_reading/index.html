@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="author" content="Fredrik K. Gustafsson">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="The header image above was generated using the text-to-image tool at imagine.art, from the input &ldquo;teddy bear scientists having an intense discussion in a reading group about machine learning&rdquo;.
+Since I started my PhD almost five years ago (in September 2018), I have categorized, annotated and written short comments for all research papers I read in detail. I share this publicly in a GitHub repository, and recently reached 300 read papers.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/phd_of_reading/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/projects.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-134427131-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/phd_of_reading/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@https://twitter.com/fregu856">
+  <meta property="twitter:creator" content="@https://twitter.com/fregu856">
+  
+  <meta property="og:site_name" content="Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <meta property="og:url" content="/post/phd_of_reading/">
+  <meta property="og:title" content="The How and Why of Reading 300 Papers in 5 Years | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning">
+  <meta property="og:description" content="The header image above was generated using the text-to-image tool at imagine.art, from the input &ldquo;teddy bear scientists having an intense discussion in a reading group about machine learning&rdquo;.
+Since I started my PhD almost five years ago (in September 2018), I have categorized, annotated and written short comments for all research papers I read in detail. I share this publicly in a GitHub repository, and recently reached 300 read papers.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2023-06-22T00:00:00&#43;02:00">
+  
+  <meta property="article:modified_time" content="2023-06-22T00:00:00&#43;02:00">
+  
+
+  
+
+  <title>The How and Why of Reading 300 Papers in 5 Years | Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Fredrik K. Gustafsson</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>About</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#service">
+            
+            <span>Service</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#coursework">
+            
+            <span>Coursework</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#reading">
+            
+            <span>Reading</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Blog Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/phd_of_reading/cover_image_orig.png" class="article-banner-small" itemprop="image">
+  
+</div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">The How and Why of Reading 300 Papers in 5 Years</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2023-06-22 00:00:00 &#43;0200 CEST" itemprop="datePublished dateModified">
+      Jun 22, 2023
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Fredrik K. Gustafsson">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    9 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/phd_of_reading/#disqus_thread"></a>
+  
+
+  
+
+  
+  
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p><em>The header image above was generated using the text-to-image tool at <a href="https://www.imagine.art/dashboard/tool/from-text" target="_blank">imagine.art</a>, from the input &ldquo;teddy bear scientists having an intense discussion in a reading group about machine learning&rdquo;.</em></p>
+
+<p>Since I started my PhD almost five years ago (in September 2018), I have categorized, annotated and written short comments for all research papers I read in detail. I share this publicly in a <a href="https://github.com/fregu856/papers" target="_blank">GitHub repository</a>, and recently reached 300 read papers. To mark this milestone, I decided to share some thoughts on why I think it&rsquo;s important to read a lot of papers, and how I organize my reading. I also compiled some paper statistics, along with a list of 30 papers that I found particularly interesting and/or well-written.</p>
+
+<h4 id="why-i-read-a-lot-of-papers">Why I read a lot of papers</h4>
+
+<p>The simple reason as to why I try to read a lot of papers, is that I find it very enjoyable and interesting. Among all the different everyday activities of a typical PhD student, reading papers is one of my clear favorites. However, I also think it&rsquo;s key for becoming a good researcher. In fact, I consider reading papers to be a fundamental part of what it even means to be a researcher.</p>
+
+<p>First of all, I have found it to be a very powerful tool for learning new things. It&rsquo;s actually quite remarkable how much you can learn about a certain machine learning problem or method simply by reading e.g. 5 papers about it in detail.</p>
+
+<p>Secondly, I think it&rsquo;s a great way to generate new research ideas. When reading an interesting paper, I virtually always get at least one idea about how the proposed approach potentially could be extended in some way, or how it could be combined with some of my previous work.</p>
+
+<h4 id="how-i-m-able-to-read-a-lot-of-papers">How I&rsquo;m able to read a lot of papers</h4>
+
+<p>As a PhD student, I&rsquo;m always quite busy with research, teaching duties, coursework and other meetings. In my experience, the single most important thing one can do in order to read a lot of papers is therefore to <em>actively prioritize reading</em>. This means setting aside some time in your schedule each week, specifically for reading. Aiming to read at least one paper a week has generally worked well for me, and I thus make sure to schedule at least one 1-2 hour time slot each week. By treating reading just like any other weekly meeting, I have (almost) always been able to find time for it.</p>
+
+<p>The second most important thing one can do is probably to join (or start) a reading group. I&rsquo;ve been organizing a weekly <a href="https://www.it.uu.se/about_us/divisions/systems_and_control/activities/mlreadinggroup" target="_blank">machine learning reading group</a> at our division since I started as a PhD student. Being a member of a reading group makes it much easier to actually set aside time to read e.g. one paper a week.</p>
+
+<p>Joining a reading group also comes with many other benefits. First of all, it&rsquo;s a good way to &ldquo;force&rdquo; yourself to read papers you wouldn&rsquo;t necessarily have selected yourself (such papers can be surprisingly interesting). I think this is important, to not just read the very latest state-of-the-art papers within your specific area of interest. Instead, I think one should actively try to branch out a little and also read some older papers, and papers from other areas.</p>
+
+<p>Moreover, discussing a paper you&rsquo;ve read in a reading group almost always significantly improves your understanding of the paper. Joining a reading group is also a great way to learn more about your colleagues’ research and interests, and of course, discussing papers with other people is a generally fun and enjoyable activity in itself.</p>
+
+<h4 id="how-i-organize-my-paper-reading">How I organize my paper reading</h4>
+
+<p>For each paper I read in detail, I create a note somewhere where I can easily find it later. In this note, I write down any questions, thoughts or ideas which arise during reading. Reading papers can generate a lot of research ideas, and they all seem obvious right there and then, but if you don’t write them down they will be very difficult to remember in the future. A PhD is long, you might want to go back to a certain read paper years later, and then such notes (even if they are very brief) can be incredibly useful.</p>
+
+<p>Afterwards, I also write a very short summary of the paper, quickly answering questions such as &ldquo;Was the paper interesting overall?&rdquo;, &ldquo;Was it easy to understand?&rdquo; or &ldquo;Could it be relevant for my research now or in the future?&rdquo;. Having short answers to simple questions like these can also turn out to be surprisingly helpful.</p>
+
+<p>For each paper, I also annotate the pdf and upload it to my <a href="https://github.com/fregu856/papers/tree/master/commented_pdfs" target="_blank">GitHub repository</a> (i.e., somewhere where I can easily find it later). I strongly recommend getting a tablet for reading and annotating papers, it really does make a big difference.</p>
+
+<p>The main reason for why I annotate each paper is that this makes it easier to stay focused while reading. I find that actively annotating a paper &ldquo;forces&rdquo; you to actually try to understand what you&rsquo;re reading. Moreover, it enables you to go back to a paper years later and quickly find the most interesting and important information.</p>
+
+<h4 id="why-i-share-my-reading-publicly">Why I share my reading publicly</h4>
+
+<p>The reason why I share a list of all my read papers publicly on <a href="https://github.com/fregu856/papers" target="_blank">GitHub</a> is somewhat of a coincidence, it&rsquo;s mostly just an idea I happened to have one day when I started my PhD. Now almost five years later, it is however something that I definitely can recommend.</p>
+
+<p>There are of course much more advanced tools such as <a href="https://www.zotero.org/" target="_blank">Zotero</a> (which I&rsquo;m sure can be super useful and convenient), but I really enjoy the simplicity of my &ldquo;GitHub repository&rdquo; system, and it seems to provide all the features I need. For example, it enables me to go back and very quickly find particular papers that I&rsquo;ve read before.</p>
+
+<p>Moreover, I strongly believe in the general principles of open science. Open exchange and publication of information are defining features of the scientific community, and publicly sharing all of my reading in this way is, at least to me, a natural next step towards truly transparent and accessible research.</p>
+
+<p>Last but not least, publicly sharing my reading definitely motivates me to read more papers. It adds a bit of external pressure and encouragement to stay consistent with my reading, to actually set aside some time (almost) every week. Without it, I&rsquo;m quite confident that I wouldn&rsquo;t have been able to reach 300 read papers already.</p>
+
+<h4 id="how-i-find-interesting-papers-to-read">How I find interesting papers to read</h4>
+
+<p>To read a lot of papers, one also has to find a lot of interesting papers. I regularly look for interesting new and old papers, for example by checking:</p>
+
+<ul>
+<li>arXiv.</li>
+<li>Twitter.</li>
+<li>Accepted papers lists for upcoming and previous conferences.</li>
+<li>The references in interesting papers.</li>
+<li>The &ldquo;Cited by&rdquo; list on Google Scholar for interesting papers.</li>
+<li>A list of people whose research I find particularly interesting, occasionally checking arXiv/scholar for their new papers.</li>
+</ul>
+
+<p>I have a (nearly) daily habit of quickly going through all new <a href="https://arxiv.org/list/cs.LG/recent" target="_blank">cs.LG</a> and <a href="https://arxiv.org/list/cs.CV/recent" target="_blank">cs.CV</a> papers on arXiv, and spending 5 minutes scrolling through twitter. The number of papers on arXiv keeps increasing every year, but I still find it manageable and worthwhile to go through them daily (typically, this takes at most 20-30 min). There are many aspects of twitter that I really don&rsquo;t like (thus I limit myself to 5 min per day), but I must admit that it&rsquo;s a good tool for finding interesting papers, researchers, workshops, seminars etc.</p>
+
+<p>Whenever I find a seemingly interesting paper, I go through it very quickly (check the abstract, scroll through the method and/or experiments) and decide whether or not it still seems interesting. If so, I then save it somewhere where I easily can go back and find it later. Specifically, I put the paper titles in Google Keep lists, and if a paper seems especially interesting I also make a short note about that. Once I have time to read a paper in detail, I then go through my lists of interesting papers and pick one.</p>
+
+<h3 id="30-particularly-interesting-and-or-well-written-papers">30 Particularly Interesting and/or Well-Written Papers</h3>
+
+<p>I went through my comments for all 300 read papers, and selected a list of 30 papers that I found particularly interesting and/or well-written:</p>
+
+<p><strong>Uncertainty Estimation:</strong></p>
+
+<ul>
+<li><a href="https://arxiv.org/abs/1505.05424" target="_blank"><em>Weight Uncertainty in Neural Networks</em></a> (ICML 2015)</li>
+<li><a href="https://arxiv.org/abs/1902.03932" target="_blank"><em>Cyclical Stochastic Gradient MCMC for Bayesian Deep Learning</em></a> (ICLR 2020)</li>
+<li><a href="https://arxiv.org/abs/2106.14806" target="_blank"><em>Laplace Redux &ndash; Effortless Bayesian Deep Learning</em></a> (NeurIPS 2021)</li>
+<li><a href="https://arxiv.org/abs/1802.07095" target="_blank"><em>Uncertainty Estimates and Multi-Hypotheses Networks for Optical Flow</em></a> (ECCV 2018)</li>
+<li><a href="https://arxiv.org/abs/1805.12114" target="_blank"><em>Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models</em></a> (NeurIPS 2018)</li>
+<li><a href="https://dl.acm.org/doi/pdf/10.5555/3295222.3295241" target="_blank"><em>Selective Classification for Deep Neural Networks</em></a> (NeurIPS 2017)</li>
+<li><a href="https://proceedings.neurips.cc/paper/2019/file/5103c3584b063c431bd1268e9b5e76fb-Paper.pdf" target="_blank"><em>Conformalized Quantile Regression</em></a> (NeurIPS 2019)</li>
+<li><a href="https://arxiv.org/abs/2107.00649" target="_blank"><em>On the Practicality of Deterministic Epistemic Uncertainty</em></a> (ICML 2022)</li>
+</ul>
+
+<p><strong>Out-of-Distribution Detection:</strong></p>
+
+<ul>
+<li><a href="https://arxiv.org/abs/2102.08248" target="_blank"><em>Hierarchical VAEs Know What They Don&rsquo;t Know</em></a> (ICML 2021)</li>
+<li><a href="https://arxiv.org/abs/1807.03888" target="_blank"><em>A Simple Unified Framework for Detecting Out-of-Distribution Samples and Adversarial Attacks</em></a> (NeurIPS 2018)</li>
+<li><a href="https://arxiv.org/abs/2103.12051" target="_blank"><em>SSD: A Unified Framework for Self-Supervised Outlier Detection</em></a> (ICLR 2021)</li>
+<li><a href="https://arxiv.org/abs/2204.06507" target="_blank"><em>Out-of-Distribution Detection with Deep Nearest Neighbors</em></a> (ICML 2022)</li>
+<li><a href="https://arxiv.org/abs/2106.10065" target="_blank"><em>Being a Bit Frequentist Improves Bayesian Neural Networks</em></a> (AISTATS 2022)</li>
+<li><a href="https://arxiv.org/abs/2110.14019" target="_blank"><em>Reliable and Trustworthy Machine Learning for Health Using Dataset Shift Detection</em></a> (NeurIPS 2021)</li>
+<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S1361841521003194?via%3Dihub" target="_blank"><em>Does Your Dermatology Classifier Know What It Doesn&rsquo;t Know? Detecting the Long-Tail of Unseen Conditions</em></a> (Medical Image Analysis, 2022)</li>
+</ul>
+
+<p><strong>Energy-Based Models:</strong></p>
+
+<ul>
+<li><a href="http://www.jmlr.org/papers/v6/hyvarinen05a.html" target="_blank"><em>Estimation of Non-Normalized Statistical Models by Score Matching</em></a> (JMLR, 2005)</li>
+<li><a href="http://proceedings.mlr.press/v9/gutmann10a/gutmann10a.pdf" target="_blank"><em>Noise-Contrastive Estimation: A New Estimation Principle for Unnormalized Statistical Models</em></a> (AISTATS 2010)</li>
+<li><a href="https://arxiv.org/abs/1903.12370" target="_blank"><em>On the Anatomy of MCMC-Based Maximum Likelihood Learning of Energy-Based Models</em></a> (AAAI 2020)</li>
+<li><a href="https://arxiv.org/abs/1912.03263" target="_blank"><em>Your Classifier is Secretly an Energy Based Model and You Should Treat it Like One</em></a> (ICLR 2020)</li>
+<li><a href="https://arxiv.org/abs/1912.00589" target="_blank"><em>Flow Contrastive Estimation of Energy-Based Models</em></a> (CVPR 2020)</li>
+<li><a href="https://arxiv.org/abs/2006.06059" target="_blank"><em>Joint Training of Variational Auto-Encoder and Latent Energy-Based Model</em></a> (CVPR 2020)</li>
+</ul>
+
+<p><strong>Other:</strong></p>
+
+<ul>
+<li><a href="https://arxiv.org/abs/2003.08934" target="_blank"><em>NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</em></a> (ECCV 2020)</li>
+<li><a href="https://arxiv.org/abs/2010.13938" target="_blank"><em>Neural Unsigned Distance Fields for Implicit Function Learning</em></a> (NeurIPS 2020)</li>
+<li><a href="https://arxiv.org/abs/1904.05866" target="_blank"><em>Expressive Body Capture: 3D Hands, Face, and Body from a Single Image</em></a> (CVPR 2019)</li>
+<li><a href="https://arxiv.org/abs/1907.03961" target="_blank"><em>A Baseline for 3D Multi-Object Tracking</em></a> (IROS 2020)</li>
+<li><a href="https://arxiv.org/abs/1811.04551" target="_blank"><em>Learning Latent Dynamics for Planning from Pixels</em></a> (ICML 2019)</li>
+<li><a href="https://link.springer.com/article/10.1007/s43681-021-00122-8" target="_blank"><em>Blind Spots in AI Ethics</em></a> (AI and Ethics, 2022)</li>
+<li><a href="https://link.springer.com/article/10.1007/s43681-022-00209-w" target="_blank"><em>The Uselessness of AI Ethics</em></a> (AI and Ethics, 2022)</li>
+<li><a href="https://arxiv.org/abs/2104.12871" target="_blank"><em>Why AI is Harder Than We Think</em></a> (GECCO 2021)</li>
+<li><a href="https://arxiv.org/abs/2212.03551" target="_blank"><em>Talking About Large Language Models</em></a> (arXiv, 2022)</li>
+</ul>
+
+<h3 id="paper-statistics">Paper Statistics</h3>
+
+<p>I compiled some more detailed statics of my read papers (number of papers read each year, papers by publication year, papers by venue, papers by category):</p>
+
+<p>303 read papers.</p>
+
+<p>1.84 GB of annotated pdfs.</p>
+
+<p><img src="/img/phd_of_reading/papers_read_each_year.svg" alt="Papers read each year" />
+<img src="/img/phd_of_reading/papers_by_publication_year.svg" alt="Papers by publication year" />
+<img src="/img/phd_of_reading/papers_by_venue.svg" alt="Papers by venue" />
+<img src="/img/phd_of_reading/papers_by_category.svg" alt="Papers by category" /></p>
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fregu856-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      Copyright &copy; Fredrik K. Gustafsson 2023 
+
+      <br>
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> &middot; Based on the modified theme by <a href="https://github.com/kasparmartens/website" target="_blank" rel="noopener">Kaspar Märtens</a>
+
+
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">BibTeX</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//fregu856-com.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

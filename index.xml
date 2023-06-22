@@ -11,6 +11,142 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>The How and Why of Reading 300 Papers in 5 Years</title>
+      <link>/post/phd_of_reading/</link>
+      <pubDate>Thu, 22 Jun 2023 00:00:00 +0200</pubDate>
+      
+      <guid>/post/phd_of_reading/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;The header image above was generated using the text-to-image tool at &lt;a href=&#34;https://www.imagine.art/dashboard/tool/from-text&#34; target=&#34;_blank&#34;&gt;imagine.art&lt;/a&gt;, from the input &amp;ldquo;teddy bear scientists having an intense discussion in a reading group about machine learning&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Since I started my PhD almost five years ago (in September 2018), I have categorized, annotated and written short comments for all research papers I read in detail. I share this publicly in a &lt;a href=&#34;https://github.com/fregu856/papers&#34; target=&#34;_blank&#34;&gt;GitHub repository&lt;/a&gt;, and recently reached 300 read papers. To mark this milestone, I decided to share some thoughts on why I think it&amp;rsquo;s important to read a lot of papers, and how I organize my reading. I also compiled some paper statistics, along with a list of 30 papers that I found particularly interesting and/or well-written.&lt;/p&gt;
+
+&lt;h4 id=&#34;why-i-read-a-lot-of-papers&#34;&gt;Why I read a lot of papers&lt;/h4&gt;
+
+&lt;p&gt;The simple reason as to why I try to read a lot of papers, is that I find it very enjoyable and interesting. Among all the different everyday activities of a typical PhD student, reading papers is one of my clear favorites. However, I also think it&amp;rsquo;s key for becoming a good researcher. In fact, I consider reading papers to be a fundamental part of what it even means to be a researcher.&lt;/p&gt;
+
+&lt;p&gt;First of all, I have found it to be a very powerful tool for learning new things. It&amp;rsquo;s actually quite remarkable how much you can learn about a certain machine learning problem or method simply by reading e.g. 5 papers about it in detail.&lt;/p&gt;
+
+&lt;p&gt;Secondly, I think it&amp;rsquo;s a great way to generate new research ideas. When reading an interesting paper, I virtually always get at least one idea about how the proposed approach potentially could be extended in some way, or how it could be combined with some of my previous work.&lt;/p&gt;
+
+&lt;h4 id=&#34;how-i-m-able-to-read-a-lot-of-papers&#34;&gt;How I&amp;rsquo;m able to read a lot of papers&lt;/h4&gt;
+
+&lt;p&gt;As a PhD student, I&amp;rsquo;m always quite busy with research, teaching duties, coursework and other meetings. In my experience, the single most important thing one can do in order to read a lot of papers is therefore to &lt;em&gt;actively prioritize reading&lt;/em&gt;. This means setting aside some time in your schedule each week, specifically for reading. Aiming to read at least one paper a week has generally worked well for me, and I thus make sure to schedule at least one 1-2 hour time slot each week. By treating reading just like any other weekly meeting, I have (almost) always been able to find time for it.&lt;/p&gt;
+
+&lt;p&gt;The second most important thing one can do is probably to join (or start) a reading group. I&amp;rsquo;ve been organizing a weekly &lt;a href=&#34;https://www.it.uu.se/about_us/divisions/systems_and_control/activities/mlreadinggroup&#34; target=&#34;_blank&#34;&gt;machine learning reading group&lt;/a&gt; at our division since I started as a PhD student. Being a member of a reading group makes it much easier to actually set aside time to read e.g. one paper a week.&lt;/p&gt;
+
+&lt;p&gt;Joining a reading group also comes with many other benefits. First of all, it&amp;rsquo;s a good way to &amp;ldquo;force&amp;rdquo; yourself to read papers you wouldn&amp;rsquo;t necessarily have selected yourself (such papers can be surprisingly interesting). I think this is important, to not just read the very latest state-of-the-art papers within your specific area of interest. Instead, I think one should actively try to branch out a little and also read some older papers, and papers from other areas.&lt;/p&gt;
+
+&lt;p&gt;Moreover, discussing a paper you&amp;rsquo;ve read in a reading group almost always significantly improves your understanding of the paper. Joining a reading group is also a great way to learn more about your colleagues’ research and interests, and of course, discussing papers with other people is a generally fun and enjoyable activity in itself.&lt;/p&gt;
+
+&lt;h4 id=&#34;how-i-organize-my-paper-reading&#34;&gt;How I organize my paper reading&lt;/h4&gt;
+
+&lt;p&gt;For each paper I read in detail, I create a note somewhere where I can easily find it later. In this note, I write down any questions, thoughts or ideas which arise during reading. Reading papers can generate a lot of research ideas, and they all seem obvious right there and then, but if you don’t write them down they will be very difficult to remember in the future. A PhD is long, you might want to go back to a certain read paper years later, and then such notes (even if they are very brief) can be incredibly useful.&lt;/p&gt;
+
+&lt;p&gt;Afterwards, I also write a very short summary of the paper, quickly answering questions such as &amp;ldquo;Was the paper interesting overall?&amp;rdquo;, &amp;ldquo;Was it easy to understand?&amp;rdquo; or &amp;ldquo;Could it be relevant for my research now or in the future?&amp;rdquo;. Having short answers to simple questions like these can also turn out to be surprisingly helpful.&lt;/p&gt;
+
+&lt;p&gt;For each paper, I also annotate the pdf and upload it to my &lt;a href=&#34;https://github.com/fregu856/papers/tree/master/commented_pdfs&#34; target=&#34;_blank&#34;&gt;GitHub repository&lt;/a&gt; (i.e., somewhere where I can easily find it later). I strongly recommend getting a tablet for reading and annotating papers, it really does make a big difference.&lt;/p&gt;
+
+&lt;p&gt;The main reason for why I annotate each paper is that this makes it easier to stay focused while reading. I find that actively annotating a paper &amp;ldquo;forces&amp;rdquo; you to actually try to understand what you&amp;rsquo;re reading. Moreover, it enables you to go back to a paper years later and quickly find the most interesting and important information.&lt;/p&gt;
+
+&lt;h4 id=&#34;why-i-share-my-reading-publicly&#34;&gt;Why I share my reading publicly&lt;/h4&gt;
+
+&lt;p&gt;The reason why I share a list of all my read papers publicly on &lt;a href=&#34;https://github.com/fregu856/papers&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; is somewhat of a coincidence, it&amp;rsquo;s mostly just an idea I happened to have one day when I started my PhD. Now almost five years later, it is however something that I definitely can recommend.&lt;/p&gt;
+
+&lt;p&gt;There are of course much more advanced tools such as &lt;a href=&#34;https://www.zotero.org/&#34; target=&#34;_blank&#34;&gt;Zotero&lt;/a&gt; (which I&amp;rsquo;m sure can be super useful and convenient), but I really enjoy the simplicity of my &amp;ldquo;GitHub repository&amp;rdquo; system, and it seems to provide all the features I need. For example, it enables me to go back and very quickly find particular papers that I&amp;rsquo;ve read before.&lt;/p&gt;
+
+&lt;p&gt;Moreover, I strongly believe in the general principles of open science. Open exchange and publication of information are defining features of the scientific community, and publicly sharing all of my reading in this way is, at least to me, a natural next step towards truly transparent and accessible research.&lt;/p&gt;
+
+&lt;p&gt;Last but not least, publicly sharing my reading definitely motivates me to read more papers. It adds a bit of external pressure and encouragement to stay consistent with my reading, to actually set aside some time (almost) every week. Without it, I&amp;rsquo;m quite confident that I wouldn&amp;rsquo;t have been able to reach 300 read papers already.&lt;/p&gt;
+
+&lt;h4 id=&#34;how-i-find-interesting-papers-to-read&#34;&gt;How I find interesting papers to read&lt;/h4&gt;
+
+&lt;p&gt;To read a lot of papers, one also has to find a lot of interesting papers. I regularly look for interesting new and old papers, for example by checking:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;arXiv.&lt;/li&gt;
+&lt;li&gt;Twitter.&lt;/li&gt;
+&lt;li&gt;Accepted papers lists for upcoming and previous conferences.&lt;/li&gt;
+&lt;li&gt;The references in interesting papers.&lt;/li&gt;
+&lt;li&gt;The &amp;ldquo;Cited by&amp;rdquo; list on Google Scholar for interesting papers.&lt;/li&gt;
+&lt;li&gt;A list of people whose research I find particularly interesting, occasionally checking arXiv/scholar for their new papers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I have a (nearly) daily habit of quickly going through all new &lt;a href=&#34;https://arxiv.org/list/cs.LG/recent&#34; target=&#34;_blank&#34;&gt;cs.LG&lt;/a&gt; and &lt;a href=&#34;https://arxiv.org/list/cs.CV/recent&#34; target=&#34;_blank&#34;&gt;cs.CV&lt;/a&gt; papers on arXiv, and spending 5 minutes scrolling through twitter. The number of papers on arXiv keeps increasing every year, but I still find it manageable and worthwhile to go through them daily (typically, this takes at most 20-30 min). There are many aspects of twitter that I really don&amp;rsquo;t like (thus I limit myself to 5 min per day), but I must admit that it&amp;rsquo;s a good tool for finding interesting papers, researchers, workshops, seminars etc.&lt;/p&gt;
+
+&lt;p&gt;Whenever I find a seemingly interesting paper, I go through it very quickly (check the abstract, scroll through the method and/or experiments) and decide whether or not it still seems interesting. If so, I then save it somewhere where I easily can go back and find it later. Specifically, I put the paper titles in Google Keep lists, and if a paper seems especially interesting I also make a short note about that. Once I have time to read a paper in detail, I then go through my lists of interesting papers and pick one.&lt;/p&gt;
+
+&lt;h3 id=&#34;30-particularly-interesting-and-or-well-written-papers&#34;&gt;30 Particularly Interesting and/or Well-Written Papers&lt;/h3&gt;
+
+&lt;p&gt;I went through my comments for all 300 read papers, and selected a list of 30 papers that I found particularly interesting and/or well-written:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Uncertainty Estimation:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1505.05424&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Weight Uncertainty in Neural Networks&lt;/em&gt;&lt;/a&gt; (ICML 2015)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1902.03932&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Cyclical Stochastic Gradient MCMC for Bayesian Deep Learning&lt;/em&gt;&lt;/a&gt; (ICLR 2020)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2106.14806&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Laplace Redux &amp;ndash; Effortless Bayesian Deep Learning&lt;/em&gt;&lt;/a&gt; (NeurIPS 2021)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1802.07095&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Uncertainty Estimates and Multi-Hypotheses Networks for Optical Flow&lt;/em&gt;&lt;/a&gt; (ECCV 2018)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1805.12114&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models&lt;/em&gt;&lt;/a&gt; (NeurIPS 2018)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dl.acm.org/doi/pdf/10.5555/3295222.3295241&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Selective Classification for Deep Neural Networks&lt;/em&gt;&lt;/a&gt; (NeurIPS 2017)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proceedings.neurips.cc/paper/2019/file/5103c3584b063c431bd1268e9b5e76fb-Paper.pdf&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Conformalized Quantile Regression&lt;/em&gt;&lt;/a&gt; (NeurIPS 2019)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2107.00649&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;On the Practicality of Deterministic Epistemic Uncertainty&lt;/em&gt;&lt;/a&gt; (ICML 2022)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Out-of-Distribution Detection:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2102.08248&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Hierarchical VAEs Know What They Don&amp;rsquo;t Know&lt;/em&gt;&lt;/a&gt; (ICML 2021)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1807.03888&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;A Simple Unified Framework for Detecting Out-of-Distribution Samples and Adversarial Attacks&lt;/em&gt;&lt;/a&gt; (NeurIPS 2018)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2103.12051&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;SSD: A Unified Framework for Self-Supervised Outlier Detection&lt;/em&gt;&lt;/a&gt; (ICLR 2021)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2204.06507&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Out-of-Distribution Detection with Deep Nearest Neighbors&lt;/em&gt;&lt;/a&gt; (ICML 2022)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2106.10065&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Being a Bit Frequentist Improves Bayesian Neural Networks&lt;/em&gt;&lt;/a&gt; (AISTATS 2022)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2110.14019&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Reliable and Trustworthy Machine Learning for Health Using Dataset Shift Detection&lt;/em&gt;&lt;/a&gt; (NeurIPS 2021)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S1361841521003194?via%3Dihub&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Does Your Dermatology Classifier Know What It Doesn&amp;rsquo;t Know? Detecting the Long-Tail of Unseen Conditions&lt;/em&gt;&lt;/a&gt; (Medical Image Analysis, 2022)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Energy-Based Models:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jmlr.org/papers/v6/hyvarinen05a.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Estimation of Non-Normalized Statistical Models by Score Matching&lt;/em&gt;&lt;/a&gt; (JMLR, 2005)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://proceedings.mlr.press/v9/gutmann10a/gutmann10a.pdf&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Noise-Contrastive Estimation: A New Estimation Principle for Unnormalized Statistical Models&lt;/em&gt;&lt;/a&gt; (AISTATS 2010)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1903.12370&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;On the Anatomy of MCMC-Based Maximum Likelihood Learning of Energy-Based Models&lt;/em&gt;&lt;/a&gt; (AAAI 2020)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1912.03263&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Your Classifier is Secretly an Energy Based Model and You Should Treat it Like One&lt;/em&gt;&lt;/a&gt; (ICLR 2020)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1912.00589&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Flow Contrastive Estimation of Energy-Based Models&lt;/em&gt;&lt;/a&gt; (CVPR 2020)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2006.06059&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Joint Training of Variational Auto-Encoder and Latent Energy-Based Model&lt;/em&gt;&lt;/a&gt; (CVPR 2020)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Other:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2003.08934&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis&lt;/em&gt;&lt;/a&gt; (ECCV 2020)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2010.13938&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Neural Unsigned Distance Fields for Implicit Function Learning&lt;/em&gt;&lt;/a&gt; (NeurIPS 2020)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1904.05866&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Expressive Body Capture: 3D Hands, Face, and Body from a Single Image&lt;/em&gt;&lt;/a&gt; (CVPR 2019)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1907.03961&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;A Baseline for 3D Multi-Object Tracking&lt;/em&gt;&lt;/a&gt; (IROS 2020)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1811.04551&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Learning Latent Dynamics for Planning from Pixels&lt;/em&gt;&lt;/a&gt; (ICML 2019)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/s43681-021-00122-8&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Blind Spots in AI Ethics&lt;/em&gt;&lt;/a&gt; (AI and Ethics, 2022)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://link.springer.com/article/10.1007/s43681-022-00209-w&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;The Uselessness of AI Ethics&lt;/em&gt;&lt;/a&gt; (AI and Ethics, 2022)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2104.12871&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Why AI is Harder Than We Think&lt;/em&gt;&lt;/a&gt; (GECCO 2021)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2212.03551&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Talking About Large Language Models&lt;/em&gt;&lt;/a&gt; (arXiv, 2022)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;paper-statistics&#34;&gt;Paper Statistics&lt;/h3&gt;
+
+&lt;p&gt;I compiled some more detailed statics of my read papers (number of papers read each year, papers by publication year, papers by venue, papers by category):&lt;/p&gt;
+
+&lt;p&gt;303 read papers.&lt;/p&gt;
+
+&lt;p&gt;1.84 GB of annotated pdfs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/phd_of_reading/papers_read_each_year.svg&#34; alt=&#34;Papers read each year&#34; /&gt;
+&lt;img src=&#34;/img/phd_of_reading/papers_by_publication_year.svg&#34; alt=&#34;Papers by publication year&#34; /&gt;
+&lt;img src=&#34;/img/phd_of_reading/papers_by_venue.svg&#34; alt=&#34;Papers by venue&#34; /&gt;
+&lt;img src=&#34;/img/phd_of_reading/papers_by_category.svg&#34; alt=&#34;Papers by category&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models</title>
       <link>/publication/refusion/</link>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
@@ -47,7 +183,7 @@
     </item>
     
     <item>
-      <title>Explaining machine learning and how it can be used to help doctors</title>
+      <title>Explaining Machine Learning and How It Can Be Used to Help Doctors</title>
       <link>/post/explaining_ml/</link>
       <pubDate>Mon, 07 Feb 2022 00:00:00 +0100</pubDate>
       
@@ -132,7 +268,7 @@
     </item>
     
     <item>
-      <title>Getting started with PyTorch:&lt;br&gt; 1 - Linear regression</title>
+      <title>Getting Started with PyTorch:&lt;br&gt; 1 - Linear Regression</title>
       <link>/post/19apr/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0200</pubDate>
       
@@ -485,16 +621,6 @@ train loss: 25.0836
       
       <guid>/project/deeplabv3/</guid>
       <description>&lt;p&gt;PyTorch implementation of &lt;a href=&#34;https://arxiv.org/abs/1706.05587&#34; target=&#34;_blank&#34;&gt;DeepLabV3&lt;/a&gt;, trained on the Cityscapes dataset. Please see the GitHub repository linked below for code and further details.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Stinspira</title>
-      <link>/project/stinspira/</link>
-      <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/project/stinspira/</guid>
-      <description>&lt;p&gt;Website (in Swedish) aiming to increase interest in higher education among youths. Web design, logo design and content creation. &lt;a href=&#34;http://www.stinspira.se/&#34; target=&#34;_blank&#34;&gt;stinspira.se&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
