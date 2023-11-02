@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Controlling Vision-Language Models for Universal Image Restoration</title>
+      <link>/publication/da_clip/</link>
+      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/da_clip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The How and Why of Reading 300 Papers in 5 Years</title>
       <link>/post/phd_of_reading/</link>
       <pubDate>Thu, 22 Jun 2023 00:00:00 +0200</pubDate>
@@ -611,16 +620,6 @@ train loss: 50.0857
 epoch: 2/25
 train loss: 25.0836
 ``` --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>PyTorch Implementation of DeepLabV3</title>
-      <link>/project/deeplabv3/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/project/deeplabv3/</guid>
-      <description>&lt;p&gt;PyTorch implementation of &lt;a href=&#34;https://arxiv.org/abs/1706.05587&#34; target=&#34;_blank&#34;&gt;DeepLabV3&lt;/a&gt;, trained on the Cityscapes dataset. Please see the GitHub repository linked below for code and further details.&lt;/p&gt;
 </description>
     </item>
     
