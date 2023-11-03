@@ -50,10 +50,10 @@
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>/home/talks/</link>
+      <link>/home/old_talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/home/talks/</guid>
+      <guid>/home/old_talks/</guid>
       <description></description>
     </item>
     
@@ -99,6 +99,23 @@ Autumn I 2021</description>
     </item>
     
     <item>
+      <title>Invited Talks</title>
+      <link>/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/talks/</guid>
+      <description>How Reliable is Your Regression Model’s Uncertainty Under Real-World Distribution Shifts?
+RISE Learning Machines Seminars | Online
+December 14, 2023 (Upcoming)  How Reliable is Your Regression Model’s Uncertainty Under Real-World Distribution Shifts?
+DFKI Augmented Vision Workshop | Online | [slides]
+October 31, 2023
+ Accurate 3D Object Detection using Energy-Based Models
+Zenseact | Online | [slides]
+January 29, 2021
+ Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision</description>
+    </item>
+    
+    <item>
       <title>Coursework</title>
       <link>/home/coursework/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
@@ -114,7 +131,8 @@ Autumn I 2021</description>
       
       <guid>/home/reading/</guid>
       <description>I categorize, annotate and write comments for all research papers I read, and share this publicly on GitHub (320+ papers since September 2018). Feel free to reach out with any questions or suggested reading. In June 2023, I also wrote the blog post The How and Why of Reading 300 Papers in 5 Years about this.
-I have also started to really enjoy reading non-technical books, e.g. about ethics and political philosophy.</description>
+From 2018 to 2023, I organized the SysCon machine learning reading group.
+I have also started to really enjoy reading non-technical books, e.</description>
     </item>
     
     <item>
