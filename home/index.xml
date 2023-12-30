@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</title>
+    <title>Homes on Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
     <link>/home/</link>
-    <description>Recent content in Homes on Fredrik K. Gustafsson | PhD Student in Probabilistic Deep Learning</description>
+    <description>Recent content in Homes on Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2023</copyright>
@@ -117,15 +117,6 @@ January 29, 2021
     </item>
     
     <item>
-      <title>Coursework</title>
-      <link>/home/coursework/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/home/coursework/</guid>
-      <description>Uppsala University  Statistical Estimation Theory and Its Applications | 9 Credits Deep Learning | 5 Credits Academic Teacher Training Course | 7.5 Credits Ethics of Technology and Science I | 2 Credits Statistical Machine Learning | 5 Credits Ethics of Technology and Science II | 3 Credits Convex Optimization with Engineering Applications | 6 Credits Using Maths and Computer Science to do Social Good | 10 Credits Application-Oriented Deep Learning | 5 Credits A Computational Introduction to Stochastic Differential Equations | 6 Credits Social Consequences of Technology and Trustworthy AI | 3 Credits Science for Sustainable Development | 3 Credits Research Methodology | 4 Credits Digital Image Analysis for Scientific Applications | 5 Credits Reading Course in Machine Learning | 8 Credits  81.</description>
-    </item>
-    
-    <item>
       <title>Reading</title>
       <link>/home/reading/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
@@ -142,6 +133,15 @@ From 2018 to 2023, I organized the SysCon machine learning reading group.</descr
       
       <guid>/home/posts/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Coursework</title>
+      <link>/home/coursework/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/coursework/</guid>
+      <description>Uppsala University  Statistical Estimation Theory and Its Applications | 9 Credits Deep Learning | 5 Credits Academic Teacher Training Course | 7.5 Credits Ethics of Technology and Science I | 2 Credits Statistical Machine Learning | 5 Credits Ethics of Technology and Science II | 3 Credits Convex Optimization with Engineering Applications | 6 Credits Using Maths and Computer Science to do Social Good | 10 Credits Application-Oriented Deep Learning | 5 Credits A Computational Introduction to Stochastic Differential Equations | 6 Credits Social Consequences of Technology and Trustworthy AI | 3 Credits Science for Sustainable Development | 3 Credits Research Methodology | 4 Credits Digital Image Analysis for Scientific Applications | 5 Credits Reading Course in Machine Learning | 8 Credits  81.</description>
     </item>
     
     <item>
@@ -168,7 +168,7 @@ From 2018 to 2023, I organized the SysCon machine learning reading group.</descr
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/contact/</guid>
-      <description> Room 2237, Department of Information Technology, Uppsala University   --   Ångström Laboratory, Department of Information Technology, Room 103166     fregu856@gmail.com | fredrik.gustafsson@it.uu.se     +46705786348    </description>
+      <description>  Department of Medical Epidemiology and Biostatistics, Room 2416     fregu856@gmail.com | fredrik.gustafsson@ki.se     +46705786348    </description>
     </item>
     
   </channel>
