@@ -6,7 +6,7 @@
     <description>Recent content in Homes on Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2023</copyright>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2024</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
     
 	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
@@ -133,6 +133,15 @@ From 2018 to 2023, I organized the SysCon machine learning reading group.</descr
       
       <guid>/home/posts/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Running</title>
+      <link>/home/running/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/running/</guid>
+      <description>During the years of my PhD, running turned into an important part of my life, crucial in order to keep me productive and in a good mental state throughout the work days and weeks. I&amp;rsquo;m a relatively serious runner, but I run mostly just because it&amp;rsquo;s a lot of fun and a great way to explore your surroundings, and because it&amp;rsquo;s good for both my physical and mental health. My training can be followed on Strava.</description>
     </item>
     
     <item>

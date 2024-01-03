@@ -3538,6 +3538,301 @@ function fill(d) {
   
   
   
+  <section id="running" class="home-section">
+    <div class="container">
+      
+
+<script type="text/javascript" src="d3-andmeteadus/d3.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.geom.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.layout.js"></script>
+
+<style type="text/css">
+
+#mybanner{
+  background: url(img/banner-andmeteadus.png) no-repeat top left;
+  background-size: contain;
+  overflow: hidden;
+  margin: 0;
+}
+
+svg {
+  width: 720px;
+  height: 200px;
+}
+
+#chart {
+  position: absolute;
+  top: 0;
+}
+
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #555;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+	
+circle {
+  stroke: #fff;
+}
+
+    </style>
+    <script type="text/javascript">
+
+var w = 720,
+    h = 260,
+    color = d3.scale.category10();
+
+var force = d3.layout.force()
+    .gravity(0)
+    .charge(-10)
+    .size([w, h]);
+
+var nodes = force.nodes(),
+    a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+    b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+    c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+
+nodes.push(a, b, c, d);
+
+var svg = d3.select("#body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.append("svg:rect")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.selectAll("circle")
+    .data(nodes)
+  .enter().append("svg:circle")
+    .attr("r", 12)
+    .attr("cx", function(d) { return d.x; })
+    .attr("cy", function(d) { return d.y; })
+    .style("fill", fill)
+	.style("visibility", "hidden");
+    
+
+force.on("tick", function(e) {
+  var k = e.alpha * .1;
+  nodes.forEach(function(node) {
+    var center = nodes[node.type];
+    node.x += (center.x - node.x) * k;
+    node.y += (center.y - node.y) * k;
+  });
+
+  svg.selectAll("circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+});
+
+var p0;
+
+svg.on("mousemove", function() {
+  var p1 = d3.svg.mouse(this),
+      node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+
+  p0 = p1;
+
+  svg.append("svg:circle")
+      .data([node])
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", 4.5)
+      .style("fill", fill)
+    .transition()
+      .delay(2250)
+      .attr("r", 1e-6)
+      .each("end", function() { nodes.splice(4, 1); })
+      .remove();
+
+  nodes.push(node);
+  force.start();
+});
+
+function fill(d) {
+  return color(d.type);
+}
+
+</script>
+
+
+<div class="row">
+  
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Running</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+<p>During the years of my PhD, running turned into an important part of my life, crucial in order to keep me productive and in a good mental state throughout the work days and weeks.  I&rsquo;m a relatively serious runner, but I run mostly just because it&rsquo;s a lot of fun and a great way to explore your surroundings, and because it&rsquo;s good for both my physical and mental health. My training can be followed on <a href="https://www.strava.com/athletes/41453104" target="_blank">Strava</a>.</p>
+
+<p>From Sep 10 2020 until Dec 31 2023, I was on a run streak (running at least 2 km outside every day) of 1208 days. I started a new run streak on Jan 2 2024.</p>
+
+<h4 id="personal-bests">Personal Bests</h4>
+
+<ul>
+<li>10 km: 34:44 (3:28 min/km) | Bålsta, 23-04-29 | <a href="https://www.strava.com/activities/8975987229" target="_blank">[Strava]</a></li>
+<li>Half Marathon: 1:19:06 (3:45 min/km) | Uppsala, 23-10-28 | <a href="https://www.strava.com/activities/10117986206" target="_blank">[Strava]</a></li>
+</ul>
+
+<h4 id="stats-by-year">Stats by Year</h4>
+
+<ul>
+<li>2023
+
+<ul>
+<li>Distance: 4,277.2 km (daily avg: 11.7 km | weekly avg: 82.0 km)</li>
+<li>Elevation gain: 37,028 m</li>
+</ul></li>
+<li>2022
+
+<ul>
+<li>Distance: 3,871.5 km (daily avg: 10.6 km | weekly avg: 74.2 km)</li>
+<li>Elevation gain: 19,657 m</li>
+</ul></li>
+<li>2021
+
+<ul>
+<li>Distance: 3,244.7 km (daily avg: 8.9 km | weekly avg: 62.2 km)</li>
+<li>Elevation gain: 16,349 m</li>
+</ul></li>
+<li>2020
+
+<ul>
+<li>Distance: 3,593.1 km (daily avg: 9.8 km | weekly avg: 68.9 km)</li>
+<li>Elevation gain: 24,089 m</li>
+</ul></li>
+<li>2019
+
+<ul>
+<li>Distance: 1,604.4 km</li>
+<li>Elevation gain: 12,634 m</li>
+</ul></li>
+</ul>
+
+<!-- Races.... TODO! -->
+
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  
+  var w = 720,
+      h = 260,
+      color = d3.scale.category10();
+  
+  var force = d3.layout.force()
+      .gravity(0)
+      .charge(-10)
+      .size([w, h]);
+  
+  var nodes = force.nodes(),
+      a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+      b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+      c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+  	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+  
+  nodes.push(a, b, c, d);
+  
+  var svg = d3.select("#mybanner").append("svg:svg")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.append("svg:rect")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.selectAll("circle")
+      .data(nodes)
+    .enter().append("svg:circle")
+      .attr("r", 12)
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .style("fill", fill)
+  	.style("visibility", "hidden");
+      
+  
+  force.on("tick", function(e) {
+    var k = e.alpha * .1;
+    nodes.forEach(function(node) {
+      var center = nodes[node.type];
+      node.x += (center.x - node.x) * k;
+      node.y += (center.y - node.y) * k;
+    });
+  
+    svg.selectAll("circle")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  });
+  
+  var p0;
+  
+  svg.on("mousemove", function() {
+    var p1 = d3.svg.mouse(this),
+        node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+  
+    p0 = p1;
+  
+    svg.append("svg:circle")
+        .data([node])
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", 4.5)
+        .style("fill", fill)
+      .transition()
+        .delay(2250)
+        .attr("r", 1e-6)
+        .each("end", function() { nodes.splice(4, 1); })
+        .remove();
+  
+    nodes.push(node);
+    force.start();
+  });
+  
+  function fill(d) {
+    return color(d.type);
+  }
+
+</script>
+    </div>
+  </section>
+  
+
+  
+  
+  
   <section id="coursework" class="home-section">
     <div class="container">
       
@@ -4955,7 +5250,7 @@ function fill(d) {
   <div class="container">
     <p class="powered-by">
 
-      Copyright &copy; Fredrik K. Gustafsson 2023 
+      Copyright &copy; Fredrik K. Gustafsson 2024 
 
       <br>
 
