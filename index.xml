@@ -11,6 +11,66 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>My Year of Reading in 2023</title>
+      <link>/post/year_of_reading_2023/</link>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0100</pubDate>
+      
+      <guid>/post/year_of_reading_2023/</guid>
+      <description>&lt;p&gt;In 2023, I read 87 papers and 26 non-technical books. 87 papers is slightly more than my previous record (82 papers in 2022), and I&amp;rsquo;ve never even been remotely close to reading 26 books in a year. Deciding to read more books is definitely one of the best things I did in 2023, it&amp;rsquo;s a great way to relax and learn some new things about the world.&lt;/p&gt;
+
+&lt;p&gt;In 2024, I want to read at least 100 papers and 12 non-technical books.&lt;/p&gt;
+
+&lt;p&gt;Some more detailed statistics of my read papers (number of papers read each year, papers by publication year, papers by venue, papers by category):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/year_of_reading_2023/papers_read_each_year.svg&#34; alt=&#34;Papers read each year&#34; /&gt;
+&lt;img src=&#34;/img/year_of_reading_2023/papers_by_publication_year.svg&#34; alt=&#34;Papers by publication year&#34; /&gt;
+&lt;img src=&#34;/img/year_of_reading_2023/papers_by_venue.svg&#34; alt=&#34;Papers by venue&#34; /&gt;
+&lt;img src=&#34;/img/year_of_reading_2023/papers_by_category.svg&#34; alt=&#34;Papers by category&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The 26 non-technical books I read in 2023:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;23-10-25 | &lt;a href=&#34;https://www.goodreads.com/book/show/11989.The_Plague&#34; target=&#34;_blank&#34;&gt;The Plague&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Albert Camus&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;23-10-23 | &lt;a href=&#34;https://www.goodreads.com/book/show/170448.Animal_Farm&#34; target=&#34;_blank&#34;&gt;Animal Farm&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;George Orwell&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;23-10-11 | &lt;a href=&#34;https://www.goodreads.com/book/show/49552.The_Stranger&#34; target=&#34;_blank&#34;&gt;The Stranger&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Albert Camus&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;23-10-02 | &lt;a href=&#34;https://www.goodreads.com/book/show/164006.Memoirs_of_a_Dutiful_Daughter&#34; target=&#34;_blank&#34;&gt;Memoirs of a Dutiful Daughter&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Simone de Beauvoir&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;23-09-17 | &lt;a href=&#34;https://www.goodreads.com/book/show/55244640-the-subversive-simone-weil&#34; target=&#34;_blank&#34;&gt;The Subversive Simone Weil: A Life in Five Ideas&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Robert Zaretsky&lt;/strong&gt;&lt;/em&gt; | Rating: 3&lt;/li&gt;
+&lt;li&gt;23-09-11 | &lt;a href=&#34;https://www.goodreads.com/book/show/123169859-n-r-ingen-lyssnar&#34; target=&#34;_blank&#34;&gt;När ingen lyssnar&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Diamant Salihu&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;23-08-31 | &lt;a href=&#34;https://www.goodreads.com/book/show/57761906-tills-alla-d-r&#34; target=&#34;_blank&#34;&gt;Tills alla dör&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Diamant Salihu&lt;/strong&gt;&lt;/em&gt; | Rating: 4.5&lt;/li&gt;
+&lt;li&gt;23-08-27 | &lt;a href=&#34;https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning&#34; target=&#34;_blank&#34;&gt;Man&amp;rsquo;s Search for Meaning&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Viktor E. Frankl&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;23-08-23 | &lt;a href=&#34;https://www.goodreads.com/book/show/105292242-bland-br-der-och-fiender-om-g-ng-manligheter-och-avhopp&#34; target=&#34;_blank&#34;&gt;Bland bröder och fiender. Om gäng, manligheter och avhopp&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Torbjörn Forkby, Jari Kuosmanen, Henrik Örnlind&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;23-08-16 | &lt;a href=&#34;https://www.goodreads.com/book/show/57445383-mary-wollstonecraft-feminismen-och-frihetens-f-ruts-ttningar&#34; target=&#34;_blank&#34;&gt;Mary Wollstonecraft, feminismen och frihetens förutsättningar&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Lena Halldenius&lt;/strong&gt;&lt;/em&gt; | Rating: 3&lt;/li&gt;
+&lt;li&gt;23-08-12 | &lt;a href=&#34;https://www.goodreads.com/book/show/17690.The_Trial&#34; target=&#34;_blank&#34;&gt;The Trial&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Franz Kafka&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;23-08-10 | &lt;a href=&#34;https://www.goodreads.com/book/show/91950.The_Myth_of_Sisyphus&#34; target=&#34;_blank&#34;&gt;The Myth of Sisyphus&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Albert Camus&lt;/strong&gt;&lt;/em&gt; | Rating: 3&lt;/li&gt;
+&lt;li&gt;23-08-07 | &lt;a href=&#34;https://www.goodreads.com/book/show/52090.Eichmann_in_Jerusalem&#34; target=&#34;_blank&#34;&gt;Eichmann in Jerusalem: A Report on the Banality of Evil&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Hannah Arendt&lt;/strong&gt;&lt;/em&gt; | Rating: 3&lt;/li&gt;
+&lt;li&gt;23-08-02 | &lt;a href=&#34;https://www.goodreads.com/book/show/52908942-how-to-avoid-a-climate-disaster&#34; target=&#34;_blank&#34;&gt;How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Bill Gates&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;23-08-01 | &lt;a href=&#34;https://www.goodreads.com/book/show/53404245-what-is-life&#34; target=&#34;_blank&#34;&gt;What Is Life? Five Great Ideas in Biology&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Paul Nurse&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;23-07-26 | &lt;a href=&#34;https://www.goodreads.com/book/show/1754324.Tysk_h_st&#34; target=&#34;_blank&#34;&gt;Tysk höst&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Stig Dagerman&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;23-07-23 | &lt;a href=&#34;https://www.goodreads.com/book/show/60590737-det-fallna-imperiet&#34; target=&#34;_blank&#34;&gt;Det fallna imperiet: Ryssland och väst under Vladimir Putin&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Martin Kragh&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;23-07-17 | &lt;a href=&#34;https://www.goodreads.com/book/show/32335775-finding-meaning-in-an-imperfect-world&#34; target=&#34;_blank&#34;&gt;Finding Meaning in an Imperfect World&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Iddo Landau&lt;/strong&gt;&lt;/em&gt; | Rating: 3&lt;/li&gt;
+&lt;li&gt;23-07-07 | &lt;a href=&#34;https://www.goodreads.com/book/show/2195464.What_I_Talk_About_When_I_Talk_About_Running&#34; target=&#34;_blank&#34;&gt;What I Talk About When I Talk About Running&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Haruki Murakami&lt;/strong&gt;&lt;/em&gt; | Rating: 3&lt;/li&gt;
+&lt;li&gt;23-07-03 | &lt;a href=&#34;https://www.goodreads.com/book/show/53922059-frontl-paren-gunder-h-gg---hans-uppg-ng-och-fall&#34; target=&#34;_blank&#34;&gt;Frontlöparen: Gunder Hägg, hans uppgång och fall&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Björn Lundberg&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;23-06-03 | &lt;a href=&#34;https://www.goodreads.com/book/show/7634213-meaning-in-life-and-why-it-matters&#34; target=&#34;_blank&#34;&gt;Meaning in Life and Why It Matters&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Susan Wolf&lt;/strong&gt;&lt;/em&gt; | Rating: 2.5&lt;/li&gt;
+&lt;li&gt;23-03-14 | &lt;a href=&#34;https://www.goodreads.com/book/show/29378.Practical_Ethics&#34; target=&#34;_blank&#34;&gt;Practical Ethics&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Peter Singer&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;23-02-12 | &lt;a href=&#34;https://www.goodreads.com/book/show/31851.An_Introduction_to_Political_Philosophy&#34; target=&#34;_blank&#34;&gt;An Introduction to Political Philosophy&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Jonathan Wolff&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;23-01-11 | &lt;a href=&#34;https://www.goodreads.com/book/show/17206336-liberalism&#34; target=&#34;_blank&#34;&gt;Liberalism&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Lena Halldenius&lt;/strong&gt;&lt;/em&gt; | Rating: 4.5&lt;/li&gt;
+&lt;li&gt;23-01-04 | &lt;a href=&#34;https://www.goodreads.com/book/show/59757676-grundbok-i-metaetik&#34; target=&#34;_blank&#34;&gt;Grundbok i metaetik&lt;/a&gt; &lt;em&gt;(Introduction to Metaethics)&lt;/em&gt; | &lt;em&gt;&lt;strong&gt;Nils Franzén, Victor Moberger, Olle Risberg&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;23-01-03 | &lt;a href=&#34;https://www.goodreads.com/book/show/2120675.The_Moral_Philosophers&#34; target=&#34;_blank&#34;&gt;The Moral Philosophers: An Introduction to Ethics&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Richard Norman&lt;/strong&gt;&lt;/em&gt; | Rating: 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Among the 26 books, these are my top 5 favorites (in alphabetical order):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/170448.Animal_Farm&#34; target=&#34;_blank&#34;&gt;Animal Farm&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;George Orwell&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/17206336-liberalism&#34; target=&#34;_blank&#34;&gt;Liberalism&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Lena Halldenius&lt;/strong&gt;&lt;/em&gt; | Rating: 4.5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/164006.Memoirs_of_a_Dutiful_Daughter&#34; target=&#34;_blank&#34;&gt;Memoirs of a Dutiful Daughter&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Simone de Beauvoir&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/17690.The_Trial&#34; target=&#34;_blank&#34;&gt;The Trial&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Franz Kafka&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/57761906-tills-alla-d-r&#34; target=&#34;_blank&#34;&gt;Tills alla dör&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Diamant Salihu&lt;/strong&gt;&lt;/em&gt; | Rating: 4.5&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Towards Accurate and Reliable Deep Regression Models</title>
       <link>/publication/thesis/</link>
       <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
@@ -20,7 +80,7 @@
     </item>
     
     <item>
-      <title>Controlling Vision-Language Models for Universal Image Restoration</title>
+      <title>Controlling Vision-Language Models for Multi-Task Image Restoration</title>
       <link>/publication/da_clip/</link>
       <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
       
@@ -273,15 +333,6 @@
       <pubDate>Thu, 26 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/publication/dctd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision</title>
-      <link>/publication/evaluating_bdl/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/evaluating_bdl/</guid>
       <description></description>
     </item>
     

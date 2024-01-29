@@ -426,21 +426,21 @@ Click [here](/post/news) for older news. -->
 <h3 id="news">News</h3>
 
 <ul>
+<li><p><b>[Jan 29, 2024]</b> New blog post: <a href="/post/year_of_reading_2023/"><em>My Year of Reading in 2023</em></a>.</p></li>
+
+<li><p><b>[Jan 16, 2024]</b> <b>Accepted paper:</b> <a href="/publication/da_clip/"><em>Controlling Vision-Language Models for Multi-Task Image Restoration</em></a>, work lead by the incredibly skilled <a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a>, has been accepted to <a href="https://iclr.cc/Conferences/2024" target="_blank">ICLR 2024</a>.</p></li>
+
 <li><p><b>[Dec 8, 2023]</b> I have joined the group of <a href="https://ki.se/en/people/mattias-rantalainen" target="_blank">Mattias Rantalainen</a> at <a href="https://ki.se/en" target="_blank">Karolinska Institutet</a> as a postdoc to work on computational pathology.</p></li>
 
 <li><p><b>[Nov 30, 2023]</b> I have successfully defended my PhD thesis <em>Towards Accurate and Reliable Deep Regression Models</em> <a href="/files/thesis.pdf">[pdf]</a> <a href="https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-513727" target="_blank">[DiVA]</a> <a href="/files/defense_slides_handout.pdf">[slides]</a> <a href="https://youtu.be/tkmi-b48VMY?si=6ETZoBJLEm5dMfIl" target="_blank">[video]</a>.</p></li>
 
 <li><p><b>[Oct 31, 2023]</b> Invited talk: I presented <em>How Reliable is Your Regression Model&rsquo;s Uncertainty Under Real-World Distribution Shifts?</em> <a href="/files/talk_231031_slides.pdf">[slides]</a> at the <a href="https://www.dfki.de/en/web/research/research-departments/augmented-vision" target="_blank">DFKI Augmented Vision Workshop</a>.</p></li>
 
-<li><p><b>[Oct 2, 2023]</b> <b>New preprint:</b> <i>Controlling Vision-Language Models for Universal Image Restoration</i> <a href="https://arxiv.org/abs/2310.01018" target="_blank">[arXiv]</a> <a href="https://github.com/Algolzw/daclip-uir" target="_blank">[code]</a> <a href="https://algolzw.github.io/daclip-uir/" target="_blank">[project]</a>.</p></li>
+<li><p><b>[Oct 2, 2023]</b> <b>New preprint:</b> <i>Controlling Vision-Language Models for Multi-Task Image Restoration</i> <a href="https://arxiv.org/abs/2310.01018" target="_blank">[arXiv]</a> <a href="https://github.com/Algolzw/daclip-uir" target="_blank">[code]</a> <a href="https://algolzw.github.io/daclip-uir/" target="_blank">[project]</a>.</p></li>
 
 <li><p><b>[Jun 28, 2023]</b> <b>Accepted paper:</b> <a href="/publication/regression_uncertainty/"><em>How Reliable is Your Regression Model&rsquo;s Uncertainty Under Real-World Distribution Shifts?</em></a> has been accepted to <a href="https://jmlr.org/tmlr/" target="_blank">TMLR</a>.</p></li>
 
 <li><p><b>[Jun 22, 2023]</b> New blog post: <a href="/post/phd_of_reading/"><em>The How and Why of Reading 300 Papers in 5 Years</em></a>.</p></li>
-
-<li><p><b>[Apr 25, 2023]</b> <b>Accepted paper:</b> <a href="/publication/ir_sde/"><em>Image Restoration with Mean-Reverting Stochastic Differential Equations</em></a> has been accepted to <a href="https://icml.cc/Conferences/2023" target="_blank">ICML 2023</a>.</p></li>
-
-<li><p><b>[Apr 18, 2023]</b> <b>Accepted paper:</b> <a href="/publication/refusion/"><em>Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models</em></a> has been accepted to <a href="https://cvlai.net/ntire/2023/" target="_blank">CVPR Workshops 2023</a>.</p></li>
 </ul>
 
 <p>Click <a href="/post/news">here</a> for older news.</p>
@@ -482,6 +482,94 @@ Click [here](/post/news) for older news. -->
     
 
     
+    
+      
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/publication/da_clip/">
+      <img src="/img/da_clip.jpg" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/da_clip/" itemprop="url">Controlling Vision-Language Models for Multi-Task Image Restoration</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    We present a degradation-aware vision-language model (DA-CLIP) as a multi-task framework for image restoration. DA-CLIP trains an additional controller that adapts the fixed CLIP image encoder to predict high-quality feature embeddings. By integrating the embedding into an image restoration network via cross-attention, we are able to pilot the model to learn a high-fidelity image reconstruction. The controller itself also outputs a degradation feature that matches the real corruptions of the input, yielding a natural classifier for different degradation types. Our approach advances state-of-the-art performance on both degradation-specific and unified image restoration tasks.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön
+    
+  </div>
+
+  <div class="pub-publication">
+    ICLR, 2024</div>
+
+  <div class="pub-links">
+    
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2310.01018" target="_blank" rel="noopener">
+  arXiv
+</a>
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/Algolzw/daclip-uir" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://algolzw.github.io/daclip-uir/" target="_blank" rel="noopener">
+  Project
+</a>
+
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://openreview.net/forum?id=t3vnnLeajU" target="_blank" rel="noopener">
+  OpenReview
+</a>
+
+
+
+
+
+
+<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
+        data-filename="/files/citations/da_clip.bib">
+  BibTeX
+</button>
+
+
+
+  </div>
+
+</div>
+
+      
     
       
         <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
@@ -1284,11 +1372,11 @@ Click [here](/post/news) for older news. -->
     
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/da_clip/" itemprop="name">Controlling Vision-Language Models for Universal Image Restoration</a>
+  <a href="/publication/da_clip/" itemprop="name">Controlling Vision-Language Models for Multi-Task Image Restoration</a>
   <div class="pub-authors2" itemprop="author">
     Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</div>
   <div class="pub-authors3">
-  Preprint, 2023
+  ICLR, 2024
   </div>
   <p>
 
@@ -1321,6 +1409,10 @@ Click [here](/post/news) for older news. -->
 
 
 
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://openreview.net/forum?id=t3vnnLeajU" target="_blank" rel="noopener">
+  OpenReview
+</a>
 
 
 
@@ -3128,6 +3220,8 @@ function fill(d) {
 <p>I have also started to really enjoy reading non-technical books, e.g. about ethics and political philosophy. Since late 2022, I have read the following books:</p>
 
 <ul>
+<li>24-01-27 | <a href="https://www.goodreads.com/book/show/56197486-inseparable" target="_blank">Inseparable</a> | <em><strong>Simone de Beauvoir</strong></em> | Rating: 4</li>
+<li>24-01-22 | <a href="https://www.goodreads.com/book/show/61439040-1984" target="_blank">1984</a> | <em><strong>George Orwell</strong></em> | Rating: 4</li>
 <li>23-10-25 | <a href="https://www.goodreads.com/book/show/11989.The_Plague" target="_blank">The Plague</a> | <em><strong>Albert Camus</strong></em> | Rating: 4</li>
 <li>23-10-23 | <a href="https://www.goodreads.com/book/show/170448.Animal_Farm" target="_blank">Animal Farm</a> | <em><strong>George Orwell</strong></em> | Rating: 4</li>
 <li>23-10-11 | <a href="https://www.goodreads.com/book/show/49552.The_Stranger" target="_blank">The Stranger</a> | <em><strong>Albert Camus</strong></em> | Rating: 3.5</li>
@@ -3157,7 +3251,7 @@ function fill(d) {
 <li>22-11-26 | <a href="https://www.goodreads.com/book/show/50680935-ethics-in-engineering" target="_blank">Ethics in Engineering</a> | <em><strong>Thomas Taro Lennerfors</strong></em> | Rating: 3</li>
 </ul>
 
-<p>27 books in total.</p>
+<p>29 books in total.</p>
 
   </div>
   
@@ -3262,6 +3356,13 @@ function fill(d) {
     <h1>Blog Posts</h1>
     
     
+    <p class="view-all">
+      <a href="/post/">
+        More Posts
+        <i class="fa fa-angle-double-right"></i>
+      </a>
+    </p>
+    
 
   </div>
   <div class="col-xs-12 col-md-8">
@@ -3272,6 +3373,79 @@ function fill(d) {
       
 
       
+      
+
+        
+
+        
+        
+
+        
+        
+
+      
+      
+        
+        
+
+<div class="card-simple" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2024-01-29 00:00:00 &#43;0100 CET" itemprop="datePublished dateModified">
+      Jan 29, 2024
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Fredrik K. Gustafsson">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/year_of_reading_2023/#disqus_thread"></a>
+  
+
+  
+
+  
+
+</div>
+
+
+  
+  
+  <a href="/post/year_of_reading_2023/">
+    <img src="/img/year_of_reading_2023/papers_read_each_year.png" class="article-banner" itemprop="image">
+  </a>
+  
+  <h3 class="article-title" itemprop="headline">
+    <a href="/post/year_of_reading_2023/" itemprop="url">My Year of Reading in 2023</a>
+  </h3>
+  <div class="article-style" itemprop="articleBody">
+    
+    <p>In 2023, I read 87 papers and 26 non-technical books. 87 papers is slightly more than my previous record (82 papers in 2022), and I&rsquo;ve never even been remotely close to reading 26 books in a year. Deciding to read more books is definitely&hellip;</p>
+    
+  </div>
+  <p class="read-more" itemprop="mainEntityOfPage">
+    <a href="/post/year_of_reading_2023/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
       
 
         
@@ -3509,23 +3683,6 @@ function fill(d) {
       
 
       
-
-        
-
-        
-        
-
-        
-        
-          
-          
-        
-      
-
-      
-      
-
-      
     
 
   </div>
@@ -3697,7 +3854,7 @@ function fill(d) {
 
 <p>During the years of my PhD, running turned into an important part of my life, crucial in order to keep me productive and in a good mental state throughout the work days and weeks.  I&rsquo;m a relatively serious runner, but I run mostly just because it&rsquo;s a lot of fun and a great way to explore your surroundings, and because it&rsquo;s good for both my physical and mental health. My training can be followed on <a href="https://www.strava.com/athletes/41453104" target="_blank">Strava</a>.</p>
 
-<p>From Sep 10 2020 until Dec 31 2023, I was on a run streak (running at least 2 km outside every day) of 1208 days. I started a new run streak on Jan 2 2024.</p>
+<p>From Sep 10 2020 until Dec 31 2023, I was on a run streak (running at least 2 km outside every day) of 1208 days. I started a new modified run/walk streak on Jan 2 2024 (just walking 1 km outside is fine on proper sick days).</p>
 
 <h4 id="personal-bests">Personal Bests</h4>
 

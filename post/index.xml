@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>My Year of Reading in 2023</title>
+      <link>/post/year_of_reading_2023/</link>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0100</pubDate>
+      
+      <guid>/post/year_of_reading_2023/</guid>
+      <description>In 2023, I read 87 papers and 26 non-technical books. 87 papers is slightly more than my previous record (82 papers in 2022), and I&amp;rsquo;ve never even been remotely close to reading 26 books in a year. Deciding to read more books is definitely one of the best things I did in 2023, it&amp;rsquo;s a great way to relax and learn some new things about the world.
+In 2024, I want to read at least 100 papers and 12 non-technical books.</description>
+    </item>
+    
+    <item>
       <title>The How and Why of Reading 300 Papers in 5 Years</title>
       <link>/post/phd_of_reading/</link>
       <pubDate>Thu, 22 Jun 2023 00:00:00 +0200</pubDate>
@@ -56,9 +66,10 @@ When I first got interested in deep learning a couple of years ago, I started ou
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Dec 8, 2023] I have joined the group of Mattias Rantalainen at Karolinska Institutet as a postdoc to work on computational pathology.
- [Nov 30, 2023] I have successfully defended my PhD thesis Towards Accurate and Reliable Deep Regression Models [pdf] [DiVA] [slides] [video].
- [Oct 31, 2023] Invited talk: I presented How Reliable is Your Regression Model&amp;rsquo;s Uncertainty Under Real-World Distribution Shifts? [slides] at the DFKI Augmented Vision Workshop.</description>
+      <description>[Jan 29, 2024] New blog post: My Year of Reading in 2023.
+ [Jan 16, 2024] Accepted paper: Controlling Vision-Language Models for Multi-Task Image Restoration, work lead by the incredibly skilled Ziwei Luo, has been accepted to ICLR 2024.
+ [Dec 8, 2023] I have joined the group of Mattias Rantalainen at Karolinska Institutet as a postdoc to work on computational pathology.
+ [Nov 30, 2023] I have successfully defended my PhD thesis Towards Accurate and Reliable Deep Regression Models [pdf] [DiVA] [slides] [video].</description>
     </item>
     
   </channel>
