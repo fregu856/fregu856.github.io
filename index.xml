@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Photo-Realistic Image Restoration in the Wild with Controlled Vision-Language Models</title>
+      <link>/publication/daclip-ir/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/daclip-ir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>My Year of Reading in 2023</title>
       <link>/post/year_of_reading_2023/</link>
       <pubDate>Mon, 29 Jan 2024 00:00:00 +0100</pubDate>
@@ -324,15 +333,6 @@
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/publication/ebms_regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Energy-Based Models for Deep Probabilistic Regression</title>
-      <link>/publication/dctd/</link>
-      <pubDate>Thu, 26 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/dctd/</guid>
       <description></description>
     </item>
     

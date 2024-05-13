@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Many important computer vision applications are naturally formulated as regression problems. Within medical imaging, accurate regression models have the potential to automate various tasks, helping to lower costs and improve patient outcomes. Such safety-critical deployment does however require reliable estimation of model uncertainty, also under the wide variety of distribution shifts that might be encountered in practice. Motivated by this, we set out to investigate the reliability of regression uncertainty estimation methods under various real-world distribution shifts. To that end, we propose an extensive benchmark of 8 image-based regression datasets with different types of challenging distribution shifts. We then employ our benchmark to evaluate many of the most common uncertainty estimation methods, as well as two state-of-the-art uncertainty scores from the task of out-of-distribution detection. We find that while methods are well calibrated when there is no distribution shift, they all become highly overconfident on many of the benchmark datasets. This uncovers important limitations of current uncertainty estimation methods, and the proposed benchmark therefore serves as a challenge to the research community. We hope that our benchmark will spur more work on how to develop truly reliable regression uncertainty estimation methods.">
+  <meta name="description" content="Though diffusion models have been successfully applied to various image restoration (IR) tasks, their performance is sensitive to the choice of training datasets. Typically, diffusion models trained in specific datasets fail to recover images that have out-of-distribution degradations. To address this problem, this work leverages a capable vision-language model and a synthetic degradation pipeline to learn image restoration in the wild (wild IR). More specifically, all low-quality images are simulated with a synthetic degradation pipeline that contains multiple common degradations such as blur, resize, noise, and JPEG compression. Then we introduce robust training for a degradation-aware CLIP model to extract enriched image content features to assist high-quality image restoration. Our base diffusion model is the image restoration SDE (IR-SDE). Built upon it, we further present a posterior sampling strategy for fast noise-free image generation. We evaluate our model on both synthetic and real-world degradation datasets. Moreover, experiments on the unified image restoration task illustrate that the proposed posterior sampling improves image generation quality for various degradations.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/regression_uncertainty/">
+  <link rel="alternate" hreflang="en-us" href="/publication/daclip-ir/">
 
   
 
@@ -82,7 +82,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/regression_uncertainty/">
+  <link rel="canonical" href="/publication/daclip-ir/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -90,19 +90,19 @@
   <meta property="twitter:creator" content="@https://twitter.com/fregu856">
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
-  <meta property="og:url" content="/publication/regression_uncertainty/">
-  <meta property="og:title" content="How Reliable is Your Regression Model&#39;s Uncertainty Under Real-World Distribution Shifts? | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
-  <meta property="og:description" content="Many important computer vision applications are naturally formulated as regression problems. Within medical imaging, accurate regression models have the potential to automate various tasks, helping to lower costs and improve patient outcomes. Such safety-critical deployment does however require reliable estimation of model uncertainty, also under the wide variety of distribution shifts that might be encountered in practice. Motivated by this, we set out to investigate the reliability of regression uncertainty estimation methods under various real-world distribution shifts. To that end, we propose an extensive benchmark of 8 image-based regression datasets with different types of challenging distribution shifts. We then employ our benchmark to evaluate many of the most common uncertainty estimation methods, as well as two state-of-the-art uncertainty scores from the task of out-of-distribution detection. We find that while methods are well calibrated when there is no distribution shift, they all become highly overconfident on many of the benchmark datasets. This uncovers important limitations of current uncertainty estimation methods, and the proposed benchmark therefore serves as a challenge to the research community. We hope that our benchmark will spur more work on how to develop truly reliable regression uncertainty estimation methods.">
+  <meta property="og:url" content="/publication/daclip-ir/">
+  <meta property="og:title" content="Photo-Realistic Image Restoration in the Wild with Controlled Vision-Language Models | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
+  <meta property="og:description" content="Though diffusion models have been successfully applied to various image restoration (IR) tasks, their performance is sensitive to the choice of training datasets. Typically, diffusion models trained in specific datasets fail to recover images that have out-of-distribution degradations. To address this problem, this work leverages a capable vision-language model and a synthetic degradation pipeline to learn image restoration in the wild (wild IR). More specifically, all low-quality images are simulated with a synthetic degradation pipeline that contains multiple common degradations such as blur, resize, noise, and JPEG compression. Then we introduce robust training for a degradation-aware CLIP model to extract enriched image content features to assist high-quality image restoration. Our base diffusion model is the image restoration SDE (IR-SDE). Built upon it, we further present a posterior sampling strategy for fast noise-free image generation. We evaluate our model on both synthetic and real-world degradation datasets. Moreover, experiments on the unified image restoration task illustrate that the proposed posterior sampling improves image generation quality for various degradations.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2023-02-07T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2024-04-15T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2023-02-07T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2024-04-15T00:00:00&#43;00:00">
   
 
-  <title>How Reliable is Your Regression Model&#39;s Uncertainty Under Real-World Distribution Shifts? | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
+  
+
+  <title>Photo-Realistic Image Restoration in the Wild with Controlled Vision-Language Models | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -296,17 +296,17 @@
 
   
 <div class="article-header">
-  <img src="/img/regression_uncertainty.png" class="article-banner-small" itemprop="image">
+  <img src="/img/daclip-ir.png" class="article-banner-small" itemprop="image">
   
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">How Reliable is Your Regression Model&#39;s Uncertainty Under Real-World Distribution Shifts?</h1>
+    <h1 itemprop="name">Photo-Realistic Image Restoration in the Wild with Controlled Vision-Language Models</h1>
     <span class="pub-authors" itemprop="author">
       
-      <strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Thomas B. Schön
+      Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön
       
     </span>
     <span class="pull-right">
@@ -318,7 +318,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Many important computer vision applications are naturally formulated as regression problems. Within medical imaging, accurate regression models have the potential to automate various tasks, helping to lower costs and improve patient outcomes. Such safety-critical deployment does however require reliable estimation of model uncertainty, also under the wide variety of distribution shifts that might be encountered in practice. Motivated by this, we set out to investigate the reliability of regression uncertainty estimation methods under various real-world distribution shifts. To that end, we propose an extensive benchmark of 8 image-based regression datasets with different types of challenging distribution shifts. We then employ our benchmark to evaluate many of the most common uncertainty estimation methods, as well as two state-of-the-art uncertainty scores from the task of out-of-distribution detection. We find that while methods are well calibrated when there is no distribution shift, they all become highly overconfident on many of the benchmark datasets. This uncovers important limitations of current uncertainty estimation methods, and the proposed benchmark therefore serves as a challenge to the research community. We hope that our benchmark will spur more work on how to develop truly reliable regression uncertainty estimation methods.</p>
+    <p class="pub-abstract" itemprop="text">Though diffusion models have been successfully applied to various image restoration (IR) tasks, their performance is sensitive to the choice of training datasets. Typically, diffusion models trained in specific datasets fail to recover images that have out-of-distribution degradations. To address this problem, this work leverages a capable vision-language model and a synthetic degradation pipeline to learn image restoration in the wild (wild IR). More specifically, all low-quality images are simulated with a synthetic degradation pipeline that contains multiple common degradations such as blur, resize, noise, and JPEG compression. Then we introduce robust training for a degradation-aware CLIP model to extract enriched image content features to assist high-quality image restoration. Our base diffusion model is the image restoration SDE (IR-SDE). Built upon it, we further present a posterior sampling strategy for fast noise-free image generation. We evaluate our model on both synthetic and real-world degradation datasets. Moreover, experiments on the unified image restoration task illustrate that the proposed posterior sampling improves image generation quality for various degradations.</p>
     
 
     
@@ -329,8 +329,8 @@
           <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
           <div class="col-xs-12 col-sm-9">
             
-            <a href="/publication/#2">
-              Journal article
+            <a href="/publication/#1">
+              Conference paper
             </a>
             
           </div>
@@ -347,7 +347,7 @@
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">Transactions on Machine Learning Research (TMLR), 2023</div>
+          <div class="col-xs-12 col-sm-9">The IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPR Workshops), 2024</div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -361,7 +361,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            February, 2023
+            April, 2024
           </div>
         </div>
       </div>
@@ -381,7 +381,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2302.03679" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2404.09732" target="_blank" rel="noopener">
   arXiv
 </a>
 
@@ -389,7 +389,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://github.com/fregu856/regression_uncertainty" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://github.com/Algolzw/daclip-uir" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -403,28 +403,11 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://youtu.be/QGGP1zsq7Sc?si=-ZznIv-2Td6kAma3" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-<a class="btn btn-primary btn-outline" href="https://openreview.net/forum?id=WJt2Pc3qtI" target="_blank" rel="noopener">
-  OpenReview
-</a>
-
-
-<a class="btn btn-primary btn-outline" href="/files/talk_240321_slides_handout.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
 
 
 
 
 
-<button type="button" class="btn btn-primary btn-outline js-cite-modal"
-        data-filename="/files/citations/regression_uncertainty.bib">
-  BibTeX
-</button>
 
 
 
