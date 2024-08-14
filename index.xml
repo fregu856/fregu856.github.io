@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Evaluating Regression and Probabilistic Methods for ECG-Based Electrolyte Prediction</title>
+      <link>/publication/regressionecg/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/regressionecg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Photo-Realistic Image Restoration in the Wild with Controlled Vision-Language Models</title>
       <link>/publication/daclip-ir/</link>
       <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
@@ -257,15 +266,6 @@
       <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>/publication/ir_sde/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ECG-Based Electrolyte Prediction: Evaluating Regression and Probabilistic Methods</title>
-      <link>/publication/regressionecg/</link>
-      <pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/regressionecg/</guid>
       <description></description>
     </item>
     

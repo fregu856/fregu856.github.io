@@ -17,7 +17,7 @@
       
     
   
-  <meta name="description" content="Objective: Imbalances of the electrolyte concentration levels in the body can lead to catastrophic consequences, but accurate and accessible measurements could improve patient outcomes. While blood tests provide accurate measurements, they are invasive and the laboratory analysis can be slow or inaccessible. In contrast, an electrocardiogram (ECG) is a widely adopted tool which is quick and simple to acquire. However, the problem of estimating continuous electrolyte concentrations directly from ECGs is not well-studied. We therefore investigate if regression methods can be used for accurate ECG-based prediction of electrolyte concentrations. Methods: We explore the use of deep neural networks (DNNs) for this task. We analyze the regression performance across four electrolytes, utilizing a novel dataset containing over 290000 ECGs. For improved understanding, we also study the full spectrum from continuous predictions to binary classification of extreme concentration levels. To enhance clinical usefulness, we finally extend to a probabilistic regression approach and evaluate different uncertainty estimates. Results: We find that the performance varies significantly between different electrolytes, which is clinically justified in the interplay of electrolytes and their manifestation in the ECG. We also compare the regression accuracy with that of traditional machine learning models, demonstrating superior performance of DNNs. Conclusion: Discretization can lead to good classification performance, but does not help solve the original problem of predicting continuous concentration levels. While probabilistic regression demonstrates potential practical usefulness, the uncertainty estimates are not particularly well-calibrated. Significance: Our study is a first step towards accurate and reliable ECG-based prediction of electrolyte concentration levels.">
+  <meta name="description" content="Imbalances in electrolyte concentrations can have severe consequences, but accurate and accessible measurements could improve patient outcomes. The current measurement method based on blood tests is accurate but invasive and time-consuming and is often unavailable for example in remote locations or an ambulance setting. In this paper, we explore the use of deep neural networks (DNNs) for regression tasks to accurately predict continuous electrolyte concentrations from electrocardiograms (ECGs), a quick and widely adopted tool. We analyze our DNN models on a novel dataset of over 290,000 ECGs across four major electrolytes and compare their performance with traditional machine learning models. For improved understanding, we also study the full spectrum from continuous predictions to a binary classification of extreme concentration levels. Finally, we investigate probabilistic regression approaches and explore uncertainty estimates for enhanced clinical usefulness. Our results show that DNNs outperform traditional models but model performance varies significantly across different electrolytes. While discretization leads to good classification performance, it does not address the original problem of continuous concentration level prediction. Probabilistic regression has practical potential, but our uncertainty estimates are not perfectly calibrated. Our study is therefore a first step towards developing an accurate and reliable ECG-based method for electrolyte concentration level prediction — a method with high potential impact within multiple clinical scenarios.">
 
   
   <link rel="alternate" hreflang="en-us" href="/publication/regressionecg/">
@@ -91,18 +91,18 @@
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
   <meta property="og:url" content="/publication/regressionecg/">
-  <meta property="og:title" content="ECG-Based Electrolyte Prediction: Evaluating Regression and Probabilistic Methods | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
-  <meta property="og:description" content="Objective: Imbalances of the electrolyte concentration levels in the body can lead to catastrophic consequences, but accurate and accessible measurements could improve patient outcomes. While blood tests provide accurate measurements, they are invasive and the laboratory analysis can be slow or inaccessible. In contrast, an electrocardiogram (ECG) is a widely adopted tool which is quick and simple to acquire. However, the problem of estimating continuous electrolyte concentrations directly from ECGs is not well-studied. We therefore investigate if regression methods can be used for accurate ECG-based prediction of electrolyte concentrations. Methods: We explore the use of deep neural networks (DNNs) for this task. We analyze the regression performance across four electrolytes, utilizing a novel dataset containing over 290000 ECGs. For improved understanding, we also study the full spectrum from continuous predictions to binary classification of extreme concentration levels. To enhance clinical usefulness, we finally extend to a probabilistic regression approach and evaluate different uncertainty estimates. Results: We find that the performance varies significantly between different electrolytes, which is clinically justified in the interplay of electrolytes and their manifestation in the ECG. We also compare the regression accuracy with that of traditional machine learning models, demonstrating superior performance of DNNs. Conclusion: Discretization can lead to good classification performance, but does not help solve the original problem of predicting continuous concentration levels. While probabilistic regression demonstrates potential practical usefulness, the uncertainty estimates are not particularly well-calibrated. Significance: Our study is a first step towards accurate and reliable ECG-based prediction of electrolyte concentration levels.">
+  <meta property="og:title" content="Evaluating Regression and Probabilistic Methods for ECG-Based Electrolyte Prediction | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
+  <meta property="og:description" content="Imbalances in electrolyte concentrations can have severe consequences, but accurate and accessible measurements could improve patient outcomes. The current measurement method based on blood tests is accurate but invasive and time-consuming and is often unavailable for example in remote locations or an ambulance setting. In this paper, we explore the use of deep neural networks (DNNs) for regression tasks to accurately predict continuous electrolyte concentrations from electrocardiograms (ECGs), a quick and widely adopted tool. We analyze our DNN models on a novel dataset of over 290,000 ECGs across four major electrolytes and compare their performance with traditional machine learning models. For improved understanding, we also study the full spectrum from continuous predictions to a binary classification of extreme concentration levels. Finally, we investigate probabilistic regression approaches and explore uncertainty estimates for enhanced clinical usefulness. Our results show that DNNs outperform traditional models but model performance varies significantly across different electrolytes. While discretization leads to good classification performance, it does not address the original problem of continuous concentration level prediction. Probabilistic regression has practical potential, but our uncertainty estimates are not perfectly calibrated. Our study is therefore a first step towards developing an accurate and reliable ECG-based method for electrolyte concentration level prediction — a method with high potential impact within multiple clinical scenarios.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2022-12-21T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2024-07-03T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2022-12-21T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2024-07-03T00:00:00&#43;00:00">
   
 
-  <title>ECG-Based Electrolyte Prediction: Evaluating Regression and Probabilistic Methods | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
+  
+
+  <title>Evaluating Regression and Probabilistic Methods for ECG-Based Electrolyte Prediction | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -296,14 +296,14 @@
 
   
 <div class="article-header">
-  <img src="/img/regressionECG.png" class="article-banner-small" itemprop="image">
+  <img src="/img/regECG.png" class="article-banner-small" itemprop="image">
   
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">ECG-Based Electrolyte Prediction: Evaluating Regression and Probabilistic Methods</h1>
+    <h1 itemprop="name">Evaluating Regression and Probabilistic Methods for ECG-Based Electrolyte Prediction</h1>
     <span class="pub-authors" itemprop="author">
       
       Philipp Von Bachmann, Daniel Gedon, <strong>Fredrik K. Gustafsson</strong>, Antônio H. Ribeiro, Erik Lampa, Stefan Gustafsson, Johan Sundström, Thomas B. Schön
@@ -318,7 +318,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Objective: Imbalances of the electrolyte concentration levels in the body can lead to catastrophic consequences, but accurate and accessible measurements could improve patient outcomes. While blood tests provide accurate measurements, they are invasive and the laboratory analysis can be slow or inaccessible. In contrast, an electrocardiogram (ECG) is a widely adopted tool which is quick and simple to acquire. However, the problem of estimating continuous electrolyte concentrations directly from ECGs is not well-studied. We therefore investigate if regression methods can be used for accurate ECG-based prediction of electrolyte concentrations. Methods: We explore the use of deep neural networks (DNNs) for this task. We analyze the regression performance across four electrolytes, utilizing a novel dataset containing over 290000 ECGs. For improved understanding, we also study the full spectrum from continuous predictions to binary classification of extreme concentration levels. To enhance clinical usefulness, we finally extend to a probabilistic regression approach and evaluate different uncertainty estimates. Results: We find that the performance varies significantly between different electrolytes, which is clinically justified in the interplay of electrolytes and their manifestation in the ECG. We also compare the regression accuracy with that of traditional machine learning models, demonstrating superior performance of DNNs. Conclusion: Discretization can lead to good classification performance, but does not help solve the original problem of predicting continuous concentration levels. While probabilistic regression demonstrates potential practical usefulness, the uncertainty estimates are not particularly well-calibrated. Significance: Our study is a first step towards accurate and reliable ECG-based prediction of electrolyte concentration levels.</p>
+    <p class="pub-abstract" itemprop="text">Imbalances in electrolyte concentrations can have severe consequences, but accurate and accessible measurements could improve patient outcomes. The current measurement method based on blood tests is accurate but invasive and time-consuming and is often unavailable for example in remote locations or an ambulance setting. In this paper, we explore the use of deep neural networks (DNNs) for regression tasks to accurately predict continuous electrolyte concentrations from electrocardiograms (ECGs), a quick and widely adopted tool. We analyze our DNN models on a novel dataset of over 290,000 ECGs across four major electrolytes and compare their performance with traditional machine learning models. For improved understanding, we also study the full spectrum from continuous predictions to a binary classification of extreme concentration levels. Finally, we investigate probabilistic regression approaches and explore uncertainty estimates for enhanced clinical usefulness. Our results show that DNNs outperform traditional models but model performance varies significantly across different electrolytes. While discretization leads to good classification performance, it does not address the original problem of continuous concentration level prediction. Probabilistic regression has practical potential, but our uncertainty estimates are not perfectly calibrated. Our study is therefore a first step towards developing an accurate and reliable ECG-based method for electrolyte concentration level prediction — a method with high potential impact within multiple clinical scenarios.</p>
     
 
     
@@ -329,8 +329,8 @@
           <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
           <div class="col-xs-12 col-sm-9">
             
-            <a href="/publication/#8">
-              Preprint
+            <a href="/publication/#2">
+              Journal article
             </a>
             
           </div>
@@ -347,7 +347,7 @@
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">Preprint, 2022</div>
+          <div class="col-xs-12 col-sm-9">Scientific Reports, 2024</div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -361,7 +361,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            December, 2022
+            July, 2024
           </div>
         </div>
       </div>
@@ -381,10 +381,10 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2212.13890" target="_blank" rel="noopener">
-  arXiv
-</a>
 
+<a class="btn btn-primary btn-outline" href="https://www.nature.com/articles/s41598-024-65223-w" target="_blank" rel="noopener">
+  Link to paper
+</a>
 
 
 
