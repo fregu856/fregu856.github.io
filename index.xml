@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Taming Diffusion Models for Image Restoration: A Review</title>
+      <link>/publication/diff_ir_review/</link>
+      <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/diff_ir_review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Evaluating Regression and Probabilistic Methods for ECG-Based Electrolyte Prediction</title>
       <link>/publication/regressionecg/</link>
       <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
@@ -324,15 +333,6 @@
       <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>/publication/ebms_3dod/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>How to Train Your Energy-Based Model for Regression</title>
-      <link>/publication/ebms_regression/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/ebms_regression/</guid>
       <description></description>
     </item>
     

@@ -66,9 +66,9 @@ When I first got interested in deep learning a couple of years ago, I started ou
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Jul 3, 2024] Accepted paper: Evaluating Regression and Probabilistic Methods for ECG-Based Electrolyte Prediction, work lead together with Philipp Von Bachmann and Daniel Gedon, has been published in Scientific Reports.
- [Apr 15, 2024] Accepted paper: Photo-Realistic Image Restoration in the Wild with Controlled Vision-Language Models has been accepted to CVPR Workshops 2024. This is follow-up work on our ICLR paper, once again lead by Ziwei Luo.
- [Mar 21, 2024] Invited talk: I presented How Reliable is Your Regression Model&amp;rsquo;s Uncertainty Under Real-World Distribution Shifts?</description>
+      <description>[Oct 3, 2024] New preprint: Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction [[arXiv]](TODO!) [[project]](/publication/gene-exp/). --  [Sep 16, 2024] New preprint: Taming Diffusion Models for Image Restoration: A Review [arXiv] [project], work lead by Ziwei Luo.
+ [Jul 3, 2024] Accepted paper: Evaluating Regression and Probabilistic Methods for ECG-Based Electrolyte Prediction, work lead together with Philipp Von Bachmann and Daniel Gedon, has been published in Scientific Reports.
+ [Apr 15, 2024] Accepted paper: Photo-Realistic Image Restoration in the Wild with Controlled Vision-Language Models has been accepted to CVPR Workshops 2024.</description>
     </item>
     
   </channel>
