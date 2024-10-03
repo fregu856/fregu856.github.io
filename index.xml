@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction</title>
+      <link>/publication/gene-exp/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/gene-exp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Taming Diffusion Models for Image Restoration: A Review</title>
       <link>/publication/diff_ir_review/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
@@ -324,15 +333,6 @@
       <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>/publication/ebms_narx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Accurate 3D Object Detection using Energy-Based Models</title>
-      <link>/publication/ebms_3dod/</link>
-      <pubDate>Tue, 08 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/ebms_3dod/</guid>
       <description></description>
     </item>
     
