@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</title>
+      <link>/publication/multi-stain/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/multi-stain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automated Segmentation of Synchrotron-Scanned Fossils</title>
+      <link>/publication/ml4paleo/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ml4paleo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</title>
       <link>/publication/cpath_fms_shifts/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>

@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Foundation models have recently become a popular research direction within computational pathology. They are intended to be general-purpose feature extractors, promising to achieve good performance on a wide range of downstream tasks. Real-world pathology image data does however exhibit considerable variability. Foundation models should be robust to these variations and other distribution shifts which might be encountered in practice. We evaluate two computational pathology foundation models: UNI (trained on more than 100,000 whole-slide images) and CONCH (trained on more than 1.1 million image-caption pairs), by utilizing them as feature extractors within prostate cancer grading models. We find that while UNI and CONCH perform well relative to baselines, the absolute performance can still be far from satisfactory. The fact that foundation models have been trained on large and varied datasets does not guarantee that downstream models always will be robust to common distribution shifts.">
+  <meta name="description" content="Computed tomography has revolutionised the study of the internal three-dimensional structure of fossils. Historically, fossils typically spent years in preparation to be freed from the enclosing rock. Now, X-ray and synchrotron tomography reveal structure that is otherwise invisible and data acquisition can be fast. However, manual segmentation of these 3D volumes can still take months to years. This is especially challenging for resource-poor teams, as scanning may be free, but the computing power and (AI-assisted) segmentation software required to handle the resulting large data sets are complex to use and expensive. Here we present a free, browser-based segmentation tool that reduces computational overhead by splitting volumes into small chunks, allowing processing on low-memory, inexpensive hardware. Our tool also speeds up collaborative ground-truth generation and 3D visualization, all in-browser. We developed and evaluated our pipeline on various open-data scans of differing contrast, resolution, textural complexity, and size. Our tool successfully isolated the Thrinaxodon and Broomistega pair from an Early Triassic burrow. It isolated cranial bones from the Cretaceous acipenseriform Parapsephurus willybemisi on both 45.53 µm and 13.67 µm resolution scanning data. We also isolated bones of the Middle Triassic sauropterygian Nothosaurus and a challenging scan of a squamate embryo inside an egg dating back to the Early Cretaceous. Our tool reliably reproduces expert-supervised segmentation at a fraction of the time and cost, offering greater accessibility than existing tools. Beyond the online tool, all our code is open source, enabling contributions from the palaeontology community to further this emerging machine learning ecosystem.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/cpath_fms_shifts/">
+  <link rel="alternate" hreflang="en-us" href="/publication/ml4paleo/">
 
   
 
@@ -82,7 +82,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/cpath_fms_shifts/">
+  <link rel="canonical" href="/publication/ml4paleo/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -90,19 +90,19 @@
   <meta property="twitter:creator" content="@https://twitter.com/fregu856">
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
-  <meta property="og:url" content="/publication/cpath_fms_shifts/">
-  <meta property="og:title" content="Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
-  <meta property="og:description" content="Foundation models have recently become a popular research direction within computational pathology. They are intended to be general-purpose feature extractors, promising to achieve good performance on a wide range of downstream tasks. Real-world pathology image data does however exhibit considerable variability. Foundation models should be robust to these variations and other distribution shifts which might be encountered in practice. We evaluate two computational pathology foundation models: UNI (trained on more than 100,000 whole-slide images) and CONCH (trained on more than 1.1 million image-caption pairs), by utilizing them as feature extractors within prostate cancer grading models. We find that while UNI and CONCH perform well relative to baselines, the absolute performance can still be far from satisfactory. The fact that foundation models have been trained on large and varied datasets does not guarantee that downstream models always will be robust to common distribution shifts.">
+  <meta property="og:url" content="/publication/ml4paleo/">
+  <meta property="og:title" content="Automated Segmentation of Synchrotron-Scanned Fossils | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
+  <meta property="og:description" content="Computed tomography has revolutionised the study of the internal three-dimensional structure of fossils. Historically, fossils typically spent years in preparation to be freed from the enclosing rock. Now, X-ray and synchrotron tomography reveal structure that is otherwise invisible and data acquisition can be fast. However, manual segmentation of these 3D volumes can still take months to years. This is especially challenging for resource-poor teams, as scanning may be free, but the computing power and (AI-assisted) segmentation software required to handle the resulting large data sets are complex to use and expensive. Here we present a free, browser-based segmentation tool that reduces computational overhead by splitting volumes into small chunks, allowing processing on low-memory, inexpensive hardware. Our tool also speeds up collaborative ground-truth generation and 3D visualization, all in-browser. We developed and evaluated our pipeline on various open-data scans of differing contrast, resolution, textural complexity, and size. Our tool successfully isolated the Thrinaxodon and Broomistega pair from an Early Triassic burrow. It isolated cranial bones from the Cretaceous acipenseriform Parapsephurus willybemisi on both 45.53 µm and 13.67 µm resolution scanning data. We also isolated bones of the Middle Triassic sauropterygian Nothosaurus and a challenging scan of a squamate embryo inside an egg dating back to the Early Cretaceous. Our tool reliably reproduces expert-supervised segmentation at a fraction of the time and cost, offering greater accessibility than existing tools. Beyond the online tool, all our code is open source, enabling contributions from the palaeontology community to further this emerging machine learning ecosystem.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2024-10-10T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2024-10-25T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2024-10-10T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2024-10-25T00:00:00&#43;00:00">
   
 
-  <title>Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
+  
+
+  <title>Automated Segmentation of Synchrotron-Scanned Fossils | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -315,17 +315,17 @@
 
   
 <div class="article-header">
-  <img src="/img/cpath_fms_shifts.png" class="article-banner-small" itemprop="image">
+  <img src="/img/ml4paleo.png" class="article-banner-small" itemprop="image">
   
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</h1>
+    <h1 itemprop="name">Automated Segmentation of Synchrotron-Scanned Fossils</h1>
     <span class="pub-authors" itemprop="author">
       
-      <strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen
+      Melanie A.D. During, Jordan K. Matelsky, <strong>Fredrik K. Gustafsson</strong>, Dennis F.A.E. Voeten, Donglei Chen, Brock A. Wester, Konrad P. Körding, Per E. Ahlberg, Thomas B. Schön
       
     </span>
     <span class="pull-right">
@@ -337,7 +337,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Foundation models have recently become a popular research direction within computational pathology. They are intended to be general-purpose feature extractors, promising to achieve good performance on a wide range of downstream tasks. Real-world pathology image data does however exhibit considerable variability. Foundation models should be robust to these variations and other distribution shifts which might be encountered in practice. We evaluate two computational pathology foundation models: UNI (trained on more than 100,000 whole-slide images) and CONCH (trained on more than 1.1 million image-caption pairs), by utilizing them as feature extractors within prostate cancer grading models. We find that while UNI and CONCH perform well relative to baselines, the absolute performance can still be far from satisfactory. The fact that foundation models have been trained on large and varied datasets does not guarantee that downstream models always will be robust to common distribution shifts.</p>
+    <p class="pub-abstract" itemprop="text">Computed tomography has revolutionised the study of the internal three-dimensional structure of fossils. Historically, fossils typically spent years in preparation to be freed from the enclosing rock. Now, X-ray and synchrotron tomography reveal structure that is otherwise invisible and data acquisition can be fast. However, manual segmentation of these 3D volumes can still take months to years. This is especially challenging for resource-poor teams, as scanning may be free, but the computing power and (AI-assisted) segmentation software required to handle the resulting large data sets are complex to use and expensive. Here we present a free, browser-based segmentation tool that reduces computational overhead by splitting volumes into small chunks, allowing processing on low-memory, inexpensive hardware. Our tool also speeds up collaborative ground-truth generation and 3D visualization, all in-browser. We developed and evaluated our pipeline on various open-data scans of differing contrast, resolution, textural complexity, and size. Our tool successfully isolated the Thrinaxodon and Broomistega pair from an Early Triassic burrow. It isolated cranial bones from the Cretaceous acipenseriform Parapsephurus willybemisi on both 45.53 µm and 13.67 µm resolution scanning data. We also isolated bones of the Middle Triassic sauropterygian Nothosaurus and a challenging scan of a squamate embryo inside an egg dating back to the Early Cretaceous. Our tool reliably reproduces expert-supervised segmentation at a fraction of the time and cost, offering greater accessibility than existing tools. Beyond the online tool, all our code is open source, enabling contributions from the palaeontology community to further this emerging machine learning ecosystem.</p>
     
 
     
@@ -399,9 +399,8 @@
 
 
 
-
-<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2410.06723" target="_blank" rel="noopener">
-  arXiv
+<a class="btn btn-primary btn-outline" href="https://www.biorxiv.org/content/10.1101/2024.10.23.619778v1.abstract" target="_blank" rel="noopener">
+  Preprint
 </a>
 
 
@@ -420,16 +419,13 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="/files/talk_241016_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
 
 
 
 
 
 <button type="button" class="btn btn-primary btn-outline js-cite-modal"
-        data-filename="/files/citations/cpath_fms_shifts.bib">
+        data-filename="/files/citations/ml4paleo.bib">
   BibTeX
 </button>
 

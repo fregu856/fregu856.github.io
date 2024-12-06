@@ -11,6 +11,24 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</title>
+      <link>/publication/multi-stain/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/multi-stain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automated Segmentation of Synchrotron-Scanned Fossils</title>
+      <link>/publication/ml4paleo/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ml4paleo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</title>
       <link>/publication/cpath_fms_shifts/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
@@ -316,24 +334,6 @@
 &lt;p&gt;Project group:&lt;/br&gt;
 &lt;a href=&#34;https://dgedon.github.io/&#34; target=&#34;_blank&#34;&gt;Daniel Gedon&lt;/a&gt;, &lt;a href=&#34;https://katalog.uu.se/profile/?id=N20-1420&#34; target=&#34;_blank&#34;&gt;Erik Hallström&lt;/a&gt; &amp;amp; Fredrik K. Gustafsson&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Learning Proposals for Practical Energy-Based Regression</title>
-      <link>/publication/ebms_proposals/</link>
-      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/ebms_proposals/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI</title>
-      <link>/publication/mri_regression/</link>
-      <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/mri_regression/</guid>
-      <description></description>
     </item>
     
   </channel>

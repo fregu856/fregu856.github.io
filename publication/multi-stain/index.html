@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Foundation models have recently become a popular research direction within computational pathology. They are intended to be general-purpose feature extractors, promising to achieve good performance on a wide range of downstream tasks. Real-world pathology image data does however exhibit considerable variability. Foundation models should be robust to these variations and other distribution shifts which might be encountered in practice. We evaluate two computational pathology foundation models: UNI (trained on more than 100,000 whole-slide images) and CONCH (trained on more than 1.1 million image-caption pairs), by utilizing them as feature extractors within prostate cancer grading models. We find that while UNI and CONCH perform well relative to baselines, the absolute performance can still be far from satisfactory. The fact that foundation models have been trained on large and varied datasets does not guarantee that downstream models always will be robust to common distribution shifts.">
+  <meta name="description" content="**Background:** Pathologic assessment of the established biomarkers using standard hematoxylin &amp; eosin (H&amp;E) and immunohistochemical (IHC) stained whole slide images (WSIs) is central in routine breast cancer diagnostics and contributes prognostic and predictive information that guides clinical decision-making. However, other than only aggregated protein-expression values from IHC WSIs, a spatial combination of histo-morphological information from IHC and H&amp;E WSIs can potentially improve prognosis prediction in breast cancer patients. In this study, we aim to develop a deep learning-based risk-stratification method for breast cancer using routine H&amp;E and IHC-stained histopathology WSIs from resected tumours. **Methods:** This is a retrospective study including WSIs from surgical resected specimens from 945 patients from the South General Hospital in Stockholm. One H&amp;E and four IHC (ER, PR, HER2, and Ki-67) stained sections were included from each patient, retrieved from the same tumour block. The IHC WSIs with the H&amp;E WSI were registered, and corresponding images patches (tiles) were extracted for each image modality. Features from the registered tiles were extracted using two existing and publicly available histopathology foundation models (UNI and CONCH). Using the extracted features together with time-to-event data, we optimised an attention-based multiple instance learning (MIL) model using the Cox loss (negative partial log-likelihood loss) and recurrence-free survival (RFS) as the survival endpoint. **Results:** Using cross-validation we observed a prognostic performance with a C-index of 0.65 (95%CI: 0.56 - 0.72) for the risk score prediction using only H&amp;E WSIs and UNI as the tile-level feature extractor. Combinations of H&amp;E with one or more IHC modalities were subsequently evaluated, with the highest performance observed in the model combining the H&amp;E and PR WSI data and the model combining all the stains, obtaining a C-index of 0.72 (95% CI: 0.65 - 0.79) and 0.72 (95% CI: 0.64 - 0.79) respectively. **Conclusion:** Multiple stain modalities are used in routine breast cancer pathology, but has not been considered together for prognostic modelling. The results in this study suggests that models combining morphological features extracted by histopathology foundation models across multiple stain modalities can improve prognostic risk-stratification performance compared to single-modality models.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/cpath_fms_shifts/">
+  <link rel="alternate" hreflang="en-us" href="/publication/multi-stain/">
 
   
 
@@ -82,7 +82,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/cpath_fms_shifts/">
+  <link rel="canonical" href="/publication/multi-stain/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -90,19 +90,19 @@
   <meta property="twitter:creator" content="@https://twitter.com/fregu856">
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
-  <meta property="og:url" content="/publication/cpath_fms_shifts/">
-  <meta property="og:title" content="Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
-  <meta property="og:description" content="Foundation models have recently become a popular research direction within computational pathology. They are intended to be general-purpose feature extractors, promising to achieve good performance on a wide range of downstream tasks. Real-world pathology image data does however exhibit considerable variability. Foundation models should be robust to these variations and other distribution shifts which might be encountered in practice. We evaluate two computational pathology foundation models: UNI (trained on more than 100,000 whole-slide images) and CONCH (trained on more than 1.1 million image-caption pairs), by utilizing them as feature extractors within prostate cancer grading models. We find that while UNI and CONCH perform well relative to baselines, the absolute performance can still be far from satisfactory. The fact that foundation models have been trained on large and varied datasets does not guarantee that downstream models always will be robust to common distribution shifts.">
+  <meta property="og:url" content="/publication/multi-stain/">
+  <meta property="og:title" content="Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology">
+  <meta property="og:description" content="**Background:** Pathologic assessment of the established biomarkers using standard hematoxylin &amp; eosin (H&amp;E) and immunohistochemical (IHC) stained whole slide images (WSIs) is central in routine breast cancer diagnostics and contributes prognostic and predictive information that guides clinical decision-making. However, other than only aggregated protein-expression values from IHC WSIs, a spatial combination of histo-morphological information from IHC and H&amp;E WSIs can potentially improve prognosis prediction in breast cancer patients. In this study, we aim to develop a deep learning-based risk-stratification method for breast cancer using routine H&amp;E and IHC-stained histopathology WSIs from resected tumours. **Methods:** This is a retrospective study including WSIs from surgical resected specimens from 945 patients from the South General Hospital in Stockholm. One H&amp;E and four IHC (ER, PR, HER2, and Ki-67) stained sections were included from each patient, retrieved from the same tumour block. The IHC WSIs with the H&amp;E WSI were registered, and corresponding images patches (tiles) were extracted for each image modality. Features from the registered tiles were extracted using two existing and publicly available histopathology foundation models (UNI and CONCH). Using the extracted features together with time-to-event data, we optimised an attention-based multiple instance learning (MIL) model using the Cox loss (negative partial log-likelihood loss) and recurrence-free survival (RFS) as the survival endpoint. **Results:** Using cross-validation we observed a prognostic performance with a C-index of 0.65 (95%CI: 0.56 - 0.72) for the risk score prediction using only H&amp;E WSIs and UNI as the tile-level feature extractor. Combinations of H&amp;E with one or more IHC modalities were subsequently evaluated, with the highest performance observed in the model combining the H&amp;E and PR WSI data and the model combining all the stains, obtaining a C-index of 0.72 (95% CI: 0.65 - 0.79) and 0.72 (95% CI: 0.64 - 0.79) respectively. **Conclusion:** Multiple stain modalities are used in routine breast cancer pathology, but has not been considered together for prognostic modelling. The results in this study suggests that models combining morphological features extracted by histopathology foundation models across multiple stain modalities can improve prognostic risk-stratification performance compared to single-modality models.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2024-10-10T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2024-11-18T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2024-10-10T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2024-11-18T00:00:00&#43;00:00">
   
 
-  <title>Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
+  
+
+  <title>Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction | Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -315,17 +315,17 @@
 
   
 <div class="article-header">
-  <img src="/img/cpath_fms_shifts.png" class="article-banner-small" itemprop="image">
+  <img src="/img/multi-stain.png" class="article-banner-small" itemprop="image">
   
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</h1>
+    <h1 itemprop="name">Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</h1>
     <span class="pub-authors" itemprop="author">
       
-      <strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen
+      Abhinav Sharma, <strong>Fredrik K. Gustafsson</strong>, Johan Hartman, Mattias Rantalainen
       
     </span>
     <span class="pull-right">
@@ -337,7 +337,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Foundation models have recently become a popular research direction within computational pathology. They are intended to be general-purpose feature extractors, promising to achieve good performance on a wide range of downstream tasks. Real-world pathology image data does however exhibit considerable variability. Foundation models should be robust to these variations and other distribution shifts which might be encountered in practice. We evaluate two computational pathology foundation models: UNI (trained on more than 100,000 whole-slide images) and CONCH (trained on more than 1.1 million image-caption pairs), by utilizing them as feature extractors within prostate cancer grading models. We find that while UNI and CONCH perform well relative to baselines, the absolute performance can still be far from satisfactory. The fact that foundation models have been trained on large and varied datasets does not guarantee that downstream models always will be robust to common distribution shifts.</p>
+    <p class="pub-abstract" itemprop="text"><strong>Background:</strong> Pathologic assessment of the established biomarkers using standard hematoxylin &amp; eosin (H&amp;E) and immunohistochemical (IHC) stained whole slide images (WSIs) is central in routine breast cancer diagnostics and contributes prognostic and predictive information that guides clinical decision-making. However, other than only aggregated protein-expression values from IHC WSIs, a spatial combination of histo-morphological information from IHC and H&amp;E WSIs can potentially improve prognosis prediction in breast cancer patients. In this study, we aim to develop a deep learning-based risk-stratification method for breast cancer using routine H&amp;E and IHC-stained histopathology WSIs from resected tumours. <strong>Methods:</strong> This is a retrospective study including WSIs from surgical resected specimens from 945 patients from the South General Hospital in Stockholm. One H&amp;E and four IHC (ER, PR, HER2, and Ki-67) stained sections were included from each patient, retrieved from the same tumour block. The IHC WSIs with the H&amp;E WSI were registered, and corresponding images patches (tiles) were extracted for each image modality. Features from the registered tiles were extracted using two existing and publicly available histopathology foundation models (UNI and CONCH). Using the extracted features together with time-to-event data, we optimised an attention-based multiple instance learning (MIL) model using the Cox loss (negative partial log-likelihood loss) and recurrence-free survival (RFS) as the survival endpoint. <strong>Results:</strong> Using cross-validation we observed a prognostic performance with a C-index of 0.65 (95%CI: 0.56 - 0.72) for the risk score prediction using only H&amp;E WSIs and UNI as the tile-level feature extractor. Combinations of H&amp;E with one or more IHC modalities were subsequently evaluated, with the highest performance observed in the model combining the H&amp;E and PR WSI data and the model combining all the stains, obtaining a C-index of 0.72 (95% CI: 0.65 - 0.79) and 0.72 (95% CI: 0.64 - 0.79) respectively. <strong>Conclusion:</strong> Multiple stain modalities are used in routine breast cancer pathology, but has not been considered together for prognostic modelling. The results in this study suggests that models combining morphological features extracted by histopathology foundation models across multiple stain modalities can improve prognostic risk-stratification performance compared to single-modality models.</p>
     
 
     
@@ -380,7 +380,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            October, 2024
+            November, 2024
           </div>
         </div>
       </div>
@@ -399,9 +399,8 @@
 
 
 
-
-<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2410.06723" target="_blank" rel="noopener">
-  arXiv
+<a class="btn btn-primary btn-outline" href="https://www.medrxiv.org/content/10.1101/2024.11.10.24317066v1" target="_blank" rel="noopener">
+  Preprint
 </a>
 
 
@@ -420,16 +419,13 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="/files/talk_241016_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
 
 
 
 
 
 <button type="button" class="btn btn-primary btn-outline js-cite-modal"
-        data-filename="/files/citations/cpath_fms_shifts.bib">
+        data-filename="/files/citations/multi-stain.bib">
   BibTeX
 </button>
 
