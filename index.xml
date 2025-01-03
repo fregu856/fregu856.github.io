@@ -11,6 +11,63 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>My Year of Reading in 2024</title>
+      <link>/post/year_of_reading_2024/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0100</pubDate>
+      
+      <guid>/post/year_of_reading_2024/</guid>
+      <description>&lt;p&gt;In 2024, I read 99 papers and 21 non-technical books. 99 papers is slightly more than my previous record (87 papers in 2023), while 21 books is slighly less than the 26 I read in 2023 (but still a lot more than what I&amp;rsquo;ve ever read in a year before that).&lt;/p&gt;
+
+&lt;p&gt;In 2025, I want to read 100 papers and at least 20 non-technical books.&lt;/p&gt;
+
+&lt;p&gt;The complete list of my read papers can be found at &lt;a href=&#34;https://github.com/fregu856/papers&#34; target=&#34;_blank&#34;&gt;github.com/fregu856/papers&lt;/a&gt;. Some statistics (number of papers read each year, papers by publication year, papers by venue):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/year_of_reading_2024/papers_read_each_year_2024.svg&#34; alt=&#34;Papers read each year&#34; /&gt;
+&lt;img src=&#34;/img/year_of_reading_2024/papers_by_publication_year_2024.svg&#34; alt=&#34;Papers by publication year&#34; /&gt;
+&lt;img src=&#34;/img/year_of_reading_2024/papers_by_venue_2024.svg&#34; alt=&#34;Papers by venue&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The 21 non-technical books I read in 2024:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;24-12-26 | &lt;a href=&#34;https://www.goodreads.com/book/show/214479660-den-vidunderliga-ordningen&#34; target=&#34;_blank&#34;&gt;Den vidunderliga ordningen&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Andrev Walden&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;24-12-11 | &lt;a href=&#34;https://www.goodreads.com/book/show/217189639-dimmans-land&#34; target=&#34;_blank&#34;&gt;Historien om Norrland. Dimmans land: från istid till hungernöd&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Robin Olovsson&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;24-11-03 | &lt;a href=&#34;https://www.goodreads.com/book/show/58662236-small-things-like-these&#34; target=&#34;_blank&#34;&gt;Small Things Like These&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Claire Keegan&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;24-10-27 | &lt;a href=&#34;https://www.goodreads.com/book/show/218063480-din-vilja-sitter-i-skogen&#34; target=&#34;_blank&#34;&gt;Din vilja sitter i skogen&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Mattias Timander&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;24-10-20 | &lt;a href=&#34;https://www.goodreads.com/book/show/40024238-ditt-lilla-m-rker-i-ljuset&#34; target=&#34;_blank&#34;&gt;Ditt lilla mörker i ljuset&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Andrev Walden&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;24-10-13 | &lt;a href=&#34;https://www.goodreads.com/book/show/1696088.Barn_av_sin_stad&#34; target=&#34;_blank&#34;&gt;Barn av sin stad&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Per Anders Fogelström&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;24-09-21 | &lt;a href=&#34;https://www.goodreads.com/book/show/1696078.Mina_dr_mmars_stad&#34; target=&#34;_blank&#34;&gt;Mina drömmars stad&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Per Anders Fogelström&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;24-08-31 | &lt;a href=&#34;https://www.goodreads.com/book/show/28186038-amok&#34; target=&#34;_blank&#34;&gt;Amok&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Stefan Zweig&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;24-08-17 | &lt;a href=&#34;https://www.goodreads.com/book/show/30753738-the-choice&#34; target=&#34;_blank&#34;&gt;The Choice: Embrace the Possible&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Edith Eger&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;24-08-10 | &lt;a href=&#34;https://www.goodreads.com/book/show/629429.The_World_of_Yesterday&#34; target=&#34;_blank&#34;&gt;The World of Yesterday&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Stefan Zweig&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;24-07-30 | &lt;a href=&#34;https://www.goodreads.com/book/show/25004547-en-tysk-mans-historia-minnen-1914-1933&#34; target=&#34;_blank&#34;&gt;En tysk mans historia&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Sebastian Haffner&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;24-07-19 | &lt;a href=&#34;https://www.goodreads.com/book/show/23480268-denne-dag-et-liv&#34; target=&#34;_blank&#34;&gt;Denna dagen, ett liv - En biografi över Astrid Lindgren&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Jens Andersen&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;24-07-10 | &lt;a href=&#34;https://www.goodreads.com/book/show/40144034-den-brutna-kvinnan&#34; target=&#34;_blank&#34;&gt;The Woman Destroyed&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Simone de Beauvoir&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;24-07-08 | &lt;a href=&#34;https://www.goodreads.com/book/show/49455.Notes_from_Underground&#34; target=&#34;_blank&#34;&gt;Notes from Underground&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Fyodor Dostoevsky&lt;/strong&gt;&lt;/em&gt; | Rating: 3&lt;/li&gt;
+&lt;li&gt;24-07-06 | &lt;a href=&#34;https://www.goodreads.com/book/show/1772910.White_Nights&#34; target=&#34;_blank&#34;&gt;White Nights&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Fyodor Dostoevsky&lt;/strong&gt;&lt;/em&gt; | Rating: 2.5&lt;/li&gt;
+&lt;li&gt;24-07-04 | &lt;a href=&#34;https://www.goodreads.com/book/show/3892118-det-g-r-an&#34; target=&#34;_blank&#34;&gt;Det går an&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Carl Jonas Love Almqvist&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;24-06-01 | &lt;a href=&#34;https://www.goodreads.com/book/show/2165.The_Old_Man_and_the_Sea&#34; target=&#34;_blank&#34;&gt;The Old Man and the Sea&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Ernest Hemingway&lt;/strong&gt;&lt;/em&gt; | Rating: 3&lt;/li&gt;
+&lt;li&gt;24-04-12 | &lt;a href=&#34;https://www.goodreads.com/book/show/393199.Down_and_Out_in_Paris_and_London&#34; target=&#34;_blank&#34;&gt;Down and Out in Paris and London&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;George Orwell&lt;/strong&gt;&lt;/em&gt; | Rating: 3&lt;/li&gt;
+&lt;li&gt;24-02-02 | &lt;a href=&#34;https://www.goodreads.com/book/show/25251914-l-parens-hj-rta&#34; target=&#34;_blank&#34;&gt;Löparens hjärta&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Markus Torgeby&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;24-01-27 | &lt;a href=&#34;https://www.goodreads.com/book/show/56197486-inseparable&#34; target=&#34;_blank&#34;&gt;Inseparable&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Simone de Beauvoir&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;24-01-22 | &lt;a href=&#34;https://www.goodreads.com/book/show/61439040-1984&#34; target=&#34;_blank&#34;&gt;1984&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;George Orwell&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/year_of_reading_2024/book_reading_2024.jpg&#34; alt=&#34;Read books&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Among the 21 books, these are my top 6 favorites (in alphabetical order):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/1696088.Barn_av_sin_stad&#34; target=&#34;_blank&#34;&gt;Barn av sin stad&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Per Anders Fogelström&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/23480268-denne-dag-et-liv&#34; target=&#34;_blank&#34;&gt;Denna dagen, ett liv - En biografi över Astrid Lindgren&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Jens Andersen&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/214479660-den-vidunderliga-ordningen&#34; target=&#34;_blank&#34;&gt;Den vidunderliga ordningen&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Andrev Walden&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/56197486-inseparable&#34; target=&#34;_blank&#34;&gt;Inseparable&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Simone de Beauvoir&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/25251914-l-parens-hj-rta&#34; target=&#34;_blank&#34;&gt;Löparens hjärta&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Markus Torgeby&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/40144034-den-brutna-kvinnan&#34; target=&#34;_blank&#34;&gt;The Woman Destroyed&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Simone de Beauvoir&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</title>
       <link>/publication/multi-stain/</link>
       <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
@@ -312,28 +369,6 @@
       
       <guid>/publication/ir_sde/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Explaining Machine Learning and How It Can Be Used to Help Doctors</title>
-      <link>/post/explaining_ml/</link>
-      <pubDate>Mon, 07 Feb 2022 00:00:00 +0100</pubDate>
-      
-      <guid>/post/explaining_ml/</guid>
-      <description>&lt;p&gt;For a project in the doctoral course &lt;em&gt;Using Maths and CS to do Social Good&lt;/em&gt; at Uppsala University, our goal was to make grade 7-9 students more interested in mathematics. To that end, we have created a &lt;a href=&#34;https://youtu.be/5G4cmSh4s-4&#34; target=&#34;_blank&#34;&gt;video&lt;/a&gt; with an accompanying &lt;a href=&#34;https://educaora.com/@MachineLearningDoc&#34; target=&#34;_blank&#34;&gt;interactive blog post&lt;/a&gt;. In the video, we explain the essence of how machine learning works and how it can be used to help doctors discover heart attacks from patient ECGs. &lt;em&gt;There is also a &lt;a href=&#34;https://youtu.be/5ehdIBaElYA&#34; target=&#34;_blank&#34;&gt;Swedish version&lt;/a&gt; of the video.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;We tailor our explanation of machine learning to grade 7-9 students by basing it on the concept of straight lines (linear functions). We start by showing how a straight line can be fitted to some collected data and then used to make predictions, for example to predict ice cream sales from the outside temperature.
-&lt;img src=&#34;/img/explaining_ml/img2.png&#34; alt=&#34;Illustrative ice cream example&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We then explain what ECGs are and how they are used by doctors when a patient comes to a hospital and complains about chest pain, trying to determine if the patient has a heart attack or not.
-&lt;img src=&#34;/img/explaining_ml/img4.png&#34; alt=&#34;Chest pain, ECG, heart attack?&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally, we generalize our initial ice cream sales vs. outside temperature example to explain how machine learning can be used also to predict heart attack risk from a patient ECG, and how this can be used to help doctors discover patients who have heart attacks.
-&lt;img src=&#34;/img/explaining_ml/img5.png&#34; alt=&#34;Prediction of heart attack risk&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Project group:&lt;/br&gt;
-&lt;a href=&#34;https://dgedon.github.io/&#34; target=&#34;_blank&#34;&gt;Daniel Gedon&lt;/a&gt;, &lt;a href=&#34;https://katalog.uu.se/profile/?id=N20-1420&#34; target=&#34;_blank&#34;&gt;Erik Hallström&lt;/a&gt; &amp;amp; Fredrik K. Gustafsson&lt;/p&gt;
-</description>
     </item>
     
   </channel>

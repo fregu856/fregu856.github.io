@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>My Year of Reading in 2024</title>
+      <link>/post/year_of_reading_2024/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0100</pubDate>
+      
+      <guid>/post/year_of_reading_2024/</guid>
+      <description>In 2024, I read 99 papers and 21 non-technical books. 99 papers is slightly more than my previous record (87 papers in 2023), while 21 books is slighly less than the 26 I read in 2023 (but still a lot more than what I&amp;rsquo;ve ever read in a year before that).
+In 2025, I want to read 100 papers and at least 20 non-technical books.
+The complete list of my read papers can be found at github.</description>
+    </item>
+    
+    <item>
       <title>My Year of Reading in 2023</title>
       <link>/post/year_of_reading_2023/</link>
       <pubDate>Mon, 29 Jan 2024 00:00:00 +0100</pubDate>
@@ -66,10 +77,10 @@ When I first got interested in deep learning a couple of years ago, I started ou
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Nov 18, 2024] New preprint: Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction [medRxiv] [project], work lead by Abhinav Sharma.
+      <description>[Jan 3, 2025] New blog post: My Year of Reading in 2024.
+ [Nov 18, 2024] New preprint: Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction [medRxiv] [project], work lead by Abhinav Sharma.
  [Oct 25, 2024] New preprint: Automated Segmentation of Synchrotron-Scanned Fossils [bioRxiv] [project], work lead by Melanie During and Jordan Matelsky.
- [Oct 10, 2024] New preprint: Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts [arXiv] [project].
- [Oct 1, 2024] New preprint: Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction [arXiv] [project].</description>
+ [Oct 10, 2024] New preprint: Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts [arXiv] [project].</description>
     </item>
     
   </channel>
