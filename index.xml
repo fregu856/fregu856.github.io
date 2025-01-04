@@ -20,7 +20,29 @@
 
 &lt;p&gt;In 2025, I want to read 100 papers and at least 20 non-technical books.&lt;/p&gt;
 
-&lt;p&gt;The complete list of my read papers can be found at &lt;a href=&#34;https://github.com/fregu856/papers&#34; target=&#34;_blank&#34;&gt;github.com/fregu856/papers&lt;/a&gt;. Some statistics (number of papers read each year, papers by publication year, papers by venue):&lt;/p&gt;
+&lt;p&gt;Complete list of my read papers: &lt;a href=&#34;https://github.com/fregu856/papers&#34; target=&#34;_blank&#34;&gt;github.com/fregu856/papers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Among the 99 papers, here are 15 that I found particularly interesting and/or well-written (in alphabetical order):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s41591-024-02856-4&#34; target=&#34;_blank&#34;&gt;A Visual-Language Foundation Model for Computational Pathology&lt;/a&gt; (Nature Medicine, 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s41586-024-07441-w&#34; target=&#34;_blank&#34;&gt;A Whole-Slide Foundation Model for Digital Pathology from Real-World Data&lt;/a&gt; (Nature, 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pathsocjournals.onlinelibrary.wiley.com/doi/full/10.1002/path.5898&#34; target=&#34;_blank&#34;&gt;Artificial Intelligence to Identify Genetic Alterations in Conventional Histopathology&lt;/a&gt; (Journal of Pathology, 2022)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2408.15823&#34; target=&#34;_blank&#34;&gt;Benchmarking Foundation Models as Feature Extractors For Weakly-Supervised Computational Pathology&lt;/a&gt; (arXiv, 2024-08)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proceedings.neurips.cc/paper/2021/hash/7f6caf1f0ba788cd7953d817724c2b6e-Abstract.html&#34; target=&#34;_blank&#34;&gt;Deep Extended Hazard Models for Survival Analysis&lt;/a&gt; (NeurIPS 2021)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2311.08199&#34; target=&#34;_blank&#34;&gt;Diffusion-Based Generation of Histopathological Whole Slide Images at a Gigapixel Scale&lt;/a&gt; (WACV 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2411.05489&#34; target=&#34;_blank&#34;&gt;Do Histopathological Foundation Models Eliminate Batch Effects? A Comparative Study&lt;/a&gt; (NeurIPS Workshops 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s41551-024-01193-8&#34; target=&#34;_blank&#34;&gt;Generation of Synthetic Whole-Slide Image Tiles of Tumours from RNA-Sequencing Data via Cascaded Diffusion Models&lt;/a&gt; (Nature Biomedical Engineering, 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2304.06819&#34; target=&#34;_blank&#34;&gt;Modeling Dense Multimodal Interactions Between Biological Pathways and Histology for Survival Prediction&lt;/a&gt; (CVPR 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2405.11643&#34; target=&#34;_blank&#34;&gt;Morphological Prototyping for Unsupervised Slide Representation Learning in Computational Pathology&lt;/a&gt; (CVPR 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.biorxiv.org/content/10.1101/2024.02.23.581806v1&#34; target=&#34;_blank&#34;&gt;Multimodal Histopathologic Models Stratify Hormone Receptor-Positive Early Breast Cancer&lt;/a&gt; (bioRxiv, 2024-02)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s41467-024-45589-1&#34; target=&#34;_blank&#34;&gt;Regression-Based Deep-Learning Predicts Molecular Biomarkers From Pathology Slides&lt;/a&gt; (Nature Communications, 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2208.10759&#34; target=&#34;_blank&#34;&gt;Survival Mixture Density Networks&lt;/a&gt; (MLHC 2022)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s41591-024-02857-3&#34; target=&#34;_blank&#34;&gt;Towards a General-Purpose Foundation Model for Computational Pathology&lt;/a&gt; (Nature Medicine, 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2405.11618&#34; target=&#34;_blank&#34;&gt;Transcriptomics-Guided Slide Representation Learning in Computational Pathology&lt;/a&gt; (CVPR 2024)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some paper statistics (number of papers read each year, papers by publication year, papers by venue):&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/img/year_of_reading_2024/papers_read_each_year_2024.svg&#34; alt=&#34;Papers read each year&#34; /&gt;
 &lt;img src=&#34;/img/year_of_reading_2024/papers_by_publication_year_2024.svg&#34; alt=&#34;Papers by publication year&#34; /&gt;
