@@ -6,7 +6,7 @@
     <url>
     
       <loc>/post/year_of_reading_2024/</loc>
-      <lastmod>2025-01-03T00:00:00+01:00</lastmod>
+      <lastmod>2025-01-03T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -78,7 +78,7 @@
     <url>
     
       <loc>/post/year_of_reading_2023/</loc>
-      <lastmod>2024-01-29T00:00:00+01:00</lastmod>
+      <lastmod>2024-01-29T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -105,7 +105,7 @@
     <url>
     
       <loc>/post/phd_of_reading/</loc>
-      <lastmod>2023-06-22T00:00:00+02:00</lastmod>
+      <lastmod>2023-06-22T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -141,7 +141,7 @@
     <url>
     
       <loc>/post/explaining_ml/</loc>
-      <lastmod>2022-02-07T00:00:00+01:00</lastmod>
+      <lastmod>2022-02-07T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -213,7 +213,7 @@
     <url>
     
       <loc>/post/19apr/</loc>
-      <lastmod>2019-04-25T00:00:00+02:00</lastmod>
+      <lastmod>2019-04-25T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -320,6 +320,15 @@
     
     <url>
     
+      <loc>/post/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/project/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -340,15 +349,6 @@
     
       <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/</loc>
-      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -402,7 +402,7 @@
     <url>
     
       <loc>/post/feedback/</loc>
-      <lastmod>2023-10-01T00:00:00+02:00</lastmod>
+      <lastmod>2023-10-01T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -411,7 +411,7 @@
     <url>
     
       <loc>/post/news/</loc>
-      <lastmod>2018-11-24T00:00:00+01:00</lastmod>
+      <lastmod>2018-11-24T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -429,7 +429,7 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
+      <lastmod>2017-10-15T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -448,7 +448,7 @@
     <url>
     
       <loc>/tags/pages/</loc>
-      <lastmod>2023-10-01T00:00:00+02:00</lastmod>
+      <lastmod>2023-10-01T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     

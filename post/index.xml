@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2025</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>My Year of Reading in 2024</title>
       <link>/post/year_of_reading_2024/</link>
-      <pubDate>Fri, 03 Jan 2025 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>/post/year_of_reading_2024/</guid>
       <description>In 2024, I read 99 papers and 21 non-technical books. 99 papers is slightly more than my previous record (87 papers in 2023), while 21 books is slighly less than the 26 I read in 2023 (but still a lot more than what I&amp;rsquo;ve ever read in a year before that).
@@ -26,7 +26,7 @@ Complete list of my read papers: github.</description>
     <item>
       <title>My Year of Reading in 2023</title>
       <link>/post/year_of_reading_2023/</link>
-      <pubDate>Mon, 29 Jan 2024 00:00:00 +0100</pubDate>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>/post/year_of_reading_2023/</guid>
       <description>In 2023, I read 87 papers and 26 non-technical books. 87 papers is slightly more than my previous record (82 papers in 2022), and I&amp;rsquo;ve never even been remotely close to reading 26 books in a year. Deciding to read more books is definitely one of the best things I did in 2023, it&amp;rsquo;s a great way to relax and learn some new things about the world.
@@ -36,7 +36,7 @@ In 2024, I want to read at least 100 papers and 12 non-technical books.</descrip
     <item>
       <title>The How and Why of Reading 300 Papers in 5 Years</title>
       <link>/post/phd_of_reading/</link>
-      <pubDate>Thu, 22 Jun 2023 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 22 Jun 2023 00:00:00 +0100</pubDate>
       
       <guid>/post/phd_of_reading/</guid>
       <description>The header image above was generated using the text-to-image tool at imagine.art, from the input &amp;ldquo;teddy bear scientists having an intense discussion in a reading group about machine learning&amp;rdquo;.
@@ -46,7 +46,7 @@ Since I started my PhD almost five years ago (in September 2018), I have categor
     <item>
       <title>Explaining Machine Learning and How It Can Be Used to Help Doctors</title>
       <link>/post/explaining_ml/</link>
-      <pubDate>Mon, 07 Feb 2022 00:00:00 +0100</pubDate>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>/post/explaining_ml/</guid>
       <description>For a project in the doctoral course Using Maths and CS to do Social Good at Uppsala University, our goal was to make grade 7-9 students more interested in mathematics. To that end, we have created a video with an accompanying interactive blog post. In the video, we explain the essence of how machine learning works and how it can be used to help doctors discover heart attacks from patient ECGs.</description>
@@ -55,7 +55,7 @@ Since I started my PhD almost five years ago (in September 2018), I have categor
     <item>
       <title>Getting Started with PyTorch:&lt;br&gt; 1 - Linear Regression</title>
       <link>/post/19apr/</link>
-      <pubDate>Thu, 25 Apr 2019 00:00:00 +0200</pubDate>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0100</pubDate>
       
       <guid>/post/19apr/</guid>
       <description>All code found in this blog post is also available on Google Colab where it can be executed directly in the browser.
@@ -65,7 +65,7 @@ When I first got interested in deep learning a couple of years ago, I started ou
     <item>
       <title>Feedback</title>
       <link>/post/feedback/</link>
-      <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>/post/feedback/</guid>
       <description>Please feel free to leave any type of anonymous feedback on my presentation at the following link: https://forms.gle/pfkhxdRzEE7ETmcs8</description>
@@ -74,7 +74,7 @@ When I first got interested in deep learning a couple of years ago, I started ou
     <item>
       <title>News</title>
       <link>/post/news/</link>
-      <pubDate>Fri, 01 Jan 2010 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>/post/news/</guid>
       <description>[Jan 3, 2025] New blog post: My Year of Reading in 2024.
