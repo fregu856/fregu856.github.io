@@ -1,0 +1,7 @@
+/* Tighten multi-line publication titles */
+.publication a[itemprop="name"],
+.pub-list-item a[itemprop="name"] {
+  display: inline-block;
+  line-height: 1.25;
+  margin-bottom: 0.15rem;
+}

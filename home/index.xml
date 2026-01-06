@@ -58,6 +58,42 @@
     </item>
     
     <item>
+      <title>Academic Service</title>
+      <link>/home/service/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/service/</guid>
+      <description>Reviewing  ICML 2026 | (Upcoming) MIDL 2026 | (Upcoming) AISTATS 2026 | 1 Paper ICLR 2026 | 5 Papers TMLR, 2025 | 6 Papers NeurIPS 2025 | 5 Papers ICML 2025 | 5 Papers MIDL 2025 | 4 Papers AISTATS 2025 | 2 Papers TMLR, 2024 | 3 Papers NeurIPS 2024 | 6 Papers ICML 2024 | 6 Papers AISTATS 2024 | 5 Papers ICLR 2024 | 5 Papers BRAVO Workshop at ICCV 2023 | 1 Paper NeurIPS 2023 | 6 Papers  Recognized as one of the top reviewers.</description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>/home/tags/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0100</pubDate>
+      
+      <guid>/home/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/talks/</guid>
+      <description>Invited Talks  How Reliable is Your Regression Model&amp;rsquo;s Uncertainty Under Real-World Distribution Shifts?
+RISE Learning Machines Seminars | Online | [slides] [video]
+March 21, 2024
+ How Reliable is Your Regression Model&amp;rsquo;s Uncertainty Under Real-World Distribution Shifts?
+DFKI Augmented Vision Workshop | Online | [slides]
+October 31, 2023
+ Accurate 3D Object Detection using Energy-Based Models
+Zenseact | Online | [slides]
+January 29, 2021
+ Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision</description>
+    </item>
+    
+    <item>
       <title>Teaching Experience</title>
       <link>/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
@@ -81,42 +117,6 @@ Autumn I 2021</description>
     </item>
     
     <item>
-      <title>Tags</title>
-      <link>/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0100</pubDate>
-      
-      <guid>/home/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Academic Service</title>
-      <link>/home/service/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/home/service/</guid>
-      <description>Reviewing  NeurIPS 2025 | (Upcoming) TMLR, 2025 | 2 Papers ICML 2025 | 5 Papers MIDL 2025 | 4 Papers AISTATS 2025 | 2 Papers TMLR, 2024 | 3 Papers NeurIPS 2024 | 6 Papers ICML 2024 | 6 Papers AISTATS 2024 | 5 Papers ICLR 2024 | 5 Papers BRAVO Workshop at ICCV 2023 | 1 Paper NeurIPS 2023 | 6 Papers  Recognized as one of the top reviewers.</description>
-    </item>
-    
-    <item>
-      <title>Talks</title>
-      <link>/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/home/talks/</guid>
-      <description>Invited Talks  How Reliable is Your Regression Model&amp;rsquo;s Uncertainty Under Real-World Distribution Shifts?
-RISE Learning Machines Seminars | Online | [slides] [video]
-March 21, 2024
- How Reliable is Your Regression Model&amp;rsquo;s Uncertainty Under Real-World Distribution Shifts?
-DFKI Augmented Vision Workshop | Online | [slides]
-October 31, 2023
- Accurate 3D Object Detection using Energy-Based Models
-Zenseact | Online | [slides]
-January 29, 2021
- Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision</description>
-    </item>
-    
-    <item>
       <title>Academic Network</title>
       <link>/home/network/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
@@ -133,6 +133,15 @@ Years with papers: 2025, 2024, 2023, 2022, 2021, 2020 Ziwei Luo | PhD student at
     </item>
     
     <item>
+      <title>Blog Posts</title>
+      <link>/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Reading</title>
       <link>/home/reading/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
@@ -143,21 +152,12 @@ Books I have also started to really enjoy reading various non-technical book. Si
     </item>
     
     <item>
-      <title>Blog Posts</title>
-      <link>/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/home/posts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Running</title>
       <link>/home/running/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/running/</guid>
-      <description>During the years of my PhD, running turned into an important part of my life, crucial in order to keep me productive and in a good mental state throughout the work days and weeks. I used to be a relatively serious runner, but nowadays I run mostly just because it&amp;rsquo;s a lot of fun and a great way to explore your surroundings, and because it&amp;rsquo;s good for both my physical and mental health.</description>
+      <description>During my PhD, running became an important part of my life, essential for staying productive and in a good mental state throughout the work days and weeks. I used to be a relatively serious runner, but nowadays I run mainly just because it&amp;rsquo;s a great way to explore your surroundings, experience the changing seasons, get some fresh air, and clear your mind. From Sep 10 2020 to Dec 31 2023, I maintained a run streak of 1208 days, running at least 2 km outdoors every day.</description>
     </item>
     
     <item>
@@ -170,7 +170,7 @@ Books I have also started to really enjoy reading various non-technical book. Si
     </item>
     
     <item>
-      <title>My Old Student Projects</title>
+      <title>BSc/MSc Student Projects</title>
       <link>/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       

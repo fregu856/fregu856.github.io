@@ -57,6 +57,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" crossorigin="anonymous">
+
+  
+  <link rel="stylesheet" href="/css/custom.css">
   
 
   
@@ -175,25 +178,6 @@
         
 
         <li class="nav-item">
-          <a href="/#teaching" data-target="#teaching">
-            
-            <span>Teaching</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
           <a href="/#service" data-target="#service">
             
             <span>Service</span>
@@ -232,6 +216,25 @@
         
 
         <li class="nav-item">
+          <a href="/#teaching" data-target="#teaching">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
           <a href="/#network" data-target="#network">
             
             <span>Network</span>
@@ -251,9 +254,9 @@
         
 
         <li class="nav-item">
-          <a href="/#reading" data-target="#reading">
+          <a href="/#posts" data-target="#posts">
             
-            <span>Reading</span>
+            <span>Blog Posts</span>
             
           </a>
         </li>
@@ -270,9 +273,9 @@
         
 
         <li class="nav-item">
-          <a href="/#posts" data-target="#posts">
+          <a href="/#reading" data-target="#reading">
             
-            <span>Blog Posts</span>
+            <span>Reading</span>
             
           </a>
         </li>
@@ -2866,333 +2869,6 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
   
   
   
-  <section id="teaching" class="home-section">
-    <div class="container">
-      
-
-<script type="text/javascript" src="d3-andmeteadus/d3.js"></script>
-<script type="text/javascript" src="d3-andmeteadus/d3.geom.js"></script>
-<script type="text/javascript" src="d3-andmeteadus/d3.layout.js"></script>
-
-<style type="text/css">
-
-#mybanner{
-  background: url(img/banner-andmeteadus.png) no-repeat top left;
-  background-size: contain;
-  overflow: hidden;
-  margin: 0;
-}
-
-svg {
-  width: 720px;
-  height: 200px;
-}
-
-#chart {
-  position: absolute;
-  top: 0;
-}
-
-
-rect {
-  fill: none;
-  pointer-events: all;
-}
-
-pre {
-  font-size: 18px;
-}
-
-line {
-  stroke: #000;
-  stroke-width: 1.5px;
-}
-
-.string, .regexp {
-  color: #f39;
-}
-
-.keyword {
-  color: #00c;
-}
-
-.comment {
-  color: #555;
-}
-
-.number {
-  color: #369;
-}
-
-.class, .special {
-  color: #1181B8;
-}
-	
-circle {
-  stroke: #fff;
-}
-
-    </style>
-    <script type="text/javascript">
-
-var w = 720,
-    h = 260,
-    color = d3.scale.category10();
-
-var force = d3.layout.force()
-    .gravity(0)
-    .charge(-10)
-    .size([w, h]);
-
-var nodes = force.nodes(),
-    a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
-    b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
-    c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
-	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
-
-nodes.push(a, b, c, d);
-
-var svg = d3.select("#body").append("svg:svg")
-    .attr("width", w)
-    .attr("height", h);
-
-svg.append("svg:rect")
-    .attr("width", w)
-    .attr("height", h);
-
-svg.selectAll("circle")
-    .data(nodes)
-  .enter().append("svg:circle")
-    .attr("r", 12)
-    .attr("cx", function(d) { return d.x; })
-    .attr("cy", function(d) { return d.y; })
-    .style("fill", fill)
-	.style("visibility", "hidden");
-    
-
-force.on("tick", function(e) {
-  var k = e.alpha * .1;
-  nodes.forEach(function(node) {
-    var center = nodes[node.type];
-    node.x += (center.x - node.x) * k;
-    node.y += (center.y - node.y) * k;
-  });
-
-  svg.selectAll("circle")
-      .attr("cx", function(d) { return d.x; })
-      .attr("cy", function(d) { return d.y; });
-});
-
-var p0;
-
-svg.on("mousemove", function() {
-  var p1 = d3.svg.mouse(this),
-      node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
-
-  p0 = p1;
-
-  svg.append("svg:circle")
-      .data([node])
-      .attr("cx", function(d) { return d.x; })
-      .attr("cy", function(d) { return d.y; })
-      .attr("r", 4.5)
-      .style("fill", fill)
-    .transition()
-      .delay(2250)
-      .attr("r", 1e-6)
-      .each("end", function() { nodes.splice(4, 1); })
-      .remove();
-
-  nodes.push(node);
-  force.start();
-});
-
-function fill(d) {
-  return color(d.type);
-}
-
-</script>
-
-
-<div class="row">
-  
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Teaching Experience</h1>
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-<h3 id="uppsala-university">Uppsala University</h3>
-
-<ul>
-<li><p><a href="https://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=38780&amp;lasar=21%2F22&amp;typ=1" target="_blank">1RT495 | Automatic Control II | MSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
-Spring II 2023</p></li>
-
-<li><p><a href="https://uppsala.instructure.com/courses/65587" target="_blank">1RT700 | Statistical Machine Learning | MSc</a><br />
-<em><strong>Teaching Assistant</strong></em><br />
-Autumn II 2022</p></li>
-
-<li><p><a href="https://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=44424&amp;type=1" target="_blank">1RT890 | Empirical Modelling | MSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
-Autumn I 2022</p></li>
-
-<li><p><a href="https://uppsala.instructure.com/courses/46077" target="_blank">1RT700 | Statistical Machine Learning | MSc</a><br />
-<em><strong>Teaching Assistant</strong></em><br />
-Spring I 2022</p></li>
-
-<li><p><a href="https://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=44424&amp;type=1" target="_blank">1RT890 | Empirical Modelling | MSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
-Autumn I 2021</p></li>
-
-<li><p><a href="https://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=38780&amp;lasar=21%2F22&amp;typ=1" target="_blank">1RT495 | Automatic Control II | MSc</a><br />
-<em><strong>Teaching Assistant</strong></em><br />
-Spring II 2021</p></li>
-
-<li><p><a href="http://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=29556&amp;lasar=&amp;typ=0" target="_blank">1RT490 | Automatic Control I | BSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
-Spring I 2021</p></li>
-
-<li><p><a href="https://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=38406&amp;type=1" target="_blank">1RT890 | Empirical Modelling | MSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
-Autumn I 2020</p></li>
-
-<li><p><a href="http://www.it.uu.se/edu/course/homepage/sml" target="_blank">1RT700 | Statistical Machine Learning | MSc</a><br />
-<em><strong>Lab Assistant</strong></em><br />
-Spring I 2020</p></li>
-
-<li><p><a href="http://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=29556&amp;lasar=&amp;typ=0" target="_blank">1RT490 | Automatic Control I | BSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
-Spring I 2020</p></li>
-
-<li><p><a href="http://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=29556&amp;lasar=&amp;typ=0" target="_blank">1RT490 | Automatic Control I | BSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
-Autumn I 2019</p></li>
-
-<li><p><a href="http://www.it.uu.se/research/systems_and_control/education/2019/dl" target="_blank">Deep Learning | PhD (Broad)</a><br />
-<em><strong>Teaching Assistant</strong></em><br />
-Spring II 2019</p></li>
-
-<li><p><a href="http://www.it.uu.se/edu/course/homepage/sml" target="_blank">1RT700 | Statistical Machine Learning | MSc</a><br />
-<em><strong>Lab Assistant</strong></em><br />
-Spring I 2019</p></li>
-
-<li><p><a href="http://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=29556&amp;lasar=&amp;typ=0" target="_blank">1RT490 | Automatic Control I | BSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
-Spring I 2019</p></li>
-</ul>
-
-<h3 id="linköping-university">Linköping University</h3>
-
-<ul>
-<li><p><a href="https://liu.se/studieinfo/en/kurs/tata24/ht-2018" target="_blank">TATA24 | Linear Algebra | BSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Mentor)</em><br />
-Autumn 2015</p></li>
-
-<li><p><a href="https://liu.se/studieinfo/en/kurs/tatm79/ht-2018" target="_blank">TATM79 | Foundation Course in Mathematics | BSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Handledare)</em><br />
-Autumn 2015</p></li>
-
-<li><p><a href="https://liu.se/studieinfo/en/kurs/tata24/ht-2018" target="_blank">TATA24 | Linear Algebra | BSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Mentor)</em><br />
-Autumn 2014</p></li>
-
-<li><p><a href="https://liu.se/studieinfo/en/kurs/taiu10/ht-2018" target="_blank">TAIU10 | Calculus, one variable - Preparatory course | BSc</a><br />
-<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
-Autumn 2014</p></li>
-</ul>
-
-  </div>
-  
-</div>
-
-<script type="text/javascript">
-  
-  var w = 720,
-      h = 260,
-      color = d3.scale.category10();
-  
-  var force = d3.layout.force()
-      .gravity(0)
-      .charge(-10)
-      .size([w, h]);
-  
-  var nodes = force.nodes(),
-      a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
-      b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
-      c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
-  	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
-  
-  nodes.push(a, b, c, d);
-  
-  var svg = d3.select("#mybanner").append("svg:svg")
-      .attr("width", w)
-      .attr("height", h);
-  
-  svg.append("svg:rect")
-      .attr("width", w)
-      .attr("height", h);
-  
-  svg.selectAll("circle")
-      .data(nodes)
-    .enter().append("svg:circle")
-      .attr("r", 12)
-      .attr("cx", function(d) { return d.x; })
-      .attr("cy", function(d) { return d.y; })
-      .style("fill", fill)
-  	.style("visibility", "hidden");
-      
-  
-  force.on("tick", function(e) {
-    var k = e.alpha * .1;
-    nodes.forEach(function(node) {
-      var center = nodes[node.type];
-      node.x += (center.x - node.x) * k;
-      node.y += (center.y - node.y) * k;
-    });
-  
-    svg.selectAll("circle")
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
-  });
-  
-  var p0;
-  
-  svg.on("mousemove", function() {
-    var p1 = d3.svg.mouse(this),
-        node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
-  
-    p0 = p1;
-  
-    svg.append("svg:circle")
-        .data([node])
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; })
-        .attr("r", 4.5)
-        .style("fill", fill)
-      .transition()
-        .delay(2250)
-        .attr("r", 1e-6)
-        .each("end", function() { nodes.splice(4, 1); })
-        .remove();
-  
-    nodes.push(node);
-    force.start();
-  });
-  
-  function fill(d) {
-    return color(d.type);
-  }
-
-</script>
-    </div>
-  </section>
-  
-
-  
-  
-  
   <section id="service" class="home-section">
     <div class="container">
       
@@ -3353,8 +3029,12 @@ function fill(d) {
 <h3 id="reviewing">Reviewing</h3>
 
 <ul>
-<li><a href="https://nips.cc/Conferences/2025" target="_blank">NeurIPS 2025</a> | (Upcoming)</li>
-<li><a href="https://jmlr.org/tmlr/" target="_blank">TMLR, 2025</a> | 2 Papers</li>
+<li><a href="https://icml.cc/Conferences/2026" target="_blank">ICML 2026</a> | (Upcoming)</li>
+<li><a href="https://2026.midl.io/" target="_blank">MIDL 2026</a> | (Upcoming)</li>
+<li><a href="https://aistats.org/aistats2026//" target="_blank">AISTATS 2026</a> | 1 Paper</li>
+<li><a href="https://iclr.cc/Conferences/2026" target="_blank">ICLR 2026</a> | 5 Papers</li>
+<li><a href="https://jmlr.org/tmlr/" target="_blank">TMLR, 2025</a> | 6 Papers</li>
+<li><a href="https://nips.cc/Conferences/2025" target="_blank">NeurIPS 2025</a> | 5 Papers</li>
 <li><a href="https://icml.cc/Conferences/2025" target="_blank">ICML 2025</a> | 5 Papers</li>
 <li><a href="https://2025.midl.io/" target="_blank">MIDL 2025</a> | 4 Papers</li>
 <li><a href="https://aistats.org/aistats2025//" target="_blank">AISTATS 2025</a> | 2 Papers</li>
@@ -3385,7 +3065,7 @@ function fill(d) {
 <li><a href="https://www.ifac2020.org/" target="_blank">IFAC World Congress 2020</a> | 2 Papers</li>
 </ul>
 
-<p>102 papers in total.</p>
+<p>117 papers in total.</p>
 
   </div>
   
@@ -3792,6 +3472,333 @@ March 22, 2019</p></li>
   
   
   
+  <section id="teaching" class="home-section">
+    <div class="container">
+      
+
+<script type="text/javascript" src="d3-andmeteadus/d3.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.geom.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.layout.js"></script>
+
+<style type="text/css">
+
+#mybanner{
+  background: url(img/banner-andmeteadus.png) no-repeat top left;
+  background-size: contain;
+  overflow: hidden;
+  margin: 0;
+}
+
+svg {
+  width: 720px;
+  height: 200px;
+}
+
+#chart {
+  position: absolute;
+  top: 0;
+}
+
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #555;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+	
+circle {
+  stroke: #fff;
+}
+
+    </style>
+    <script type="text/javascript">
+
+var w = 720,
+    h = 260,
+    color = d3.scale.category10();
+
+var force = d3.layout.force()
+    .gravity(0)
+    .charge(-10)
+    .size([w, h]);
+
+var nodes = force.nodes(),
+    a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+    b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+    c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+
+nodes.push(a, b, c, d);
+
+var svg = d3.select("#body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.append("svg:rect")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.selectAll("circle")
+    .data(nodes)
+  .enter().append("svg:circle")
+    .attr("r", 12)
+    .attr("cx", function(d) { return d.x; })
+    .attr("cy", function(d) { return d.y; })
+    .style("fill", fill)
+	.style("visibility", "hidden");
+    
+
+force.on("tick", function(e) {
+  var k = e.alpha * .1;
+  nodes.forEach(function(node) {
+    var center = nodes[node.type];
+    node.x += (center.x - node.x) * k;
+    node.y += (center.y - node.y) * k;
+  });
+
+  svg.selectAll("circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+});
+
+var p0;
+
+svg.on("mousemove", function() {
+  var p1 = d3.svg.mouse(this),
+      node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+
+  p0 = p1;
+
+  svg.append("svg:circle")
+      .data([node])
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", 4.5)
+      .style("fill", fill)
+    .transition()
+      .delay(2250)
+      .attr("r", 1e-6)
+      .each("end", function() { nodes.splice(4, 1); })
+      .remove();
+
+  nodes.push(node);
+  force.start();
+});
+
+function fill(d) {
+  return color(d.type);
+}
+
+</script>
+
+
+<div class="row">
+  
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Teaching Experience</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+<h3 id="uppsala-university">Uppsala University</h3>
+
+<ul>
+<li><p><a href="https://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=38780&amp;lasar=21%2F22&amp;typ=1" target="_blank">1RT495 | Automatic Control II | MSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Spring II 2023</p></li>
+
+<li><p><a href="https://uppsala.instructure.com/courses/65587" target="_blank">1RT700 | Statistical Machine Learning | MSc</a><br />
+<em><strong>Teaching Assistant</strong></em><br />
+Autumn II 2022</p></li>
+
+<li><p><a href="https://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=44424&amp;type=1" target="_blank">1RT890 | Empirical Modelling | MSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Autumn I 2022</p></li>
+
+<li><p><a href="https://uppsala.instructure.com/courses/46077" target="_blank">1RT700 | Statistical Machine Learning | MSc</a><br />
+<em><strong>Teaching Assistant</strong></em><br />
+Spring I 2022</p></li>
+
+<li><p><a href="https://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=44424&amp;type=1" target="_blank">1RT890 | Empirical Modelling | MSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Autumn I 2021</p></li>
+
+<li><p><a href="https://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=38780&amp;lasar=21%2F22&amp;typ=1" target="_blank">1RT495 | Automatic Control II | MSc</a><br />
+<em><strong>Teaching Assistant</strong></em><br />
+Spring II 2021</p></li>
+
+<li><p><a href="http://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=29556&amp;lasar=&amp;typ=0" target="_blank">1RT490 | Automatic Control I | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Spring I 2021</p></li>
+
+<li><p><a href="https://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=38406&amp;type=1" target="_blank">1RT890 | Empirical Modelling | MSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Autumn I 2020</p></li>
+
+<li><p><a href="http://www.it.uu.se/edu/course/homepage/sml" target="_blank">1RT700 | Statistical Machine Learning | MSc</a><br />
+<em><strong>Lab Assistant</strong></em><br />
+Spring I 2020</p></li>
+
+<li><p><a href="http://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=29556&amp;lasar=&amp;typ=0" target="_blank">1RT490 | Automatic Control I | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Spring I 2020</p></li>
+
+<li><p><a href="http://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=29556&amp;lasar=&amp;typ=0" target="_blank">1RT490 | Automatic Control I | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Autumn I 2019</p></li>
+
+<li><p><a href="http://www.it.uu.se/research/systems_and_control/education/2019/dl" target="_blank">Deep Learning | PhD (Broad)</a><br />
+<em><strong>Teaching Assistant</strong></em><br />
+Spring II 2019</p></li>
+
+<li><p><a href="http://www.it.uu.se/edu/course/homepage/sml" target="_blank">1RT700 | Statistical Machine Learning | MSc</a><br />
+<em><strong>Lab Assistant</strong></em><br />
+Spring I 2019</p></li>
+
+<li><p><a href="http://www.uu.se/en/admissions/freestanding-courses/course-syllabus/?kpid=29556&amp;lasar=&amp;typ=0" target="_blank">1RT490 | Automatic Control I | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Spring I 2019</p></li>
+</ul>
+
+<h3 id="linköping-university">Linköping University</h3>
+
+<ul>
+<li><p><a href="https://liu.se/studieinfo/en/kurs/tata24/ht-2018" target="_blank">TATA24 | Linear Algebra | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Mentor)</em><br />
+Autumn 2015</p></li>
+
+<li><p><a href="https://liu.se/studieinfo/en/kurs/tatm79/ht-2018" target="_blank">TATM79 | Foundation Course in Mathematics | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Handledare)</em><br />
+Autumn 2015</p></li>
+
+<li><p><a href="https://liu.se/studieinfo/en/kurs/tata24/ht-2018" target="_blank">TATA24 | Linear Algebra | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Mentor)</em><br />
+Autumn 2014</p></li>
+
+<li><p><a href="https://liu.se/studieinfo/en/kurs/taiu10/ht-2018" target="_blank">TAIU10 | Calculus, one variable - Preparatory course | BSc</a><br />
+<em><strong>Teaching Assistant</strong> (Swedish: Lektionsledare)</em><br />
+Autumn 2014</p></li>
+</ul>
+
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  
+  var w = 720,
+      h = 260,
+      color = d3.scale.category10();
+  
+  var force = d3.layout.force()
+      .gravity(0)
+      .charge(-10)
+      .size([w, h]);
+  
+  var nodes = force.nodes(),
+      a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+      b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+      c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+  	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+  
+  nodes.push(a, b, c, d);
+  
+  var svg = d3.select("#mybanner").append("svg:svg")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.append("svg:rect")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.selectAll("circle")
+      .data(nodes)
+    .enter().append("svg:circle")
+      .attr("r", 12)
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .style("fill", fill)
+  	.style("visibility", "hidden");
+      
+  
+  force.on("tick", function(e) {
+    var k = e.alpha * .1;
+    nodes.forEach(function(node) {
+      var center = nodes[node.type];
+      node.x += (center.x - node.x) * k;
+      node.y += (center.y - node.y) * k;
+    });
+  
+    svg.selectAll("circle")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  });
+  
+  var p0;
+  
+  svg.on("mousemove", function() {
+    var p1 = d3.svg.mouse(this),
+        node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+  
+    p0 = p1;
+  
+    svg.append("svg:circle")
+        .data([node])
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", 4.5)
+        .style("fill", fill)
+      .transition()
+        .delay(2250)
+        .attr("r", 1e-6)
+        .each("end", function() { nodes.splice(4, 1); })
+        .remove();
+  
+    nodes.push(node);
+    force.start();
+  });
+  
+  function fill(d) {
+    return color(d.type);
+  }
+
+</script>
+    </div>
+  </section>
+  
+
+  
+  
+  
   <section id="network" class="home-section">
     <div class="container">
       
@@ -3991,322 +3998,6 @@ Main supervisor: <a href="https://ki.se/en/research/research-areas-centres-and-n
 <li><p><strong>Co-supervisor: <a href="https://scholar.google.com/citations?user=NCSSpMkAAAAJ&amp;hl" target="_blank">Martin Danelljan</a></strong> | PhD in 2018 from Linköping University<br />
 <em>Advised by <a href="https://scholar.google.com/citations?user=lkWfR08AAAAJ&amp;hl" target="_blank">Michael Felsberg</a> (PhD in 2002 from Kiel University) and <a href="https://scholar.google.com/citations?user=zvaeYnUAAAAJ&amp;hl" target="_blank">Fahad Shahbaz Khan</a> (PhD in 2011 from Autonomous University of Barcelona)</em></p></li>
 </ul>
-
-  </div>
-  
-</div>
-
-<script type="text/javascript">
-  
-  var w = 720,
-      h = 260,
-      color = d3.scale.category10();
-  
-  var force = d3.layout.force()
-      .gravity(0)
-      .charge(-10)
-      .size([w, h]);
-  
-  var nodes = force.nodes(),
-      a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
-      b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
-      c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
-  	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
-  
-  nodes.push(a, b, c, d);
-  
-  var svg = d3.select("#mybanner").append("svg:svg")
-      .attr("width", w)
-      .attr("height", h);
-  
-  svg.append("svg:rect")
-      .attr("width", w)
-      .attr("height", h);
-  
-  svg.selectAll("circle")
-      .data(nodes)
-    .enter().append("svg:circle")
-      .attr("r", 12)
-      .attr("cx", function(d) { return d.x; })
-      .attr("cy", function(d) { return d.y; })
-      .style("fill", fill)
-  	.style("visibility", "hidden");
-      
-  
-  force.on("tick", function(e) {
-    var k = e.alpha * .1;
-    nodes.forEach(function(node) {
-      var center = nodes[node.type];
-      node.x += (center.x - node.x) * k;
-      node.y += (center.y - node.y) * k;
-    });
-  
-    svg.selectAll("circle")
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
-  });
-  
-  var p0;
-  
-  svg.on("mousemove", function() {
-    var p1 = d3.svg.mouse(this),
-        node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
-  
-    p0 = p1;
-  
-    svg.append("svg:circle")
-        .data([node])
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; })
-        .attr("r", 4.5)
-        .style("fill", fill)
-      .transition()
-        .delay(2250)
-        .attr("r", 1e-6)
-        .each("end", function() { nodes.splice(4, 1); })
-        .remove();
-  
-    nodes.push(node);
-    force.start();
-  });
-  
-  function fill(d) {
-    return color(d.type);
-  }
-
-</script>
-    </div>
-  </section>
-  
-
-  
-  
-  
-  <section id="reading" class="home-section">
-    <div class="container">
-      
-
-<script type="text/javascript" src="d3-andmeteadus/d3.js"></script>
-<script type="text/javascript" src="d3-andmeteadus/d3.geom.js"></script>
-<script type="text/javascript" src="d3-andmeteadus/d3.layout.js"></script>
-
-<style type="text/css">
-
-#mybanner{
-  background: url(img/banner-andmeteadus.png) no-repeat top left;
-  background-size: contain;
-  overflow: hidden;
-  margin: 0;
-}
-
-svg {
-  width: 720px;
-  height: 200px;
-}
-
-#chart {
-  position: absolute;
-  top: 0;
-}
-
-
-rect {
-  fill: none;
-  pointer-events: all;
-}
-
-pre {
-  font-size: 18px;
-}
-
-line {
-  stroke: #000;
-  stroke-width: 1.5px;
-}
-
-.string, .regexp {
-  color: #f39;
-}
-
-.keyword {
-  color: #00c;
-}
-
-.comment {
-  color: #555;
-}
-
-.number {
-  color: #369;
-}
-
-.class, .special {
-  color: #1181B8;
-}
-	
-circle {
-  stroke: #fff;
-}
-
-    </style>
-    <script type="text/javascript">
-
-var w = 720,
-    h = 260,
-    color = d3.scale.category10();
-
-var force = d3.layout.force()
-    .gravity(0)
-    .charge(-10)
-    .size([w, h]);
-
-var nodes = force.nodes(),
-    a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
-    b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
-    c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
-	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
-
-nodes.push(a, b, c, d);
-
-var svg = d3.select("#body").append("svg:svg")
-    .attr("width", w)
-    .attr("height", h);
-
-svg.append("svg:rect")
-    .attr("width", w)
-    .attr("height", h);
-
-svg.selectAll("circle")
-    .data(nodes)
-  .enter().append("svg:circle")
-    .attr("r", 12)
-    .attr("cx", function(d) { return d.x; })
-    .attr("cy", function(d) { return d.y; })
-    .style("fill", fill)
-	.style("visibility", "hidden");
-    
-
-force.on("tick", function(e) {
-  var k = e.alpha * .1;
-  nodes.forEach(function(node) {
-    var center = nodes[node.type];
-    node.x += (center.x - node.x) * k;
-    node.y += (center.y - node.y) * k;
-  });
-
-  svg.selectAll("circle")
-      .attr("cx", function(d) { return d.x; })
-      .attr("cy", function(d) { return d.y; });
-});
-
-var p0;
-
-svg.on("mousemove", function() {
-  var p1 = d3.svg.mouse(this),
-      node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
-
-  p0 = p1;
-
-  svg.append("svg:circle")
-      .data([node])
-      .attr("cx", function(d) { return d.x; })
-      .attr("cy", function(d) { return d.y; })
-      .attr("r", 4.5)
-      .style("fill", fill)
-    .transition()
-      .delay(2250)
-      .attr("r", 1e-6)
-      .each("end", function() { nodes.splice(4, 1); })
-      .remove();
-
-  nodes.push(node);
-  force.start();
-});
-
-function fill(d) {
-  return color(d.type);
-}
-
-</script>
-
-
-<div class="row">
-  
-  <div class="col-xs-12 col-md-4 section-heading">
-    <h1>Reading</h1>
-    
-  </div>
-  <div class="col-xs-12 col-md-8">
-    
-
-<h3 id="papers">Papers</h3>
-
-<!-- I categorize, annotate and write comments for all research papers I read, and share this publicly on [GitHub](https://github.com/fregu856/papers) (220+ papers since 2018). Feel free to reach out with any questions or suggested readings, I am always interested in learning about new methods and ideas. -->
-
-<!-- I categorize, annotate and write comments for all research papers I read, and share this publicly on [GitHub](https://github.com/fregu856/papers) (440+ papers since September 2018). Feel free to reach out with any questions or suggested reading. In June 2023, I also wrote the blog post [_The How and Why of Reading 300 Papers in 5 Years_](/post/phd_of_reading/) about this.
-
-From 2018 to 2023, I organized the [SysCon machine learning reading group](https://www.it.uu.se/about_us/divisions/systems_and_control/activities/mlreadinggroup). -->
-
-<p>I categorize, annotate and write comments for all research papers I read, and share this publicly on <a href="https://github.com/fregu856/papers" target="_blank">GitHub</a> (440+ papers since September 2018). Feel free to reach out with any questions or suggested reading. In June 2023, I also wrote the blog post <a href="/post/phd_of_reading/"><em>The How and Why of Reading 300 Papers in 5 Years</em></a> about this.</p>
-
-<h3 id="books">Books</h3>
-
-<!-- I have also become quite interested in philosophy (mainly ethics and political philosophy), and have read the following books: -->
-
-<p>I have also started to really enjoy reading various non-technical book. Since late 2022, I have read the following books (I&rsquo;m also on <a href="https://www.goodreads.com/user/show/167840381-fredrik-gustafsson" target="_blank">Goodreads</a>):</p>
-
-<ul>
-<li>24-12-26 | <a href="https://www.goodreads.com/book/show/214479660-den-vidunderliga-ordningen" target="_blank">Den vidunderliga ordningen</a> | <em><strong>Andrev Walden</strong></em> | Rating: 4</li>
-<li>24-12-11 | <a href="https://www.goodreads.com/book/show/217189639-dimmans-land" target="_blank">Historien om Norrland. Dimmans land: från istid till hungernöd</a> | <em><strong>Robin Olovsson</strong></em> | Rating: 3.5</li>
-<li>24-11-03 | <a href="https://www.goodreads.com/book/show/58662236-small-things-like-these" target="_blank">Small Things Like These</a> | <em><strong>Claire Keegan</strong></em> | Rating: 3.5</li>
-<li>24-10-27 | <a href="https://www.goodreads.com/book/show/218063480-din-vilja-sitter-i-skogen" target="_blank">Din vilja sitter i skogen</a> | <em><strong>Mattias Timander</strong></em> | Rating: 3.5</li>
-<li>24-10-20 | <a href="https://www.goodreads.com/book/show/40024238-ditt-lilla-m-rker-i-ljuset" target="_blank">Ditt lilla mörker i ljuset</a> | <em><strong>Andrev Walden</strong></em> | Rating: 3.5</li>
-<li>24-10-13 | <a href="https://www.goodreads.com/book/show/1696088.Barn_av_sin_stad" target="_blank">Barn av sin stad</a> | <em><strong>Per Anders Fogelström</strong></em> | Rating: 4</li>
-<li>24-09-21 | <a href="https://www.goodreads.com/book/show/1696078.Mina_dr_mmars_stad" target="_blank">Mina drömmars stad</a> | <em><strong>Per Anders Fogelström</strong></em> | Rating: 4</li>
-<li>24-08-31 | <a href="https://www.goodreads.com/book/show/28186038-amok" target="_blank">Amok</a> | <em><strong>Stefan Zweig</strong></em> | Rating: 4</li>
-<li>24-08-17 | <a href="https://www.goodreads.com/book/show/30753738-the-choice" target="_blank">The Choice: Embrace the Possible</a> | <em><strong>Edith Eger</strong></em> | Rating: 3.5</li>
-<li>24-08-10 | <a href="https://www.goodreads.com/book/show/629429.The_World_of_Yesterday" target="_blank">The World of Yesterday</a> | <em><strong>Stefan Zweig</strong></em> | Rating: 3.5</li>
-<li>24-07-30 | <a href="https://www.goodreads.com/book/show/25004547-en-tysk-mans-historia-minnen-1914-1933" target="_blank">En tysk mans historia</a> | <em><strong>Sebastian Haffner</strong></em> | Rating: 4</li>
-<li>24-07-19 | <a href="https://www.goodreads.com/book/show/23480268-denne-dag-et-liv" target="_blank">Denna dagen, ett liv - En biografi över Astrid Lindgren</a> | <em><strong>Jens Andersen</strong></em> | Rating: 4</li>
-<li>24-07-10 | <a href="https://www.goodreads.com/book/show/40144034-den-brutna-kvinnan" target="_blank">The Woman Destroyed</a> | <em><strong>Simone de Beauvoir</strong></em> | Rating: 4</li>
-<li>24-07-08 | <a href="https://www.goodreads.com/book/show/49455.Notes_from_Underground" target="_blank">Notes from Underground</a> | <em><strong>Fyodor Dostoevsky</strong></em> | Rating: 3</li>
-<li>24-07-06 | <a href="https://www.goodreads.com/book/show/1772910.White_Nights" target="_blank">White Nights</a> | <em><strong>Fyodor Dostoevsky</strong></em> | Rating: 2.5</li>
-<li>24-07-04 | <a href="https://www.goodreads.com/book/show/3892118-det-g-r-an" target="_blank">Det går an</a> | <em><strong>Carl Jonas Love Almqvist</strong></em> | Rating: 3.5</li>
-<li>24-06-01 | <a href="https://www.goodreads.com/book/show/2165.The_Old_Man_and_the_Sea" target="_blank">The Old Man and the Sea</a> | <em><strong>Ernest Hemingway</strong></em> | Rating: 3</li>
-<li>24-04-12 | <a href="https://www.goodreads.com/book/show/393199.Down_and_Out_in_Paris_and_London" target="_blank">Down and Out in Paris and London</a> | <em><strong>George Orwell</strong></em> | Rating: 3</li>
-<li>24-02-02 | <a href="https://www.goodreads.com/book/show/25251914-l-parens-hj-rta" target="_blank">Löparens hjärta</a> | <em><strong>Markus Torgeby</strong></em> | Rating: 4</li>
-<li>24-01-27 | <a href="https://www.goodreads.com/book/show/56197486-inseparable" target="_blank">Inseparable</a> | <em><strong>Simone de Beauvoir</strong></em> | Rating: 4</li>
-<li>24-01-22 | <a href="https://www.goodreads.com/book/show/61439040-1984" target="_blank">1984</a> | <em><strong>George Orwell</strong></em> | Rating: 4</li>
-<li>23-10-25 | <a href="https://www.goodreads.com/book/show/11989.The_Plague" target="_blank">The Plague</a> | <em><strong>Albert Camus</strong></em> | Rating: 4</li>
-<li>23-10-23 | <a href="https://www.goodreads.com/book/show/170448.Animal_Farm" target="_blank">Animal Farm</a> | <em><strong>George Orwell</strong></em> | Rating: 4</li>
-<li>23-10-11 | <a href="https://www.goodreads.com/book/show/49552.The_Stranger" target="_blank">The Stranger</a> | <em><strong>Albert Camus</strong></em> | Rating: 3.5</li>
-<li>23-10-02 | <a href="https://www.goodreads.com/book/show/164006.Memoirs_of_a_Dutiful_Daughter" target="_blank">Memoirs of a Dutiful Daughter</a> | <em><strong>Simone de Beauvoir</strong></em> | Rating: 4</li>
-<li>23-09-17 | <a href="https://www.goodreads.com/book/show/55244640-the-subversive-simone-weil" target="_blank">The Subversive Simone Weil: A Life in Five Ideas</a> | <em><strong>Robert Zaretsky</strong></em> | Rating: 3</li>
-<li>23-09-11 | <a href="https://www.goodreads.com/book/show/123169859-n-r-ingen-lyssnar" target="_blank">När ingen lyssnar</a> | <em><strong>Diamant Salihu</strong></em> | Rating: 4</li>
-<li>23-08-31 | <a href="https://www.goodreads.com/book/show/57761906-tills-alla-d-r" target="_blank">Tills alla dör</a> | <em><strong>Diamant Salihu</strong></em> | Rating: 4.5</li>
-<li>23-08-27 | <a href="https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning" target="_blank">Man&rsquo;s Search for Meaning</a> | <em><strong>Viktor E. Frankl</strong></em> | Rating: 3.5</li>
-<li>23-08-23 | <a href="https://www.goodreads.com/book/show/105292242-bland-br-der-och-fiender-om-g-ng-manligheter-och-avhopp" target="_blank">Bland bröder och fiender. Om gäng, manligheter och avhopp</a> | <em><strong>Torbjörn Forkby, Jari Kuosmanen, Henrik Örnlind</strong></em> | Rating: 3.5</li>
-<li>23-08-16 | <a href="https://www.goodreads.com/book/show/57445383-mary-wollstonecraft-feminismen-och-frihetens-f-ruts-ttningar" target="_blank">Mary Wollstonecraft, feminismen och frihetens förutsättningar</a> | <em><strong>Lena Halldenius</strong></em> | Rating: 3</li>
-<li>23-08-12 | <a href="https://www.goodreads.com/book/show/17690.The_Trial" target="_blank">The Trial</a> | <em><strong>Franz Kafka</strong></em> | Rating: 4</li>
-<li>23-08-10 | <a href="https://www.goodreads.com/book/show/91950.The_Myth_of_Sisyphus" target="_blank">The Myth of Sisyphus</a> | <em><strong>Albert Camus</strong></em> | Rating: 3</li>
-<li>23-08-07 | <a href="https://www.goodreads.com/book/show/52090.Eichmann_in_Jerusalem" target="_blank">Eichmann in Jerusalem: A Report on the Banality of Evil</a> | <em><strong>Hannah Arendt</strong></em> | Rating: 3</li>
-<li>23-08-02 | <a href="https://www.goodreads.com/book/show/52908942-how-to-avoid-a-climate-disaster" target="_blank">How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need</a> | <em><strong>Bill Gates</strong></em> | Rating: 4</li>
-<li>23-08-01 | <a href="https://www.goodreads.com/book/show/53404245-what-is-life" target="_blank">What Is Life? Five Great Ideas in Biology</a> | <em><strong>Paul Nurse</strong></em> | Rating: 3.5</li>
-<li>23-07-26 | <a href="https://www.goodreads.com/book/show/1754324.Tysk_h_st" target="_blank">Tysk höst</a> | <em><strong>Stig Dagerman</strong></em> | Rating: 3.5</li>
-<li>23-07-23 | <a href="https://www.goodreads.com/book/show/60590737-det-fallna-imperiet" target="_blank">Det fallna imperiet: Ryssland och väst under Vladimir Putin</a> | <em><strong>Martin Kragh</strong></em> | Rating: 3.5</li>
-<li>23-07-17 | <a href="https://www.goodreads.com/book/show/32335775-finding-meaning-in-an-imperfect-world" target="_blank">Finding Meaning in an Imperfect World</a> | <em><strong>Iddo Landau</strong></em> | Rating: 3</li>
-<li>23-07-07 | <a href="https://www.goodreads.com/book/show/2195464.What_I_Talk_About_When_I_Talk_About_Running" target="_blank">What I Talk About When I Talk About Running</a> | <em><strong>Haruki Murakami</strong></em> | Rating: 3</li>
-<li>23-07-03 | <a href="https://www.goodreads.com/book/show/53922059-frontl-paren-gunder-h-gg---hans-uppg-ng-och-fall" target="_blank">Frontlöparen: Gunder Hägg, hans uppgång och fall</a> | <em><strong>Björn Lundberg</strong></em> | Rating: 3.5</li>
-<li>23-06-03 | <a href="https://www.goodreads.com/book/show/7634213-meaning-in-life-and-why-it-matters" target="_blank">Meaning in Life and Why It Matters</a> | <em><strong>Susan Wolf</strong></em> | Rating: 2.5</li>
-<li>23-03-14 | <a href="https://www.goodreads.com/book/show/29378.Practical_Ethics" target="_blank">Practical Ethics</a> | <em><strong>Peter Singer</strong></em> | Rating: 3.5</li>
-<li>23-02-12 | <a href="https://www.goodreads.com/book/show/31851.An_Introduction_to_Political_Philosophy" target="_blank">An Introduction to Political Philosophy</a> | <em><strong>Jonathan Wolff</strong></em> | Rating: 3.5</li>
-<li>23-01-11 | <a href="https://www.goodreads.com/book/show/17206336-liberalism" target="_blank">Liberalism</a> | <em><strong>Lena Halldenius</strong></em> | Rating: 4.5</li>
-<li>23-01-04 | <a href="https://www.goodreads.com/book/show/59757676-grundbok-i-metaetik" target="_blank">Grundbok i metaetik</a> <em>(Introduction to Metaethics)</em> | <em><strong>Nils Franzén, Victor Moberger, Olle Risberg</strong></em> | Rating: 3.5</li>
-<li>23-01-03 | <a href="https://www.goodreads.com/book/show/2120675.The_Moral_Philosophers" target="_blank">The Moral Philosophers: An Introduction to Ethics</a> | <em><strong>Richard Norman</strong></em> | Rating: 3</li>
-<li>22-11-26 | <a href="https://www.goodreads.com/book/show/50680935-ethics-in-engineering" target="_blank">Ethics in Engineering</a> | <em><strong>Thomas Taro Lennerfors</strong></em> | Rating: 3</li>
-</ul>
-
-<p>48 books in total.</p>
 
   </div>
   
@@ -4806,6 +4497,322 @@ From 2018 to 2023, I organized the [SysCon machine learning reading group](https
   
   
   
+  <section id="reading" class="home-section">
+    <div class="container">
+      
+
+<script type="text/javascript" src="d3-andmeteadus/d3.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.geom.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.layout.js"></script>
+
+<style type="text/css">
+
+#mybanner{
+  background: url(img/banner-andmeteadus.png) no-repeat top left;
+  background-size: contain;
+  overflow: hidden;
+  margin: 0;
+}
+
+svg {
+  width: 720px;
+  height: 200px;
+}
+
+#chart {
+  position: absolute;
+  top: 0;
+}
+
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #555;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+	
+circle {
+  stroke: #fff;
+}
+
+    </style>
+    <script type="text/javascript">
+
+var w = 720,
+    h = 260,
+    color = d3.scale.category10();
+
+var force = d3.layout.force()
+    .gravity(0)
+    .charge(-10)
+    .size([w, h]);
+
+var nodes = force.nodes(),
+    a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+    b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+    c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+
+nodes.push(a, b, c, d);
+
+var svg = d3.select("#body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.append("svg:rect")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.selectAll("circle")
+    .data(nodes)
+  .enter().append("svg:circle")
+    .attr("r", 12)
+    .attr("cx", function(d) { return d.x; })
+    .attr("cy", function(d) { return d.y; })
+    .style("fill", fill)
+	.style("visibility", "hidden");
+    
+
+force.on("tick", function(e) {
+  var k = e.alpha * .1;
+  nodes.forEach(function(node) {
+    var center = nodes[node.type];
+    node.x += (center.x - node.x) * k;
+    node.y += (center.y - node.y) * k;
+  });
+
+  svg.selectAll("circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+});
+
+var p0;
+
+svg.on("mousemove", function() {
+  var p1 = d3.svg.mouse(this),
+      node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+
+  p0 = p1;
+
+  svg.append("svg:circle")
+      .data([node])
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", 4.5)
+      .style("fill", fill)
+    .transition()
+      .delay(2250)
+      .attr("r", 1e-6)
+      .each("end", function() { nodes.splice(4, 1); })
+      .remove();
+
+  nodes.push(node);
+  force.start();
+});
+
+function fill(d) {
+  return color(d.type);
+}
+
+</script>
+
+
+<div class="row">
+  
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Reading</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+<h3 id="papers">Papers</h3>
+
+<!-- I categorize, annotate and write comments for all research papers I read, and share this publicly on [GitHub](https://github.com/fregu856/papers) (220+ papers since 2018). Feel free to reach out with any questions or suggested readings, I am always interested in learning about new methods and ideas. -->
+
+<!-- I categorize, annotate and write comments for all research papers I read, and share this publicly on [GitHub](https://github.com/fregu856/papers) (440+ papers since September 2018). Feel free to reach out with any questions or suggested reading. In June 2023, I also wrote the blog post [_The How and Why of Reading 300 Papers in 5 Years_](/post/phd_of_reading/) about this.
+
+From 2018 to 2023, I organized the [SysCon machine learning reading group](https://www.it.uu.se/about_us/divisions/systems_and_control/activities/mlreadinggroup). -->
+
+<p>I categorize, annotate and write comments for all research papers I read, and share this publicly on <a href="https://github.com/fregu856/papers" target="_blank">GitHub</a> (440+ papers since September 2018). Feel free to reach out with any questions or suggested reading. In June 2023, I also wrote the blog post <a href="/post/phd_of_reading/"><em>The How and Why of Reading 300 Papers in 5 Years</em></a> about this.</p>
+
+<h3 id="books">Books</h3>
+
+<!-- I have also become quite interested in philosophy (mainly ethics and political philosophy), and have read the following books: -->
+
+<p>I have also started to really enjoy reading various non-technical book. Since late 2022, I have read the following books (I&rsquo;m also on <a href="https://www.goodreads.com/user/show/167840381-fredrik-gustafsson" target="_blank">Goodreads</a>):</p>
+
+<ul>
+<li>24-12-26 | <a href="https://www.goodreads.com/book/show/214479660-den-vidunderliga-ordningen" target="_blank">Den vidunderliga ordningen</a> | <em><strong>Andrev Walden</strong></em> | Rating: 4</li>
+<li>24-12-11 | <a href="https://www.goodreads.com/book/show/217189639-dimmans-land" target="_blank">Historien om Norrland. Dimmans land: från istid till hungernöd</a> | <em><strong>Robin Olovsson</strong></em> | Rating: 3.5</li>
+<li>24-11-03 | <a href="https://www.goodreads.com/book/show/58662236-small-things-like-these" target="_blank">Small Things Like These</a> | <em><strong>Claire Keegan</strong></em> | Rating: 3.5</li>
+<li>24-10-27 | <a href="https://www.goodreads.com/book/show/218063480-din-vilja-sitter-i-skogen" target="_blank">Din vilja sitter i skogen</a> | <em><strong>Mattias Timander</strong></em> | Rating: 3.5</li>
+<li>24-10-20 | <a href="https://www.goodreads.com/book/show/40024238-ditt-lilla-m-rker-i-ljuset" target="_blank">Ditt lilla mörker i ljuset</a> | <em><strong>Andrev Walden</strong></em> | Rating: 3.5</li>
+<li>24-10-13 | <a href="https://www.goodreads.com/book/show/1696088.Barn_av_sin_stad" target="_blank">Barn av sin stad</a> | <em><strong>Per Anders Fogelström</strong></em> | Rating: 4</li>
+<li>24-09-21 | <a href="https://www.goodreads.com/book/show/1696078.Mina_dr_mmars_stad" target="_blank">Mina drömmars stad</a> | <em><strong>Per Anders Fogelström</strong></em> | Rating: 4</li>
+<li>24-08-31 | <a href="https://www.goodreads.com/book/show/28186038-amok" target="_blank">Amok</a> | <em><strong>Stefan Zweig</strong></em> | Rating: 4</li>
+<li>24-08-17 | <a href="https://www.goodreads.com/book/show/30753738-the-choice" target="_blank">The Choice: Embrace the Possible</a> | <em><strong>Edith Eger</strong></em> | Rating: 3.5</li>
+<li>24-08-10 | <a href="https://www.goodreads.com/book/show/629429.The_World_of_Yesterday" target="_blank">The World of Yesterday</a> | <em><strong>Stefan Zweig</strong></em> | Rating: 3.5</li>
+<li>24-07-30 | <a href="https://www.goodreads.com/book/show/25004547-en-tysk-mans-historia-minnen-1914-1933" target="_blank">En tysk mans historia</a> | <em><strong>Sebastian Haffner</strong></em> | Rating: 4</li>
+<li>24-07-19 | <a href="https://www.goodreads.com/book/show/23480268-denne-dag-et-liv" target="_blank">Denna dagen, ett liv - En biografi över Astrid Lindgren</a> | <em><strong>Jens Andersen</strong></em> | Rating: 4</li>
+<li>24-07-10 | <a href="https://www.goodreads.com/book/show/40144034-den-brutna-kvinnan" target="_blank">The Woman Destroyed</a> | <em><strong>Simone de Beauvoir</strong></em> | Rating: 4</li>
+<li>24-07-08 | <a href="https://www.goodreads.com/book/show/49455.Notes_from_Underground" target="_blank">Notes from Underground</a> | <em><strong>Fyodor Dostoevsky</strong></em> | Rating: 3</li>
+<li>24-07-06 | <a href="https://www.goodreads.com/book/show/1772910.White_Nights" target="_blank">White Nights</a> | <em><strong>Fyodor Dostoevsky</strong></em> | Rating: 2.5</li>
+<li>24-07-04 | <a href="https://www.goodreads.com/book/show/3892118-det-g-r-an" target="_blank">Det går an</a> | <em><strong>Carl Jonas Love Almqvist</strong></em> | Rating: 3.5</li>
+<li>24-06-01 | <a href="https://www.goodreads.com/book/show/2165.The_Old_Man_and_the_Sea" target="_blank">The Old Man and the Sea</a> | <em><strong>Ernest Hemingway</strong></em> | Rating: 3</li>
+<li>24-04-12 | <a href="https://www.goodreads.com/book/show/393199.Down_and_Out_in_Paris_and_London" target="_blank">Down and Out in Paris and London</a> | <em><strong>George Orwell</strong></em> | Rating: 3</li>
+<li>24-02-02 | <a href="https://www.goodreads.com/book/show/25251914-l-parens-hj-rta" target="_blank">Löparens hjärta</a> | <em><strong>Markus Torgeby</strong></em> | Rating: 4</li>
+<li>24-01-27 | <a href="https://www.goodreads.com/book/show/56197486-inseparable" target="_blank">Inseparable</a> | <em><strong>Simone de Beauvoir</strong></em> | Rating: 4</li>
+<li>24-01-22 | <a href="https://www.goodreads.com/book/show/61439040-1984" target="_blank">1984</a> | <em><strong>George Orwell</strong></em> | Rating: 4</li>
+<li>23-10-25 | <a href="https://www.goodreads.com/book/show/11989.The_Plague" target="_blank">The Plague</a> | <em><strong>Albert Camus</strong></em> | Rating: 4</li>
+<li>23-10-23 | <a href="https://www.goodreads.com/book/show/170448.Animal_Farm" target="_blank">Animal Farm</a> | <em><strong>George Orwell</strong></em> | Rating: 4</li>
+<li>23-10-11 | <a href="https://www.goodreads.com/book/show/49552.The_Stranger" target="_blank">The Stranger</a> | <em><strong>Albert Camus</strong></em> | Rating: 3.5</li>
+<li>23-10-02 | <a href="https://www.goodreads.com/book/show/164006.Memoirs_of_a_Dutiful_Daughter" target="_blank">Memoirs of a Dutiful Daughter</a> | <em><strong>Simone de Beauvoir</strong></em> | Rating: 4</li>
+<li>23-09-17 | <a href="https://www.goodreads.com/book/show/55244640-the-subversive-simone-weil" target="_blank">The Subversive Simone Weil: A Life in Five Ideas</a> | <em><strong>Robert Zaretsky</strong></em> | Rating: 3</li>
+<li>23-09-11 | <a href="https://www.goodreads.com/book/show/123169859-n-r-ingen-lyssnar" target="_blank">När ingen lyssnar</a> | <em><strong>Diamant Salihu</strong></em> | Rating: 4</li>
+<li>23-08-31 | <a href="https://www.goodreads.com/book/show/57761906-tills-alla-d-r" target="_blank">Tills alla dör</a> | <em><strong>Diamant Salihu</strong></em> | Rating: 4.5</li>
+<li>23-08-27 | <a href="https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning" target="_blank">Man&rsquo;s Search for Meaning</a> | <em><strong>Viktor E. Frankl</strong></em> | Rating: 3.5</li>
+<li>23-08-23 | <a href="https://www.goodreads.com/book/show/105292242-bland-br-der-och-fiender-om-g-ng-manligheter-och-avhopp" target="_blank">Bland bröder och fiender. Om gäng, manligheter och avhopp</a> | <em><strong>Torbjörn Forkby, Jari Kuosmanen, Henrik Örnlind</strong></em> | Rating: 3.5</li>
+<li>23-08-16 | <a href="https://www.goodreads.com/book/show/57445383-mary-wollstonecraft-feminismen-och-frihetens-f-ruts-ttningar" target="_blank">Mary Wollstonecraft, feminismen och frihetens förutsättningar</a> | <em><strong>Lena Halldenius</strong></em> | Rating: 3</li>
+<li>23-08-12 | <a href="https://www.goodreads.com/book/show/17690.The_Trial" target="_blank">The Trial</a> | <em><strong>Franz Kafka</strong></em> | Rating: 4</li>
+<li>23-08-10 | <a href="https://www.goodreads.com/book/show/91950.The_Myth_of_Sisyphus" target="_blank">The Myth of Sisyphus</a> | <em><strong>Albert Camus</strong></em> | Rating: 3</li>
+<li>23-08-07 | <a href="https://www.goodreads.com/book/show/52090.Eichmann_in_Jerusalem" target="_blank">Eichmann in Jerusalem: A Report on the Banality of Evil</a> | <em><strong>Hannah Arendt</strong></em> | Rating: 3</li>
+<li>23-08-02 | <a href="https://www.goodreads.com/book/show/52908942-how-to-avoid-a-climate-disaster" target="_blank">How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need</a> | <em><strong>Bill Gates</strong></em> | Rating: 4</li>
+<li>23-08-01 | <a href="https://www.goodreads.com/book/show/53404245-what-is-life" target="_blank">What Is Life? Five Great Ideas in Biology</a> | <em><strong>Paul Nurse</strong></em> | Rating: 3.5</li>
+<li>23-07-26 | <a href="https://www.goodreads.com/book/show/1754324.Tysk_h_st" target="_blank">Tysk höst</a> | <em><strong>Stig Dagerman</strong></em> | Rating: 3.5</li>
+<li>23-07-23 | <a href="https://www.goodreads.com/book/show/60590737-det-fallna-imperiet" target="_blank">Det fallna imperiet: Ryssland och väst under Vladimir Putin</a> | <em><strong>Martin Kragh</strong></em> | Rating: 3.5</li>
+<li>23-07-17 | <a href="https://www.goodreads.com/book/show/32335775-finding-meaning-in-an-imperfect-world" target="_blank">Finding Meaning in an Imperfect World</a> | <em><strong>Iddo Landau</strong></em> | Rating: 3</li>
+<li>23-07-07 | <a href="https://www.goodreads.com/book/show/2195464.What_I_Talk_About_When_I_Talk_About_Running" target="_blank">What I Talk About When I Talk About Running</a> | <em><strong>Haruki Murakami</strong></em> | Rating: 3</li>
+<li>23-07-03 | <a href="https://www.goodreads.com/book/show/53922059-frontl-paren-gunder-h-gg---hans-uppg-ng-och-fall" target="_blank">Frontlöparen: Gunder Hägg, hans uppgång och fall</a> | <em><strong>Björn Lundberg</strong></em> | Rating: 3.5</li>
+<li>23-06-03 | <a href="https://www.goodreads.com/book/show/7634213-meaning-in-life-and-why-it-matters" target="_blank">Meaning in Life and Why It Matters</a> | <em><strong>Susan Wolf</strong></em> | Rating: 2.5</li>
+<li>23-03-14 | <a href="https://www.goodreads.com/book/show/29378.Practical_Ethics" target="_blank">Practical Ethics</a> | <em><strong>Peter Singer</strong></em> | Rating: 3.5</li>
+<li>23-02-12 | <a href="https://www.goodreads.com/book/show/31851.An_Introduction_to_Political_Philosophy" target="_blank">An Introduction to Political Philosophy</a> | <em><strong>Jonathan Wolff</strong></em> | Rating: 3.5</li>
+<li>23-01-11 | <a href="https://www.goodreads.com/book/show/17206336-liberalism" target="_blank">Liberalism</a> | <em><strong>Lena Halldenius</strong></em> | Rating: 4.5</li>
+<li>23-01-04 | <a href="https://www.goodreads.com/book/show/59757676-grundbok-i-metaetik" target="_blank">Grundbok i metaetik</a> <em>(Introduction to Metaethics)</em> | <em><strong>Nils Franzén, Victor Moberger, Olle Risberg</strong></em> | Rating: 3.5</li>
+<li>23-01-03 | <a href="https://www.goodreads.com/book/show/2120675.The_Moral_Philosophers" target="_blank">The Moral Philosophers: An Introduction to Ethics</a> | <em><strong>Richard Norman</strong></em> | Rating: 3</li>
+<li>22-11-26 | <a href="https://www.goodreads.com/book/show/50680935-ethics-in-engineering" target="_blank">Ethics in Engineering</a> | <em><strong>Thomas Taro Lennerfors</strong></em> | Rating: 3</li>
+</ul>
+
+<p>48 books in total.</p>
+
+  </div>
+  
+</div>
+
+<script type="text/javascript">
+  
+  var w = 720,
+      h = 260,
+      color = d3.scale.category10();
+  
+  var force = d3.layout.force()
+      .gravity(0)
+      .charge(-10)
+      .size([w, h]);
+  
+  var nodes = force.nodes(),
+      a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+      b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+      c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+  	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+  
+  nodes.push(a, b, c, d);
+  
+  var svg = d3.select("#mybanner").append("svg:svg")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.append("svg:rect")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.selectAll("circle")
+      .data(nodes)
+    .enter().append("svg:circle")
+      .attr("r", 12)
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .style("fill", fill)
+  	.style("visibility", "hidden");
+      
+  
+  force.on("tick", function(e) {
+    var k = e.alpha * .1;
+    nodes.forEach(function(node) {
+      var center = nodes[node.type];
+      node.x += (center.x - node.x) * k;
+      node.y += (center.y - node.y) * k;
+    });
+  
+    svg.selectAll("circle")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  });
+  
+  var p0;
+  
+  svg.on("mousemove", function() {
+    var p1 = d3.svg.mouse(this),
+        node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+  
+    p0 = p1;
+  
+    svg.append("svg:circle")
+        .data([node])
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", 4.5)
+        .style("fill", fill)
+      .transition()
+        .delay(2250)
+        .attr("r", 1e-6)
+        .each("end", function() { nodes.splice(4, 1); })
+        .remove();
+  
+    nodes.push(node);
+    force.start();
+  });
+  
+  function fill(d) {
+    return color(d.type);
+  }
+
+</script>
+    </div>
+  </section>
+  
+
+  
+  
+  
   <section id="running" class="home-section">
     <div class="container">
       
@@ -4967,7 +4974,7 @@ function fill(d) {
 
 From Sep 10 2020 until Dec 31 2023, I was on a run streak (running at least 2 km outside every day) of 1208 days. I'm currently on a run streak of 300+ days, since Jan 27 2024. -->
 
-<p>During the years of my PhD, running turned into an important part of my life, crucial in order to keep me productive and in a good mental state throughout the work days and weeks.  I used to be a relatively serious runner, but nowadays I run mostly just because it&rsquo;s a lot of fun and a great way to explore your surroundings, and because it&rsquo;s good for both my physical and mental health. From Sep 10 2020 until Dec 31 2023, I was on a run streak (running at least 2 km outside every day) of 1208 days. My training can be followed on <a href="https://www.strava.com/athletes/41453104" target="_blank">Strava</a>.</p>
+<p>During my PhD, running became an important part of my life, essential for staying productive and in a good mental state throughout the work days and weeks. I used to be a relatively serious runner, but nowadays I run mainly just because it&rsquo;s a great way to explore your surroundings, experience the changing seasons, get some fresh air, and clear your mind. From Sep 10 2020 to Dec 31 2023, I maintained a run streak of 1208 days, running at least 2 km outdoors every day. All my training is on <a href="https://www.strava.com/athletes/41453104" target="_blank">Strava</a>.</p>
 
 <h4 id="personal-bests">Personal Bests</h4>
 
@@ -4979,6 +4986,12 @@ From Sep 10 2020 until Dec 31 2023, I was on a run streak (running at least 2 km
 <h4 id="stats-by-year">Stats by Year</h4>
 
 <ul>
+<li>2025
+
+<ul>
+<li>Distance: 3,136.0 km (daily avg: 8.6 km | weekly avg: 60.1 km)</li>
+<li>Elevation gain: 29,849 m</li>
+</ul></li>
 <li>2024
 
 <ul>
@@ -5455,7 +5468,7 @@ function fill(d) {
 
 <div class="row">
   <div class="col-xs-12 col-md-4 section-heading">
-    <h1>My Old Student Projects</h1>
+    <h1>BSc/MSc Student Projects</h1>
     
   </div>
   <div class="col-xs-12 col-md-8">
