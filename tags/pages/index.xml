@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pages on Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
+    <title>pages on Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</title>
     <link>/tags/pages/</link>
-    <description>Recent content in pages on Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</description>
+    <description>Recent content in pages on Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2025</copyright>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2026</copyright>
     <lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/pages/index.xml" rel="self" type="application/rss+xml" />
@@ -27,10 +27,9 @@
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Jan 3, 2025] New blog post: My Year of Reading in 2024.
- [Nov 18, 2024] New preprint: Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction [medRxiv] [project], work lead by Abhinav Sharma.
- [Oct 25, 2024] New preprint: Automated Segmentation of Synchrotron-Scanned Fossils [bioRxiv] [project], work lead by Melanie During and Jordan Matelsky.
- [Oct 10, 2024] New preprint: Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts [arXiv] [project].</description>
+      <description>[Jul 15, 2025] I have joined the group of David Clifton at the University of Oxford as a postdoc to work on machine learning for healthcare.
+ [Jun 19, 2025] Accepted paper: Taming Diffusion Models for Image Restoration: A Review, work lead by Ziwei Luo, has been published in Philosophical Transactions of the Royal Society A.
+ [May 22, 2025] New preprint: Forward-only Diffusion Probabilistic Models [arXiv] [project], work lead by Ziwei Luo.</description>
     </item>
     
   </channel>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</title>
+    <title>Homes on Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</title>
     <link>/home/</link>
-    <description>Recent content in Homes on Fredrik K. Gustafsson | Postdoc | Machine Learning for Computational Pathology</description>
+    <description>Recent content in Homes on Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2025</copyright>
+    <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2026</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
@@ -58,7 +58,7 @@
     </item>
     
     <item>
-      <title>Teaching</title>
+      <title>Teaching Experience</title>
       <link>/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
@@ -128,8 +128,8 @@ Main supervisor: Thomas Schön, other co-supervisor: Jens Sjölund
  Erik Thiringer | MSc Thesis student at Karolinska Institutet
 Co-supervisor, since Sep 2024
 Main supervisor: Mattias Rantalainen
-  Co-authors  Thomas Schön | Professor at Uppsala University | 14 papers
-Years with papers: 2024, 2023, 2022, 2021, 2020 Martin Danelljan | Senior Research Engineer at Apple | 6 papers</description>
+  Co-authors  Thomas Schön | Professor at Uppsala University | 15 papers
+Years with papers: 2025, 2024, 2023, 2022, 2021, 2020 Ziwei Luo | PhD student at Uppsala University | 6 papers</description>
     </item>
     
     <item>
@@ -139,7 +139,7 @@ Years with papers: 2024, 2023, 2022, 2021, 2020 Martin Danelljan | Senior Resear
       
       <guid>/home/reading/</guid>
       <description>Papers I categorize, annotate and write comments for all research papers I read, and share this publicly on GitHub (440+ papers since September 2018). Feel free to reach out with any questions or suggested reading. In June 2023, I also wrote the blog post The How and Why of Reading 300 Papers in 5 Years about this.
-From 2018 to 2023, I organized the SysCon machine learning reading group.</description>
+Books I have also started to really enjoy reading various non-technical book. Since late 2022, I have read the following books (I&amp;rsquo;m also on Goodreads):</description>
     </item>
     
     <item>
@@ -157,7 +157,7 @@ From 2018 to 2023, I organized the SysCon machine learning reading group.</descr
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/running/</guid>
-      <description>During the years of my PhD, running turned into an important part of my life, crucial in order to keep me productive and in a good mental state throughout the work days and weeks. I&amp;rsquo;m a relatively serious runner, but I run mostly just because it&amp;rsquo;s a lot of fun and a great way to explore your surroundings, and because it&amp;rsquo;s good for both my physical and mental health. My training can be followed on Strava.</description>
+      <description>During the years of my PhD, running turned into an important part of my life, crucial in order to keep me productive and in a good mental state throughout the work days and weeks. I used to be a relatively serious runner, but nowadays I run mostly just because it&amp;rsquo;s a lot of fun and a great way to explore your surroundings, and because it&amp;rsquo;s good for both my physical and mental health.</description>
     </item>
     
     <item>
@@ -170,7 +170,7 @@ From 2018 to 2023, I organized the SysCon machine learning reading group.</descr
     </item>
     
     <item>
-      <title>Student Projects</title>
+      <title>My Old Student Projects</title>
       <link>/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0100</pubDate>
       
@@ -193,7 +193,7 @@ From 2018 to 2023, I organized the SysCon machine learning reading group.</descr
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/contact/</guid>
-      <description>  Department of Medical Epidemiology and Biostatistics, Room 2416     fregu856@gmail.com | fredrik.gustafsson@ki.se     +46705786348    </description>
+      <description>  Institute of Biomedical Engineering, Old Road Campus Research Building     fregu856@gmail.com | fredrik.gustafsson@eng.ox.ac.uk     +447826918964 | +46705786348    </description>
     </item>
     
   </channel>
