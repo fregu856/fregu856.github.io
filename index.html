@@ -541,15 +541,15 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
 <ul>
 <li><p><b>[Jul 15, 2025]</b> I have joined the group of <a href="https://eng.ox.ac.uk/chi/team" target="_blank">David Clifton</a> at the <a href="https://www.ox.ac.uk/" target="_blank">University of Oxford</a> as a postdoc to work on machine learning for healthcare.</p></li>
 
-<li><p><b>[Jun 19, 2025]</b> <b>Accepted paper:</b> <a href="/publication/diff_ir_review/"><em>Taming Diffusion Models for Image Restoration: A Review</em></a>, work lead by <a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a>, has been published in <a href="https://royalsocietypublishing.org/rsta" target="_blank">Philosophical Transactions of the Royal Society A</a>.</p></li>
+<li><p><b>[Jun 19, 2025]</b> <b>Accepted paper:</b> <a href="/publication/diff_ir_review/"><em>Taming Diffusion Models for Image Restoration: A Review</em></a>, work led by <a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a>, has been published in <a href="https://royalsocietypublishing.org/rsta" target="_blank">Philosophical Transactions of the Royal Society A</a>.</p></li>
 
-<li><p><b>[May 22, 2025]</b> New preprint: <i>Forward-only Diffusion Probabilistic Models</i> <a href="https://arxiv.org/abs/2505.16733?" target="_blank">[arXiv]</a> <a href="/publication/fod/">[project]</a>, work lead by <a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a>.</p></li>
+<li><p><b>[May 22, 2025]</b> New preprint: <i>Forward-only Diffusion Probabilistic Models</i> <a href="https://arxiv.org/abs/2505.16733?" target="_blank">[arXiv]</a> <a href="/publication/fod/">[project]</a>, work led by <a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a>.</p></li>
 
-<li><p><b>[Mar 6, 2025]</b> <b>Accepted paper:</b> <a href="/publication/ml4paleo"><em>Automated Segmentation of Synchrotron-Scanned Fossils</em></a>, work lead by <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N19-1696" target="_blank">Melanie During</a> and <a href="https://jordan.matelsky.com/" target="_blank">Jordan Matelsky</a>, has been published in <a href="https://fr.pensoft.net/" target="_blank">Fossil Record</a>.</p></li>
+<li><p><b>[Mar 6, 2025]</b> <b>Accepted paper:</b> <a href="/publication/ml4paleo"><em>Automated Segmentation of Synchrotron-Scanned Fossils</em></a>, work led by <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N19-1696" target="_blank">Melanie During</a> and <a href="https://jordan.matelsky.com/" target="_blank">Jordan Matelsky</a>, has been published in <a href="https://fr.pensoft.net/" target="_blank">Fossil Record</a>.</p></li>
 
 <li><p><b>[Jan 3, 2025]</b> New blog post: <a href="/post/year_of_reading_2024/"><em>My Year of Reading in 2024</em></a>.</p></li>
 
-<li><p><b>[Nov 18, 2024]</b> New preprint: <i>Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</i> <a href="https://www.medrxiv.org/content/10.1101/2024.11.10.24317066v1" target="_blank">[medRxiv]</a> <a href="/publication/multi-stain/">[project]</a>, work lead by <a href="https://ki.se/en/people/abhinav-sharma" target="_blank">Abhinav Sharma</a>.</p></li>
+<li><p><b>[Nov 18, 2024]</b> New preprint: <i>Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</i> <a href="https://www.medrxiv.org/content/10.1101/2024.11.10.24317066v1" target="_blank">[medRxiv]</a> <a href="/publication/multi-stain/">[project]</a>, work led by <a href="https://ki.se/en/people/abhinav-sharma" target="_blank">Abhinav Sharma</a>.</p></li>
 
 <li><p><b>[Oct 10, 2024]</b> New preprint: <i>Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</i> <a href="https://arxiv.org/abs/2410.06723" target="_blank">[arXiv]</a> <a href="/publication/cpath_fms_shifts/">[project]</a>.</p></li>
 
@@ -1647,1221 +1647,486 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
   
   
   
-  <section id="publications" class="home-section">
+  <section id="publications_custom" class="home-section">
     <div class="container">
       
 
+<script type="text/javascript" src="d3-andmeteadus/d3.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.geom.js"></script>
+<script type="text/javascript" src="d3-andmeteadus/d3.layout.js"></script>
 
+<style type="text/css">
+
+#mybanner{
+  background: url(img/banner-andmeteadus.png) no-repeat top left;
+  background-size: contain;
+  overflow: hidden;
+  margin: 0;
+}
+
+svg {
+  width: 720px;
+  height: 200px;
+}
+
+#chart {
+  position: absolute;
+  top: 0;
+}
+
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #555;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+	
+circle {
+  stroke: #fff;
+}
+
+    </style>
+    <script type="text/javascript">
+
+var w = 720,
+    h = 260,
+    color = d3.scale.category10();
+
+var force = d3.layout.force()
+    .gravity(0)
+    .charge(-10)
+    .size([w, h]);
+
+var nodes = force.nodes(),
+    a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+    b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+    c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+
+nodes.push(a, b, c, d);
+
+var svg = d3.select("#body").append("svg:svg")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.append("svg:rect")
+    .attr("width", w)
+    .attr("height", h);
+
+svg.selectAll("circle")
+    .data(nodes)
+  .enter().append("svg:circle")
+    .attr("r", 12)
+    .attr("cx", function(d) { return d.x; })
+    .attr("cy", function(d) { return d.y; })
+    .style("fill", fill)
+	.style("visibility", "hidden");
+    
+
+force.on("tick", function(e) {
+  var k = e.alpha * .1;
+  nodes.forEach(function(node) {
+    var center = nodes[node.type];
+    node.x += (center.x - node.x) * k;
+    node.y += (center.y - node.y) * k;
+  });
+
+  svg.selectAll("circle")
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+});
+
+var p0;
+
+svg.on("mousemove", function() {
+  var p1 = d3.svg.mouse(this),
+      node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+
+  p0 = p1;
+
+  svg.append("svg:circle")
+      .data([node])
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .attr("r", 4.5)
+      .style("fill", fill)
+    .transition()
+      .delay(2250)
+      .attr("r", 1e-6)
+      .each("end", function() { nodes.splice(4, 1); })
+      .remove();
+
+  nodes.push(node);
+  force.start();
+});
+
+function fill(d) {
+  return color(d.type);
+}
+
+</script>
 
 
 <div class="row">
+  
   <div class="col-xs-12 col-md-4 section-heading">
     <h1>Publications</h1>
-    
     
   </div>
   <div class="col-xs-12 col-md-8">
     
 
-    
-      
-    
+<!-- Citation badge legend -->
 
-    
-
-    
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/fod/" itemprop="name">Forward-only Diffusion Probabilistic Models</a>
-  <div class="pub-authors2" itemprop="author">
-    Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Jens Sjölund, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  Preprint, 2025
+<div class="cite-legend" role="group" aria-label="Citation badge legend">
+  <div class="cite-legend-items">
+    <div class="cite-legend-item">
+      <span class="cite-count cite-blue" aria-hidden="true">Cited by —</span>
+      <span class="cite-legend-label">20 - 49 citations.</span>
+    </div>
+    <div class="cite-legend-item">
+      <span class="cite-count cite-green" aria-hidden="true">Cited by —</span>
+      <span class="cite-legend-label">50 - 99 citations.</span>
+    </div>
+    <div class="cite-legend-item">
+      <span class="cite-count cite-orange" aria-hidden="true">Cited by —</span>
+      <span class="cite-legend-label">100 - 249 citations.</span>
+    </div>
+    <div class="cite-legend-item">
+      <span class="cite-count cite-red" aria-hidden="true">Cited by —</span>
+      <span class="cite-legend-label">250+ citations.</span>
+    </div>
   </div>
-  <p>
 
+<p><div class="cite-legend-note">
+    Citation counts based on <a href="https://scholar.google.com/citations?user=bjbzGCcAAAAJ&hl">Google Scholar</a>, manually updated 2026-01-07.
+  </div>
+</div></p>
 
+<h3 id="preprints">Preprints</h3>
 
+<div class="compact-pubs">
+  <p class="pub-item">
+    <span class="pub-id">[P4]</span>
+    <span class="pub-text">
+      <a href="/publication/fod">Forward-only Diffusion Probabilistic Models</a><br>
+      <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Jens Sjölund, Thomas B. Schön</em><br>
+    </span>
+  </p>
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2505.16733?" target="_blank" rel="noopener">
-  arXiv
-</a>
+  <p class="pub-item">
+    <span class="pub-id">[P3]</span>
+    <span class="pub-text">
+      <a href="/publication/multi-stain">Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</a><br>
+      <em>Abhinav Sharma, <strong>Fredrik K. Gustafsson</strong>, Johan Hartman, Mattias Rantalainen</em><br>
+    </span>
+  </p>
 
+  <p class="pub-item">
+    <span class="pub-id">[P2]</span>
+    <span class="pub-text">
+      <a href="/publication/cpath_fms_shifts">Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</a><br>
+      <em><strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen</em><br>
+    </span>
+  </p>
 
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/Algolzw/FoD" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://algolzw.github.io/fod/" target="_blank" rel="noopener">
-  Project
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/fod.bib">
-  Cite
-</button>
-
-
-</p>
+  <p class="pub-item">
+    <span class="pub-id">[P1]</span>
+    <span class="pub-text">
+      <a href="/publication/gene-exp">Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction</a><br>
+      <em><strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen</em><br>
+    </span>
+  </p>
 </div>
 
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/multi-stain/" itemprop="name">Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</a>
-  <div class="pub-authors2" itemprop="author">
-    Abhinav Sharma, <strong>Fredrik K. Gustafsson</strong>, Johan Hartman, Mattias Rantalainen</div>
-  <div class="pub-authors3">
-  Preprint, 2024
-  </div>
-  <p>
+<h3 id="journal-papers">Journal Papers</h3>
 
+<div class="compact-pubs">
+  <p class="pub-item">
+    <span class="pub-id">[J5]</span>
+    <span class="pub-text">
+      <a href="/publication/diff_ir_review">Taming Diffusion Models for Image Restoration: A Review</a><br>
+      <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</em><br>
+      Philosophical Transactions of the Royal Society A, 2025
+    </span>
+  </p>
 
+  <p class="pub-item">
+    <span class="pub-id">[J4]</span>
+    <span class="pub-text">
+      <a href="/publication/ml4paleo">Automated Segmentation of Synchrotron-Scanned Fossils</a><br>
+      <em>Melanie A.D. During, Jordan K. Matelsky, <strong>Fredrik K. Gustafsson</strong>, Dennis F.A.E. Voeten, Donglei Chen, Brock A. Wester, Konrad P. Körding, Per E. Ahlberg, Thomas B. Schön</em><br>
+      Fossil Record, 2025
+    </span>
+  </p>
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.medrxiv.org/content/10.1101/2024.11.10.24317066v1" target="_blank" rel="noopener">
-  Preprint
-</a>
+  <p class="pub-item">
+    <span class="pub-id">[J3]</span>
+    <span class="pub-text">
+      <a href="/publication/regressionecg">Evaluating Regression and Probabilistic Methods for ECG-Based Electrolyte Prediction</a><br>
+      <em>Philipp Von Bachmann, Daniel Gedon, <strong>Fredrik K. Gustafsson</strong>, Antônio H. Ribeiro, Erik Lampa, Stefan Gustafsson, Johan Sundström, Thomas B. Schön</em><br>
+      Scientific Reports, 2024
+    </span>
+  </p>
 
+  <p class="pub-item">
+    <span class="pub-id">[J2]</span>
+    <span class="pub-text">
+      <a href="/publication/regression_uncertainty">How Reliable is Your Regression Model's Uncertainty Under Real-World Distribution Shifts?</a><br>
+      <em><strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Thomas B. Schön</em><br>
+      Transactions on Machine Learning Research (TMLR), 2023
+    </span>
+  </p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/multi-stain.bib">
-  Cite
-</button>
-
-
-</p>
+  <p class="pub-item">
+    <span class="pub-id">[J1]</span>
+    <span class="pub-text">
+      <a href="/publication/mri_regression">Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI</a><br>
+      <em>Taro Langner, <strong>Fredrik K. Gustafsson</strong>, Benny Avelin, Robin Strand, Håkan Ahlström, Joel&nbsp;Kullberg</em><br>
+      Computerized Medical Imaging and Graphics, 2021
+      <br><span class="cite-count cite-blue">Cited by 20</span>
+    </span>
+  </p>
 </div>
 
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/ml4paleo/" itemprop="name">Automated Segmentation of Synchrotron-Scanned Fossils</a>
-  <div class="pub-authors2" itemprop="author">
-    Melanie A.D. During, Jordan K. Matelsky, <strong>Fredrik K. Gustafsson</strong>, Dennis F.A.E. Voeten, Donglei Chen, Brock A. Wester, Konrad P. Körding, Per E. Ahlberg, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  Fossil Record, 2025
-  </div>
-  <p>
+<h3 id="conference-papers">Conference Papers</h3>
 
+<div class="compact-pubs">
+  <p class="pub-item">
+    <span class="pub-id">[C6]</span>
+    <span class="pub-text">
+      <a href="/publication/da_clip">Controlling Vision-Language Models for Multi-Task Image Restoration</a><br>
+      <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</em><br>
+      ICLR, 2024
+      <br><span class="cite-count cite-orange">Cited by 230</span>
+    </span>
+  </p>
 
+  <p class="pub-item">
+    <span class="pub-id">[C5]</span>
+    <span class="pub-text">
+      <a href="/publication/ir_sde">Image Restoration with Mean-Reverting Stochastic Differential Equations</a><br>
+      <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</em><br>
+      ICML, 2023
+      <br><span class="cite-count cite-red">Cited by 320</span>
+    </span>
+  </p>
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.biorxiv.org/content/10.1101/2024.10.23.619778v1.abstract" target="_blank" rel="noopener">
-  Preprint
-</a>
+  <p class="pub-item">
+    <span class="pub-id">[C4]</span>
+    <span class="pub-text">
+      <a href="/publication/ebms_proposals">Learning Proposals for Practical Energy-Based Regression</a><br>
+      <em><strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Thomas B. Schön</em><br>
+      AISTATS, 2022
+    </span>
+  </p>
 
+  <p class="pub-item">
+    <span class="pub-id">[C3]</span>
+    <span class="pub-text">
+      <a href="/publication/ebms_narx">Deep Energy-Based NARX Models</a><br>
+      <em>Johannes Hendriks, <strong>Fredrik K. Gustafsson</strong>, Antônio Ribeiro, Adrian Wills, Thomas&nbsp;B.&nbsp;Schön</em><br>
+      SYSID, 2021
+    </span>
+  </p>
 
+  <p class="pub-item">
+    <span class="pub-id">[C2]</span>
+    <span class="pub-text">
+      <a href="/publication/ebms_regression">How to Train Your Energy-Based Model for Regression</a><br>
+      <em><strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Radu Timofte, Thomas B. Schön</em><br>
+      BMVC, 2020
+      <br><span class="cite-count cite-blue">Cited by 45</span>
+    </span>
+  </p>
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://fr.pensoft.net/article/139379/" target="_blank" rel="noopener">
-  Link to paper
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/ml4paleo.bib">
-  Cite
-</button>
-
-
-</p>
+  <p class="pub-item">
+    <span class="pub-id">[C1]</span>
+    <span class="pub-text">
+      <a href="/publication/dctd">Energy-Based Models for Deep Probabilistic Regression</a><br>
+      <em><strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Goutam Bhat, Thomas B. Schön</em><br>
+      ECCV, 2020
+      <br><span class="cite-count cite-green">Cited by 90</span>
+    </span>
+  </p>
 </div>
 
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/cpath_fms_shifts/" itemprop="name">Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</a>
-  <div class="pub-authors2" itemprop="author">
-    <strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen</div>
-  <div class="pub-authors3">
-  Preprint, 2024
-  </div>
-  <p>
+<h3 id="conference-workshop-papers">Conference Workshop Papers</h3>
 
+<div class="compact-pubs">
+  <p class="pub-item">
+    <span class="pub-id">[W4]</span>
+    <span class="pub-text">
+      <a href="/publication/daclip-ir">Photo-Realistic Image Restoration in the Wild with Controlled Vision-Language Models</a><br>
+      <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</em><br>
+      CVPR Workshops, 2024
+      <br><span class="cite-count cite-blue">Cited by 25</span>
+    </span>
+  </p>
 
+  <p class="pub-item">
+    <span class="pub-id">[W3]</span>
+    <span class="pub-text">
+      <a href="/publication/refusion">Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models</a><br>
+      <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</em><br>
+      CVPR Workshops, 2023
+      <br><span class="cite-count cite-orange">Cited by 190</span>
+    </span>
+  </p>
 
+  <p class="pub-item">
+    <span class="pub-id">[W2]</span>
+    <span class="pub-text">
+      <a href="/publication/ebms_3dod">Accurate 3D Object Detection using Energy-Based Models</a><br>
+      <em><strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Thomas B. Schön</em><br>
+      CVPR Workshops, 2021
+    </span>
+  </p>
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2410.06723" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/talk_241016_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/cpath_fms_shifts.bib">
-  Cite
-</button>
-
-
-</p>
+  <p class="pub-item">
+    <span class="pub-id">[W1]</span>
+    <span class="pub-text">
+      <a href="/publication/evaluating_bdl">Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision</a><br>
+      <em><strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Thomas B. Schön</em><br>
+      CVPR Workshops, 2020
+      <br><span class="cite-count cite-red">Cited by 430</span>
+    </span>
+  </p>
 </div>
 
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/gene-exp/" itemprop="name">Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction</a>
-  <div class="pub-authors2" itemprop="author">
-    <strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen</div>
-  <div class="pub-authors3">
-  Preprint, 2024
-  </div>
-  <p>
+<h3 id="theses">Theses</h3>
 
+<div class="compact-pubs">
+  <p class="pub-item">
+    <span class="pub-id">[T2]</span>
+    <span class="pub-text">
+      <a href="/publication/thesis">Towards Accurate and Reliable Deep Regression Models</a><br>
+      <em><strong>Fredrik K. Gustafsson</strong></em><br>
+      PhD Thesis in Machine Learning, Uppsala University, 2023
+    </span>
+  </p>
 
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2410.00945" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/gene-exp_poster.pdf" target="_blank" rel="noopener">
-  Poster
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/gene-exp.bib">
-  Cite
-</button>
-
-
-</p>
+  <p class="pub-item">
+    <span class="pub-id">[T1]</span>
+    <span class="pub-text">
+      <a href="/publication/msc">Automotive 3D Object Detection Without Target Domain Annotations</a><br>
+      <em><strong>Fredrik K. Gustafsson</strong>, Erik Linder‑Norén</em><br>
+      MSc Thesis in Electrical Engineering, Linköping University, 2018
+    </span>
+  </p>
 </div>
 
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/diff_ir_review/" itemprop="name">Taming Diffusion Models for Image Restoration: A Review</a>
-  <div class="pub-authors2" itemprop="author">
-    Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  Philosophical Transactions of the Royal Society A, 2025
   </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2409.10353" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://royalsocietypublishing.org/rsta/article/383/2299/20240358/234771/Taming-diffusion-models-for-image-restoration-a" target="_blank" rel="noopener">
-  Link to paper
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/diff_ir_review.bib">
-  Cite
-</button>
-
-
-</p>
+  
 </div>
 
+<script type="text/javascript">
+  
+  var w = 720,
+      h = 260,
+      color = d3.scale.category10();
+  
+  var force = d3.layout.force()
+      .gravity(0)
+      .charge(-10)
+      .size([w, h]);
+  
+  var nodes = force.nodes(),
+      a = {type: 0, x: 1 * w / 6, y: 3 * h / 6, fixed: true},
+      b = {type: 1, x: 2 * w / 6, y: 3 * h / 6, fixed: true},
+      c = {type: 2, x: 3.1 * w / 6, y: 3 * h / 6, fixed: true},
+  	d = {type: 3, x: 4.2 * w / 6, y: 3 * h / 6, fixed: true};
+  
+  nodes.push(a, b, c, d);
+  
+  var svg = d3.select("#mybanner").append("svg:svg")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.append("svg:rect")
+      .attr("width", w)
+      .attr("height", h);
+  
+  svg.selectAll("circle")
+      .data(nodes)
+    .enter().append("svg:circle")
+      .attr("r", 12)
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; })
+      .style("fill", fill)
+  	.style("visibility", "hidden");
       
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/regressionecg/" itemprop="name">Evaluating Regression and Probabilistic Methods for ECG-Based Electrolyte Prediction</a>
-  <div class="pub-authors2" itemprop="author">
-    Philipp Von Bachmann, Daniel Gedon, <strong>Fredrik K. Gustafsson</strong>, Antônio H. Ribeiro, Erik Lampa, Stefan Gustafsson, Johan Sundström, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  Scientific Reports, 2024
-  </div>
-  <p>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.nature.com/articles/s41598-024-65223-w" target="_blank" rel="noopener">
-  Link to paper
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/philippvb/ecg-electrolyte-regression" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/regressionECG.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/daclip-ir/" itemprop="name">Photo-Realistic Image Restoration in the Wild with Controlled Vision-Language Models</a>
-  <div class="pub-authors2" itemprop="author">
-    Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  CVPR Workshops, 2024
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2404.09732" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/Algolzw/daclip-uir" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/thesis/" itemprop="name">Towards Accurate and Reliable Deep Regression Models</a>
-  <div class="pub-authors2" itemprop="author">
-    <strong>Fredrik K. Gustafsson</strong></div>
-  <div class="pub-authors3">
-  PhD Thesis, 2023
-  </div>
-  <p>
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/thesis.pdf" target="_blank" rel="noopener">
-  pdf
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-513727" target="_blank" rel="noopener">
-  DiVA
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/tkmi-b48VMY?si=6ETZoBJLEm5dMfIl" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/defense_slides_handout.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/thesis.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/da_clip/" itemprop="name">Controlling Vision-Language Models for Multi-Task Image Restoration</a>
-  <div class="pub-authors2" itemprop="author">
-    Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  ICLR, 2024
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2310.01018" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/Algolzw/daclip-uir" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://algolzw.github.io/daclip-uir/" target="_blank" rel="noopener">
-  Project
-</a>
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://openreview.net/forum?id=t3vnnLeajU" target="_blank" rel="noopener">
-  Openreview
-</a>
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/da_clip.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/refusion/" itemprop="name">Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models</a>
-  <div class="pub-authors2" itemprop="author">
-    Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  CVPR Workshops, 2023
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2304.08291" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/Algolzw/image-restoration-sde" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/refusion.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/regression_uncertainty/" itemprop="name">How Reliable is Your Regression Model&#39;s Uncertainty Under Real-World Distribution Shifts?</a>
-  <div class="pub-authors2" itemprop="author">
-    <strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  TMLR, 2023
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2302.03679" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/regression_uncertainty" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/QGGP1zsq7Sc?si=-ZznIv-2Td6kAma3" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://openreview.net/forum?id=WJt2Pc3qtI" target="_blank" rel="noopener">
-  Openreview
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/talk_240321_slides_handout.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/regression_uncertainty.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/ir_sde/" itemprop="name">Image Restoration with Mean-Reverting Stochastic Differential Equations</a>
-  <div class="pub-authors2" itemprop="author">
-    Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  ICML, 2023
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2301.11699" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/Algolzw/image-restoration-sde" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://algolzw.github.io/ir-sde/index.html" target="_blank" rel="noopener">
-  Project
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/ir_sde.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/ebms_proposals/" itemprop="name">Learning Proposals for Practical Energy-Based Regression</a>
-  <div class="pub-authors2" itemprop="author">
-    <strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  AISTATS, 2022
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2110.11948" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/ebms_proposals" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/aistats2022_poster.pdf" target="_blank" rel="noopener">
-  Poster
-</a>
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/aistats2022_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/ebms_proposals.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/mri_regression/" itemprop="name">Uncertainty-Aware Body Composition Analysis with Deep Regression Ensembles on UK Biobank MRI</a>
-  <div class="pub-authors2" itemprop="author">
-    Taro Langner, <strong>Fredrik K. Gustafsson</strong>, Benny Avelin, Robin Strand, Håkan Ahlström, Joel Kullberg</div>
-  <div class="pub-authors3">
-  Computerized Medical Imaging and Graphics, 2021
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2101.06963" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/tarolangner/mri-biometry" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/mri_regression.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/ebms_narx/" itemprop="name">Deep Energy-Based NARX Models</a>
-  <div class="pub-authors2" itemprop="author">
-    Johannes Hendriks, <strong>Fredrik K. Gustafsson</strong>, Antônio H. Ribeiro, Adrian Wills, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  SYSID, 2021
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2012.04136" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/jnh277/ebm_arx" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/sysid2021_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/ebms_narx.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/ebms_3dod/" itemprop="name">Accurate 3D Object Detection using Energy-Based Models</a>
-  <div class="pub-authors2" itemprop="author">
-    <strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  CVPR Workshops, 2021
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2012.04634" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/ebms_3dod" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/ebms_3dod_poster.pdf" target="_blank" rel="noopener">
-  Poster
-</a>
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/7JP6V818bh0" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/ebms_3dod_slides210129.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/ebms_3dod.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/ebms_regression/" itemprop="name">How to Train Your Energy-Based Model for Regression</a>
-  <div class="pub-authors2" itemprop="author">
-    <strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Radu Timofte, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  BMVC, 2020
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2005.01698" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/ebms_regression" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/BpzcgufCZ2g" target="_blank" rel="noopener">
-  Video (1.5 min)
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/ebms_regression_90sec.pdf" target="_blank" rel="noopener">
-  Slides (1.5 min)
-</a>
-
-
-
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/ebms_regression.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/dctd/" itemprop="name">Energy-Based Models for Deep Probabilistic Regression</a>
-  <div class="pub-authors2" itemprop="author">
-    <strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Goutam Bhat, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  ECCV, 2020
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1909.12297" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/ebms_regression" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/oacQnWV7XeI" target="_blank" rel="noopener">
-  Video (1 min)
-</a>
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/dctd_1min.pdf" target="_blank" rel="noopener">
-  Slides (1 min)
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/PW8UzjxVwJo" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/dctd_10min.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/dctd.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/evaluating_bdl/" itemprop="name">Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision</a>
-  <div class="pub-authors2" itemprop="author">
-    <strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Thomas B. Schön</div>
-  <div class="pub-authors3">
-  CVPR Workshops, 2020
-  </div>
-  <p>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1906.01620" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/evaluating_bdl" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/evaluating_bdl_poster_bdl-workshop.pdf" target="_blank" rel="noopener">
-  Poster
-</a>
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/CabPVqtzsOI" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/evaluating_bdl_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/evaluating_bdl.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-      
-        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <a href="/publication/msc/" itemprop="name">Automotive 3D Object Detection Without Target Domain Annotations</a>
-  <div class="pub-authors2" itemprop="author">
-    <strong>Fredrik K. Gustafsson</strong>, Erik Linder-Norén</div>
-  <div class="pub-authors3">
-  Master of Science Thesis in Electrical Engineering, 2018
-  </div>
-  <p>
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-148585" target="_blank" rel="noopener">
-  Link to paper
-</a>
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/fregu856/3DOD_thesis" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/KdrHLXpYYlg" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="http://www.fregu856.com/static/msc_thesis_slides.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/msc.bib">
-  Cite
-</button>
-
-
-</p>
-</div>
-
-      
-    
-
-  </div>
-</div>
-
+  
+  force.on("tick", function(e) {
+    var k = e.alpha * .1;
+    nodes.forEach(function(node) {
+      var center = nodes[node.type];
+      node.x += (center.x - node.x) * k;
+      node.y += (center.y - node.y) * k;
+    });
+  
+    svg.selectAll("circle")
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  });
+  
+  var p0;
+  
+  svg.on("mousemove", function() {
+    var p1 = d3.svg.mouse(this),
+        node = {type: Math.random() * 4 | 0, x: p1[0], y: p1[1], px: (p0 || (p0 = p1))[0], py: p0[1]};
+  
+    p0 = p1;
+  
+    svg.append("svg:circle")
+        .data([node])
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; })
+        .attr("r", 4.5)
+        .style("fill", fill)
+      .transition()
+        .delay(2250)
+        .attr("r", 1e-6)
+        .each("end", function() { nodes.splice(4, 1); })
+        .remove();
+  
+    nodes.push(node);
+    force.start();
+  });
+  
+  function fill(d) {
+    return color(d.type);
+  }
+
+</script>
     </div>
   </section>
   
