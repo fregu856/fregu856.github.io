@@ -178,3 +178,40 @@
   color: #666;
   font-style: italic;
 }
+
+
+
+
+
+
+/* Smaller line spacing for titles in the "Talks" section: */
+#talks strong,
+.section-talks strong,
+.talks-widget strong {
+  line-height: 1.35 !important;
+}
+
+#talks li,
+.section-talks li,
+.talks-widget li {
+  line-height: 1.4;
+}
+
+
+
+
+/* Compact spacing for Academic Network section */
+#network ul {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+#network li {
+  margin-bottom: 0.55rem;
+  line-height: 1.35;
+}
+
+#network li em {
+  display: inline-block;
+  line-height: 1.25;
+}
