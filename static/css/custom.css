@@ -215,3 +215,49 @@
   display: inline-block;
   line-height: 1.25;
 }
+
+
+/* Compact spacing for sub-bullets in Academic Network */
+#network ul ul {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+#network ul ul li {
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+  line-height: 1.2;
+}
+
+/* Remove extra paragraph spacing inside sub-bullets */
+#network ul ul li p {
+  margin: 0;
+}
+
+/* Remove extra space before first sub-bullet in Academic Network */
+#network li > p {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* Compact spacing for Reading > Books list */
+#reading li {
+  line-height: 1.2;        /* tighter wrapped lines */
+  margin-top: 0.50rem; /* space between books */
+  margin-bottom: 0.50rem; /* space between books */
+}
+
+
+
+
+
+
+/* Compact spacing for Teaching section */
+#teaching li {
+  line-height: 1.2;
+}

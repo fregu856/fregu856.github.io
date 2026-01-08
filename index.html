@@ -539,6 +539,8 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
 <h3 id="news">News</h3>
 
 <ul>
+<li><p><b>[Jan 8, 2026]</b> New preprint: <i>Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models</i> <a href="https://arxiv.org/abs/2601.04163" target="_blank">[arXiv]</a> <a href="/publication/pfms_scanners/">[project]</a>, work led together with <a href="https://www.linkedin.com/in/erik-thiringer-992a5816b/" target="_blank">Erik Thiringer</a>.</p></li>
+
 <li><p><b>[Jul 15, 2025]</b> I have joined the group of <a href="https://eng.ox.ac.uk/chi/team" target="_blank">David Clifton</a> at the <a href="https://www.ox.ac.uk/" target="_blank">University of Oxford</a> as a postdoc to work on machine learning for healthcare.</p></li>
 
 <li><p><b>[Jun 19, 2025]</b> <b>Accepted paper:</b> <a href="/publication/diff_ir_review/"><em>Taming Diffusion Models for Image Restoration: A Review</em></a>, work led by <a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a>, has been published in <a href="https://royalsocietypublishing.org/rsta" target="_blank">Philosophical Transactions of the Royal Society A</a>.</p></li>
@@ -552,8 +554,6 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
 <li><p><b>[Nov 18, 2024]</b> New preprint: <i>Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</i> <a href="https://www.medrxiv.org/content/10.1101/2024.11.10.24317066v1" target="_blank">[medRxiv]</a> <a href="/publication/multi-stain/">[project]</a>, work led by <a href="https://ki.se/en/people/abhinav-sharma" target="_blank">Abhinav Sharma</a>.</p></li>
 
 <li><p><b>[Oct 10, 2024]</b> New preprint: <i>Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</i> <a href="https://arxiv.org/abs/2410.06723" target="_blank">[arXiv]</a> <a href="/publication/cpath_fms_shifts/">[project]</a>.</p></li>
-
-<li><p><b>[Oct 1, 2024]</b> New preprint: <i>Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction</i> <a href="https://arxiv.org/abs/2410.00945" target="_blank">[arXiv]</a> <a href="/publication/gene-exp/">[project]</a>.</p></li>
 </ul>
 
 <p>Click <a href="/post/news">here</a> for older news.</p>
@@ -604,6 +604,77 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
   
   
   <div>
+    <a href="/publication/pfms_scanners/">
+      <img src="/img/pfms_scanners.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/pfms_scanners/" itemprop="url">Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    Pathology foundation models (PFMs) are central to computational pathology, yet their robustness to real-world technical domain shifts is poorly understood. Using an in-house multiscanner dataset that isolates scanner effects from all other sources of variation, we evaluate the robustness of 14 PFMs to scanner variability. Complementary unsupervised embedding analyses and supervised prediction tasks reveal that no PFM is invariant to scanner-induced domain shifts. Although predictive AUC remains stable, scanner variability distorts embedding spaces and impacts calibration of model predictions. Moreover, robustness is not explained by training data scale, model recency or size.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Erik Thiringer, <strong>Fredrik K. Gustafsson</strong>, Kajsa Ledesma Eriksson, Mattias&nbsp;Rantalainen
+    
+  </div>
+
+  <div class="pub-publication">
+    Preprint</div>
+
+  <div class="pub-links">
+    
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2601.04163" target="_blank" rel="noopener">
+  arXiv
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+      
+    
+      
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
     <a href="/publication/cpath_fms_shifts/">
       <img src="/img/cpath_fms_shifts.png" class="pub-banner" itemprop="image">
     </a>
@@ -627,7 +698,7 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
   </div>
 
   <div class="pub-publication">
-    Preprint, 2024</div>
+    Preprint</div>
 
   <div class="pub-links">
     
@@ -707,7 +778,7 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
   </div>
 
   <div class="pub-publication">
-    Preprint, 2024</div>
+    Preprint</div>
 
   <div class="pub-links">
     
@@ -1834,6 +1905,14 @@ function fill(d) {
 <h3 id="preprints">Preprints</h3>
 
 <div class="compact-pubs">
+<p class="pub-item">
+  <span class="pub-id">[P5]</span>
+  <span class="pub-text">
+    <a href="/publication/pfms_scanners">Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models</a><br>
+    <em>Erik Thiringer, <strong>Fredrik K. Gustafsson</strong>, Kajsa Ledesma Eriksson, Mattias Rantalainen</em><br>
+  </span>
+</p>
+
   <p class="pub-item">
     <span class="pub-id">[P4]</span>
     <span class="pub-text">
@@ -3230,8 +3309,12 @@ Main supervisor: <a href="https://user.it.uu.se/~thosc112/" target="_blank">Thom
 
 <li><p><a href="https://www.linkedin.com/in/erik-thiringer-992a5816b/" target="_blank">Erik Thiringer</a> | MSc Thesis student at Karolinska Institutet<br />
 Co-supervisor, Sep 2024 &ndash; Feb 2025<br />
-Main supervisor: <a href="https://ki.se/en/research/research-areas-centres-and-networks/research-groups/predictive-medicine-mattias-rantalainens-research-group" target="_blank">Mattias Rantalainen</a><br />
-Subsequent position: Research Assistant at Karolinska Institutet</p></li>
+Main supervisor: <a href="https://ki.se/en/research/research-areas-centres-and-networks/research-groups/predictive-medicine-mattias-rantalainens-research-group" target="_blank">Mattias Rantalainen</a></p>
+
+<ul>
+<li>Subsequent position: Research Assistant at Karolinska Institutet</li>
+<li>The MSc thesis was extended into <a href="/publication/pfms_scanners/">this paper</a></li>
+</ul></li>
 </ul>
 
 <h3 id="co-authors">Co-authors</h3>
@@ -3246,9 +3329,9 @@ Subsequent position: Research Assistant at Karolinska Institutet</p></li>
 <li><a href="https://martin-danelljan.github.io/" target="_blank">Martin Danelljan</a> | Senior Research Engineer at Apple | <em>6 papers</em><br />
 <em>Years with papers: 2023, 2022, 2021, 2020</em></li>
 <li><a href="https://zz.zabemon.com/" target="_blank">Zheng Zhao</a> | Assistant professor at Linköping University | <em>5 papers</em><br />
-<em>Years with papers: 2024, 2023</em></li>
-<li><a href="https://ki.se/en/research/research-areas-centres-and-networks/research-groups/predictive-medicine-mattias-rantalainens-research-group" target="_blank">Mattias Rantalainen</a> | Associate professor, Karolinska Institutet | <em>3 papers</em><br />
-<em>Years with papers: 2024</em></li>
+<em>Years with papers: 2025, 2024, 2023</em></li>
+<li><a href="https://ki.se/en/research/research-areas-centres-and-networks/research-groups/predictive-medicine-mattias-rantalainens-research-group" target="_blank">Mattias Rantalainen</a> | Associate professor, Karolinska Institutet | <em>4 papers</em><br />
+<em>Years with papers: 2026, 2024</em></li>
 <li><a href="https://antonior92.github.io/" target="_blank">Antônio H. Ribeiro</a> | Assistant professor at Uppsala University | <em>2 papers</em><br />
 <em>Years with papers: 2024, 2021</em></li>
 </ul>

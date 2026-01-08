@@ -20,6 +20,15 @@
     </item>
     
     <item>
+      <title>Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models</title>
+      <link>/publication/pfms_scanners/</link>
+      <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/pfms_scanners/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>My Year of Reading in 2024</title>
       <link>/post/year_of_reading_2024/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
@@ -381,15 +390,6 @@
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>/publication/refusion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>How Reliable is Your Regression Model&#39;s Uncertainty Under Real-World Distribution Shifts?</title>
-      <link>/publication/regression_uncertainty/</link>
-      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/regression_uncertainty/</guid>
       <description></description>
     </item>
     
