@@ -98,28 +98,29 @@
   opacity: 0.9;
 }
 
-/* 20–49: blue */
+/* 20–49: gray (baseline impact) */
 .cite-count.cite-blue {
-  color: #3b5b92;
-  background: rgba(59,91,146,0.08);
-  border: 1px solid rgba(59,91,146,0.18);
+  color: #444;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.25);
+  opacity: 0.95;
 }
 
-/* 50–99: green */
+/* 50–99: green (solid impact) */
 .cite-count.cite-green {
   color: #1b7f3b;
   background: rgba(27,127,59,0.08);
   border: 1px solid rgba(27,127,59,0.18);
 }
 
-/* 100–249: orange */
+/* 100–249: orange (high impact) */
 .cite-count.cite-orange {
   color: #b35c00;
   background: rgba(179,92,0,0.10);
   border: 1px solid rgba(179,92,0,0.25);
 }
 
-/* 250+: red */
+/* 250+: red (very high impact) */
 .cite-count.cite-red {
   color: #a12622;
   background: rgba(161,38,34,0.10);
