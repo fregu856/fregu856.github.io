@@ -11,6 +11,87 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>My Year of Reading in 2025</title>
+      <link>/post/year_of_reading_2025/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/post/year_of_reading_2025/</guid>
+      <description>&lt;p&gt;In 2025, I read 113 papers and 16 non-technical books. 113 papers is slightly more than my previous record (99 papers in 2024). In 2026, I want to read 100 papers and at least 15 non-technical books.&lt;/p&gt;
+
+&lt;p&gt;Complete list of my read papers: &lt;a href=&#34;https://github.com/fregu856/papers&#34; target=&#34;_blank&#34;&gt;github.com/fregu856/papers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Among the 113 papers, here are 25 that I found particularly interesting and/or well written (in alphabetical order):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2505.24655&#34; target=&#34;_blank&#34;&gt;Adaptable Cardiovascular Disease Risk Prediction from Heterogeneous Data using Large Language Models&lt;/a&gt; (arxiv, 2025-05)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s43856-024-00730-5&#34; target=&#34;_blank&#34;&gt;Artificial Intelligence for Hemodynamic Monitoring With a Wearable Electrocardiogram Monitor&lt;/a&gt; (Communications Medicine, 2025)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2509.10151&#34; target=&#34;_blank&#34;&gt;BenchECG and xECG: A Benchmark and Baseline for ECG Foundation Models&lt;/a&gt; (arxiv, 2025-09)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2507.00191&#34; target=&#34;_blank&#34;&gt;Beyond Sensor Data: Foundation Models of Behavioral Data from Wearables Improve Health Predictions&lt;/a&gt; (ICML 2025)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://proceedings.mlr.press/v202/li23q/li23q.pdf&#34; target=&#34;_blank&#34;&gt;BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models&lt;/a&gt; (ICML 2023)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2006.07733&#34; target=&#34;_blank&#34;&gt;Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning&lt;/a&gt; (NeurIPS 2020)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s43018-025-00991-6&#34; target=&#34;_blank&#34;&gt;Development and Validation of an Autonomous Artificial Intelligence Agent for Clinical Decision-Making in Oncology&lt;/a&gt; (Nature Cancer, 2025)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s41467-024-54182-5&#34; target=&#34;_blank&#34;&gt;Digital Profiling of Gene Expression from Histology Images with Linearized Attention&lt;/a&gt; (Nature Communications, 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://openreview.net/forum?id=giEbq8Khcf&#34; target=&#34;_blank&#34;&gt;ECG Semantic Integrator (ESI): A Foundation ECG Model Pretrained with LLM-Enhanced Cardiological Text&lt;/a&gt; (TMLR, 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://openaccess.thecvf.com/content/ICCV2021/html/Caron_Emerging_Properties_in_Self-Supervised_Vision_Transformers_ICCV_2021_paper.html&#34; target=&#34;_blank&#34;&gt;Emerging Properties in Self-Supervised Vision Transformers&lt;/a&gt; (ICCV 2021)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2502.06124&#34; target=&#34;_blank&#34;&gt;Foundation Model of Electronic Medical Records for Adaptive Risk Estimation&lt;/a&gt; (GigaScience, 2025)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2406.16192&#34; target=&#34;_blank&#34;&gt;HEST-1k: A Dataset for Spatial Transcriptomics and Histology Image Analysis&lt;/a&gt; (NeurIPS 2024)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2111.07832&#34; target=&#34;_blank&#34;&gt;iBOT: Image BERT Pre-Training with Online Tokenizer&lt;/a&gt; (ICLR 2022)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2502.14259&#34; target=&#34;_blank&#34;&gt;LabTOP: A Unified Model for Lab Test Outcome Prediction on Electronic Health Records&lt;/a&gt; (CHIL 2025)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2502.17403&#34; target=&#34;_blank&#34;&gt;Large Language Models are Powerful Electronic Health Record Encoders&lt;/a&gt; (arxiv, 2025-02)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2502.02673&#34; target=&#34;_blank&#34;&gt;MedRAX: Medical Reasoning Agent for Chest X-ray&lt;/a&gt; (ICML 2025)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2505.23606&#34; target=&#34;_blank&#34;&gt;Muddit: Liberating Generation Beyond Text-to-Image with a Unified Discrete Diffusion Model&lt;/a&gt; (arxiv, 2025-05)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2509.03498&#34; target=&#34;_blank&#34;&gt;OneCAT: Decoder-Only Auto-Regressive Model for Unified Understanding and Generation&lt;/a&gt; (arxiv, 2025-09)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.biorxiv.org/content/10.1101/2024.10.16.618609v1&#34; target=&#34;_blank&#34;&gt;Path2Space: An AI Approach for Cancer Biomarker Discovery Via Histopathology Inferred Spatial Transcriptomics&lt;/a&gt; (biorxiv, 2024-10)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2506.21718&#34; target=&#34;_blank&#34;&gt;Performance Prediction for Large Systems via Text-to-Text Regression&lt;/a&gt; (arxiv, 2025-06)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2505.06296&#34; target=&#34;_blank&#34;&gt;Q-Heart: ECG Question Answering via Knowledge-Informed Multimodal LLMs&lt;/a&gt; (arxiv, 2025-05)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2302.09664&#34; target=&#34;_blank&#34;&gt;Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation&lt;/a&gt; (ICLR 2023)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2506.09108&#34; target=&#34;_blank&#34;&gt;SensorLM: Learning the Language of Wearable Sensors&lt;/a&gt; (NeurIPS 2025)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2507.15743&#34; target=&#34;_blank&#34;&gt;Towards Physician-Centered Oversight of Conversational Diagnostic AI&lt;/a&gt; (arxiv, 2025-07)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s41746-024-01235-0&#34; target=&#34;_blank&#34;&gt;Zero Shot Health Trajectory Prediction Using Transformer&lt;/a&gt; (npj Digital Medicine, 2024)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some paper statistics (number of papers read each year, papers by venue):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/year_of_reading_2025/papers_read_each_year_2025.svg&#34; alt=&#34;Papers read each year&#34; /&gt;
+&lt;img src=&#34;/img/year_of_reading_2025/papers_by_venue_2025.svg&#34; alt=&#34;Papers by venue&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The 16 non-technical books I read in 2025:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;25-12-31 | &lt;a href=&#34;https://www.goodreads.com/book/show/1865260.Bildhuggarens_dotter&#34; target=&#34;_blank&#34;&gt;Bildhuggarens dotter&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Tove Jansson&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;25-12-06 | &lt;a href=&#34;https://www.goodreads.com/book/show/17189707-invandrarna&#34; target=&#34;_blank&#34;&gt;Invandrarna&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Vilhelm Moberg&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;25-10-04 | &lt;a href=&#34;https://www.goodreads.com/book/show/1696115.Stad_i_v_rlden&#34; target=&#34;_blank&#34;&gt;Stad i världen&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Per Anders Fogelström&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;25-08-30 | &lt;a href=&#34;https://www.goodreads.com/book/show/1696105.I_en_f_rvandlad_stad&#34; target=&#34;_blank&#34;&gt;I en förvandlad stad&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Per Anders Fogelström&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;25-07-08 | &lt;a href=&#34;https://www.goodreads.com/book/show/23276898-resa-med-l-tt-bagage&#34; target=&#34;_blank&#34;&gt;Resa med lätt bagage&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Tove Jansson&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;25-06-21 | &lt;a href=&#34;https://www.goodreads.com/book/show/18458190-egenm-ktigt-f-rfarande&#34; target=&#34;_blank&#34;&gt;Egenmäktigt förfarande&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Lena Andersson&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;25-06-12 | &lt;a href=&#34;https://www.goodreads.com/book/show/10780909-doktor-glas&#34; target=&#34;_blank&#34;&gt;Doktor Glas&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Hjalmar Söderberg&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;25-06-01 | &lt;a href=&#34;https://www.goodreads.com/book/show/703475.Utvandrarna&#34; target=&#34;_blank&#34;&gt;Utvandrarna&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Vilhelm Moberg&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;25-05-05 | &lt;a href=&#34;https://www.goodreads.com/book/show/194021202-stacken&#34; target=&#34;_blank&#34;&gt;Stacken&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Annika Norlin&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;25-04-20 | &lt;a href=&#34;https://www.goodreads.com/book/show/195857823-j-vla-karlar&#34; target=&#34;_blank&#34;&gt;Jävla karlar&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Andrev Walden&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;25-04-05 | &lt;a href=&#34;https://www.goodreads.com/book/show/61952471-den-lodande-m-nniskan&#34; target=&#34;_blank&#34;&gt;Den lodande människan. Havet, djupet och nyfikenheten: Essäer&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Patrik Svensson&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;25-03-15 | &lt;a href=&#34;https://www.goodreads.com/book/show/53317528-the-copenhagen-trilogy&#34; target=&#34;_blank&#34;&gt;Köpenhamnstriologin&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Tove Ditlevsen&lt;/strong&gt;&lt;/em&gt; | Rating: 4.5&lt;/li&gt;
+&lt;li&gt;25-02-22 | &lt;a href=&#34;https://www.goodreads.com/book/show/49412309-jag-ser-allt-du-g-r&#34; target=&#34;_blank&#34;&gt;Jag ser allt du gör&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Annika Norlin&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;25-02-07 | &lt;a href=&#34;https://www.goodreads.com/book/show/79550.The_Summer_Book&#34; target=&#34;_blank&#34;&gt;Sommarboken&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Tove Jansson&lt;/strong&gt;&lt;/em&gt; | Rating: 3.5&lt;/li&gt;
+&lt;li&gt;25-01-19 | &lt;a href=&#34;https://www.goodreads.com/book/show/8143909-foster&#34; target=&#34;_blank&#34;&gt;Foster&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Claire Keegan&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;25-01-11 | &lt;a href=&#34;https://www.goodreads.com/book/show/1696122.Minns_du_den_stad&#34; target=&#34;_blank&#34;&gt;Minns du den stad&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Per Anders Fogelström&lt;/strong&gt;&lt;/em&gt; | Rating: 4.5&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/year_of_reading_2025/book_reading_2025_2.jpg&#34; alt=&#34;Read books&#34; /&gt;
+&lt;img src=&#34;/img/year_of_reading_2025/book_reading_2025_1.jpg&#34; alt=&#34;Read books&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Among the 16 books, these are my top 5 favorites (in alphabetical order):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/17189707-invandrarna&#34; target=&#34;_blank&#34;&gt;Invandrarna&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Vilhelm Moberg&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/195857823-j-vla-karlar&#34; target=&#34;_blank&#34;&gt;Jävla karlar&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Andrev Walden&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/53317528-the-copenhagen-trilogy&#34; target=&#34;_blank&#34;&gt;Köpenhamnstriologin&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Tove Ditlevsen&lt;/strong&gt;&lt;/em&gt; | Rating: 4.5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/1696122.Minns_du_den_stad&#34; target=&#34;_blank&#34;&gt;Minns du den stad&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Per Anders Fogelström&lt;/strong&gt;&lt;/em&gt; | Rating: 4.5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/194021202-stacken&#34; target=&#34;_blank&#34;&gt;Stacken&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Annika Norlin&lt;/strong&gt;&lt;/em&gt; | Rating: 4&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Forward-only Diffusion Probabilistic Models</title>
       <link>/publication/fod/</link>
       <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
@@ -34,13 +115,13 @@
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>/post/year_of_reading_2024/</guid>
-      <description>&lt;p&gt;In 2024, I read 99 papers and 21 non-technical books. 99 papers is slightly more than my previous record (87 papers in 2023), while 21 books is slighly less than the 26 I read in 2023 (but still a lot more than what I&amp;rsquo;ve ever read in a year before that).&lt;/p&gt;
+      <description>&lt;p&gt;In 2024, I read 99 papers and 21 non-technical books. 99 papers is slightly more than my previous record (87 papers in 2023), while 21 books is slightly less than the 26 I read in 2023 (but still a lot more than what I&amp;rsquo;ve ever read in a year before that).&lt;/p&gt;
 
 &lt;p&gt;In 2025, I want to read 100 papers and at least 20 non-technical books.&lt;/p&gt;
 
 &lt;p&gt;Complete list of my read papers: &lt;a href=&#34;https://github.com/fregu856/papers&#34; target=&#34;_blank&#34;&gt;github.com/fregu856/papers&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Among the 99 papers, here are 15 that I found particularly interesting and/or well-written (in alphabetical order):&lt;/p&gt;
+&lt;p&gt;Among the 99 papers, here are 15 that I found particularly interesting and/or well written (in alphabetical order):&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.nature.com/articles/s41591-024-02856-4&#34; target=&#34;_blank&#34;&gt;A Visual-Language Foundation Model for Computational Pathology&lt;/a&gt; (Nature Medicine, 2024)&lt;/li&gt;
@@ -382,15 +463,6 @@
 &lt;img src=&#34;/img/phd_of_reading/papers_by_venue.svg&#34; alt=&#34;Papers by venue&#34; /&gt;
 &lt;img src=&#34;/img/phd_of_reading/papers_by_category.svg&#34; alt=&#34;Papers by category&#34; /&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models</title>
-      <link>/publication/refusion/</link>
-      <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/refusion/</guid>
-      <description></description>
     </item>
     
   </channel>

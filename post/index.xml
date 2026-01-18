@@ -13,12 +13,24 @@
     
     
     <item>
+      <title>My Year of Reading in 2025</title>
+      <link>/post/year_of_reading_2025/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/post/year_of_reading_2025/</guid>
+      <description>In 2025, I read 113 papers and 16 non-technical books. 113 papers is slightly more than my previous record (99 papers in 2024). In 2026, I want to read 100 papers and at least 15 non-technical books.
+Complete list of my read papers: github.com/fregu856/papers.
+Among the 113 papers, here are 25 that I found particularly interesting and/or well written (in alphabetical order):
+ Adaptable Cardiovascular Disease Risk Prediction from Heterogeneous Data using Large Language Models (arxiv, 2025-05) Artificial Intelligence for Hemodynamic Monitoring With a Wearable Electrocardiogram Monitor (Communications Medicine, 2025) BenchECG and xECG: A Benchmark and Baseline for ECG Foundation Models (arxiv, 2025-09) Beyond Sensor Data: Foundation Models of Behavioral Data from Wearables Improve Health Predictions (ICML 2025) BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models (ICML 2023) Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (NeurIPS 2020) Development and Validation of an Autonomous Artificial Intelligence Agent for Clinical Decision-Making in Oncology (Nature Cancer, 2025) Digital Profiling of Gene Expression from Histology Images with Linearized Attention (Nature Communications, 2024) ECG Semantic Integrator (ESI): A Foundation ECG Model Pretrained with LLM-Enhanced Cardiological Text (TMLR, 2024) Emerging Properties in Self-Supervised Vision Transformers (ICCV 2021) Foundation Model of Electronic Medical Records for Adaptive Risk Estimation (GigaScience, 2025) HEST-1k: A Dataset for Spatial Transcriptomics and Histology Image Analysis (NeurIPS 2024) iBOT: Image BERT Pre-Training with Online Tokenizer (ICLR 2022) LabTOP: A Unified Model for Lab Test Outcome Prediction on Electronic Health Records (CHIL 2025) Large Language Models are Powerful Electronic Health Record Encoders (arxiv, 2025-02) MedRAX: Medical Reasoning Agent for Chest X-ray (ICML 2025) Muddit: Liberating Generation Beyond Text-to-Image with a Unified Discrete Diffusion Model (arxiv, 2025-05) OneCAT: Decoder-Only Auto-Regressive Model for Unified Understanding and Generation (arxiv, 2025-09) Path2Space: An AI Approach for Cancer Biomarker Discovery Via Histopathology Inferred Spatial Transcriptomics (biorxiv, 2024-10) Performance Prediction for Large Systems via Text-to-Text Regression (arxiv, 2025-06) Q-Heart: ECG Question Answering via Knowledge-Informed Multimodal LLMs (arxiv, 2025-05) Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation (ICLR 2023) SensorLM: Learning the Language of Wearable Sensors (NeurIPS 2025) Towards Physician-Centered Oversight of Conversational Diagnostic AI (arxiv, 2025-07) Zero Shot Health Trajectory Prediction Using Transformer (npj Digital Medicine, 2024)  Some paper statistics (number of papers read each year, papers by venue):</description>
+    </item>
+    
+    <item>
       <title>My Year of Reading in 2024</title>
       <link>/post/year_of_reading_2024/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>/post/year_of_reading_2024/</guid>
-      <description>In 2024, I read 99 papers and 21 non-technical books. 99 papers is slightly more than my previous record (87 papers in 2023), while 21 books is slighly less than the 26 I read in 2023 (but still a lot more than what I&amp;rsquo;ve ever read in a year before that).
+      <description>In 2024, I read 99 papers and 21 non-technical books. 99 papers is slightly more than my previous record (87 papers in 2023), while 21 books is slightly less than the 26 I read in 2023 (but still a lot more than what I&amp;rsquo;ve ever read in a year before that).
 In 2025, I want to read 100 papers and at least 20 non-technical books.
 Complete list of my read papers: github.</description>
     </item>
@@ -77,7 +89,8 @@ When I first got interested in deep learning a couple of years ago, I started ou
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Jan 8, 2026] New preprint: Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models [arXiv] [project], work led together with Erik Thiringer.
+      <description>[Jan 18, 2026] New blog post: My Year of Reading in 2025.
+ [Jan 8, 2026] New preprint: Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models [arXiv] [project], work led together with Erik Thiringer.
  [Jul 15, 2025] I have joined the group of David Clifton at the University of Oxford as a postdoc to work on machine learning for healthcare.
  [Jun 19, 2025] Accepted paper: Taming Diffusion Models for Image Restoration: A Review, work led by Ziwei Luo, has been published in Philosophical Transactions of the Royal Society A.</description>
     </item>
