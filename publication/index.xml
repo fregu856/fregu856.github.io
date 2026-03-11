@@ -13,20 +13,29 @@
     
     
     <item>
-      <title>Forward-only Diffusion Probabilistic Models</title>
-      <link>/publication/fod/</link>
-      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      <title>SignalMC-MED: A Multimodal Benchmark for Evaluating Biosignal Foundation Models on Single-Lead ECG and PPG</title>
+      <link>/publication/signalmc-med/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
       
-      <guid>/publication/fod/</guid>
+      <guid>/publication/signalmc-med/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models</title>
       <link>/publication/pfms_scanners/</link>
-      <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
       
       <guid>/publication/pfms_scanners/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forward-only Diffusion Probabilistic Models</title>
+      <link>/publication/fod/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/fod/</guid>
       <description></description>
     </item>
     

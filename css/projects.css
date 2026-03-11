@@ -9,3 +9,20 @@
   text-transform: none;
 }
 
+
+
+
+
+/* ===== Publication Card (Selected Publications) ===== */
+
+/* Title */
+.pub-list-item.card-simple h3.article-title {
+  font-size: 1.6rem !important;
+  line-height: 1.25 !important;   /* tighter multi-line title spacing */
+}
+
+/* Abstract */
+.pub-list-item.card-simple .pub-abstract {
+  line-height: 1.45 !important;    /* tighten paragraph spacing */
+  margin-bottom: 0.4rem !important;
+}
