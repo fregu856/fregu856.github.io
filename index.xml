@@ -11,6 +11,24 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Entropy Alone is Insufficient for Safe Selective Prediction in LLMs</title>
+      <link>/publication/selective_llms/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/selective_llms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantic Self-Distillation for Language Model Uncertainty</title>
+      <link>/publication/ssd/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ssd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SignalMC-MED: A Multimodal Benchmark for Evaluating Biosignal Foundation Models on Single-Lead ECG and PPG</title>
       <link>/publication/signalmc-med/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
@@ -318,24 +336,6 @@
 &lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/book/show/57761906-tills-alla-d-r&#34; target=&#34;_blank&#34;&gt;Tills alla dör&lt;/a&gt; | &lt;em&gt;&lt;strong&gt;Diamant Salihu&lt;/strong&gt;&lt;/em&gt; | Rating: 4.5&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Towards Accurate and Reliable Deep Regression Models</title>
-      <link>/publication/thesis/</link>
-      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/thesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Controlling Vision-Language Models for Multi-Task Image Restoration</title>
-      <link>/publication/da_clip/</link>
-      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/da_clip/</guid>
-      <description></description>
     </item>
     
   </channel>

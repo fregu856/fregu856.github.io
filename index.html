@@ -539,6 +539,8 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
 <h3 id="news">News</h3>
 
 <ul>
+<li><p><b>[Mar 24, 2026]</b> New preprints: <i>Semantic Self-Distillation for Language Model Uncertainty</i> <a href="https://arxiv.org/abs/2602.04577" target="_blank">[arXiv]</a> <a href="/publication/ssd/">[project]</a> and <i>Entropy Alone is Insufficient for Safe Selective Prediction in LLMs</i> <a href="https://arxiv.org/abs/2603.21172" target="_blank">[arXiv]</a> <a href="/publication/selective_llms/">[project]</a>, work led by <a href="https://scholar.google.com/citations?user=RWQIIc0AAAAJ&amp;hl=en" target="_blank">Edward Phillips</a>.</p></li>
+
 <li><p><b>[Mar 11, 2026]</b> New preprint: <i>SignalMC-MED: A Multimodal Benchmark for Evaluating Biosignal Foundation Models on Single-Lead ECG and PPG</i> <a href="https://arxiv.org/abs/2603.09940" target="_blank">[arXiv]</a> <a href="https://github.com/fregu856/SignalMC-MED" target="_blank">[code]</a> <a href="/publication/signalmc-med/">[project]</a>.</p></li>
 
 <li><p><b>[Jan 18, 2026]</b> New blog post: <a href="/post/year_of_reading_2025/"><em>My Year of Reading in 2025</em></a>.</p></li>
@@ -552,8 +554,6 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
 <li><p><b>[May 22, 2025]</b> New preprint: <i>Forward-only Diffusion Probabilistic Models</i> <a href="https://arxiv.org/abs/2505.16733?" target="_blank">[arXiv]</a> <a href="/publication/fod/">[project]</a>, work led by <a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a>.</p></li>
 
 <li><p><b>[Mar 6, 2025]</b> <b>Accepted paper:</b> <a href="/publication/ml4paleo"><em>Automated Segmentation of Synchrotron-Scanned Fossils</em></a>, work led by <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N19-1696" target="_blank">Melanie During</a> and <a href="https://jordan.matelsky.com/" target="_blank">Jordan Matelsky</a>, has been published in <a href="https://fr.pensoft.net/" target="_blank">Fossil Record</a>.</p></li>
-
-<li><p><b>[Jan 3, 2025]</b> New blog post: <a href="/post/year_of_reading_2024/"><em>My Year of Reading in 2024</em></a>.</p></li>
 </ul>
 
 <p>Click <a href="/post/news">here</a> for older news.</p>
@@ -604,6 +604,77 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
   
   
   <div>
+    <a href="/publication/ssd/">
+      <img src="/img/ssd.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/ssd/" itemprop="url">Semantic Self-Distillation for Language Model Uncertainty</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    LLMs make principled uncertainty estimation difficult due to their complexity and diverse outputs. Semantic dispersion, the variance in the meaning of sampled answers, captures this uncertainty but is too computationally expensive for latency-critical applications. We show that sampled semantic distributions can be distilled into lightweight student models which estimate a prompt-conditioned density before generation. The student model predicts a semantic distribution over answers, where the entropy provides a prompt-level uncertainty signal, and the density allows answer-level reliability evaluation. Our approach matches sampling-based baselines for hallucination detection while enabling out-of-domain detection and multiple-choice answer selection.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Edward Phillips, Sean Wu, <strong>Fredrik K. Gustafsson</strong>, Boyan Gao, David A. Clifton
+    
+  </div>
+
+  <div class="pub-publication">
+    Preprint, 2026</div>
+
+  <div class="pub-links">
+    
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2602.04577" target="_blank" rel="noopener">
+  arXiv
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+      
+    
+      
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
     <a href="/publication/signalmc-med/">
       <img src="/img/signalmc-med.png" class="pub-banner" itemprop="image">
     </a>
@@ -627,7 +698,7 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
   </div>
 
   <div class="pub-publication">
-    Preprint</div>
+    Preprint, 2026</div>
 
   <div class="pub-links">
     
@@ -707,7 +778,7 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
   </div>
 
   <div class="pub-publication">
-    Preprint</div>
+    Preprint, 2026</div>
 
   <div class="pub-links">
     
@@ -783,7 +854,7 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
   </div>
 
   <div class="pub-publication">
-    Preprint</div>
+    Preprint, 2024</div>
 
   <div class="pub-links">
     
@@ -863,7 +934,7 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
   </div>
 
   <div class="pub-publication">
-    Preprint</div>
+    Preprint, 2024</div>
 
   <div class="pub-links">
     
@@ -1983,7 +2054,7 @@ function fill(d) {
   </div>
 
 <p><div class="cite-legend-note">
-    Citation counts based on <a href="https://scholar.google.com/citations?user=bjbzGCcAAAAJ&hl">Google Scholar</a> (updated 2026-03-11), shown for papers with 20+ citations.
+    Citation counts based on <a href="https://scholar.google.com/citations?user=bjbzGCcAAAAJ&hl">Google Scholar</a> (updated 2026-03-24), shown for papers with 20+ citations.
   </div>
 </div></p>
 
@@ -1991,34 +2062,47 @@ function fill(d) {
 
 <div class="compact-pubs">
 <p class="pub-item">
+  <span class="pub-id">[P7]</span>
+  <span class="pub-text">
+    <a href="/publication/selective_llms">Entropy Alone is Insufficient for Safe Selective Prediction in LLMs</a><br>
+    <em>Edward Phillips, <strong>Fredrik K. Gustafsson</strong>, Sean Wu, Anshul Thakur, David A. Clifton</em><br>
+      Preprint, 2026
+  </span>
+</p>
+
+<p class="pub-item">
   <span class="pub-id">[P6]</span>
   <span class="pub-text">
-    <a href="/publication/signalmc-med">SignalMC-MED: A Multimodal Benchmark for Evaluating Biosignal Foundation Models on Single-Lead ECG and PPG</a><br>
-    <em><strong>Fredrik K. Gustafsson</strong>, Xiao Gu, Mattia Carletti, Patitapaban Palo, David W. Eyre, David&nbsp;A.&nbsp;Clifton</em><br>
+    <a href="/publication/ssd">Semantic Self-Distillation for Language Model Uncertainty</a><br>
+    <em>Edward Phillips, Sean Wu, <strong>Fredrik K. Gustafsson</strong>, Boyan Gao, David A. Clifton</em><br>
+      Preprint, 2026
   </span>
 </p>
 
 <p class="pub-item">
   <span class="pub-id">[P5]</span>
   <span class="pub-text">
+    <a href="/publication/signalmc-med">SignalMC-MED: A Multimodal Benchmark for Evaluating Biosignal Foundation Models on Single-Lead ECG and PPG</a><br>
+    <em><strong>Fredrik K. Gustafsson</strong>, Xiao Gu, Mattia Carletti, Patitapaban Palo, David W. Eyre, David&nbsp;A.&nbsp;Clifton</em><br>
+      Preprint, 2026
+  </span>
+</p>
+
+<p class="pub-item">
+  <span class="pub-id">[P4]</span>
+  <span class="pub-text">
     <a href="/publication/pfms_scanners">Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models</a><br>
     <em>Erik Thiringer, <strong>Fredrik K. Gustafsson</strong>, Kajsa Ledesma Eriksson, Mattias Rantalainen</em><br>
+      Preprint, 2026
   </span>
 </p>
 
   <p class="pub-item">
-    <span class="pub-id">[P4]</span>
+    <span class="pub-id">[P3]</span>
     <span class="pub-text">
       <a href="/publication/fod">Forward-only Diffusion Probabilistic Models</a><br>
       <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Jens Sjölund, Thomas B. Schön</em><br>
-    </span>
-  </p>
-
-  <p class="pub-item">
-    <span class="pub-id">[P3]</span>
-    <span class="pub-text">
-      <a href="/publication/multi-stain">Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</a><br>
-      <em>Abhinav Sharma, <strong>Fredrik K. Gustafsson</strong>, Johan Hartman, Mattias Rantalainen</em><br>
+      Preprint, 2025
     </span>
   </p>
 
@@ -2027,6 +2111,7 @@ function fill(d) {
     <span class="pub-text">
       <a href="/publication/cpath_fms_shifts">Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</a><br>
       <em><strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen</em><br>
+      Preprint, 2024
     </span>
   </p>
 
@@ -2035,6 +2120,7 @@ function fill(d) {
     <span class="pub-text">
       <a href="/publication/gene-exp">Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction</a><br>
       <em><strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen</em><br>
+      Preprint, 2024
     </span>
   </p>
 </div>
@@ -2099,7 +2185,7 @@ function fill(d) {
       <a href="/publication/da_clip">Controlling Vision-Language Models for Multi-Task Image Restoration</a><br>
       <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</em><br>
       ICLR, 2024
-      <br><span class="cite-count cite-red">Cited by 275</span>
+      <br><span class="cite-count cite-red">Cited by 280</span>
     </span>
   </p>
 
@@ -2190,7 +2276,20 @@ function fill(d) {
       <a href="/publication/evaluating_bdl">Evaluating Scalable Bayesian Deep Learning Methods for Robust Computer Vision</a><br>
       <em><strong>Fredrik K. Gustafsson</strong>, Martin Danelljan, Thomas B. Schön</em><br>
       CVPR Workshops, 2020
-      <br><span class="cite-count cite-red">Cited by 445</span>
+      <br><span class="cite-count cite-red">Cited by 450</span>
+    </span>
+  </p>
+</div>
+
+<h3 id="technical-reports">Technical Reports</h3>
+
+<div class="compact-pubs">
+  <p class="pub-item">
+    <span class="pub-id">[R1]</span>
+    <span class="pub-text">
+      <a href="/publication/multi-stain">Multi-Stain Modelling of Histopathology Slides for Breast Cancer Prognosis Prediction</a><br>
+      <em>Abhinav Sharma, <strong>Fredrik K. Gustafsson</strong>, Johan Hartman, Mattias Rantalainen</em><br>
+      Technical Report, 2024
     </span>
   </p>
 </div>
@@ -2467,8 +2566,8 @@ function fill(d) {
 <h3 id="reviewing">Reviewing</h3>
 
 <ul>
+<li><a href="https://jmlr.org/tmlr/" target="_blank">TMLR, 2026</a> | 2 Papers</li>
 <li><a href="https://icml.cc/Conferences/2026" target="_blank">ICML 2026</a> | 5 Papers</li>
-<li><a href="https://jmlr.org/tmlr/" target="_blank">TMLR, 2026</a> | 1 Paper</li>
 <li><a href="https://2026.midl.io/" target="_blank">MIDL 2026</a> | 5 Papers</li>
 <li><a href="https://aistats.org/aistats2026//" target="_blank">AISTATS 2026</a> | 1 Paper</li>
 <li><a href="https://iclr.cc/Conferences/2026" target="_blank">ICLR 2026</a> | 5 Papers</li>
@@ -2504,7 +2603,7 @@ function fill(d) {
 <li><a href="https://www.ifac2020.org/" target="_blank">IFAC World Congress 2020</a> | 2 Papers</li>
 </ul>
 
-<p>128 papers in total.</p>
+<p>129 papers in total.</p>
 
   </div>
   

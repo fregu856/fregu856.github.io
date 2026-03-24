@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Entropy Alone is Insufficient for Safe Selective Prediction in LLMs</title>
+      <link>/publication/selective_llms/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/selective_llms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantic Self-Distillation for Language Model Uncertainty</title>
+      <link>/publication/ssd/</link>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/ssd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SignalMC-MED: A Multimodal Benchmark for Evaluating Biosignal Foundation Models on Single-Lead ECG and PPG</title>
       <link>/publication/signalmc-med/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
