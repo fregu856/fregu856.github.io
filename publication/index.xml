@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence</title>
+      <link>/publication/bas/</link>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/bas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Entropy Alone is Insufficient for Safe Selective Prediction in LLMs</title>
       <link>/publication/selective_llms/</link>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>

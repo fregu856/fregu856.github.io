@@ -539,6 +539,8 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
 <h3 id="news">News</h3>
 
 <ul>
+<li><p><b>[Apr 6, 2026]</b> New preprint: <i>BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence</i> <a href="https://arxiv.org/abs/2604.03216" target="_blank">[arXiv]</a> <a href="https://github.com/SeanWu25/Behavioral-Alignment-Score" target="_blank">[code]</a> <a href="/publication/bas/">[project]</a>, work led by <a href="https://scholar.google.com/citations?user=Z7Ul8jUAAAAJ&amp;hl=en" target="_blank">Sean Wu</a>.</p></li>
+
 <li><p><b>[Mar 24, 2026]</b> New preprints: <i>Semantic Self-Distillation for Language Model Uncertainty</i> <a href="https://arxiv.org/abs/2602.04577" target="_blank">[arXiv]</a> <a href="/publication/ssd/">[project]</a> and <i>Entropy Alone is Insufficient for Safe Selective Prediction in LLMs</i> <a href="https://arxiv.org/abs/2603.21172" target="_blank">[arXiv]</a> <a href="/publication/selective_llms/">[project]</a>, work led by <a href="https://scholar.google.com/citations?user=RWQIIc0AAAAJ&amp;hl=en" target="_blank">Edward Phillips</a>.</p></li>
 
 <li><p><b>[Mar 11, 2026]</b> New preprint: <i>SignalMC-MED: A Multimodal Benchmark for Evaluating Biosignal Foundation Models on Single-Lead ECG and PPG</i> <a href="https://arxiv.org/abs/2603.09940" target="_blank">[arXiv]</a> <a href="https://github.com/fregu856/SignalMC-MED" target="_blank">[code]</a> <a href="/publication/signalmc-med/">[project]</a>.</p></li>
@@ -552,8 +554,6 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
 <li><p><b>[Jun 19, 2025]</b> <b>Accepted paper:</b> <a href="/publication/diff_ir_review/"><em>Taming Diffusion Models for Image Restoration: A Review</em></a>, work led by <a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a>, has been published in <a href="https://royalsocietypublishing.org/rsta" target="_blank">Philosophical Transactions of the Royal Society A</a>.</p></li>
 
 <li><p><b>[May 22, 2025]</b> New preprint: <i>Forward-only Diffusion Probabilistic Models</i> <a href="https://arxiv.org/abs/2505.16733?" target="_blank">[arXiv]</a> <a href="/publication/fod/">[project]</a>, work led by <a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a>.</p></li>
-
-<li><p><b>[Mar 6, 2025]</b> <b>Accepted paper:</b> <a href="/publication/ml4paleo"><em>Automated Segmentation of Synchrotron-Scanned Fossils</em></a>, work led by <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N19-1696" target="_blank">Melanie During</a> and <a href="https://jordan.matelsky.com/" target="_blank">Jordan Matelsky</a>, has been published in <a href="https://fr.pensoft.net/" target="_blank">Fossil Record</a>.</p></li>
 </ul>
 
 <p>Click <a href="/post/news">here</a> for older news.</p>
@@ -595,6 +595,81 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
     
 
     
+    
+      
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/publication/bas/">
+      <img src="/img/bas.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/bas/" itemprop="url">BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    We introduce BAS, a confidence reliability metric derived from an explicit answer-or-abstain utility model, and show that it defines a proper scoring objective for selective prediction. BAS asymmetrically penalizes overconfident errors, reflecting their impact on decision-level risk. Using BAS alongside widely used metrics such as ECE and AURC, we then construct a benchmark of self-reported confidence reliability across multiple LLMs and tasks. Our results reveal substantial variation in performance, and while larger and more accurate LLMs tend to also achieve better reliability metrics, even frontier models remain prone to severe overconfidence. Our work provides both a principled metric and a comprehensive benchmark for evaluating LLM confidence reliability.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    Sean Wu*, <strong>Fredrik K. Gustafsson</strong>*, Edward Phillips, Boyan Gao, Anshul Thakur, David A. Clifton
+    
+  </div>
+
+  <div class="pub-publication">
+    Preprint, 2026</div>
+
+  <div class="pub-links">
+    
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2604.03216" target="_blank" rel="noopener">
+  arXiv
+</a>
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/SeanWu25/Behavioral-Alignment-Score" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+      
     
       
         <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
@@ -658,6 +733,11 @@ I received my BSc in _Applied Physics and Electrical Engineering_ in 2016 and my
 
 
 
+
+<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
+        data-filename="/files/citations/ssd.bib">
+  Cite
+</button>
 
 
 
@@ -2054,13 +2134,22 @@ function fill(d) {
   </div>
 
 <p><div class="cite-legend-note">
-    Citation counts based on <a href="https://scholar.google.com/citations?user=bjbzGCcAAAAJ&hl">Google Scholar</a> (updated 2026-03-24), shown for papers with 20+ citations.
+    Citation counts based on <a href="https://scholar.google.com/citations?user=bjbzGCcAAAAJ&hl">Google Scholar</a> (updated 2026-04-05), shown for papers with 20+ citations.
   </div>
 </div></p>
 
 <h3 id="preprints">Preprints</h3>
 
 <div class="compact-pubs">
+<p class="pub-item">
+  <span class="pub-id">[P8]</span>
+  <span class="pub-text">
+    <a href="/publication/bas">BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence</a><br>
+    <em>Sean Wu*, <strong>Fredrik K. Gustafsson*</strong>, Edward Phillips, Boyan Gao, Anshul Thakur, David&nbsp;A.&nbsp;Clifton</em><br>
+      Preprint, 2026
+  </span>
+</p>
+
 <p class="pub-item">
   <span class="pub-id">[P7]</span>
   <span class="pub-text">
@@ -2185,7 +2274,7 @@ function fill(d) {
       <a href="/publication/da_clip">Controlling Vision-Language Models for Multi-Task Image Restoration</a><br>
       <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</em><br>
       ICLR, 2024
-      <br><span class="cite-count cite-red">Cited by 280</span>
+      <br><span class="cite-count cite-red">Cited by 290</span>
     </span>
   </p>
 
@@ -2195,7 +2284,7 @@ function fill(d) {
       <a href="/publication/ir_sde">Image Restoration with Mean-Reverting Stochastic Differential Equations</a><br>
       <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</em><br>
       ICML, 2023
-      <br><span class="cite-count cite-red">Cited by 375</span>
+      <br><span class="cite-count cite-red">Cited by 380</span>
     </span>
   </p>
 
@@ -2257,7 +2346,7 @@ function fill(d) {
       <a href="/publication/refusion">Refusion: Enabling Large-Size Realistic Image Restoration with Latent-Space Diffusion Models</a><br>
       <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Zheng Zhao, Jens Sjölund, Thomas B. Schön</em><br>
       CVPR Workshops, 2023
-      <br><span class="cite-count cite-orange">Cited by 210</span>
+      <br><span class="cite-count cite-orange">Cited by 215</span>
     </span>
   </p>
 
@@ -3518,35 +3607,45 @@ Main supervisor: <a href="https://ki.se/en/research/research-areas-centres-and-n
 <h3 id="co-authors">Co-authors</h3>
 
 <ul>
-<li><a href="https://user.it.uu.se/~thosc112/" target="_blank">Thomas Schön</a> | Professor at Uppsala University | <em>15 papers</em><br />
+<li><a href="https://scholar.google.com/citations?user=FUqUC2oAAAAJ" target="_blank">Thomas Schön</a> | Professor at Uppsala University | <em>15 papers</em><br />
 <em>Years with papers: 2025, 2024, 2023, 2022, 2021, 2020</em></li>
-<li><a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a> | PhD student at Uppsala University | <em>6 papers</em><br />
+<li><a href="https://scholar.google.com/citations?user=3WQTKocAAAAJ" target="_blank">Ziwei Luo</a> | PhD student at Uppsala University | <em>6 papers</em><br />
 <em>Years with papers: 2025, 2024, 2023</em></li>
-<li><a href="https://jsjol.github.io/" target="_blank">Jens Sjölund</a> | Assistant professor at Uppsala University | <em>6 papers</em><br />
+<li><a href="https://scholar.google.com/citations?user=AlF2g-YAAAAJ" target="_blank">Jens Sjölund</a> | Assistant professor at Uppsala University | <em>6 papers</em><br />
 <em>Years with papers: 2025, 2024, 2023</em></li>
-<li><a href="https://martin-danelljan.github.io/" target="_blank">Martin Danelljan</a> | Senior Research Engineer at Apple | <em>6 papers</em><br />
+<li><a href="https://scholar.google.com/citations?user=NCSSpMkAAAAJ" target="_blank">Martin Danelljan</a> | Senior Research Engineer at Apple | <em>6 papers</em><br />
 <em>Years with papers: 2023, 2022, 2021, 2020</em></li>
-<li><a href="https://zz.zabemon.com/" target="_blank">Zheng Zhao</a> | Assistant professor at Linköping University | <em>5 papers</em><br />
+<li><a href="https://scholar.google.com/citations?user=soEnzAYAAAAJ" target="_blank">Zheng Zhao</a> | Assistant professor at Linköping University | <em>5 papers</em><br />
 <em>Years with papers: 2025, 2024, 2023</em></li>
-<li><a href="https://ki.se/en/research/research-areas-centres-and-networks/research-groups/predictive-medicine-mattias-rantalainens-research-group" target="_blank">Mattias Rantalainen</a> | Associate professor, Karolinska Institutet | <em>4 papers</em><br />
+<li><a href="https://scholar.google.com/citations?user=mFN2KJ4AAAAJ" target="_blank">David Clifton</a> | Professor at the University of Oxford | <em>4 papers</em><br />
+<em>Years with papers: 2026</em></li>
+<li><a href="https://scholar.google.com/citations?user=tS7AlgEAAAAJ" target="_blank">Mattias Rantalainen</a> | Associate professor at Karolinska Institutet | <em>4 papers</em><br />
 <em>Years with papers: 2026, 2024</em></li>
-<li><a href="https://antonior92.github.io/" target="_blank">Antônio H. Ribeiro</a> | Assistant professor at Uppsala University | <em>2 papers</em><br />
+<li><a href="https://scholar.google.com/citations?user=RWQIIc0AAAAJ" target="_blank">Edward Phillips</a> | PhD student at the University of Oxford | <em>3 papers</em><br />
+<em>Years with papers: 2026</em></li>
+<li><a href="https://scholar.google.com/citations?user=Z7Ul8jUAAAAJ" target="_blank">Sean Wu</a> | PhD student at the University of Oxford | <em>3 papers</em><br />
+<em>Years with papers: 2026</em></li>
+<li><a href="https://scholar.google.com/citations?user=yB-oPPoAAAAJ" target="_blank">Anshul Thakur</a> | Departmental lecturer at the University of Oxford | <em>2 papers</em><br />
+<em>Years with papers: 2026</em></li>
+<li><a href="https://scholar.google.com/citations?user=WIuM3SIAAAAJ" target="_blank">Boyan Gao</a> | Postdoc at the University of Oxford | <em>2 papers</em><br />
+<em>Years with papers: 2026</em></li>
+<li><a href="https://scholar.google.com/citations?user=5t_sZdMAAAAJ" target="_blank">Antônio H. Ribeiro</a> | Assistant professor at Uppsala University | <em>2 papers</em><br />
 <em>Years with papers: 2024, 2021</em></li>
 </ul>
 
-<p>(<em>Minimum 2 papers, updated 2026-01-07</em>)</p>
+<p>(<em>Minimum 2 papers, updated 2026-04-06</em>)</p>
 
 <h3 id="academic-lineage">Academic Lineage</h3>
 
 <ul>
-<li><p><strong>Main supervisor: <a href="https://scholar.google.com/citations?user=FUqUC2oAAAAJ&amp;hl" target="_blank">Thomas Schön</a></strong> | PhD in 2006 from Linköping University<br />
-<em>Advised by <a href="https://scholar.google.com/citations?user=sMGv1xoAAAAJ&amp;hl" target="_blank">Fredrik Gustafsson</a> (PhD in 1992 from Linköping University),<br />
-advised by <a href="https://scholar.google.com/citations?user=2lo28DgAAAAJ&amp;hl" target="_blank">Lennart Ljung</a> (PhD in 1974 from Lund University),<br />
-advised by <a href="https://scholar.google.com/citations?user=ZS-RjQsAAAAJ&amp;hl" target="_blank">Karl Johan Åström</a> (PhD in 1960 from KTH).</em></p></li>
+<li><p><strong>Main supervisor: <a href="https://scholar.google.com/citations?user=FUqUC2oAAAAJ" target="_blank">Thomas Schön</a></strong> | PhD in 2006 from Linköping University<br />
+<em>Advised by <a href="https://scholar.google.com/citations?user=sMGv1xoAAAAJ" target="_blank">Fredrik Gustafsson</a> (PhD in 1992 from Linköping University),<br />
+advised by <a href="https://scholar.google.com/citations?user=2lo28DgAAAAJ" target="_blank">Lennart Ljung</a> (PhD in 1974 from Lund University),<br />
+advised by <a href="https://scholar.google.com/citations?user=ZS-RjQsAAAAJ" target="_blank">Karl Johan Åström</a> (PhD in 1960 from KTH).</em></p></li>
 
-<li><p><strong>Co-supervisor: <a href="https://scholar.google.com/citations?user=NCSSpMkAAAAJ&amp;hl" target="_blank">Martin Danelljan</a></strong> | PhD in 2018 from Linköping University<br />
-<em>Advised by <a href="https://scholar.google.com/citations?user=lkWfR08AAAAJ&amp;hl" target="_blank">Michael Felsberg</a> (PhD in 2002 from Kiel University)<br />
-and <a href="https://scholar.google.com/citations?user=zvaeYnUAAAAJ&amp;hl" target="_blank">Fahad Shahbaz Khan</a> (PhD in 2011 from UAB Barcelona).</em></p></li>
+<li><p><strong>Co-supervisor: <a href="https://scholar.google.com/citations?user=NCSSpMkAAAAJ" target="_blank">Martin Danelljan</a></strong> | PhD in 2018 from Linköping University<br />
+<em>Advised by <a href="https://scholar.google.com/citations?user=lkWfR08AAAAJ" target="_blank">Michael Felsberg</a> (PhD in 2002 from Kiel University)<br />
+and <a href="https://scholar.google.com/citations?user=zvaeYnUAAAAJ" target="_blank">Fahad Shahbaz Khan</a> (PhD in 2011 from UAB Barcelona).</em></p></li>
 </ul>
 
   </div>
