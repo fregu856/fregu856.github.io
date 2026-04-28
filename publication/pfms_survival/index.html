@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Large language models (LLMs) often produce confident but incorrect answers in settings where abstention would be safer. Standard evaluation protocols, however, require a response and do not account for how confidence should guide decisions under different risk preferences. To address this gap, we introduce the _Behavioral Alignment Score_ (BAS), a decision-theoretic metric for evaluating how well LLM confidence supports abstention-aware decision making. BAS is derived from an explicit answer-or-abstain utility model and aggregates realized utility across a continuum of risk thresholds, yielding a measure of decision-level reliability that depends on both the magnitude and ordering of confidence. We show theoretically that truthful confidence estimates uniquely maximize expected BAS utility, linking calibration to decision-optimal behavior. BAS is related to proper scoring rules such as log loss, but differs structurally: log loss penalizes underconfidence and overconfidence symmetrically, whereas BAS imposes an asymmetric penalty that strongly prioritizes avoiding overconfident errors. Using BAS alongside widely used metrics such as ECE and AURC, we then construct a benchmark of self-reported confidence reliability across multiple LLMs and tasks. Our results reveal substantial variation in decision-useful confidence, and while larger and more accurate models tend to achieve higher BAS, even frontier models remain prone to severe overconfidence. Importantly, models with similar ECE or AURC can exhibit very different BAS due to highly overconfident errors, highlighting limitations of standard metrics. We further show that simple interventions, such as top-k confidence elicitation and post-hoc calibration, can meaningfully improve confidence reliability. Overall, our work provides both a principled metric and a comprehensive benchmark for evaluating LLM confidence reliability.">
+  <meta name="description" content="Pathology foundation models (PFMs) have recently emerged as powerful pretrained encoders for computational pathology, enabling transfer learning across a wide range of downstream tasks. However, systematic comparisons of these models for clinically meaningful prediction problems remain limited, especially in the context of survival prediction under external validation. In this study, we benchmark widely used and recently proposed PFMs for breast cancer survival prediction from whole-slide histopathology images. Using a standardized pipeline based on patch-level feature extraction and a unified survival modeling framework, we evaluate model representations across three independent clinical cohorts comprising more than 5,400 patients with long-term follow-up. Models are trained on one cohort and evaluated on two independent external cohorts, enabling a rigorous assessment of cross-dataset generalization. Overall, H-optimus-1 achieves the strongest survival prediction performance. More broadly, we observe consistent generational improvements across model families, with second-generation PFMs outperforming their first-generation counterparts. However, absolute performance differences between many recent PFMs remain modest, suggesting diminishing returns from further scaling of pretraining data or model size alone. Notably, the compact distilled model H0-mini slightly outperforms its larger teacher model H-optimus-0, despite using fewer than 8% of the parameters and enabling significantly faster feature extraction. Together, these results provide the first large-scale, externally validated benchmark of PFMs for breast cancer survival prediction, and offer practical guidance for efficient deployment of PFMs in clinical workflows.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/bas/">
+  <link rel="alternate" hreflang="en-us" href="/publication/pfms_survival/">
 
   
 
@@ -90,24 +90,24 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/bas/">
+  <link rel="canonical" href="/publication/pfms_survival/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare">
-  <meta property="og:url" content="/publication/bas/">
-  <meta property="og:title" content="BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare">
-  <meta property="og:description" content="Large language models (LLMs) often produce confident but incorrect answers in settings where abstention would be safer. Standard evaluation protocols, however, require a response and do not account for how confidence should guide decisions under different risk preferences. To address this gap, we introduce the _Behavioral Alignment Score_ (BAS), a decision-theoretic metric for evaluating how well LLM confidence supports abstention-aware decision making. BAS is derived from an explicit answer-or-abstain utility model and aggregates realized utility across a continuum of risk thresholds, yielding a measure of decision-level reliability that depends on both the magnitude and ordering of confidence. We show theoretically that truthful confidence estimates uniquely maximize expected BAS utility, linking calibration to decision-optimal behavior. BAS is related to proper scoring rules such as log loss, but differs structurally: log loss penalizes underconfidence and overconfidence symmetrically, whereas BAS imposes an asymmetric penalty that strongly prioritizes avoiding overconfident errors. Using BAS alongside widely used metrics such as ECE and AURC, we then construct a benchmark of self-reported confidence reliability across multiple LLMs and tasks. Our results reveal substantial variation in decision-useful confidence, and while larger and more accurate models tend to achieve higher BAS, even frontier models remain prone to severe overconfidence. Importantly, models with similar ECE or AURC can exhibit very different BAS due to highly overconfident errors, highlighting limitations of standard metrics. We further show that simple interventions, such as top-k confidence elicitation and post-hoc calibration, can meaningfully improve confidence reliability. Overall, our work provides both a principled metric and a comprehensive benchmark for evaluating LLM confidence reliability.">
+  <meta property="og:url" content="/publication/pfms_survival/">
+  <meta property="og:title" content="Benchmarking Pathology Foundation Models for Breast Cancer Survival Prediction | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare">
+  <meta property="og:description" content="Pathology foundation models (PFMs) have recently emerged as powerful pretrained encoders for computational pathology, enabling transfer learning across a wide range of downstream tasks. However, systematic comparisons of these models for clinically meaningful prediction problems remain limited, especially in the context of survival prediction under external validation. In this study, we benchmark widely used and recently proposed PFMs for breast cancer survival prediction from whole-slide histopathology images. Using a standardized pipeline based on patch-level feature extraction and a unified survival modeling framework, we evaluate model representations across three independent clinical cohorts comprising more than 5,400 patients with long-term follow-up. Models are trained on one cohort and evaluated on two independent external cohorts, enabling a rigorous assessment of cross-dataset generalization. Overall, H-optimus-1 achieves the strongest survival prediction performance. More broadly, we observe consistent generational improvements across model families, with second-generation PFMs outperforming their first-generation counterparts. However, absolute performance differences between many recent PFMs remain modest, suggesting diminishing returns from further scaling of pretraining data or model size alone. Notably, the compact distilled model H0-mini slightly outperforms its larger teacher model H-optimus-0, despite using fewer than 8% of the parameters and enabling significantly faster feature extraction. Together, these results provide the first large-scale, externally validated benchmark of PFMs for breast cancer survival prediction, and offer practical guidance for efficient deployment of PFMs in clinical workflows.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2026-04-06T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2026-04-28T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2026-04-06T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2026-04-28T00:00:00&#43;00:00">
   
 
-  <title>BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</title>
+  
+
+  <title>Benchmarking Pathology Foundation Models for Breast Cancer Survival Prediction | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -320,17 +320,17 @@
 
   
 <div class="article-header">
-  <img src="/img/bas.png" class="article-banner-small" itemprop="image">
+  <img src="/img/pfms_survival.png" class="article-banner-small" itemprop="image">
   
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence</h1>
+    <h1 itemprop="name">Benchmarking Pathology Foundation Models for Breast Cancer Survival Prediction</h1>
     <span class="pub-authors" itemprop="author">
       
-      Sean Wu*, <strong>Fredrik K. Gustafsson</strong>*, Edward Phillips, Boyan Gao, Anshul Thakur, David A. Clifton
+      <strong>Fredrik K. Gustafsson</strong>, Constance Boissin, Johan Vallon-Christersson, David&nbsp;A.&nbsp;Clifton, Mattias Rantalainen
       
     </span>
     <span class="pull-right">
@@ -342,7 +342,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Large language models (LLMs) often produce confident but incorrect answers in settings where abstention would be safer. Standard evaluation protocols, however, require a response and do not account for how confidence should guide decisions under different risk preferences. To address this gap, we introduce the <em>Behavioral Alignment Score</em> (BAS), a decision-theoretic metric for evaluating how well LLM confidence supports abstention-aware decision making. BAS is derived from an explicit answer-or-abstain utility model and aggregates realized utility across a continuum of risk thresholds, yielding a measure of decision-level reliability that depends on both the magnitude and ordering of confidence. We show theoretically that truthful confidence estimates uniquely maximize expected BAS utility, linking calibration to decision-optimal behavior. BAS is related to proper scoring rules such as log loss, but differs structurally: log loss penalizes underconfidence and overconfidence symmetrically, whereas BAS imposes an asymmetric penalty that strongly prioritizes avoiding overconfident errors. Using BAS alongside widely used metrics such as ECE and AURC, we then construct a benchmark of self-reported confidence reliability across multiple LLMs and tasks. Our results reveal substantial variation in decision-useful confidence, and while larger and more accurate models tend to achieve higher BAS, even frontier models remain prone to severe overconfidence. Importantly, models with similar ECE or AURC can exhibit very different BAS due to highly overconfident errors, highlighting limitations of standard metrics. We further show that simple interventions, such as top-k confidence elicitation and post-hoc calibration, can meaningfully improve confidence reliability. Overall, our work provides both a principled metric and a comprehensive benchmark for evaluating LLM confidence reliability.</p>
+    <p class="pub-abstract" itemprop="text">Pathology foundation models (PFMs) have recently emerged as powerful pretrained encoders for computational pathology, enabling transfer learning across a wide range of downstream tasks. However, systematic comparisons of these models for clinically meaningful prediction problems remain limited, especially in the context of survival prediction under external validation. In this study, we benchmark widely used and recently proposed PFMs for breast cancer survival prediction from whole-slide histopathology images. Using a standardized pipeline based on patch-level feature extraction and a unified survival modeling framework, we evaluate model representations across three independent clinical cohorts comprising more than 5,400 patients with long-term follow-up. Models are trained on one cohort and evaluated on two independent external cohorts, enabling a rigorous assessment of cross-dataset generalization. Overall, H-optimus-1 achieves the strongest survival prediction performance. More broadly, we observe consistent generational improvements across model families, with second-generation PFMs outperforming their first-generation counterparts. However, absolute performance differences between many recent PFMs remain modest, suggesting diminishing returns from further scaling of pretraining data or model size alone. Notably, the compact distilled model H0-mini slightly outperforms its larger teacher model H-optimus-0, despite using fewer than 8% of the parameters and enabling significantly faster feature extraction. Together, these results provide the first large-scale, externally validated benchmark of PFMs for breast cancer survival prediction, and offer practical guidance for efficient deployment of PFMs in clinical workflows.</p>
     
 
     
@@ -405,7 +405,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2604.03216" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2604.24679" target="_blank" rel="noopener">
   arXiv
 </a>
 
@@ -413,9 +413,6 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://github.com/SeanWu25/Behavioral-Alignment-Score" target="_blank" rel="noopener">
-  Code
-</a>
 
 
 
@@ -431,12 +428,6 @@
 
 
 
-
-
-<button type="button" class="btn btn-primary btn-outline js-cite-modal"
-        data-filename="/files/citations/bas.bib">
-  Cite
-</button>
 
 
 
