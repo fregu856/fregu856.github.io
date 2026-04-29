@@ -13,9 +13,18 @@
     <item>
       <title>Benchmarking Pathology Foundation Models for Breast Cancer Survival Prediction</title>
       <link>/publication/pfms_survival/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
       
       <guid>/publication/pfms_survival/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</title>
+      <link>/publication/cpath_fms_shifts/</link>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/cpath_fms_shifts/</guid>
       <description></description>
     </item>
     
@@ -248,15 +257,6 @@
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
       
       <guid>/publication/ml4paleo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</title>
-      <link>/publication/cpath_fms_shifts/</link>
-      <pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/cpath_fms_shifts/</guid>
       <description></description>
     </item>
     

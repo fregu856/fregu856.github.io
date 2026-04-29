@@ -543,7 +543,9 @@ Before moving to Oxford, I was a postdoc in the group of [Mattias Rantalainen](h
 <h3 id="news">News</h3>
 
 <ul>
-<li><p><b>[Apr 28, 2028]</b> New preprint: <i>Benchmarking Pathology Foundation Models for Breast Cancer Survival Prediction</i> <a href="https://arxiv.org/abs/2604.24679" target="_blank">[arXiv]</a> <a href="/publication/pfms_survival/">[project]</a>.</p></li>
+<li><p><b>[Apr 29, 2026]</b> New preprint: <i>Benchmarking Pathology Foundation Models for Breast Cancer Survival Prediction</i> <a href="https://arxiv.org/abs/2604.24679" target="_blank">[arXiv]</a> <a href="/publication/pfms_survival/">[project]</a>. I also created the presentation <i>Performance and Robustness Evaluation of Pathology Foundation Models</i> <a href="/files/slides_260429.pdf">[slides]</a>.</p></li>
+
+<li><p><b>[Apr 28, 2026]</b> Updated preprint: <i>Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</i> <a href="https://arxiv.org/abs/2410.06723" target="_blank">[arXiv]</a> <a href="/publication/cpath_fms_shifts/">[project]</a>.</p></li>
 
 <li><p><b>[Apr 6, 2026]</b> New preprint: <i>BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence</i> <a href="https://arxiv.org/abs/2604.03216" target="_blank">[arXiv]</a> <a href="https://github.com/SeanWu25/Behavioral-Alignment-Score" target="_blank">[code]</a> <a href="/publication/bas/">[project]</a>, work led by <a href="https://scholar.google.com/citations?user=Z7Ul8jUAAAAJ&amp;hl=en" target="_blank">Sean Wu</a>.</p></li>
 
@@ -556,8 +558,6 @@ Before moving to Oxford, I was a postdoc in the group of [Mattias Rantalainen](h
 <li><p><b>[Jan 8, 2026]</b> New preprint: <i>Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models</i> <a href="https://arxiv.org/abs/2601.04163" target="_blank">[arXiv]</a> <a href="/publication/pfms_scanners/">[project]</a>, work led together with <a href="https://www.linkedin.com/in/erik-thiringer-992a5816b/" target="_blank">Erik Thiringer</a>.</p></li>
 
 <li><p><b>[Jul 15, 2025]</b> I have joined the group of <a href="https://eng.ox.ac.uk/chi/team" target="_blank">David Clifton</a> at the <a href="https://www.ox.ac.uk/" target="_blank">University of Oxford</a> as a postdoc to work on machine learning for healthcare.</p></li>
-
-<li><p><b>[Jun 19, 2025]</b> <b>Accepted paper:</b> <a href="/publication/diff_ir_review/"><em>Taming Diffusion Models for Image Restoration: A Review</em></a>, work led by <a href="https://algolzw.github.io/" target="_blank">Ziwei Luo</a>, has been published in <a href="https://royalsocietypublishing.org/rsta" target="_blank">Philosophical Transactions of the Royal Society A</a>.</p></li>
 </ul>
 
 <p>Click <a href="/post/news">here</a> for older news.</p>
@@ -659,9 +659,93 @@ Before moving to Oxford, I was a postdoc in the group of [Mattias Rantalainen](h
 
 
 
+<a class="btn btn-primary btn-outline btn-xs" href="/files/slides_260429.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
 
 
 
+
+
+
+
+  </div>
+
+</div>
+
+      
+    
+      
+        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+    
+  
+  
+  <div>
+    <a href="/publication/cpath_fms_shifts/">
+      <img src="/img/cpath_fms_shifts_v2.png" class="pub-banner" itemprop="image">
+    </a>
+  </div>
+  
+
+  <h3 class="article-title" itemprop="name">
+    <a href="/publication/cpath_fms_shifts/" itemprop="url">Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</a>
+  </h3>
+
+  <div class="pub-abstract" itemprop="text">
+    
+    Pathology foundation models (PFMs) have become central to computational pathology, but their robustness under distribution shifts remains insufficiently understood. We benchmark PFMs for prostate cancer grading from WSIs, evaluating robustness to shifts in WSI image appearance across sites and in the label distribution over cancer grades. PFMs consistently perform well in-distribution, but performance drops substantially under cross-site transfer. In comparison, PFMs are less sensitive to label-distribution shift, indicating that visually grounded domain shift is the dominant challenge. While PFMs provide strong representations, robust deployment remains constrained by the quality and diversity of the data used to train downstream prediction models.
+    
+  </div>
+
+  <div class="pub-authors" itemprop="author">
+    
+    <strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen
+    
+  </div>
+
+  <div class="pub-publication">
+    Preprint, 2026</div>
+
+  <div class="pub-links">
+    
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2410.06723" target="_blank" rel="noopener">
+  arXiv
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="/files/slides_260429.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
+        data-filename="/files/citations/cpath_fms_shifts.bib">
+  Cite
+</button>
 
 
 
@@ -966,83 +1050,7 @@ Before moving to Oxford, I was a postdoc in the group of [Mattias Rantalainen](h
 
 
 
-
-
-
-
-<button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/pfms_scanners.bib">
-  Cite
-</button>
-
-
-
-  </div>
-
-</div>
-
-      
-    
-      
-        <div class="pub-list-item card-simple" itemscope itemtype="http://schema.org/CreativeWork">
-
-  
-    
-  
-  
-  <div>
-    <a href="/publication/cpath_fms_shifts/">
-      <img src="/img/cpath_fms_shifts.png" class="pub-banner" itemprop="image">
-    </a>
-  </div>
-  
-
-  <h3 class="article-title" itemprop="name">
-    <a href="/publication/cpath_fms_shifts/" itemprop="url">Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</a>
-  </h3>
-
-  <div class="pub-abstract" itemprop="text">
-    
-    Foundation models (FMs) are intended to be general-purpose feature extractors. Real-world pathology image data does however exhibit considerable variability. FMs should be robust to these variations and other distribution shifts which might be encountered in practice. We evaluate two computational pathology FMs (UNI and CONCH), by utilizing them as feature extractors within prostate cancer grading models. We find that while FMs perform well relative to baselines, the absolute performance can still be far from satisfactory. The fact that FMs have been trained on large and varied datasets does not guarantee that downstream models always will be robust to common distribution shifts.
-    
-  </div>
-
-  <div class="pub-authors" itemprop="author">
-    
-    <strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen
-    
-  </div>
-
-  <div class="pub-publication">
-    Preprint, 2024</div>
-
-  <div class="pub-links">
-    
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/2410.06723" target="_blank" rel="noopener">
-  arXiv
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="/files/talk_241016_slides.pdf" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline btn-xs" href="/files/slides_260429.pdf" target="_blank" rel="noopener">
   Slides
 </a>
 
@@ -1051,7 +1059,7 @@ Before moving to Oxford, I was a postdoc in the group of [Mattias Rantalainen](h
 
 
 <button type="button" class="btn btn-primary btn-outline btn-xs js-cite-modal"
-        data-filename="/files/citations/cpath_fms_shifts.bib">
+        data-filename="/files/citations/pfms_scanners.bib">
   Cite
 </button>
 
@@ -2233,6 +2241,15 @@ function fill(d) {
 <p class="pub-item">
   <span class="pub-id">[P8]</span>
   <span class="pub-text">
+    <a href="/publication/cpath_fms_shifts">Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</a><br>
+    <em><strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen</em><br>
+    Preprint, 2026
+  </span>
+</p>
+
+<p class="pub-item">
+  <span class="pub-id">[P7]</span>
+  <span class="pub-text">
     <a href="/publication/bas">BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence</a><br>
     <em>Sean Wu*, <strong>Fredrik K. Gustafsson*</strong>, Edward Phillips, Boyan Gao, Anshul Thakur, David&nbsp;A.&nbsp;Clifton</em><br>
       Preprint, 2026
@@ -2240,7 +2257,7 @@ function fill(d) {
 </p>
 
 <p class="pub-item">
-  <span class="pub-id">[P7]</span>
+  <span class="pub-id">[P6]</span>
   <span class="pub-text">
     <a href="/publication/selective_llms">Entropy Alone is Insufficient for Safe Selective Prediction in LLMs</a><br>
     <em>Edward Phillips, <strong>Fredrik K. Gustafsson</strong>, Sean Wu, Anshul Thakur, David A. Clifton</em><br>
@@ -2249,7 +2266,7 @@ function fill(d) {
 </p>
 
 <p class="pub-item">
-  <span class="pub-id">[P6]</span>
+  <span class="pub-id">[P5]</span>
   <span class="pub-text">
     <a href="/publication/ssd">Semantic Self-Distillation for Language Model Uncertainty</a><br>
     <em>Edward Phillips, Sean Wu, <strong>Fredrik K. Gustafsson</strong>, Boyan Gao, David A. Clifton</em><br>
@@ -2258,7 +2275,7 @@ function fill(d) {
 </p>
 
 <p class="pub-item">
-  <span class="pub-id">[P5]</span>
+  <span class="pub-id">[P4]</span>
   <span class="pub-text">
     <a href="/publication/signalmc-med">SignalMC-MED: A Multimodal Benchmark for Evaluating Biosignal Foundation Models on Single-Lead ECG and PPG</a><br>
     <em><strong>Fredrik K. Gustafsson</strong>, Xiao Gu, Mattia Carletti, Patitapaban Palo, David W. Eyre, David&nbsp;A.&nbsp;Clifton</em><br>
@@ -2267,7 +2284,7 @@ function fill(d) {
 </p>
 
 <p class="pub-item">
-  <span class="pub-id">[P4]</span>
+  <span class="pub-id">[P3]</span>
   <span class="pub-text">
     <a href="/publication/pfms_scanners">Scanner-Induced Domain Shifts Undermine the Robustness of Pathology Foundation Models</a><br>
     <em>Erik Thiringer, <strong>Fredrik K. Gustafsson</strong>, Kajsa Ledesma Eriksson, Mattias Rantalainen</em><br>
@@ -2276,20 +2293,11 @@ function fill(d) {
 </p>
 
   <p class="pub-item">
-    <span class="pub-id">[P3]</span>
+    <span class="pub-id">[P2]</span>
     <span class="pub-text">
       <a href="/publication/fod">Forward-only Diffusion Probabilistic Models</a><br>
       <em>Ziwei Luo, <strong>Fredrik K. Gustafsson</strong>, Jens Sjölund, Thomas B. Schön</em><br>
       Preprint, 2025
-    </span>
-  </p>
-
-  <p class="pub-item">
-    <span class="pub-id">[P2]</span>
-    <span class="pub-text">
-      <a href="/publication/cpath_fms_shifts">Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts</a><br>
-      <em><strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen</em><br>
-      Preprint, 2024
     </span>
   </p>
 
@@ -3069,6 +3077,9 @@ October 16, 2024</p></li>
 <h3 id="other-presentations">Other Presentations</h3>
 
 <ul>
+<li><p><strong>Performance and Robustness Evaluation of Pathology Foundation Models</strong><br />
+April 29, 2026 | <a href="/files/slides_260429.pdf">[slides]</a></p></li>
+
 <li><p><strong>Towards Accurate and Reliable Deep Regression Models</strong><br />
 PhD defense | <em>Uppsala, Sweden</em> | <a href="/files/defense_slides_handout.pdf">[slides]</a> <a href="https://youtu.be/tkmi-b48VMY?si=6ETZoBJLEm5dMfIl" target="_blank">[video]</a><br />
 November 30, 2023</p></li>
