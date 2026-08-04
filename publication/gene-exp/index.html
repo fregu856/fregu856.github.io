@@ -17,7 +17,7 @@
       
     
   
-  <meta name="description" content="Prediction of mRNA gene-expression profiles directly from routine whole-slide images (WSIs) using deep learning models could potentially offer cost-effective and widely accessible molecular phenotyping. While such WSI-based gene-expression prediction models have recently emerged within computational pathology, the high-dimensional nature of the corresponding regression problem offers numerous design choices which remain to be analyzed in detail. This study provides recommendations on how deep regression models should be trained for WSI-based gene-expression prediction. For example, we conclude that training a single model to simultaneously regress all 20530 genes is a computationally efficient yet very strong baseline.">
+  <meta name="description" content="Gene-expression profiling is widely used in research and central to many areas of precision oncology, but remains costly and not universally accessible. Recent advances in computational pathology enable prediction of transcriptomic profiles directly from hematoxylin and eosin (H&amp;E)-stained whole-slide images (WSIs), although optimal modeling strategies and clinical relevance remain unclear. In this study, we systematically evaluate deep regression models for WSI-based gene-expression prediction across multiple regression formulations and pathology foundation models (PFMs), and assess whether the resulting predicted transcriptomic signals retain prognostic utility. Across four TCGA datasets, we find that direct regression using attention-based multiple instance learning together with PFM feature extractors provides a strong and computationally efficient baseline, with no consistent benefit from separately training multiple models on subsets of genes. We then externally validate the selected configuration on an independent cohort of 997 breast cancer patients, demonstrating robust generalization for clinically relevant gene sets such as PAM50. To assess clinical relevance, we further evaluate predicted gene-expression scores in two independent population-representative breast cancer cohorts comprising 4,172 patients with survival endpoints, where predicted scores retain prognostic value in both the full patient cohort and the ER&#43; &amp; HER2- subgroup. Together, these results demonstrate that WSI-based gene-expression prediction can generalize across independent cohorts and recover biologically and clinically meaningful molecular structure, supporting its potential as a scalable approach for transcriptomic phenotyping and risk stratification.">
 
   
   <link rel="alternate" hreflang="en-us" href="/publication/gene-exp/">
@@ -96,18 +96,18 @@
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare">
   <meta property="og:url" content="/publication/gene-exp/">
-  <meta property="og:title" content="Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare">
-  <meta property="og:description" content="Prediction of mRNA gene-expression profiles directly from routine whole-slide images (WSIs) using deep learning models could potentially offer cost-effective and widely accessible molecular phenotyping. While such WSI-based gene-expression prediction models have recently emerged within computational pathology, the high-dimensional nature of the corresponding regression problem offers numerous design choices which remain to be analyzed in detail. This study provides recommendations on how deep regression models should be trained for WSI-based gene-expression prediction. For example, we conclude that training a single model to simultaneously regress all 20530 genes is a computationally efficient yet very strong baseline.">
+  <meta property="og:title" content="Evaluation and Prognostic Validation of Deep Regression Models for WSI-Based Gene-Expression Prediction | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare">
+  <meta property="og:description" content="Gene-expression profiling is widely used in research and central to many areas of precision oncology, but remains costly and not universally accessible. Recent advances in computational pathology enable prediction of transcriptomic profiles directly from hematoxylin and eosin (H&amp;E)-stained whole-slide images (WSIs), although optimal modeling strategies and clinical relevance remain unclear. In this study, we systematically evaluate deep regression models for WSI-based gene-expression prediction across multiple regression formulations and pathology foundation models (PFMs), and assess whether the resulting predicted transcriptomic signals retain prognostic utility. Across four TCGA datasets, we find that direct regression using attention-based multiple instance learning together with PFM feature extractors provides a strong and computationally efficient baseline, with no consistent benefit from separately training multiple models on subsets of genes. We then externally validate the selected configuration on an independent cohort of 997 breast cancer patients, demonstrating robust generalization for clinically relevant gene sets such as PAM50. To assess clinical relevance, we further evaluate predicted gene-expression scores in two independent population-representative breast cancer cohorts comprising 4,172 patients with survival endpoints, where predicted scores retain prognostic value in both the full patient cohort and the ER&#43; &amp; HER2- subgroup. Together, these results demonstrate that WSI-based gene-expression prediction can generalize across independent cohorts and recover biologically and clinically meaningful molecular structure, supporting its potential as a scalable approach for transcriptomic phenotyping and risk stratification.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2024-10-01T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2026-07-23T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2024-10-01T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2026-07-23T00:00:00&#43;00:00">
   
 
-  <title>Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</title>
+  
+
+  <title>Evaluation and Prognostic Validation of Deep Regression Models for WSI-Based Gene-Expression Prediction | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -320,17 +320,17 @@
 
   
 <div class="article-header">
-  <img src="/img/gene-exp.png" class="article-banner-small" itemprop="image">
+  <img src="/img/gene-exp_v2.png" class="article-banner-small" itemprop="image">
   
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction</h1>
+    <h1 itemprop="name">Evaluation and Prognostic Validation of Deep Regression Models for WSI-Based Gene-Expression Prediction</h1>
     <span class="pub-authors" itemprop="author">
       
-      <strong>Fredrik K. Gustafsson</strong>, Mattias Rantalainen
+      <strong>Fredrik K. Gustafsson</strong>, Constance Boissin, Johan Vallon-Christersson, Mattias&nbsp;Rantalainen
       
     </span>
     <span class="pull-right">
@@ -342,7 +342,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Prediction of mRNA gene-expression profiles directly from routine whole-slide images (WSIs) using deep learning models could potentially offer cost-effective and widely accessible molecular phenotyping. While such WSI-based gene-expression prediction models have recently emerged within computational pathology, the high-dimensional nature of the corresponding regression problem offers numerous design choices which remain to be analyzed in detail. This study provides recommendations on how deep regression models should be trained for WSI-based gene-expression prediction. For example, we conclude that training a single model to simultaneously regress all 20530 genes is a computationally efficient yet very strong baseline.</p>
+    <p class="pub-abstract" itemprop="text">Gene-expression profiling is widely used in research and central to many areas of precision oncology, but remains costly and not universally accessible. Recent advances in computational pathology enable prediction of transcriptomic profiles directly from hematoxylin and eosin (H&amp;E)-stained whole-slide images (WSIs), although optimal modeling strategies and clinical relevance remain unclear. In this study, we systematically evaluate deep regression models for WSI-based gene-expression prediction across multiple regression formulations and pathology foundation models (PFMs), and assess whether the resulting predicted transcriptomic signals retain prognostic utility. Across four TCGA datasets, we find that direct regression using attention-based multiple instance learning together with PFM feature extractors provides a strong and computationally efficient baseline, with no consistent benefit from separately training multiple models on subsets of genes. We then externally validate the selected configuration on an independent cohort of 997 breast cancer patients, demonstrating robust generalization for clinically relevant gene sets such as PAM50. To assess clinical relevance, we further evaluate predicted gene-expression scores in two independent population-representative breast cancer cohorts comprising 4,172 patients with survival endpoints, where predicted scores retain prognostic value in both the full patient cohort and the ER+ &amp; HER2- subgroup. Together, these results demonstrate that WSI-based gene-expression prediction can generalize across independent cohorts and recover biologically and clinically meaningful molecular structure, supporting its potential as a scalable approach for transcriptomic phenotyping and risk stratification.</p>
     
 
     
@@ -371,7 +371,7 @@
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">Preprint, 2024</div>
+          <div class="col-xs-12 col-sm-9">Preprint, 2026</div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -385,7 +385,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            October, 2024
+            July, 2026
           </div>
         </div>
       </div>

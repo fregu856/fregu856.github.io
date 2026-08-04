@@ -27,9 +27,9 @@
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Apr 29, 2026] New preprint: Benchmarking Pathology Foundation Models for Breast Cancer Survival Prediction [arXiv] [project]. I also created the presentation Performance and Robustness Evaluation of Pathology Foundation Models [slides].
- [Apr 28, 2026] Updated preprint: Evaluating Computational Pathology Foundation Models for Prostate Cancer Grading under Distribution Shifts [arXiv] [project].
- [Apr 6, 2026] New preprint: BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence [arXiv] [code] [project], work led by Sean Wu.</description>
+      <description>[Jul 31, 2026] Accepted papers: (1) Semantic Self-Distillation for Language Model Uncertainty has been accepted to UAI 2026, (2) BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence to COLM 2026, and (3) Efficient Image Restoration with State-Dependent Forward Diffusion to TMLR.
+ [Jul 23, 2026] Updated preprint: Evaluation and Prognostic Validation of Deep Regression Models for WSI-Based Gene-Expression Prediction [arXiv] [project].
+ [Apr 29, 2026] New preprint: Benchmarking Pathology Foundation Models for Breast Cancer Survival Prediction [arXiv] [project].</description>
     </item>
     
   </channel>

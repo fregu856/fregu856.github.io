@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Large language models (LLMs) often produce confident but incorrect answers in settings where abstention would be safer. Standard evaluation protocols, however, require a response and do not account for how confidence should guide decisions under different risk preferences. To address this gap, we introduce the _Behavioral Alignment Score_ (BAS), a decision-theoretic metric for evaluating how well LLM confidence supports abstention-aware decision making. BAS is derived from an explicit answer-or-abstain utility model and aggregates realized utility across a continuum of risk thresholds, yielding a measure of decision-level reliability that depends on both the magnitude and ordering of confidence. We show theoretically that truthful confidence estimates uniquely maximize expected BAS utility, linking calibration to decision-optimal behavior. BAS is related to proper scoring rules such as log loss, but differs structurally: log loss penalizes underconfidence and overconfidence symmetrically, whereas BAS imposes an asymmetric penalty that strongly prioritizes avoiding overconfident errors. Using BAS alongside widely used metrics such as ECE and AURC, we then construct a benchmark of self-reported confidence reliability across multiple LLMs and tasks. Our results reveal substantial variation in decision-useful confidence, and while larger and more accurate models tend to achieve higher BAS, even frontier models remain prone to severe overconfidence. Importantly, models with similar ECE or AURC can exhibit very different BAS due to highly overconfident errors, highlighting limitations of standard metrics. We further show that simple interventions, such as top-k confidence elicitation and post-hoc calibration, can meaningfully improve confidence reliability. Overall, our work provides both a principled metric and a comprehensive benchmark for evaluating LLM confidence reliability.">
+  <meta name="description" content="Electrocardiogram (ECG) foundation models pretrained on typical diagnostic 10-second ECG segments, have demonstrated strong transferability across a range of clinical applications. However, many real-world applications produce recordings that are typically longer, and are varied in duration during inference time. These 10-second models have no built-in way to combine information across time. Extending them to longer horizons introduces two challenges: structural incompatibilities arising from input-length disparities, and semantic challenges that limit meaningful temporal aggregation. We propose a parameter-efficient framework that extends pretrained ECG foundation models to longer and variable-length ECGs without retraining the backbone. Guided by a frozen pretrained 10-second model, we introduce a lightweight plug-in module that extends the model in two complementary ways: (i) structurally compatible long-sequence processing and (ii) semantically informed temporal modeling. Experiments on multiple long-horizon ECG tasks, datasets, and foundation model backbones demonstrate that our method enables robust long-horizon extension from pretrained snapshot models, consistently outperforming sliding-window and pooling-based baselines with strong parameter efficiency.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/bas/">
+  <link rel="alternate" hreflang="en-us" href="/publication/longecg/">
 
   
 
@@ -90,24 +90,24 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/bas/">
+  <link rel="canonical" href="/publication/longecg/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare">
-  <meta property="og:url" content="/publication/bas/">
-  <meta property="og:title" content="BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare">
-  <meta property="og:description" content="Large language models (LLMs) often produce confident but incorrect answers in settings where abstention would be safer. Standard evaluation protocols, however, require a response and do not account for how confidence should guide decisions under different risk preferences. To address this gap, we introduce the _Behavioral Alignment Score_ (BAS), a decision-theoretic metric for evaluating how well LLM confidence supports abstention-aware decision making. BAS is derived from an explicit answer-or-abstain utility model and aggregates realized utility across a continuum of risk thresholds, yielding a measure of decision-level reliability that depends on both the magnitude and ordering of confidence. We show theoretically that truthful confidence estimates uniquely maximize expected BAS utility, linking calibration to decision-optimal behavior. BAS is related to proper scoring rules such as log loss, but differs structurally: log loss penalizes underconfidence and overconfidence symmetrically, whereas BAS imposes an asymmetric penalty that strongly prioritizes avoiding overconfident errors. Using BAS alongside widely used metrics such as ECE and AURC, we then construct a benchmark of self-reported confidence reliability across multiple LLMs and tasks. Our results reveal substantial variation in decision-useful confidence, and while larger and more accurate models tend to achieve higher BAS, even frontier models remain prone to severe overconfidence. Importantly, models with similar ECE or AURC can exhibit very different BAS due to highly overconfident errors, highlighting limitations of standard metrics. We further show that simple interventions, such as top-k confidence elicitation and post-hoc calibration, can meaningfully improve confidence reliability. Overall, our work provides both a principled metric and a comprehensive benchmark for evaluating LLM confidence reliability.">
+  <meta property="og:url" content="/publication/longecg/">
+  <meta property="og:title" content="Extending Pretrained 10-Second ECG Foundation Models to Longer Horizons | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare">
+  <meta property="og:description" content="Electrocardiogram (ECG) foundation models pretrained on typical diagnostic 10-second ECG segments, have demonstrated strong transferability across a range of clinical applications. However, many real-world applications produce recordings that are typically longer, and are varied in duration during inference time. These 10-second models have no built-in way to combine information across time. Extending them to longer horizons introduces two challenges: structural incompatibilities arising from input-length disparities, and semantic challenges that limit meaningful temporal aggregation. We propose a parameter-efficient framework that extends pretrained ECG foundation models to longer and variable-length ECGs without retraining the backbone. Guided by a frozen pretrained 10-second model, we introduce a lightweight plug-in module that extends the model in two complementary ways: (i) structurally compatible long-sequence processing and (ii) semantically informed temporal modeling. Experiments on multiple long-horizon ECG tasks, datasets, and foundation model backbones demonstrate that our method enables robust long-horizon extension from pretrained snapshot models, consistently outperforming sliding-window and pooling-based baselines with strong parameter efficiency.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2026-04-06T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2026-05-16T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2026-04-06T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2026-05-16T00:00:00&#43;00:00">
   
 
-  <title>BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</title>
+  
+
+  <title>Extending Pretrained 10-Second ECG Foundation Models to Longer Horizons | Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -320,17 +320,17 @@
 
   
 <div class="article-header">
-  <img src="/img/bas.png" class="article-banner-small" itemprop="image">
+  <img src="/img/longecg.png" class="article-banner-small" itemprop="image">
   
 </div>
 
 
 
   <div class="article-container">
-    <h1 itemprop="name">BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence</h1>
+    <h1 itemprop="name">Extending Pretrained 10-Second ECG Foundation Models to Longer Horizons</h1>
     <span class="pub-authors" itemprop="author">
       
-      Sean Wu*, <strong>Fredrik K. Gustafsson</strong>*, Edward Phillips, Boyan Gao, Anshul Thakur, David A. Clifton
+      Wei Tang, Jinpei Han, Kangning Cui, Mattia Carletti, <strong>Fredrik K. Gustafsson</strong>, Shreyank N Gowda, Patitapaban Palo, Anshul Thakur, Lei Clifton, Jean-michel Morel, Raymond H. Chan, David A. Clifton, Xiao Gu
       
     </span>
     <span class="pull-right">
@@ -342,7 +342,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Large language models (LLMs) often produce confident but incorrect answers in settings where abstention would be safer. Standard evaluation protocols, however, require a response and do not account for how confidence should guide decisions under different risk preferences. To address this gap, we introduce the <em>Behavioral Alignment Score</em> (BAS), a decision-theoretic metric for evaluating how well LLM confidence supports abstention-aware decision making. BAS is derived from an explicit answer-or-abstain utility model and aggregates realized utility across a continuum of risk thresholds, yielding a measure of decision-level reliability that depends on both the magnitude and ordering of confidence. We show theoretically that truthful confidence estimates uniquely maximize expected BAS utility, linking calibration to decision-optimal behavior. BAS is related to proper scoring rules such as log loss, but differs structurally: log loss penalizes underconfidence and overconfidence symmetrically, whereas BAS imposes an asymmetric penalty that strongly prioritizes avoiding overconfident errors. Using BAS alongside widely used metrics such as ECE and AURC, we then construct a benchmark of self-reported confidence reliability across multiple LLMs and tasks. Our results reveal substantial variation in decision-useful confidence, and while larger and more accurate models tend to achieve higher BAS, even frontier models remain prone to severe overconfidence. Importantly, models with similar ECE or AURC can exhibit very different BAS due to highly overconfident errors, highlighting limitations of standard metrics. We further show that simple interventions, such as top-k confidence elicitation and post-hoc calibration, can meaningfully improve confidence reliability. Overall, our work provides both a principled metric and a comprehensive benchmark for evaluating LLM confidence reliability.</p>
+    <p class="pub-abstract" itemprop="text">Electrocardiogram (ECG) foundation models pretrained on typical diagnostic 10-second ECG segments, have demonstrated strong transferability across a range of clinical applications. However, many real-world applications produce recordings that are typically longer, and are varied in duration during inference time. These 10-second models have no built-in way to combine information across time. Extending them to longer horizons introduces two challenges: structural incompatibilities arising from input-length disparities, and semantic challenges that limit meaningful temporal aggregation. We propose a parameter-efficient framework that extends pretrained ECG foundation models to longer and variable-length ECGs without retraining the backbone. Guided by a frozen pretrained 10-second model, we introduce a lightweight plug-in module that extends the model in two complementary ways: (i) structurally compatible long-sequence processing and (ii) semantically informed temporal modeling. Experiments on multiple long-horizon ECG tasks, datasets, and foundation model backbones demonstrate that our method enables robust long-horizon extension from pretrained snapshot models, consistently outperforming sliding-window and pooling-based baselines with strong parameter efficiency.</p>
     
 
     
@@ -353,8 +353,8 @@
           <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
           <div class="col-xs-12 col-sm-9">
             
-            <a href="/publication/#1">
-              Conference paper
+            <a href="/publication/#8">
+              Preprint
             </a>
             
           </div>
@@ -371,7 +371,7 @@
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">Conference on Language Modeling (COLM), 2026</div>
+          <div class="col-xs-12 col-sm-9">Preprint, 2026</div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -385,7 +385,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            April, 2026
+            May, 2026
           </div>
         </div>
       </div>
@@ -405,17 +405,13 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2604.03216" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/2605.16975" target="_blank" rel="noopener">
   arXiv
 </a>
 
 
 
 
-
-<a class="btn btn-primary btn-outline" href="https://github.com/SeanWu25/Behavioral-Alignment-Score" target="_blank" rel="noopener">
-  Code
-</a>
 
 
 
@@ -434,7 +430,7 @@
 
 
 <button type="button" class="btn btn-primary btn-outline js-cite-modal"
-        data-filename="/files/citations/bas.bib">
+        data-filename="/files/citations/longecg.bib">
   Cite
 </button>
 

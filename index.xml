@@ -11,6 +11,24 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Evaluation and Prognostic Validation of Deep Regression Models for WSI-Based Gene-Expression Prediction</title>
+      <link>/publication/gene-exp/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/gene-exp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Extending Pretrained 10-Second ECG Foundation Models to Longer Horizons</title>
+      <link>/publication/longecg/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/longecg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Benchmarking Pathology Foundation Models for Breast Cancer Survival Prediction</title>
       <link>/publication/pfms_survival/</link>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
@@ -155,7 +173,7 @@
     </item>
     
     <item>
-      <title>Forward-only Diffusion Probabilistic Models</title>
+      <title>Efficient Image Restoration with State-Dependent Forward Diffusion</title>
       <link>/publication/fod/</link>
       <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
       
@@ -261,29 +279,11 @@
     </item>
     
     <item>
-      <title>Evaluating Deep Regression Models for WSI-Based Gene-Expression Prediction</title>
-      <link>/publication/gene-exp/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/gene-exp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Taming Diffusion Models for Image Restoration: A Review</title>
       <link>/publication/diff_ir_review/</link>
       <pubDate>Mon, 16 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>/publication/diff_ir_review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Evaluating Regression and Probabilistic Methods for ECG-Based Electrolyte Prediction</title>
-      <link>/publication/regressionecg/</link>
-      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/publication/regressionecg/</guid>
       <description></description>
     </item>
     
