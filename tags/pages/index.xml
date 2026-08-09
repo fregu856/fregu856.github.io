@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pages on Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</title>
+    <title>pages on Fredrik K. Gustafsson | Postdoc at AstraZeneca in Cambridge | Machine Learning &amp; Computer Vision for Multimodal Digital Pathology</title>
     <link>/tags/pages/</link>
-    <description>Recent content in pages on Fredrik K. Gustafsson | Postdoc in Oxford | Machine Learning for Healthcare</description>
+    <description>Recent content in pages on Fredrik K. Gustafsson | Postdoc at AstraZeneca in Cambridge | Machine Learning &amp; Computer Vision for Multimodal Digital Pathology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; Fredrik K. Gustafsson 2026</copyright>
@@ -27,9 +27,9 @@
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>/post/news/</guid>
-      <description>[Jul 31, 2026] Accepted papers: (1) Semantic Self-Distillation for Language Model Uncertainty has been accepted to UAI 2026, (2) BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence to COLM 2026, and (3) Efficient Image Restoration with State-Dependent Forward Diffusion to TMLR.
- [Jul 23, 2026] Updated preprint: Evaluation and Prognostic Validation of Deep Regression Models for WSI-Based Gene-Expression Prediction [arXiv] [project].
- [Apr 29, 2026] New preprint: Benchmarking Pathology Foundation Models for Breast Cancer Survival Prediction [arXiv] [project].</description>
+      <description>[Aug 3, 2026] I have joined AstraZeneca in Cambridge as a postdoc, to work on machine learning and computer vision for multimodal digital pathology.
+ [Jul 31, 2026] Accepted papers: (1) Semantic Self-Distillation for Language Model Uncertainty has been accepted to UAI 2026, (2) BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence to COLM 2026, and (3) Efficient Image Restoration with State-Dependent Forward Diffusion to TMLR.
+ [Jul 23, 2026] Updated preprint: Evaluation and Prognostic Validation of Deep Regression Models for WSI-Based Gene-Expression Prediction [arXiv] [project].</description>
     </item>
     
   </channel>
